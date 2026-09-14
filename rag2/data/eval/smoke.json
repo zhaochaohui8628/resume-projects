@@ -1,0 +1,15 @@
+{
+  "tag": "smoke",
+  "mode": "bm25",
+  "index": "tower_base.faiss",
+  "alpha": 0.9,
+  "cand": 10,
+  "top_k": 5,
+  "device": "cuda:0",
+  "n": 43,
+  "hit@k": 0.8604651162790697,
+  "mrr": 0.8062015503875969,
+  "ndcg@k": 0.8175499713455183,
+  "recall@k": 0.8604651162790697,
+  "sec_per_query": 0.0187
+}

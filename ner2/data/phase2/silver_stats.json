@@ -1,0 +1,17 @@
+{
+ "judged": 1400,
+ "verdict": {
+  "keep": 1036,
+  "fix": 364,
+  "gold-leak": 17,
+  "empty-fix": 139
+ },
+ "gold_leak_removed": 17,
+ "silver_train": 1077,
+ "silver_val": 167,
+ "conflicts": 156,
+ "fix_sample_rule_only_avg": 1.06,
+ "fix_sample_llm_only_avg": 0.33,
+ "fix_sample_jaccard_avg": 0.2609,
+ "fix_count": 364
+}

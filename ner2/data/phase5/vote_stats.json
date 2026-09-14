@@ -1,0 +1,49 @@
+{
+ "candidates": 1200,
+ "experts": [
+  "expert_model.jsonl",
+  "expert_rule.jsonl",
+  "expert_weak.jsonl"
+ ],
+ "authoritative": "expert_model.jsonl",
+ "min_votes": 2,
+ "consensus_sent": 1043,
+ "consensus_ents": 1637,
+ "disputes": 0,
+ "conflicts_vetoed": 633,
+ "pair_jaccard": {
+  "expert_model.jsonl|expert_rule.jsonl": 0.5645,
+  "expert_model.jsonl|expert_weak.jsonl": 0.8352,
+  "expert_rule.jsonl|expert_weak.jsonl": 0.6852
+ },
+ "vote_dist": {
+  "工序": {
+   "3": 321,
+   "2": 336,
+   "1": 23
+  },
+  "设备": {
+   "3": 445,
+   "1": 7,
+   "2": 107
+  },
+  "危大类别": {
+   "3": 245,
+   "1": 334,
+   "2": 59
+  },
+  "规范编号": {
+   "3": 13,
+   "2": 1
+  },
+  "工程类型": {
+   "2": 106,
+   "1": 24,
+   "3": 54
+  },
+  "参数": {
+   "3": 192,
+   "2": 3
+  }
+ }
+}

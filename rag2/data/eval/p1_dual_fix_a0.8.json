@@ -1,0 +1,14 @@
+{
+  "tag": "p1_dual_fix_a0.8",
+  "mode": "convex",
+  "index": "dual_p1.faiss",
+  "alpha": 0.8,
+  "cand": 10,
+  "top_k": 5,
+  "n": 43,
+  "hit@k": 1.0,
+  "mrr": 0.8875968992248061,
+  "ndcg@k": 0.9159319100100609,
+  "recall@k": 1.0,
+  "sec_per_query": 0.0397
+}

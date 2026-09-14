@@ -1,0 +1,63 @@
+# ===== 密钥与本地配置（绝不提交）=====
+.env
+*.env
+!.env.example
+*secret*
+*credential*
+*.key
+*.pem
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/*/ 
+.pytest_cache/
+*.egg-info/
+.mypy_cache/
+.ruff_cache/
+
+# ===== 模型权重（体积大，需本地另备）=====
+data/models/
+rag2/data/models/
+ner2/models/
+*.safetensors
+*.pt
+*.ckpt
+*.onnx
+*.h5
+
+# ===== 规范 PDF 语料（体积 + 版权）=====
+data/raw/
+*.pdf
+
+# ===== 检索索引（可由语料重建）=====
+rag2/data/index/
+rag2/data/corpus/_baseline_*
+rag2/data/phase2/_baseline_*
+rag2/data/phase2/candidates.jsonl
+rag2/data/phase2/judge_C_toolong.jsonl
+rag2/data/phase2/judge_A_samesource.jsonl
+
+# ===== 真实项目方案派生数据（保密，不入仓）=====
+agent/bench/data/real_fragments*/
+agent/bench/data/real_cases*.jsonl
+agent/bench/data/rule_engine_mechanical*.json
+agent/data/memory/
+简历模板/
+
+# ===== 第三方二进制 =====
+neo4j-community-4.4.8/
+
+# ===== 输出与日志 =====
+agent/outputs/
+agent/bench/outputs/
+*.log
+
+# ===== 编辑器 / 系统 =====
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini

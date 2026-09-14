@@ -1,0 +1,963 @@
+{
+  "pdf_total": 81,
+  "docs_ok": 81,
+  "blocks": 13661,
+  "by_chunk_mode": {
+    "clause": 13122,
+    "clause_repaired": 539
+  },
+  "by_part": {
+    "正文": 13091,
+    "附录": 570
+  },
+  "with_children": 362,
+  "n_children_total": 1833,
+  "len_p50": 82,
+  "len_p90": 314,
+  "len_p95": 476,
+  "len_p99": 1301,
+  "len_max": 96986,
+  "top_sources": [
+    [
+      "JGJ33-2012_建筑机械使用安全技术规程",
+      1152
+    ],
+    [
+      "DGJ08-11-2018_地基基础设计标准",
+      499
+    ],
+    [
+      "GB51004-2015_建筑地基基础工程施工规范",
+      484
+    ],
+    [
+      "DG-TJ08-61-2018_基坑工程技术标准",
+      479
+    ],
+    [
+      "JGJ160-2016_施工现场机械设备检查技术规范",
+      470
+    ],
+    [
+      "GB50666-2011_混凝土结构工程施工规范",
+      389
+    ],
+    [
+      "JGJ120-2012_建筑基坑支护技术规程",
+      381
+    ],
+    [
+      "GB50550-2010_建筑结构加固工程施工质量验收规范",
+      369
+    ],
+    [
+      "JGJ94-2008_建筑桩基技术规范",
+      359
+    ],
+    [
+      "GB50202-2018_建筑地基基础工程施工质量验收标准",
+      290
+    ],
+    [
+      "JGJ79-2012_建筑地基处理技术规范",
+      289
+    ],
+    [
+      "JGJ311-2013_建筑深基坑工程施工安全技术规范",
+      265
+    ]
+  ],
+  "report": [
+    {
+      "source": "DG-TJ08-2001-2016_基坑工程施工监测规程",
+      "status": "ok",
+      "chunk_mode": "clause",
+      "pages": 125,
+      "chars": 59204,
+      "clauses_kept": 181,
+      "median_len": 79,
+      "max_len": 2004,
+      "n_children": 10
+    },
+    {
+      "source": "DG-TJ08-202-2020_钻孔灌注桩施工标准",
+      "status": "ok",
+      "chunk_mode": "clause",
+      "pages": 102,
+      "chars": 48412,
+      "clauses_kept": 166,
+      "median_len": 67,
+      "max_len": 17671,
+      "n_children": 30
+    },
+    {
+      "source": "DG-TJ08-2077-2021_危险性较大的分部分项工程安全管理标准",
+      "status": "ok",
+      "chunk_mode": "clause",
+      "pages": 80,
+      "chars": 30813,
+      "clauses_kept": 128,
+      "median_len": 62,
+      "max_len": 271,
+      "n_children": 0
+    },
+    {
+      "source": "DG-TJ08-2186-2023_降水工程技术标准",
+      "status": "ok",
+      "chunk_mode": "clause",
+      "pages": 156,
+      "chars": 78855,
+      "clauses_kept": 203,
+      "median_len": 148,
+      "max_len": 2122,
+      "n_children": 20
+    },
+    {
+      "source": "DG-TJ08-61-2018_基坑工程技术标准",
+      "status": "ok",
+      "chunk_mode": "clause",
+      "pages": 398,
+      "chars": 223663,
+      "clauses_kept": 479,
+      "median_len": 120,
+      "max_len": 32209,
+      "n_children": 121
+    },
+    {
+      "source": "DG-TJ08-903-2022_现场施工安全生产管理标准",
+      "status": "ok",
+      "chunk_mode": "clause",
+      "pages": 65,
+      "chars": 25501,
+      "clauses_kept": 95,
+      "median_len": 58,
+      "max_len": 8983,
+      "n_children": 18
+    },
+    {
+      "source": "DGJ08-11-2018_地基基础设计标准",
+      "status": "ok",
+      "chunk_mode": "clause",
+      "pages": 377,
+      "chars": 217191,
+      "clauses_kept": 499,
+      "median_len": 131,
+      "max_len": 49181,
+      "n_children": 242
+    },
+    {
+      "source": "GB25506-2010_消防控制室通用技术要求",
+      "status": "ok",
+      "chunk_mode": "clause",
+      "pages": 11,
+      "chars": 8669,
+      "clauses_kept": 34,
+      "median_len": 127,
+      "max_len": 931,
+      "n_children": 2
+    },
+    {
+      "source": "GB29550-2013_民用建筑燃气安全技术条件",
+      "status": "ok",
+      "chunk_mode": "clause",
+      "pages": 10,
+      "chars": 5804,
+      "clauses_kept": 37,
+      "median_len": 55,
+      "max_len": 1101,
+      "n_children": 2
+    },
+    {
+      "source": "GB50202-2018_建筑地基基础工程施工质量验收标准",
+      "status": "ok",
+      "chunk_mode": "clause",
+      "pages": 144,
+      "chars": 73587,
+      "clauses_kept": 290,
+      "median_len": 70,
+      "max_len": 1092,
+      "n_children": 6
+    },
+    {
+      "source": "GB50204-2015_混凝土结构工程施工质量验收规范",
+      "status": "ok",
+      "chunk_mode": "clause",
+      "pages": 140,
+      "chars": 75819,
+      "clauses_kept": 180,
+      "median_len": 157,
+      "max_len": 1892,
+      "n_children": 16
+    },
+    {
+      "source": "GB50205-2020_钢结构工程施工质量验收标准",
+      "status": "ok",
+      "chunk_mode": "clause",
+      "pages": 204,
+      "chars": 90927,
+      "clauses_kept": 202,
+      "median_len": 98,
+      "max_len": 13824,
+      "n_children": 79
+    },
+    {
+      "source": "GB50300-2013_建筑工程施工质量验收统一标准",
+      "status": "ok",
+      "chunk_mode": "clause",
+      "pages": 63,
+      "chars": 32705,
+      "clauses_kept": 45,
+      "median_len": 98,
+      "max_len": 4684,
+      "n_children": 11
+    },
+    {
+      "source": "GB50497-2019_建筑基坑工程监测技术标准",
+      "status": "ok",
+      "chunk_mode": "clause",
+      "pages": 106,
+      "chars": 55517,
+      "clauses_kept": 155,
+      "median_len": 83,
+      "max_len": 2218,
+      "n_children": 4
+    },
+    {
+      "source": "GB50550-2010_建筑结构加固工程施工质量验收规范",
+      "status": "ok",
+      "chunk_mode": "clause_repaired",
+      "pages": 321,
+      "chars": 171227,
+      "clauses_kept": 369,
+      "median_len": 148,
+      "max_len": 5222,
+      "n_children": 72
+    },
+    {
+      "source": "GB50666-2011_混凝土结构工程施工规范",
+      "status": "ok",
+      "chunk_mode": "clause",
+      "pages": 218,
+      "chars": 135772,
+      "clauses_kept": 389,
+      "median_len": 139,
+      "max_len": 4937,
+      "n_children": 28
+    },
+    {
+      "source": "GB50870-2013_建筑施工安全技术统一规范",
+      "status": "ok",
+      "chunk_mode": "clause",
+      "pages": 56,
+      "chars": 25316,
+      "clauses_kept": 95,
+      "median_len": 83,
+      "max_len": 7887,
+      "n_children": 14
+    },
+    {
+      "source": "GB51004-2015_建筑地基基础工程施工规范",
+      "status": "ok",
+      "chunk_mode": "clause",
+      "pages": 265,
+      "chars": 158387,
+      "clauses_kept": 484,
+      "median_len": 96,
+      "max_len": 1355,
+      "n_children": 20
+    },
+    {
+      "source": "GB51210-2016_建筑施工脚手架安全技术统一标准",
+      "status": "ok",
+      "chunk_mode": "clause",
+      "pages": 149,
+      "chars": 81297,
+      "clauses_kept": 190,
+      "median_len": 112,
+      "max_len": 966,
+      "n_children": 6
+    },
+    {
+      "source": "GB55001-2021_工程结构通用规范",
+      "status": "ok",
+      "chunk_mode": "clause",
+      "pages": 69,
+      "chars": 38374,
+      "clauses_kept": 119,
+      "median_len": 78,
+      "max_len": 1908,
+      "n_children": 6
+    },
+    {
+      "source": "GB55002-2021_建筑与市政工程抗震通用规范",
+      "status": "ok",
+      "chunk_mode": "clause",
+      "pages": 115,
+      "chars": 65824,
+      "clauses_kept": 111,
+      "median_len": 145,
+      "max_len": 2093,
+      "n_children": 10
+    },
+    {
+      "source": "GB55003-2021_建筑与市政地基基础通用规范",
+      "status": "ok",
+      "chunk_mode": "clause",
+      "pages": 81,
+      "chars": 47725,
+      "clauses_kept": 130,
+      "median_len": 89,
+      "max_len": 2526,
+      "n_children": 5
+    },
+    {
+      "source": "GB55004-2021_组合结构通用规范",
+      "status": "ok",
+      "chunk_mode": "clause",
+      "pages": 58,
+      "chars": 31276,
+      "clauses_kept": 73,
+      "median_len": 99,
+      "max_len": 1462,
+      "n_children": 4
+    },
+    {
+      "source": "GB55005-2021_木结构通用规范",
+      "status": "ok",
+      "chunk_mode": "clause",
+      "pages": 56,
+      "chars": 28316,
+      "clauses_kept": 64,
+      "median_len": 82,
+      "max_len": 1480,
+      "n_children": 3
+    },
+    {
+      "source": "GB55006-2021_钢结构通用规范",
+      "status": "ok",
+      "chunk_mode": "clause",
+      "pages": 71,
+      "chars": 40079,
+      "clauses_kept": 104,
+      "median_len": 71,
+      "max_len": 2520,
+      "n_children": 5
+    },
+    {
+      "source": "GB55007-2021_砌体结构通用规范",
+      "status": "ok",
+      "chunk_mode": "clause",
+      "pages": 55,
+      "chars": 30250,
+      "clauses_kept": 65,
+      "median_len": 59,
+      "max_len": 2043,
+      "n_children": 8
+    },
+    {
+      "source": "GB55008-2021_混凝土结构通用规范",
+      "status": "ok",
+      "chunk_mode": "clause",
+      "pages": 75,
+      "chars": 43785,
+      "clauses_kept": 72,
+      "median_len": 68,
+      "max_len": 2648,
+      "n_children": 9
+    },
+    {
+      "source": "GB55009-2021_燃气工程项目规范",
+      "status": "ok",
+      "chunk_mode": "clause",
+      "pages": 75,
+      "chars": 45184,
+      "clauses_kept": 155,
+      "median_len": 63,
+      "max_len": 2051,
+      "n_children": 5
+    },
+    {
+      "source": "GB55010-2021_供热工程项目规范",
+      "status": "ok",
+      "chunk_mode": "clause",
+      "pages": 53,
+      "chars": 32249,
+      "clauses_kept": 78,
+      "median_len": 66,
+      "max_len": 1190,
+      "n_children": 2
+    },
+    {
+      "source": "GB55011-2021_城市道路交通工程项目规范",
+      "status": "ok",
+      "chunk_mode": "clause",
+      "pages": 83,
+      "chars": 46137,
+      "clauses_kept": 142,
+      "median_len": 126,
+      "max_len": 3637,
+      "n_children": 25
+    },
+    {
+      "source": "GB55012-2021_生活垃圾处理处置工程项目规范",
+      "status": "ok",
+      "chunk_mode": "clause",
+      "pages": 91,
+      "chars": 53908,
+      "clauses_kept": 147,
+      "median_len": 55,
+      "max_len": 1600,
+      "n_children": 5
+    },
+    {
+      "source": "GB55013-2021_市容环卫工程项目规范",
+      "status": "ok",
+      "chunk_mode": "clause",
+      "pages": 72,
+      "chars": 42372,
+      "clauses_kept": 94,
+      "median_len": 57,
+      "max_len": 4272,
+      "n_children": 8
+    },
+    {
+      "source": "GB55014-2021_园林绿化工程项目规范",
+      "status": "ok",
+      "chunk_mode": "clause",
+      "pages": 66,
+      "chars": 39353,
+      "clauses_kept": 100,
+      "median_len": 64,
+      "max_len": 980,
+      "n_children": 2
+    },
+    {
+      "source": "GB55015-2021_建筑节能与可再生能源利用通用规范",
+      "status": "ok",
+      "chunk_mode": "clause",
+      "pages": 186,
+      "chars": 116462,
+      "clauses_kept": 156,
+      "median_len": 96,
+      "max_len": 13576,
+      "n_children": 63
+    },
+    {
+      "source": "GB55016-2021_建筑环境通用规范",
+      "status": "ok",
+      "chunk_mode": "clause",
+      "pages": 97,
+      "chars": 52635,
+      "clauses_kept": 94,
+      "median_len": 96,
+      "max_len": 5943,
+      "n_children": 14
+    },
+    {
+      "source": "GB55017-2021_工程勘察通用规范",
+      "status": "ok",
+      "chunk_mode": "clause",
+      "pages": 54,
+      "chars": 25429,
+      "clauses_kept": 82,
+      "median_len": 95,
+      "max_len": 1778,
+      "n_children": 4
+    },
+    {
+      "source": "GB55018-2021_工程测量通用规范",
+      "status": "ok",
+      "chunk_mode": "clause",
+      "pages": 58,
+      "chars": 31826,
+      "clauses_kept": 72,
+      "median_len": 135,
+      "max_len": 7395,
+      "n_children": 14
+    },
+    {
+      "source": "GB55019-2021_建筑与市政工程无障碍通用规范",
+      "status": "ok",
+      "chunk_mode": "clause",
+      "pages": 67,
+      "chars": 36616,
+      "clauses_kept": 104,
+      "median_len": 58,
+      "max_len": 1619,
+      "n_children": 3
+    },
+    {
+      "source": "GB55020-2021_建筑给水排水与节水通用规范",
+      "status": "ok",
+      "chunk_mode": "clause",
+      "pages": 97,
+      "chars": 61977,
+      "clauses_kept": 162,
+      "median_len": 51,
+      "max_len": 3783,
+      "n_children": 7
+    },
+    {
+      "source": "GB55021-2021_既有建筑鉴定与加固通用规范",
+      "status": "ok",
+      "chunk_mode": "clause",
+      "pages": 72,
+      "chars": 40633,
+      "clauses_kept": 115,
+      "median_len": 102,
+      "max_len": 2682,
+      "n_children": 11
+    },
+    {
+      "source": "GB55022-2021_既有建筑维护与改造通用规范",
+      "status": "ok",
+      "chunk_mode": "clause",
+      "pages": 50,
+      "chars": 26787,
+      "clauses_kept": 95,
+      "median_len": 66,
+      "max_len": 1256,
+      "n_children": 3
+    },
+    {
+      "source": "GB55023-2022_施工脚手架通用规范",
+      "status": "ok",
+      "chunk_mode": "clause",
+      "pages": 48,
+      "chars": 26204,
+      "clauses_kept": 72,
+      "median_len": 74,
+      "max_len": 2086,
+      "n_children": 4
+    },
+    {
+      "source": "GB55024-2022_建筑电气与智能化通用规范",
+      "status": "ok",
+      "chunk_mode": "clause",
+      "pages": 174,
+      "chars": 108369,
+      "clauses_kept": 203,
+      "median_len": 146,
+      "max_len": 6208,
+      "n_children": 50
+    },
+    {
+      "source": "GB55025-2022_宿舍、旅馆建筑项目规范",
+      "status": "ok",
+      "chunk_mode": "clause",
+      "pages": 31,
+      "chars": 14670,
+      "clauses_kept": 55,
+      "median_len": 58,
+      "max_len": 1301,
+      "n_children": 3
+    },
+    {
+      "source": "GB55026-2022_城市给水工程项目规范",
+      "status": "ok",
+      "chunk_mode": "clause",
+      "pages": 80,
+      "chars": 50418,
+      "clauses_kept": 131,
+      "median_len": 83,
+      "max_len": 1571,
+      "n_children": 11
+    },
+    {
+      "source": "GB55027-2022_城乡排水工程项目规范",
+      "status": "ok",
+      "chunk_mode": "clause",
+      "pages": 66,
+      "chars": 41804,
+      "clauses_kept": 136,
+      "median_len": 53,
+      "max_len": 1979,
+      "n_children": 5
+    },
+    {
+      "source": "GB55028-2022_特殊设施工程项目规范",
+      "status": "ok",
+      "chunk_mode": "clause",
+      "pages": 45,
+      "chars": 24373,
+      "clauses_kept": 66,
+      "median_len": 101,
+      "max_len": 1596,
+      "n_children": 3
+    },
+    {
+      "source": "GB55029-2022_安全防范工程通用规范",
+      "status": "ok",
+      "chunk_mode": "clause",
+      "pages": 60,
+      "chars": 32068,
+      "clauses_kept": 52,
+      "median_len": 66,
+      "max_len": 1686,
+      "n_children": 3
+    },
+    {
+      "source": "GB55030-2022_建筑与市政工程防水通用规范",
+      "status": "ok",
+      "chunk_mode": "clause",
+      "pages": 93,
+      "chars": 52410,
+      "clauses_kept": 149,
+      "median_len": 66,
+      "max_len": 1460,
+      "n_children": 5
+    },
+    {
+      "source": "GB55031-2022_民用建筑通用规范",
+      "status": "ok",
+      "chunk_mode": "clause",
+      "pages": 76,
+      "chars": 41148,
+      "clauses_kept": 136,
+      "median_len": 52,
+      "max_len": 312,
+      "n_children": 0
+    },
+    {
+      "source": "GB55032-2022_建筑与市政工程施工质量控制通用规范",
+      "status": "ok",
+      "chunk_mode": "clause",
+      "pages": 61,
+      "chars": 31311,
+      "clauses_kept": 60,
+      "median_len": 82,
+      "max_len": 5770,
+      "n_children": 21
+    },
+    {
+      "source": "GB55033-2022_城市轨道交通工程项目规范",
+      "status": "ok",
+      "chunk_mode": "clause",
+      "pages": 93,
+      "chars": 56366,
+      "clauses_kept": 182,
+      "median_len": 73,
+      "max_len": 8353,
+      "n_children": 18
+    },
+    {
+      "source": "GB55034-2022_建筑与市政施工现场安全卫生与职业健康通用规范",
+      "status": "ok",
+      "chunk_mode": "clause",
+      "pages": 45,
+      "chars": 23759,
+      "clauses_kept": 114,
+      "median_len": 62,
+      "max_len": 1861,
+      "n_children": 4
+    },
+    {
+      "source": "GB55035-2023_城乡历史文化保护利用项目规范",
+      "status": "ok",
+      "chunk_mode": "clause",
+      "pages": 42,
+      "chars": 21825,
+      "clauses_kept": 80,
+      "median_len": 49,
+      "max_len": 1385,
+      "n_children": 3
+    },
+    {
+      "source": "GB55036-2022_消防设施通用规范",
+      "status": "ok",
+      "chunk_mode": "clause",
+      "pages": 71,
+      "chars": 41284,
+      "clauses_kept": 117,
+      "median_len": 85,
+      "max_len": 403,
+      "n_children": 0
+    },
+    {
+      "source": "GB55037-2022_建筑防火通用规范",
+      "status": "ok",
+      "chunk_mode": "clause",
+      "pages": 136,
+      "chars": 83093,
+      "clauses_kept": 230,
+      "median_len": 110,
+      "max_len": 666,
+      "n_children": 0
+    },
+    {
+      "source": "GB55038-2025_住宅项目规范",
+      "status": "ok",
+      "chunk_mode": "clause",
+      "pages": 79,
+      "chars": 47629,
+      "clauses_kept": 110,
+      "median_len": 66,
+      "max_len": 907,
+      "n_children": 4
+    },
+    {
+      "source": "JGJ-T231-2021_建筑施工承插型盘扣式钢管脚手架安全技术标准",
+      "status": "ok",
+      "chunk_mode": "clause",
+      "pages": 73,
+      "chars": 31465,
+      "clauses_kept": 139,
+      "median_len": 66,
+      "max_len": 3767,
+      "n_children": 11
+    },
+    {
+      "source": "JGJ-T46-2024_建筑与市政工程施工现场临时用电安全技术标",
+      "status": "ok",
+      "chunk_mode": "clause",
+      "pages": 85,
+      "chars": 48744,
+      "clauses_kept": 228,
+      "median_len": 72,
+      "max_len": 739,
+      "n_children": 2
+    },
+    {
+      "source": "JGJ107-2016_钢筋机械连接技术规程",
+      "status": "ok",
+      "chunk_mode": "clause",
+      "pages": 62,
+      "chars": 29450,
+      "clauses_kept": 55,
+      "median_len": 137,
+      "max_len": 1216,
+      "n_children": 10
+    },
+    {
+      "source": "JGJ120-2012_建筑基坑支护技术规程",
+      "status": "ok",
+      "chunk_mode": "clause",
+      "pages": 207,
+      "chars": 124344,
+      "clauses_kept": 381,
+      "median_len": 119,
+      "max_len": 1218,
+      "n_children": 13
+    },
+    {
+      "source": "JGJ130-2011_建筑施工扣件式钢管脚手架安全技术规范",
+      "status": "ok",
+      "chunk_mode": "clause",
+      "pages": 130,
+      "chars": 72585,
+      "clauses_kept": 191,
+      "median_len": 76,
+      "max_len": 6556,
+      "n_children": 40
+    },
+    {
+      "source": "JGJ147-2016_建筑拆除工程安全技术规范",
+      "status": "ok",
+      "chunk_mode": "clause",
+      "pages": 32,
+      "chars": 12134,
+      "clauses_kept": 74,
+      "median_len": 54,
+      "max_len": 469,
+      "n_children": 0
+    },
+    {
+      "source": "JGJ160-2016_施工现场机械设备检查技术规范",
+      "status": "ok",
+      "chunk_mode": "clause",
+      "pages": 131,
+      "chars": 70609,
+      "clauses_kept": 470,
+      "median_len": 58,
+      "max_len": 886,
+      "n_children": 4
+    },
+    {
+      "source": "JGJ162-2008_建筑施工模板安全技术规范",
+      "status": "ok",
+      "chunk_mode": "clause",
+      "pages": 144,
+      "chars": 84895,
+      "clauses_kept": 134,
+      "median_len": 115,
+      "max_len": 36573,
+      "n_children": 90
+    },
+    {
+      "source": "JGJ164-2008_建筑施工木脚手架安全技术规范",
+      "status": "ok",
+      "chunk_mode": "clause_repaired",
+      "pages": 80,
+      "chars": 34731,
+      "clauses_kept": 68,
+      "median_len": 87,
+      "max_len": 1406,
+      "n_children": 6
+    },
+    {
+      "source": "JGJ166-2016_建筑施工碗扣式钢管脚手架安全技术规范",
+      "status": "ok",
+      "chunk_mode": "clause",
+      "pages": 126,
+      "chars": 67414,
+      "clauses_kept": 188,
+      "median_len": 97,
+      "max_len": 8972,
+      "n_children": 17
+    },
+    {
+      "source": "JGJ196-2010_建筑施工塔式起重机安装、使用、拆卸安全技术规程",
+      "status": "ok",
+      "chunk_mode": "clause",
+      "pages": 54,
+      "chars": 23785,
+      "clauses_kept": 99,
+      "median_len": 56,
+      "max_len": 694,
+      "n_children": 0
+    },
+    {
+      "source": "JGJ202-2010_建筑施工工具式脚手架安全技术规范",
+      "status": "ok",
+      "chunk_mode": "clause",
+      "pages": 112,
+      "chars": 60238,
+      "clauses_kept": 189,
+      "median_len": 65,
+      "max_len": 8339,
+      "n_children": 25
+    },
+    {
+      "source": "JGJ215-2010_建筑施工升降机安装、使用、拆卸安全技术规程",
+      "status": "ok",
+      "chunk_mode": "clause_repaired",
+      "pages": 64,
+      "chars": 28833,
+      "clauses_kept": 60,
+      "median_len": 83,
+      "max_len": 1172,
+      "n_children": 4
+    },
+    {
+      "source": "JGJ254-2011_建筑施工竹脚手架安全技术规范",
+      "status": "ok",
+      "chunk_mode": "clause",
+      "pages": 61,
+      "chars": 26506,
+      "clauses_kept": 142,
+      "median_len": 75,
+      "max_len": 535,
+      "n_children": 0
+    },
+    {
+      "source": "JGJ276-2012_建筑施工起重吊装工程安全技术规范",
+      "status": "ok",
+      "chunk_mode": "clause",
+      "pages": 110,
+      "chars": 58051,
+      "clauses_kept": 137,
+      "median_len": 89,
+      "max_len": 3626,
+      "n_children": 12
+    },
+    {
+      "source": "JGJ300-2013_建筑施工临时支撑结构技术规范",
+      "status": "ok",
+      "chunk_mode": "clause",
+      "pages": 102,
+      "chars": 51302,
+      "clauses_kept": 120,
+      "median_len": 94,
+      "max_len": 9228,
+      "n_children": 24
+    },
+    {
+      "source": "JGJ311-2013_建筑深基坑工程施工安全技术规范",
+      "status": "ok",
+      "chunk_mode": "clause",
+      "pages": 112,
+      "chars": 73230,
+      "clauses_kept": 265,
+      "median_len": 85,
+      "max_len": 1138,
+      "n_children": 6
+    },
+    {
+      "source": "JGJ33-2012_建筑机械使用安全技术规程",
+      "status": "ok",
+      "chunk_mode": "clause",
+      "pages": 195,
+      "chars": 121398,
+      "clauses_kept": 1152,
+      "median_len": 51,
+      "max_len": 1862,
+      "n_children": 4
+    },
+    {
+      "source": "JGJ59-2011_建筑施工安全检查标准",
+      "status": "ok",
+      "chunk_mode": "clause",
+      "pages": 156,
+      "chars": 76740,
+      "clauses_kept": 80,
+      "median_len": 175,
+      "max_len": 15769,
+      "n_children": 48
+    },
+    {
+      "source": "JGJ79-2012_建筑地基处理技术规范",
+      "status": "ok",
+      "chunk_mode": "clause",
+      "pages": 254,
+      "chars": 162957,
+      "clauses_kept": 289,
+      "median_len": 114,
+      "max_len": 10471,
+      "n_children": 69
+    },
+    {
+      "source": "JGJ8-2016_建筑变形测量规范",
+      "status": "ok",
+      "chunk_mode": "clause",
+      "pages": 166,
+      "chars": 87951,
+      "clauses_kept": 232,
+      "median_len": 108,
+      "max_len": 2056,
+      "n_children": 13
+    },
+    {
+      "source": "JGJ80-2016_建筑施工高处作业安全技术规范",
+      "status": "ok",
+      "chunk_mode": "clause",
+      "pages": 65,
+      "chars": 28997,
+      "clauses_kept": 119,
+      "median_len": 82,
+      "max_len": 849,
+      "n_children": 2
+    },
+    {
+      "source": "JGJ88-2010_龙门架及井架物料提升机安全技术规范",
+      "status": "ok",
+      "chunk_mode": "clause_repaired",
+      "pages": 54,
+      "chars": 20266,
+      "clauses_kept": 42,
+      "median_len": 84,
+      "max_len": 2272,
+      "n_children": 12
+    },
+    {
+      "source": "JGJ94-2008_建筑桩基技术规范",
+      "status": "ok",
+      "chunk_mode": "clause",
+      "pages": 325,
+      "chars": 264814,
+      "clauses_kept": 359,
+      "median_len": 116,
+      "max_len": 96986,
+      "n_children": 370
+    }
+  ]
+}

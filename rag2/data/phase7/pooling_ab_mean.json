@@ -1,0 +1,16 @@
+{
+  "model": "data/models/dual_mix_mean/doc_encoder",
+  "n_eval": 500,
+  "results": {
+    "cls": {
+      "hit@5": 0.92,
+      "mrr": 0.8276,
+      "ndcg@5": 0.8493
+    },
+    "mean": {
+      "hit@5": 0.906,
+      "mrr": 0.8274,
+      "ndcg@5": 0.8442
+    }
+  }
+}

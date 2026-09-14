@@ -1,0 +1,23 @@
+{
+ "head": "softmax",
+ "ckpt": "ner2/models/s1_softmax_stage1/model.pt",
+ "data": "<REPO_ROOT>\\ner2\\data\\phase2\\silver_train.jsonl",
+ "sp_margin": 0.25,
+ "o_margin": 0.15,
+ "n_in": 1577,
+ "out": 495,
+ "out_entities": 611,
+ "by_type": {
+  "工程类型": 265,
+  "设备": 122,
+  "参数": 26,
+  "工序": 135,
+  "危大类别": 60,
+  "规范编号": 3
+ },
+ "total": 1577,
+ "drop_disagree": 751,
+ "drop_span_margin": 330,
+ "kept": 495,
+ "drop_o_margin": 1
+}

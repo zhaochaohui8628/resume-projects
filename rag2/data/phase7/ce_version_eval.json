@@ -1,0 +1,34 @@
+[
+  {
+    "model": "data/models/cross_v2_ep1",
+    "dev_acc": 0.8556430446194225,
+    "dev_pos_hit": 0.8529411764705882,
+    "dev_neg_fp": 0.14218009478672985,
+    "gold_sig_mean": 0.8736836102163913,
+    "gold_sig_p50": 0.9803419709205627
+  },
+  {
+    "model": "data/models/cross_v2_ep2",
+    "dev_acc": 0.884514435695538,
+    "dev_pos_hit": 0.888235294117647,
+    "dev_neg_fp": 0.11848341232227488,
+    "gold_sig_mean": 0.9158999403225904,
+    "gold_sig_p50": 0.9980564713478088
+  },
+  {
+    "model": "data/models/cross_v2_ep3",
+    "dev_acc": 0.889763779527559,
+    "dev_pos_hit": 0.9058823529411765,
+    "dev_neg_fp": 0.12322274881516587,
+    "gold_sig_mean": 0.9345712427133029,
+    "gold_sig_p50": 0.9995023012161255
+  },
+  {
+    "model": "data/models/cross_v2_ep4",
+    "dev_acc": 0.89501312335958,
+    "dev_pos_hit": 0.9058823529411765,
+    "dev_neg_fp": 0.11374407582938388,
+    "gold_sig_mean": 0.9356327165439752,
+    "gold_sig_p50": 0.9997456669807434
+  }
+]

@@ -1,0 +1,30 @@
+## 施工方案合规审查 · 运行配置
+# 说明：目前只有 agent/src/tools/rag_client.py 会读本文件（retrieval.* 段）。
+#       其余段落为项目说明性配置，改这里不影响已训练产物。
+
+project:
+  name: 施工方案合规审查
+  owner: 面试简历项目
+
+llm:
+  provider: mock            # mock（无需 Key，确定性输出） | deepseek（需 DEEPSEEK_API_KEY）
+  deepseek:
+    model: deepseek-chat
+    base_url: https://api.deepseek.com/v1
+    api_key_env: DEEPSEEK_API_KEY
+
+retrieval:
+  top_k: 5                  # 最终返回条文数
+  rag2:                     # ★ 现行检索后端（唯一），rag_client._build_rag2 读取
+    fuse_mode: rrf          # rrf | convex（用户裁定 RRF；convex 需配 alpha）
+    alpha: 0.3              # fuse_mode=convex 时的向量路权重（凸组合前已做温莎截断 min-max 归一）
+  rerank:                   # ★ CrossEncoder 精排（默认开，UI 可关）
+    enabled: true
+    model: rag2/data/models/cross_v2_ep4   # 领域微调 CE 产物（相对工作区根）
+    oversample: 4           # 召回 top_k*oversample -> 精排 -> 截断回 top_k
+    batch_size: 16
+    max_len: 256
+
+resources:                        # ★ 重型模型并发槽位（防瞬时提交内存超限 → WinError 1455）
+  model_slots: 2                  # 同进程最多并发的重型模型调用数（NER 加载/推理、CE 加载/推理各占 1）
+  slot_timeout: 180               # 等待槽位超时（秒）；超时抛 SlotTimeout。设 0/null = 无限等待

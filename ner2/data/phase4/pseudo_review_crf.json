@@ -1,0 +1,23 @@
+{
+ "in": 72,
+ "out": 42,
+ "out_pos": 42,
+ "out_neg": 0,
+ "out_entities": 47,
+ "kept_ratio": 0.5833,
+ "dropped": {
+  "drop_caption": 3,
+  "drop_generic": 16,
+  "drop_sent_empty": 27,
+  "drop_no_consensus": 13,
+  "drop_param_no_value": 1
+ },
+ "by_type": {
+  "设备": 25,
+  "工程类型": 13,
+  "工序": 6,
+  "危大类别": 3
+ },
+ "head": "crf",
+ "input": "ner2/data/phase4/pseudo_hc_crf.jsonl"
+}

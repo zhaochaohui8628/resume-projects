@@ -1,0 +1,1225 @@
+{
+ "nodes": [
+  {
+   "id": "term:高支模",
+   "label": "Term",
+   "name": "term:高支模",
+   "note": "规范叫法：混凝土模板支撑工程"
+  },
+  {
+   "id": "term:深基坑",
+   "label": "Term",
+   "name": "term:深基坑",
+   "note": "规范叫法：深基坑工程"
+  },
+  {
+   "id": "term:排架",
+   "label": "Term",
+   "name": "term:排架",
+   "note": "规范叫法：模板支撑架/支撑结构"
+  },
+  {
+   "id": "term:满堂架",
+   "label": "Term",
+   "name": "term:满堂架",
+   "note": "规范叫法：满堂支撑架"
+  },
+  {
+   "id": "term:塔吊",
+   "label": "Term",
+   "name": "term:塔吊",
+   "note": "规范叫法：塔式起重机"
+  },
+  {
+   "id": "term:爬架",
+   "label": "Term",
+   "name": "term:爬架",
+   "note": "规范叫法：附着式升降脚手架"
+  },
+  {
+   "id": "metric:模板支撑工程:搭设高度",
+   "label": "Metric",
+   "name": "metric:模板支撑工程:搭设高度",
+   "unit": "m",
+   "source": "hazardous_work_types.json"
+  },
+  {
+   "id": "metric:深基坑工程:开挖深度",
+   "label": "Metric",
+   "name": "metric:深基坑工程:开挖深度",
+   "unit": "m",
+   "source": "hazardous_work_types.json"
+  },
+  {
+   "id": "metric:模板支撑工程:施工总荷载",
+   "label": "Metric",
+   "name": "metric:模板支撑工程:施工总荷载",
+   "unit": "kN/m2",
+   "source": "hazardous_work_types.json"
+  },
+  {
+   "id": "metric:模板支撑工程:集中线荷载",
+   "label": "Metric",
+   "name": "metric:模板支撑工程:集中线荷载",
+   "unit": "kN/m",
+   "source": "hazardous_work_types.json"
+  },
+  {
+   "id": "metric:起重吊装工程:单件起吊重量",
+   "label": "Metric",
+   "name": "metric:起重吊装工程:单件起吊重量",
+   "unit": "kN",
+   "source": "hazardous_work_types.json"
+  },
+  {
+   "id": "metric:脚手架工程:搭设高度",
+   "label": "Metric",
+   "name": "metric:脚手架工程:搭设高度",
+   "unit": "m",
+   "source": "hazardous_work_types.json"
+  },
+  {
+   "id": "metric:降水工程:开挖深度",
+   "label": "Metric",
+   "name": "metric:降水工程:开挖深度",
+   "unit": "m",
+   "source": "hazardous_work_types.json"
+  },
+  {
+   "id": "threshold:模板支撑工程:搭设高度:危大:5m",
+   "label": "Threshold",
+   "name": "threshold:模板支撑工程:搭设高度:危大:5m",
+   "category": "模板支撑工程",
+   "metric": "搭设高度",
+   "level": "危大",
+   "value": 5,
+   "unit": "m",
+   "source": "37号令附件1 二(二)"
+  },
+  {
+   "id": "threshold:模板支撑工程:搭设高度:超规模:8m",
+   "label": "Threshold",
+   "name": "threshold:模板支撑工程:搭设高度:超规模:8m",
+   "category": "模板支撑工程",
+   "metric": "搭设高度",
+   "level": "超规模",
+   "value": 8,
+   "unit": "m",
+   "source": "37号令附件2 二(二)"
+  },
+  {
+   "id": "threshold:模板支撑工程:施工总荷载:危大:10kN/m2",
+   "label": "Threshold",
+   "name": "threshold:模板支撑工程:施工总荷载:危大:10kN/m2",
+   "category": "模板支撑工程",
+   "metric": "施工总荷载",
+   "level": "危大",
+   "value": 10,
+   "unit": "kN/m2",
+   "source": "37号令附件1 二(二)"
+  },
+  {
+   "id": "threshold:模板支撑工程:施工总荷载:超规模:15kN/m2",
+   "label": "Threshold",
+   "name": "threshold:模板支撑工程:施工总荷载:超规模:15kN/m2",
+   "category": "模板支撑工程",
+   "metric": "施工总荷载",
+   "level": "超规模",
+   "value": 15,
+   "unit": "kN/m2",
+   "source": "37号令附件2 二(二)"
+  },
+  {
+   "id": "threshold:深基坑工程:开挖深度:危大:3m",
+   "label": "Threshold",
+   "name": "threshold:深基坑工程:开挖深度:危大:3m",
+   "category": "深基坑工程",
+   "metric": "开挖深度",
+   "level": "危大",
+   "value": 3,
+   "unit": "m",
+   "source": "37号令附件1 三(一)"
+  },
+  {
+   "id": "threshold:深基坑工程:开挖深度:超规模:5m",
+   "label": "Threshold",
+   "name": "threshold:深基坑工程:开挖深度:超规模:5m",
+   "category": "深基坑工程",
+   "metric": "开挖深度",
+   "level": "超规模",
+   "value": 5,
+   "unit": "m",
+   "source": "37号令附件2 三(一)"
+  },
+  {
+   "id": "threshold:脚手架工程:搭设高度:危大:24m",
+   "label": "Threshold",
+   "name": "threshold:脚手架工程:搭设高度:危大:24m",
+   "category": "脚手架工程",
+   "metric": "搭设高度",
+   "level": "危大",
+   "value": 24,
+   "unit": "m",
+   "source": "37号令附件1 四(一)"
+  },
+  {
+   "id": "threshold:脚手架工程:搭设高度:超规模:50m",
+   "label": "Threshold",
+   "name": "threshold:脚手架工程:搭设高度:超规模:50m",
+   "category": "脚手架工程",
+   "metric": "搭设高度",
+   "level": "超规模",
+   "value": 50,
+   "unit": "m",
+   "source": "37号令附件2 四(一)"
+  },
+  {
+   "id": "threshold:起重吊装工程:单件起吊重量:危大:10kN",
+   "label": "Threshold",
+   "name": "threshold:起重吊装工程:单件起吊重量:危大:10kN",
+   "category": "起重吊装工程",
+   "metric": "单件起吊重量",
+   "level": "危大",
+   "value": 10,
+   "unit": "kN",
+   "source": "37号令附件1 五(一)"
+  },
+  {
+   "id": "threshold:起重吊装工程:单件起吊重量:超规模:100kN",
+   "label": "Threshold",
+   "name": "threshold:起重吊装工程:单件起吊重量:超规模:100kN",
+   "category": "起重吊装工程",
+   "metric": "单件起吊重量",
+   "level": "超规模",
+   "value": 100,
+   "unit": "kN",
+   "source": "37号令附件2 五(一)"
+  },
+  {
+   "id": "obligation:应编制专项施工方案",
+   "label": "Obligation",
+   "name": "obligation:应编制专项施工方案",
+   "description": "危大工程必须编制专项施工方案（37号令第10条）"
+  },
+  {
+   "id": "obligation:应组织专家论证",
+   "label": "Obligation",
+   "name": "obligation:应组织专家论证",
+   "description": "超规模危大工程专项方案必须专家论证（37号令第12条）"
+  },
+  {
+   "id": "obligation:应进行基坑监测",
+   "label": "Obligation",
+   "name": "obligation:应进行基坑监测",
+   "description": "深基坑工程应实施第三方监测（JGJ311-2013 第8章）"
+  },
+  {
+   "id": "obligation:应进行分阶段验收",
+   "label": "Obligation",
+   "name": "obligation:应进行分阶段验收",
+   "description": "脚手架搭设完成后应分阶段验收（JGJ130-2011 第8章）"
+  },
+  {
+   "id": "obligation:方案应经审批",
+   "label": "Obligation",
+   "name": "obligation:方案应经审批",
+   "description": "专项方案应经施工单位技术负责人、总监理工程师签字（37号令第13条）"
+  },
+  {
+   "id": "GB55023-2022_施工脚手架通用规范",
+   "label": "Standard",
+   "name": "GB55023-2022_施工脚手架通用规范",
+   "full_name": "GB55023-2022_施工脚手架通用规范",
+   "level": "强制性国标",
+   "demo_note": "脚手架强条以 GB55023 为准（demo 示例，全量由 abolished_clauses.json 驱动）"
+  },
+  {
+   "id": "GB55032-2022_建筑与市政工程施工质量控制通用规范",
+   "label": "Standard",
+   "name": "GB55032-2022_建筑与市政工程施工质量控制通用规范",
+   "full_name": "GB55032-2022_建筑与市政工程施工质量控制通用规范",
+   "level": "强制性国标",
+   "demo_note": "JGJ46-2005 废止，由 GB55024 系列替代（demo 示例）"
+  },
+  {
+   "id": "JGJ130-2011_建筑施工扣件式钢管脚手架安全技术规范::6.2.4",
+   "label": "Clause",
+   "name": "JGJ130-2011_建筑施工扣件式钢管脚手架安全技术规范::6.2.4",
+   "text": "架高超7m时，连墙件应按两步三跨或两步两跨设置，并宜采用梅花形布置。"
+  },
+  {
+   "id": "JGJ130-2011_建筑施工扣件式钢管脚手架安全技术规范::附录B",
+   "label": "Clause",
+   "name": "JGJ130-2011_建筑施工扣件式钢管脚手架安全技术规范::附录B",
+   "text": "（附录B：连墙件布置表）",
+   "is_appendix": true
+  },
+  {
+   "id": "JGJ311-2013_建筑深基坑工程施工安全技术规范",
+   "label": "Standard",
+   "name": "JGJ311-2013_建筑深基坑工程施工安全技术规范",
+   "full_name": "建筑深基坑工程施工安全技术规范",
+   "level": "行业标准"
+  },
+  {
+   "id": "JGJ120-2012_建筑基坑支护技术规程",
+   "label": "Standard",
+   "name": "JGJ120-2012_建筑基坑支护技术规程",
+   "full_name": "建筑基坑支护技术规程",
+   "level": "行业标准"
+  },
+  {
+   "id": "DG-TJ08-61-2018_基坑工程技术标准",
+   "label": "Standard",
+   "name": "DG-TJ08-61-2018_基坑工程技术标准",
+   "full_name": "基坑工程技术标准（上海市）",
+   "level": "地方标准"
+  },
+  {
+   "id": "DG-TJ08-2077-2021_危险性较大的分部分项工程安全管理标准",
+   "label": "Standard",
+   "name": "DG-TJ08-2077-2021_危险性较大的分部分项工程安全管理标准",
+   "full_name": "危险性较大的分部分项工程安全管理标准（上海市）",
+   "level": "地方标准"
+  },
+  {
+   "id": "GB51210-2016_建筑施工脚手架安全技术统一标准",
+   "label": "Standard",
+   "name": "GB51210-2016_建筑施工脚手架安全技术统一标准",
+   "full_name": "建筑施工脚手架安全技术统一标准",
+   "level": "国家标准"
+  },
+  {
+   "id": "GB51004-2015_建筑地基基础工程施工规范",
+   "label": "Standard",
+   "name": "GB51004-2015_建筑地基基础工程施工规范",
+   "full_name": "建筑地基基础工程施工规范",
+   "level": "国家标准"
+  },
+  {
+   "id": "JGJ130-2011_建筑施工扣件式钢管脚手架安全技术规范",
+   "label": "Standard",
+   "name": "JGJ130-2011_建筑施工扣件式钢管脚手架安全技术规范",
+   "full_name": "建筑施工扣件式钢管脚手架安全技术规范",
+   "level": "行业标准"
+  },
+  {
+   "id": "深基坑工程",
+   "label": "HazardCategory",
+   "name": "深基坑工程",
+   "description": "开挖深度≥3m 或未超过3m但地质条件复杂的基坑"
+  },
+  {
+   "id": "模板支撑工程",
+   "label": "HazardCategory",
+   "name": "模板支撑工程",
+   "description": "搭设高度≥5m、跨度≥10m、施工总荷载≥10kN/m²等条件的模板支架"
+  },
+  {
+   "id": "起重吊装工程",
+   "label": "HazardCategory",
+   "name": "起重吊装工程",
+   "description": "采用非常规起重设备且单件起吊重量≥10kN 的吊装"
+  },
+  {
+   "id": "脚手架工程",
+   "label": "HazardCategory",
+   "name": "脚手架工程",
+   "description": "搭设高度≥24m 的落地式脚手架等"
+  },
+  {
+   "id": "基坑开挖",
+   "label": "Entity",
+   "name": "基坑开挖",
+   "description": "基坑土方开挖工序"
+  },
+  {
+   "id": "支护结构",
+   "label": "Entity",
+   "name": "支护结构",
+   "description": "基坑围护/支撑结构"
+  },
+  {
+   "id": "降排水",
+   "label": "Entity",
+   "name": "降排水",
+   "description": "基坑降水与排水"
+  },
+  {
+   "id": "监测",
+   "label": "Entity",
+   "name": "监测",
+   "description": "基坑变形监测"
+  },
+  {
+   "id": "模板支架",
+   "label": "Entity",
+   "name": "模板支架",
+   "description": "模板支撑架体"
+  },
+  {
+   "id": "连墙件",
+   "label": "Entity",
+   "name": "连墙件",
+   "description": "脚手架与结构连接件"
+  },
+  {
+   "id": "JGJ311-2013_建筑深基坑工程施工安全技术规范::7.1.2",
+   "label": "Clause",
+   "name": "JGJ311-2013_建筑深基坑工程施工安全技术规范::7.1.2",
+   "text": "降排水施工方案应包含各种泵的扬程、功率，排水管路尺寸、材料、路线，水箱位置、尺寸，电力配置等。"
+  },
+  {
+   "id": "JGJ120-2012_建筑基坑支护技术规程::3.3.1",
+   "label": "Clause",
+   "name": "JGJ120-2012_建筑基坑支护技术规程::3.3.1",
+   "text": "支护结构选型时，应综合考虑下列因素:1基坑深度;2土的性状及地下水条件;3基坑周边环境对基坑变形的承受能力及支护结构失效的后果;..."
+  },
+  {
+   "id": "DG-TJ08-61-2018_基坑工程技术标准::2.1.2",
+   "label": "Clause",
+   "name": "DG-TJ08-61-2018_基坑工程技术标准::2.1.2",
+   "text": "基坑工程为挖除建(构)筑物地下结构处的土方，保证主体地下结构的安全施工及保护基坑周边环境而采取的围护、支撑、降水、加固、挖土与回填等工程措施的总称。"
+  },
+  {
+   "id": "DG-TJ08-2077-2021_危险性较大的分部分项工程安全管理标准::8.4.7",
+   "label": "Clause",
+   "name": "DG-TJ08-2077-2021_危险性较大的分部分项工程安全管理标准::8.4.7",
+   "text": "监理单位发现施工单位未按照专项施工方案施工的，应要求其进行整改；情节严重的，应要求其暂停施工，并及时报告建设单位；..."
+  },
+  {
+   "id": "GB51210-2016_建筑施工脚手架安全技术统一标准::3.2.3",
+   "label": "Clause",
+   "name": "GB51210-2016_建筑施工脚手架安全技术统一标准::3.2.3",
+   "text": "脚手架结构重要性系数，应按表3.2.3 的规定取值。承载能力极限状态设计结构重要性系数安全等级I级1.1、II级1.0。"
+  },
+  {
+   "id": "GB55023-2022_施工脚手架通用规范::5.2.1",
+   "label": "Clause",
+   "name": "GB55023-2022_施工脚手架通用规范::5.2.1",
+   "text": "脚手架应按顺序搭设...落地作业脚手架、悬挑脚手架的搭设应与主体结构工程施工同步，一次搭设高度不应超过最上层连墙件2步，且自由高度不应大于4m。"
+  },
+  {
+   "id": "GB51004-2015_建筑地基基础工程施工规范::5.3.2",
+   "label": "Clause",
+   "name": "GB51004-2015_建筑地基基础工程施工规范::5.3.2",
+   "text": "钢筋混凝土条形基础施工应符合下列规定...混凝土宜分段分层连续浇筑，每层厚度宜为300mm~500mm。"
+  },
+  {
+   "id": "risk:起重吊装:01",
+   "label": "RiskSource",
+   "name": "地基承载力不足",
+   "category": "起重吊装",
+   "source": "地基承载力不足",
+   "hazard": "吊车支腿下陷、倾覆",
+   "control": "吊装前验算地基承载力，支腿下垫路基箱/钢板，确认地基处理合格"
+  },
+  {
+   "id": "risk:起重吊装:02",
+   "label": "RiskSource",
+   "name": "吊具/钢丝绳超载或磨损",
+   "category": "起重吊装",
+   "source": "吊具/钢丝绳超载或磨损",
+   "hazard": "吊物坠落",
+   "control": "按吊重核算钢丝绳安全系数，吊装前检查吊具、绳卡、卸扣"
+  },
+  {
+   "id": "risk:起重吊装:03",
+   "label": "RiskSource",
+   "name": "超载/超力矩作业",
+   "category": "起重吊装",
+   "source": "超载/超力矩作业",
+   "hazard": "吊车倾覆",
+   "control": "核对额定起重量曲线，严禁超载、超力矩，设力矩限制器并试吊"
+  },
+  {
+   "id": "risk:起重吊装:04",
+   "label": "RiskSource",
+   "name": "指挥信号不统一",
+   "category": "起重吊装",
+   "source": "指挥信号不统一",
+   "hazard": "误操作、碰撞",
+   "control": "专职指挥持证上岗，统一信号（旗语/对讲机），吊装区域设警戒"
+  },
+  {
+   "id": "risk:起重吊装:05",
+   "label": "RiskSource",
+   "name": "大风/恶劣天气",
+   "category": "起重吊装",
+   "source": "大风/恶劣天气",
+   "hazard": "吊物摆动失控",
+   "control": "风速超限（一般 6 级及以上）停止吊装，起重臂迎风停放"
+  },
+  {
+   "id": "risk:起重吊装:06",
+   "label": "RiskSource",
+   "name": "吊点位置不当",
+   "category": "起重吊装",
+   "source": "吊点位置不当",
+   "hazard": "构件变形、失稳",
+   "control": "按计算书确定吊点，钢栈桥设专用吊耳/吊装加固"
+  },
+  {
+   "id": "risk:起重吊装:07",
+   "label": "RiskSource",
+   "name": "作业人员无证/配合不当",
+   "category": "起重吊装",
+   "source": "作业人员无证/配合不当",
+   "hazard": "操作失误",
+   "control": "司机、司索、指挥持证上岗，作业前交底"
+  },
+  {
+   "id": "risk:起重吊装:08",
+   "label": "RiskSource",
+   "name": "临边/交叉作业",
+   "category": "起重吊装",
+   "source": "临边/交叉作业",
+   "hazard": "高处坠落、物体打击",
+   "control": "设临边防护、警戒区，吊装区下方禁止站人"
+  },
+  {
+   "id": "risk:基坑工程:01",
+   "label": "RiskSource",
+   "name": "开挖超深/超挖",
+   "category": "基坑工程",
+   "source": "开挖超深/超挖",
+   "hazard": "坍塌",
+   "control": "分层分段开挖，严禁超挖，按方案放坡或支护"
+  },
+  {
+   "id": "risk:基坑工程:02",
+   "label": "RiskSource",
+   "name": "支护结构变形超限",
+   "category": "基坑工程",
+   "source": "支护结构变形超限",
+   "hazard": "基坑失稳",
+   "control": "按方案施工支护，监测报警值设限，超限停工"
+  },
+  {
+   "id": "risk:基坑工程:03",
+   "label": "RiskSource",
+   "name": "地下水控制失效",
+   "category": "基坑工程",
+   "source": "地下水控制失效",
+   "hazard": "流砂、管涌",
+   "control": "降水井点布设与运行，坑内明排，止水帷幕完整"
+  },
+  {
+   "id": "risk:基坑工程:04",
+   "label": "RiskSource",
+   "name": "周边管线/建筑物沉降",
+   "category": "基坑工程",
+   "source": "周边管线/建筑物沉降",
+   "hazard": "管线破裂、建筑开裂",
+   "control": "周边环境调查，第三方监测，管线保护措施"
+  },
+  {
+   "id": "risk:基坑工程:05",
+   "label": "RiskSource",
+   "name": "坑边堆载超限",
+   "category": "基坑工程",
+   "source": "坑边堆载超限",
+   "hazard": "边坡失稳",
+   "control": "坑边 1m 内禁堆载，材料距坑边距离按方案"
+  },
+  {
+   "id": "risk:模板支撑:01",
+   "label": "RiskSource",
+   "name": "支撑体系失稳",
+   "category": "模板支撑",
+   "source": "支撑体系失稳",
+   "hazard": "坍塌",
+   "control": "按计算书搭设，立杆间距、步距、剪刀撑符合方案"
+  },
+  {
+   "id": "risk:模板支撑:02",
+   "label": "RiskSource",
+   "name": "混凝土浇筑不对称",
+   "category": "模板支撑",
+   "source": "混凝土浇筑不对称",
+   "hazard": "偏心荷载坍塌",
+   "control": "对称浇筑，浇筑顺序按方案，严禁集中堆载"
+  },
+  {
+   "id": "risk:模板支撑:03",
+   "label": "RiskSource",
+   "name": "拆模过早",
+   "category": "模板支撑",
+   "source": "拆模过早",
+   "hazard": "结构开裂、坍塌",
+   "control": "拆模强度达设计要求并经申请，先支后拆"
+  },
+  {
+   "id": "risk:模板支撑:04",
+   "label": "RiskSource",
+   "name": "基础不实",
+   "category": "模板支撑",
+   "source": "基础不实",
+   "hazard": "立杆下沉",
+   "control": "地基夯实并设垫板，排水畅通"
+  },
+  {
+   "id": "risk:脚手架:01",
+   "label": "RiskSource",
+   "name": "连墙件缺失",
+   "category": "脚手架",
+   "source": "连墙件缺失",
+   "hazard": "架体倾覆",
+   "control": "按方案设置连墙件，两步三跨，严禁随意拆除"
+  },
+  {
+   "id": "risk:脚手架:02",
+   "label": "RiskSource",
+   "name": "基础不实/沉降",
+   "category": "脚手架",
+   "source": "基础不实/沉降",
+   "hazard": "架体倾斜",
+   "control": "基础硬化、排水，立杆下垫板"
+  },
+  {
+   "id": "risk:脚手架:03",
+   "label": "RiskSource",
+   "name": "超载堆料",
+   "category": "脚手架",
+   "source": "超载堆料",
+   "hazard": "架体变形",
+   "control": "控制作业面荷载，严禁超载"
+  },
+  {
+   "id": "risk:脚手架:04",
+   "label": "RiskSource",
+   "name": "剪刀撑缺失",
+   "category": "脚手架",
+   "source": "剪刀撑缺失",
+   "hazard": "整体刚度不足",
+   "control": "按方案设剪刀撑，连续设置"
+  }
+ ],
+ "edges": [
+  {
+   "from": "term:高支模",
+   "to": "模板支撑工程",
+   "type": "ALIAS_OF",
+   "target_label": "HazardCategory"
+  },
+  {
+   "from": "term:深基坑",
+   "to": "深基坑工程",
+   "type": "ALIAS_OF",
+   "target_label": "HazardCategory"
+  },
+  {
+   "from": "term:排架",
+   "to": "模板支架",
+   "type": "ALIAS_OF",
+   "target_label": "Entity"
+  },
+  {
+   "from": "term:满堂架",
+   "to": "模板支架",
+   "type": "ALIAS_OF",
+   "target_label": "Entity"
+  },
+  {
+   "from": "term:塔吊",
+   "to": "起重吊装工程",
+   "type": "ALIAS_OF",
+   "target_label": "HazardCategory"
+  },
+  {
+   "from": "term:爬架",
+   "to": "脚手架工程",
+   "type": "ALIAS_OF",
+   "target_label": "HazardCategory"
+  },
+  {
+   "from": "模板支撑工程",
+   "to": "metric:模板支撑工程:搭设高度",
+   "type": "HAS_METRIC"
+  },
+  {
+   "from": "深基坑工程",
+   "to": "metric:深基坑工程:开挖深度",
+   "type": "HAS_METRIC"
+  },
+  {
+   "from": "模板支撑工程",
+   "to": "metric:模板支撑工程:施工总荷载",
+   "type": "HAS_METRIC"
+  },
+  {
+   "from": "模板支撑工程",
+   "to": "metric:模板支撑工程:集中线荷载",
+   "type": "HAS_METRIC"
+  },
+  {
+   "from": "起重吊装工程",
+   "to": "metric:起重吊装工程:单件起吊重量",
+   "type": "HAS_METRIC"
+  },
+  {
+   "from": "脚手架工程",
+   "to": "metric:脚手架工程:搭设高度",
+   "type": "HAS_METRIC"
+  },
+  {
+   "from": "降水工程",
+   "to": "metric:降水工程:开挖深度",
+   "type": "HAS_METRIC"
+  },
+  {
+   "from": "metric:模板支撑工程:搭设高度",
+   "to": "threshold:模板支撑工程:搭设高度:危大:5m",
+   "type": "HAS_THRESHOLD"
+  },
+  {
+   "from": "threshold:模板支撑工程:搭设高度:危大:5m",
+   "to": "模板支撑工程",
+   "type": "FOR_CATEGORY"
+  },
+  {
+   "from": "metric:模板支撑工程:搭设高度",
+   "to": "threshold:模板支撑工程:搭设高度:超规模:8m",
+   "type": "HAS_THRESHOLD"
+  },
+  {
+   "from": "threshold:模板支撑工程:搭设高度:超规模:8m",
+   "to": "模板支撑工程",
+   "type": "FOR_CATEGORY"
+  },
+  {
+   "from": "metric:模板支撑工程:施工总荷载",
+   "to": "threshold:模板支撑工程:施工总荷载:危大:10kN/m2",
+   "type": "HAS_THRESHOLD"
+  },
+  {
+   "from": "threshold:模板支撑工程:施工总荷载:危大:10kN/m2",
+   "to": "模板支撑工程",
+   "type": "FOR_CATEGORY"
+  },
+  {
+   "from": "metric:模板支撑工程:施工总荷载",
+   "to": "threshold:模板支撑工程:施工总荷载:超规模:15kN/m2",
+   "type": "HAS_THRESHOLD"
+  },
+  {
+   "from": "threshold:模板支撑工程:施工总荷载:超规模:15kN/m2",
+   "to": "模板支撑工程",
+   "type": "FOR_CATEGORY"
+  },
+  {
+   "from": "metric:深基坑工程:开挖深度",
+   "to": "threshold:深基坑工程:开挖深度:危大:3m",
+   "type": "HAS_THRESHOLD"
+  },
+  {
+   "from": "threshold:深基坑工程:开挖深度:危大:3m",
+   "to": "深基坑工程",
+   "type": "FOR_CATEGORY"
+  },
+  {
+   "from": "metric:深基坑工程:开挖深度",
+   "to": "threshold:深基坑工程:开挖深度:超规模:5m",
+   "type": "HAS_THRESHOLD"
+  },
+  {
+   "from": "threshold:深基坑工程:开挖深度:超规模:5m",
+   "to": "深基坑工程",
+   "type": "FOR_CATEGORY"
+  },
+  {
+   "from": "metric:脚手架工程:搭设高度",
+   "to": "threshold:脚手架工程:搭设高度:危大:24m",
+   "type": "HAS_THRESHOLD"
+  },
+  {
+   "from": "threshold:脚手架工程:搭设高度:危大:24m",
+   "to": "脚手架工程",
+   "type": "FOR_CATEGORY"
+  },
+  {
+   "from": "metric:脚手架工程:搭设高度",
+   "to": "threshold:脚手架工程:搭设高度:超规模:50m",
+   "type": "HAS_THRESHOLD"
+  },
+  {
+   "from": "threshold:脚手架工程:搭设高度:超规模:50m",
+   "to": "脚手架工程",
+   "type": "FOR_CATEGORY"
+  },
+  {
+   "from": "metric:起重吊装工程:单件起吊重量",
+   "to": "threshold:起重吊装工程:单件起吊重量:危大:10kN",
+   "type": "HAS_THRESHOLD"
+  },
+  {
+   "from": "threshold:起重吊装工程:单件起吊重量:危大:10kN",
+   "to": "起重吊装工程",
+   "type": "FOR_CATEGORY"
+  },
+  {
+   "from": "metric:起重吊装工程:单件起吊重量",
+   "to": "threshold:起重吊装工程:单件起吊重量:超规模:100kN",
+   "type": "HAS_THRESHOLD"
+  },
+  {
+   "from": "threshold:起重吊装工程:单件起吊重量:超规模:100kN",
+   "to": "起重吊装工程",
+   "type": "FOR_CATEGORY"
+  },
+  {
+   "from": "threshold:模板支撑工程:搭设高度:危大:5m",
+   "to": "obligation:应编制专项施工方案",
+   "type": "TRIGGERS"
+  },
+  {
+   "from": "threshold:模板支撑工程:搭设高度:危大:5m",
+   "to": "obligation:方案应经审批",
+   "type": "TRIGGERS"
+  },
+  {
+   "from": "threshold:模板支撑工程:搭设高度:超规模:8m",
+   "to": "obligation:应组织专家论证",
+   "type": "TRIGGERS"
+  },
+  {
+   "from": "threshold:模板支撑工程:施工总荷载:危大:10kN/m2",
+   "to": "obligation:应编制专项施工方案",
+   "type": "TRIGGERS"
+  },
+  {
+   "from": "threshold:模板支撑工程:施工总荷载:危大:10kN/m2",
+   "to": "obligation:方案应经审批",
+   "type": "TRIGGERS"
+  },
+  {
+   "from": "threshold:模板支撑工程:施工总荷载:超规模:15kN/m2",
+   "to": "obligation:应组织专家论证",
+   "type": "TRIGGERS"
+  },
+  {
+   "from": "threshold:深基坑工程:开挖深度:危大:3m",
+   "to": "obligation:应编制专项施工方案",
+   "type": "TRIGGERS"
+  },
+  {
+   "from": "threshold:深基坑工程:开挖深度:危大:3m",
+   "to": "obligation:方案应经审批",
+   "type": "TRIGGERS"
+  },
+  {
+   "from": "threshold:深基坑工程:开挖深度:危大:3m",
+   "to": "obligation:应进行基坑监测",
+   "type": "TRIGGERS"
+  },
+  {
+   "from": "threshold:深基坑工程:开挖深度:超规模:5m",
+   "to": "obligation:应组织专家论证",
+   "type": "TRIGGERS"
+  },
+  {
+   "from": "threshold:脚手架工程:搭设高度:危大:24m",
+   "to": "obligation:应编制专项施工方案",
+   "type": "TRIGGERS"
+  },
+  {
+   "from": "threshold:脚手架工程:搭设高度:危大:24m",
+   "to": "obligation:方案应经审批",
+   "type": "TRIGGERS"
+  },
+  {
+   "from": "threshold:脚手架工程:搭设高度:超规模:50m",
+   "to": "obligation:应组织专家论证",
+   "type": "TRIGGERS"
+  },
+  {
+   "from": "threshold:起重吊装工程:单件起吊重量:危大:10kN",
+   "to": "obligation:应编制专项施工方案",
+   "type": "TRIGGERS"
+  },
+  {
+   "from": "threshold:起重吊装工程:单件起吊重量:危大:10kN",
+   "to": "obligation:方案应经审批",
+   "type": "TRIGGERS"
+  },
+  {
+   "from": "threshold:起重吊装工程:单件起吊重量:超规模:100kN",
+   "to": "obligation:应组织专家论证",
+   "type": "TRIGGERS"
+  },
+  {
+   "from": "GB55023-2022_施工脚手架通用规范",
+   "to": "JGJ130-2011_建筑施工扣件式钢管脚手架安全技术规范",
+   "type": "SUPERSEDES",
+   "note": "脚手架强条以 GB55023 为准（demo 示例，全量由 abolished_clauses.json 驱动）"
+  },
+  {
+   "from": "GB55032-2022_建筑与市政工程施工质量控制通用规范",
+   "to": "JGJ46-2005_施工现场临时用电安全技术规范",
+   "type": "SUPERSEDES",
+   "note": "JGJ46-2005 废止，由 GB55024 系列替代（demo 示例）"
+  },
+  {
+   "from": "JGJ130-2011_建筑施工扣件式钢管脚手架安全技术规范::6.2.4",
+   "to": "JGJ130-2011_建筑施工扣件式钢管脚手架安全技术规范::附录B",
+   "type": "REFERENCES_CLAUSE",
+   "note": "架高超7m 连墙件设置依据附录B（demo 示例）"
+  },
+  {
+   "from": "JGJ311-2013_建筑深基坑工程施工安全技术规范::7.1.2",
+   "to": "JGJ311-2013_建筑深基坑工程施工安全技术规范",
+   "type": "BELONGS_TO"
+  },
+  {
+   "from": "JGJ120-2012_建筑基坑支护技术规程::3.3.1",
+   "to": "JGJ120-2012_建筑基坑支护技术规程",
+   "type": "BELONGS_TO"
+  },
+  {
+   "from": "DG-TJ08-61-2018_基坑工程技术标准::2.1.2",
+   "to": "DG-TJ08-61-2018_基坑工程技术标准",
+   "type": "BELONGS_TO"
+  },
+  {
+   "from": "DG-TJ08-2077-2021_危险性较大的分部分项工程安全管理标准::8.4.7",
+   "to": "DG-TJ08-2077-2021_危险性较大的分部分项工程安全管理标准",
+   "type": "BELONGS_TO"
+  },
+  {
+   "from": "GB51210-2016_建筑施工脚手架安全技术统一标准::3.2.3",
+   "to": "GB51210-2016_建筑施工脚手架安全技术统一标准",
+   "type": "BELONGS_TO"
+  },
+  {
+   "from": "GB55023-2022_施工脚手架通用规范::5.2.1",
+   "to": "GB55023-2022_施工脚手架通用规范",
+   "type": "BELONGS_TO"
+  },
+  {
+   "from": "GB51004-2015_建筑地基基础工程施工规范::5.3.2",
+   "to": "GB51004-2015_建筑地基基础工程施工规范",
+   "type": "BELONGS_TO"
+  },
+  {
+   "from": "JGJ130-2011_建筑施工扣件式钢管脚手架安全技术规范::6.2.4",
+   "to": "JGJ130-2011_建筑施工扣件式钢管脚手架安全技术规范",
+   "type": "BELONGS_TO"
+  },
+  {
+   "from": "深基坑工程",
+   "to": "JGJ311-2013_建筑深基坑工程施工安全技术规范",
+   "type": "REGULATED_BY"
+  },
+  {
+   "from": "深基坑工程",
+   "to": "JGJ120-2012_建筑基坑支护技术规程",
+   "type": "REGULATED_BY"
+  },
+  {
+   "from": "深基坑工程",
+   "to": "DG-TJ08-61-2018_基坑工程技术标准",
+   "type": "REGULATED_BY"
+  },
+  {
+   "from": "深基坑工程",
+   "to": "DG-TJ08-2077-2021_危险性较大的分部分项工程安全管理标准",
+   "type": "REGULATED_BY"
+  },
+  {
+   "from": "模板支撑工程",
+   "to": "GB51210-2016_建筑施工脚手架安全技术统一标准",
+   "type": "REGULATED_BY"
+  },
+  {
+   "from": "模板支撑工程",
+   "to": "GB55023-2022_施工脚手架通用规范",
+   "type": "REGULATED_BY"
+  },
+  {
+   "from": "模板支撑工程",
+   "to": "JGJ130-2011_建筑施工扣件式钢管脚手架安全技术规范",
+   "type": "REGULATED_BY"
+  },
+  {
+   "from": "模板支撑工程",
+   "to": "DG-TJ08-2077-2021_危险性较大的分部分项工程安全管理标准",
+   "type": "REGULATED_BY"
+  },
+  {
+   "from": "起重吊装工程",
+   "to": "DG-TJ08-2077-2021_危险性较大的分部分项工程安全管理标准",
+   "type": "REGULATED_BY"
+  },
+  {
+   "from": "脚手架工程",
+   "to": "GB51210-2016_建筑施工脚手架安全技术统一标准",
+   "type": "REGULATED_BY"
+  },
+  {
+   "from": "脚手架工程",
+   "to": "GB55023-2022_施工脚手架通用规范",
+   "type": "REGULATED_BY"
+  },
+  {
+   "from": "脚手架工程",
+   "to": "JGJ130-2011_建筑施工扣件式钢管脚手架安全技术规范",
+   "type": "REGULATED_BY"
+  },
+  {
+   "from": "JGJ311-2013_建筑深基坑工程施工安全技术规范::7.1.2",
+   "to": "深基坑工程",
+   "type": "COVERS"
+  },
+  {
+   "from": "JGJ120-2012_建筑基坑支护技术规程::3.3.1",
+   "to": "深基坑工程",
+   "type": "COVERS"
+  },
+  {
+   "from": "DG-TJ08-61-2018_基坑工程技术标准::2.1.2",
+   "to": "深基坑工程",
+   "type": "COVERS"
+  },
+  {
+   "from": "DG-TJ08-2077-2021_危险性较大的分部分项工程安全管理标准::8.4.7",
+   "to": "模板支撑工程",
+   "type": "COVERS"
+  },
+  {
+   "from": "GB51210-2016_建筑施工脚手架安全技术统一标准::3.2.3",
+   "to": "模板支撑工程",
+   "type": "COVERS"
+  },
+  {
+   "from": "GB55023-2022_施工脚手架通用规范::5.2.1",
+   "to": "模板支撑工程",
+   "type": "COVERS"
+  },
+  {
+   "from": "JGJ130-2011_建筑施工扣件式钢管脚手架安全技术规范::6.2.4",
+   "to": "脚手架工程",
+   "type": "COVERS"
+  },
+  {
+   "from": "GB51004-2015_建筑地基基础工程施工规范::5.3.2",
+   "to": "深基坑工程",
+   "type": "COVERS"
+  },
+  {
+   "from": "JGJ311-2013_建筑深基坑工程施工安全技术规范::7.1.2",
+   "to": "降排水",
+   "type": "MENTIONS"
+  },
+  {
+   "from": "JGJ120-2012_建筑基坑支护技术规程::3.3.1",
+   "to": "支护结构",
+   "type": "MENTIONS"
+  },
+  {
+   "from": "JGJ120-2012_建筑基坑支护技术规程::3.3.1",
+   "to": "基坑开挖",
+   "type": "MENTIONS"
+  },
+  {
+   "from": "DG-TJ08-61-2018_基坑工程技术标准::2.1.2",
+   "to": "支护结构",
+   "type": "MENTIONS"
+  },
+  {
+   "from": "DG-TJ08-61-2018_基坑工程技术标准::2.1.2",
+   "to": "降排水",
+   "type": "MENTIONS"
+  },
+  {
+   "from": "DG-TJ08-61-2018_基坑工程技术标准::2.1.2",
+   "to": "基坑开挖",
+   "type": "MENTIONS"
+  },
+  {
+   "from": "GB55023-2022_施工脚手架通用规范::5.2.1",
+   "to": "模板支架",
+   "type": "MENTIONS"
+  },
+  {
+   "from": "GB55023-2022_施工脚手架通用规范::5.2.1",
+   "to": "连墙件",
+   "type": "MENTIONS"
+  },
+  {
+   "from": "JGJ130-2011_建筑施工扣件式钢管脚手架安全技术规范::6.2.4",
+   "to": "连墙件",
+   "type": "MENTIONS"
+  },
+  {
+   "from": "GB51210-2016_建筑施工脚手架安全技术统一标准::3.2.3",
+   "to": "模板支架",
+   "type": "MENTIONS"
+  },
+  {
+   "from": "GB55023-2022_施工脚手架通用规范",
+   "to": "GB51210-2016_建筑施工脚手架安全技术统一标准",
+   "type": "HIERARCHY"
+  },
+  {
+   "from": "GB51210-2016_建筑施工脚手架安全技术统一标准",
+   "to": "JGJ130-2011_建筑施工扣件式钢管脚手架安全技术规范",
+   "type": "HIERARCHY"
+  },
+  {
+   "from": "JGJ120-2012_建筑基坑支护技术规程",
+   "to": "DG-TJ08-61-2018_基坑工程技术标准",
+   "type": "HIERARCHY"
+  },
+  {
+   "from": "JGJ311-2013_建筑深基坑工程施工安全技术规范",
+   "to": "DG-TJ08-61-2018_基坑工程技术标准",
+   "type": "HIERARCHY"
+  },
+  {
+   "from": "JGJ120-2012_建筑基坑支护技术规程::3.3.1",
+   "to": "GB51004-2015_建筑地基基础工程施工规范",
+   "type": "REFERENCES"
+  },
+  {
+   "from": "JGJ311-2013_建筑深基坑工程施工安全技术规范::7.1.2",
+   "to": "GB51004-2015_建筑地基基础工程施工规范",
+   "type": "REFERENCES"
+  },
+  {
+   "from": "起重吊装工程",
+   "to": "risk:起重吊装:01",
+   "type": "HAS_RISK"
+  },
+  {
+   "from": "起重吊装工程",
+   "to": "risk:起重吊装:02",
+   "type": "HAS_RISK"
+  },
+  {
+   "from": "起重吊装工程",
+   "to": "risk:起重吊装:03",
+   "type": "HAS_RISK"
+  },
+  {
+   "from": "起重吊装工程",
+   "to": "risk:起重吊装:04",
+   "type": "HAS_RISK"
+  },
+  {
+   "from": "起重吊装工程",
+   "to": "risk:起重吊装:05",
+   "type": "HAS_RISK"
+  },
+  {
+   "from": "起重吊装工程",
+   "to": "risk:起重吊装:06",
+   "type": "HAS_RISK"
+  },
+  {
+   "from": "起重吊装工程",
+   "to": "risk:起重吊装:07",
+   "type": "HAS_RISK"
+  },
+  {
+   "from": "起重吊装工程",
+   "to": "risk:起重吊装:08",
+   "type": "HAS_RISK"
+  },
+  {
+   "from": "深基坑工程",
+   "to": "risk:基坑工程:01",
+   "type": "HAS_RISK"
+  },
+  {
+   "from": "深基坑工程",
+   "to": "risk:基坑工程:02",
+   "type": "HAS_RISK"
+  },
+  {
+   "from": "深基坑工程",
+   "to": "risk:基坑工程:03",
+   "type": "HAS_RISK"
+  },
+  {
+   "from": "深基坑工程",
+   "to": "risk:基坑工程:04",
+   "type": "HAS_RISK"
+  },
+  {
+   "from": "深基坑工程",
+   "to": "risk:基坑工程:05",
+   "type": "HAS_RISK"
+  },
+  {
+   "from": "模板支撑工程",
+   "to": "risk:模板支撑:01",
+   "type": "HAS_RISK"
+  },
+  {
+   "from": "模板支撑工程",
+   "to": "risk:模板支撑:02",
+   "type": "HAS_RISK"
+  },
+  {
+   "from": "模板支撑工程",
+   "to": "risk:模板支撑:03",
+   "type": "HAS_RISK"
+  },
+  {
+   "from": "模板支撑工程",
+   "to": "risk:模板支撑:04",
+   "type": "HAS_RISK"
+  },
+  {
+   "from": "脚手架工程",
+   "to": "risk:脚手架:01",
+   "type": "HAS_RISK"
+  },
+  {
+   "from": "脚手架工程",
+   "to": "risk:脚手架:02",
+   "type": "HAS_RISK"
+  },
+  {
+   "from": "脚手架工程",
+   "to": "risk:脚手架:03",
+   "type": "HAS_RISK"
+  },
+  {
+   "from": "脚手架工程",
+   "to": "risk:脚手架:04",
+   "type": "HAS_RISK"
+  }
+ ],
+ "meta": {
+  "purpose": "qa 路多跳查询图谱 demo v2（术语归一 + 阈值链 + 废止链 + 条文跳转）",
+  "node_labels": [
+   "Clause",
+   "Entity",
+   "HazardCategory",
+   "Metric",
+   "Obligation",
+   "RiskSource",
+   "Standard",
+   "Term",
+   "Threshold"
+  ],
+  "rel_types": [
+   "ALIAS_OF",
+   "BELONGS_TO",
+   "COVERS",
+   "FOR_CATEGORY",
+   "HAS_METRIC",
+   "HAS_RISK",
+   "HAS_THRESHOLD",
+   "HIERARCHY",
+   "MENTIONS",
+   "REFERENCES",
+   "REFERENCES_CLAUSE",
+   "REGULATED_BY",
+   "SUPERSEDES",
+   "TRIGGERS"
+  ],
+  "risk_sources_added": true
+ }
+}

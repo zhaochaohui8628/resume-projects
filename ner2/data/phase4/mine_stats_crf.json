@@ -1,0 +1,29 @@
+{
+ "head": "crf",
+ "ckpt": "ner2/models/s2_crf_stage1/model.pt",
+ "pool": 6498,
+ "sp_margin": 0.0,
+ "o_margin": 0.0,
+ "crf_percentile": 60.0,
+ "excluded_hashes": 2186,
+ "crf_threshold": -0.005679,
+ "after_score_gate": 2600,
+ "total": 2600,
+ "drop_inconsistent": 482,
+ "kept_pos": 69,
+ "kept_neg": 3,
+ "out": 72,
+ "out_entities": 80,
+ "by_type": {
+  "设备": 28,
+  "工程类型": 21,
+  "危大类别": 18,
+  "工序": 12,
+  "参数": 1
+ },
+ "by_len": {
+  "min": 7,
+  "max": 51,
+  "avg": 27.7
+ }
+}

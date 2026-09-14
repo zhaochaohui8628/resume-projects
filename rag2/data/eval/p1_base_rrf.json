@@ -1,0 +1,14 @@
+{
+  "tag": "p1_base_rrf",
+  "mode": "rrf",
+  "index": "tower_base.faiss",
+  "alpha": 0.9,
+  "cand": 10,
+  "top_k": 5,
+  "n": 43,
+  "hit@k": 0.9534883720930233,
+  "mrr": 0.7982834994462902,
+  "ndcg@k": 0.834344500028041,
+  "recall@k": 0.9534883720930233,
+  "sec_per_query": 0.0407
+}

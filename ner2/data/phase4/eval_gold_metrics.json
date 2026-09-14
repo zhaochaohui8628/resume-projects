@@ -1,0 +1,751 @@
+{
+ "data": "<REPO_ROOT>\\ner2\\data\\phase5\\gold_test.jsonl",
+ "n_sent": 543,
+ "n_gold_entities": 841,
+ "models": {
+  "L1_rule_lexicon": {
+   "lexicon": "<REPO_ROOT>\\data\\ner\\lexicon.json",
+   "ckpt": null,
+   "head": "rule",
+   "strict": {
+    "precision": 0.7435,
+    "recall": 0.7788,
+    "f1": 0.7607,
+    "f1_ci95": [
+     0.7333,
+     0.7851
+    ],
+    "precision_ci95": [
+     0.7124,
+     0.7727
+    ],
+    "recall_ci95": [
+     0.7536,
+     0.8046
+    ]
+   },
+   "lenient": {
+    "precision": 0.7435,
+    "recall": 0.7788,
+    "f1": 0.7607,
+    "f1_ci95": [
+     0.7333,
+     0.7851
+    ],
+    "precision_ci95": [
+     0.7124,
+     0.7727
+    ],
+    "recall_ci95": [
+     0.7536,
+     0.8046
+    ]
+   }
+  },
+  "s1_softmax_stage1": {
+   "ckpt": "ner2/models/s1_softmax_stage1/model.pt",
+   "head": "softmax",
+   "freeze": "encoder",
+   "best_val_f1": 0.671,
+   "trainable_params": 15380,
+   "strict": {
+    "precision": 0.6478,
+    "recall": 0.805,
+    "f1": 0.7179,
+    "f1_ci95": [
+     0.6894,
+     0.7438
+    ],
+    "precision_ci95": [
+     0.6162,
+     0.6784
+    ],
+    "recall_ci95": [
+     0.775,
+     0.8323
+    ]
+   },
+   "lenient": {
+    "precision": 0.6938,
+    "recall": 0.8621,
+    "f1": 0.7688,
+    "f1_ci95": [
+     0.7445,
+     0.7912
+    ],
+    "precision_ci95": [
+     0.6638,
+     0.7215
+    ],
+    "recall_ci95": [
+     0.8369,
+     0.8853
+    ]
+   },
+   "per_type_strict": {
+    "危大类别": {
+     "tp": 148,
+     "fp": 27,
+     "fn": 13,
+     "precision": 0.8457,
+     "recall": 0.9193,
+     "f1": 0.881
+    },
+    "设备": {
+     "tp": 235,
+     "fp": 114,
+     "fn": 43,
+     "precision": 0.6734,
+     "recall": 0.8453,
+     "f1": 0.7496
+    },
+    "工序": {
+     "tp": 174,
+     "fp": 106,
+     "fn": 43,
+     "precision": 0.6214,
+     "recall": 0.8018,
+     "f1": 0.7002
+    },
+    "参数": {
+     "tp": 39,
+     "fp": 75,
+     "fn": 53,
+     "precision": 0.3421,
+     "recall": 0.4239,
+     "f1": 0.3786
+    },
+    "工程类型": {
+     "tp": 76,
+     "fp": 41,
+     "fn": 11,
+     "precision": 0.6496,
+     "recall": 0.8736,
+     "f1": 0.7451
+    },
+    "规范编号": {
+     "tp": 5,
+     "fp": 5,
+     "fn": 1,
+     "precision": 0.5,
+     "recall": 0.8333,
+     "f1": 0.625
+    }
+   },
+   "per_type_lenient": {
+    "危大类别": {
+     "tp": 151,
+     "fp": 24,
+     "fn": 10,
+     "precision": 0.8629,
+     "recall": 0.9379,
+     "f1": 0.8988
+    },
+    "设备": {
+     "tp": 253,
+     "fp": 96,
+     "fn": 25,
+     "precision": 0.7249,
+     "recall": 0.9101,
+     "f1": 0.807
+    },
+    "工序": {
+     "tp": 182,
+     "fp": 98,
+     "fn": 35,
+     "precision": 0.65,
+     "recall": 0.8387,
+     "f1": 0.7324
+    },
+    "参数": {
+     "tp": 52,
+     "fp": 62,
+     "fn": 40,
+     "precision": 0.4561,
+     "recall": 0.5652,
+     "f1": 0.5049
+    },
+    "工程类型": {
+     "tp": 82,
+     "fp": 35,
+     "fn": 5,
+     "precision": 0.7009,
+     "recall": 0.9425,
+     "f1": 0.8039
+    },
+    "规范编号": {
+     "tp": 5,
+     "fp": 5,
+     "fn": 1,
+     "precision": 0.5,
+     "recall": 0.8333,
+     "f1": 0.625
+    }
+   }
+  },
+  "s1_softmax_stage2": {
+   "ckpt": "ner2/models/s1_softmax_stage2/model.pt",
+   "head": "softmax",
+   "freeze": "none",
+   "best_val_f1": 0.7214,
+   "trainable_params": 101692436,
+   "strict": {
+    "precision": 0.7787,
+    "recall": 0.8537,
+    "f1": 0.8145,
+    "f1_ci95": [
+     0.7885,
+     0.8377
+    ],
+    "precision_ci95": [
+     0.7478,
+     0.8082
+    ],
+    "recall_ci95": [
+     0.8247,
+     0.8791
+    ]
+   },
+   "lenient": {
+    "precision": 0.8286,
+    "recall": 0.9084,
+    "f1": 0.8667,
+    "f1_ci95": [
+     0.8491,
+     0.8839
+    ],
+    "precision_ci95": [
+     0.8035,
+     0.8538
+    ],
+    "recall_ci95": [
+     0.8891,
+     0.9285
+    ]
+   },
+   "per_type_strict": {
+    "危大类别": {
+     "tp": 147,
+     "fp": 7,
+     "fn": 14,
+     "precision": 0.9545,
+     "recall": 0.913,
+     "f1": 0.9333
+    },
+    "设备": {
+     "tp": 238,
+     "fp": 56,
+     "fn": 40,
+     "precision": 0.8095,
+     "recall": 0.8561,
+     "f1": 0.8322
+    },
+    "工序": {
+     "tp": 189,
+     "fp": 68,
+     "fn": 28,
+     "precision": 0.7354,
+     "recall": 0.871,
+     "f1": 0.7975
+    },
+    "参数": {
+     "tp": 58,
+     "fp": 47,
+     "fn": 34,
+     "precision": 0.5524,
+     "recall": 0.6304,
+     "f1": 0.5888
+    },
+    "工程类型": {
+     "tp": 81,
+     "fp": 22,
+     "fn": 6,
+     "precision": 0.7864,
+     "recall": 0.931,
+     "f1": 0.8526
+    },
+    "规范编号": {
+     "tp": 5,
+     "fp": 4,
+     "fn": 1,
+     "precision": 0.5556,
+     "recall": 0.8333,
+     "f1": 0.6667
+    }
+   },
+   "per_type_lenient": {
+    "危大类别": {
+     "tp": 150,
+     "fp": 4,
+     "fn": 11,
+     "precision": 0.974,
+     "recall": 0.9317,
+     "f1": 0.9524
+    },
+    "设备": {
+     "tp": 253,
+     "fp": 41,
+     "fn": 25,
+     "precision": 0.8605,
+     "recall": 0.9101,
+     "f1": 0.8846
+    },
+    "工序": {
+     "tp": 200,
+     "fp": 57,
+     "fn": 17,
+     "precision": 0.7782,
+     "recall": 0.9217,
+     "f1": 0.8439
+    },
+    "参数": {
+     "tp": 71,
+     "fp": 34,
+     "fn": 21,
+     "precision": 0.6762,
+     "recall": 0.7717,
+     "f1": 0.7208
+    },
+    "工程类型": {
+     "tp": 85,
+     "fp": 18,
+     "fn": 2,
+     "precision": 0.8252,
+     "recall": 0.977,
+     "f1": 0.8947
+    },
+    "规范编号": {
+     "tp": 5,
+     "fp": 4,
+     "fn": 1,
+     "precision": 0.5556,
+     "recall": 0.8333,
+     "f1": 0.6667
+    }
+   }
+  },
+  "s2_crf_stage1": {
+   "ckpt": "ner2/models/s2_crf_stage1/model.pt",
+   "head": "crf",
+   "freeze": "encoder_and_head",
+   "best_val_f1": 0.7509,
+   "trainable_params": 440,
+   "strict": {
+    "precision": 0.8154,
+    "recall": 0.8561,
+    "f1": 0.8353,
+    "f1_ci95": [
+     0.815,
+     0.8555
+    ],
+    "precision_ci95": [
+     0.7895,
+     0.8407
+    ],
+    "recall_ci95": [
+     0.8331,
+     0.8783
+    ]
+   },
+   "lenient": {
+    "precision": 0.8369,
+    "recall": 0.8787,
+    "f1": 0.8573,
+    "f1_ci95": [
+     0.8382,
+     0.8762
+    ],
+    "precision_ci95": [
+     0.8127,
+     0.8606
+    ],
+    "recall_ci95": [
+     0.8541,
+     0.901
+    ]
+   },
+   "per_type_strict": {
+    "危大类别": {
+     "tp": 152,
+     "fp": 6,
+     "fn": 9,
+     "precision": 0.962,
+     "recall": 0.9441,
+     "f1": 0.953
+    },
+    "设备": {
+     "tp": 238,
+     "fp": 56,
+     "fn": 40,
+     "precision": 0.8095,
+     "recall": 0.8561,
+     "f1": 0.8322
+    },
+    "工序": {
+     "tp": 188,
+     "fp": 56,
+     "fn": 29,
+     "precision": 0.7705,
+     "recall": 0.8664,
+     "f1": 0.8156
+    },
+    "参数": {
+     "tp": 54,
+     "fp": 29,
+     "fn": 38,
+     "precision": 0.6506,
+     "recall": 0.587,
+     "f1": 0.6171
+    },
+    "工程类型": {
+     "tp": 82,
+     "fp": 13,
+     "fn": 5,
+     "precision": 0.8632,
+     "recall": 0.9425,
+     "f1": 0.9011
+    },
+    "规范编号": {
+     "tp": 6,
+     "fp": 3,
+     "fn": 0,
+     "precision": 0.6667,
+     "recall": 1.0,
+     "f1": 0.8
+    }
+   },
+   "per_type_lenient": {
+    "危大类别": {
+     "tp": 152,
+     "fp": 6,
+     "fn": 9,
+     "precision": 0.962,
+     "recall": 0.9441,
+     "f1": 0.953
+    },
+    "设备": {
+     "tp": 242,
+     "fp": 52,
+     "fn": 36,
+     "precision": 0.8231,
+     "recall": 0.8705,
+     "f1": 0.8462
+    },
+    "工序": {
+     "tp": 197,
+     "fp": 47,
+     "fn": 20,
+     "precision": 0.8074,
+     "recall": 0.9078,
+     "f1": 0.8547
+    },
+    "参数": {
+     "tp": 59,
+     "fp": 24,
+     "fn": 33,
+     "precision": 0.7108,
+     "recall": 0.6413,
+     "f1": 0.6743
+    },
+    "工程类型": {
+     "tp": 83,
+     "fp": 12,
+     "fn": 4,
+     "precision": 0.8737,
+     "recall": 0.954,
+     "f1": 0.9121
+    },
+    "规范编号": {
+     "tp": 6,
+     "fp": 3,
+     "fn": 0,
+     "precision": 0.6667,
+     "recall": 1.0,
+     "f1": 0.8
+    }
+   }
+  },
+  "s2_crf_stage2": {
+   "ckpt": "ner2/models/s2_crf_stage2/model.pt",
+   "head": "crf",
+   "freeze": "none",
+   "best_val_f1": 0.8175,
+   "trainable_params": 101692876,
+   "strict": {
+    "precision": 0.8658,
+    "recall": 0.9049,
+    "f1": 0.8849,
+    "f1_ci95": [
+     0.8629,
+     0.9054
+    ],
+    "precision_ci95": [
+     0.8414,
+     0.889
+    ],
+    "recall_ci95": [
+     0.8817,
+     0.9244
+    ]
+   },
+   "lenient": {
+    "precision": 0.8851,
+    "recall": 0.9251,
+    "f1": 0.9047,
+    "f1_ci95": [
+     0.8862,
+     0.9226
+    ],
+    "precision_ci95": [
+     0.8632,
+     0.9065
+    ],
+    "recall_ci95": [
+     0.9033,
+     0.9435
+    ]
+   },
+   "per_type_strict": {
+    "危大类别": {
+     "tp": 157,
+     "fp": 11,
+     "fn": 4,
+     "precision": 0.9345,
+     "recall": 0.9752,
+     "f1": 0.9544
+    },
+    "设备": {
+     "tp": 256,
+     "fp": 25,
+     "fn": 22,
+     "precision": 0.911,
+     "recall": 0.9209,
+     "f1": 0.9159
+    },
+    "工序": {
+     "tp": 197,
+     "fp": 35,
+     "fn": 20,
+     "precision": 0.8491,
+     "recall": 0.9078,
+     "f1": 0.8775
+    },
+    "参数": {
+     "tp": 60,
+     "fp": 38,
+     "fn": 32,
+     "precision": 0.6122,
+     "recall": 0.6522,
+     "f1": 0.6316
+    },
+    "工程类型": {
+     "tp": 85,
+     "fp": 6,
+     "fn": 2,
+     "precision": 0.9341,
+     "recall": 0.977,
+     "f1": 0.9551
+    },
+    "规范编号": {
+     "tp": 6,
+     "fp": 3,
+     "fn": 0,
+     "precision": 0.6667,
+     "recall": 1.0,
+     "f1": 0.8
+    }
+   },
+   "per_type_lenient": {
+    "危大类别": {
+     "tp": 157,
+     "fp": 11,
+     "fn": 4,
+     "precision": 0.9345,
+     "recall": 0.9752,
+     "f1": 0.9544
+    },
+    "设备": {
+     "tp": 256,
+     "fp": 25,
+     "fn": 22,
+     "precision": 0.911,
+     "recall": 0.9209,
+     "f1": 0.9159
+    },
+    "工序": {
+     "tp": 206,
+     "fp": 26,
+     "fn": 11,
+     "precision": 0.8879,
+     "recall": 0.9493,
+     "f1": 0.9176
+    },
+    "参数": {
+     "tp": 67,
+     "fp": 31,
+     "fn": 25,
+     "precision": 0.6837,
+     "recall": 0.7283,
+     "f1": 0.7053
+    },
+    "工程类型": {
+     "tp": 86,
+     "fp": 5,
+     "fn": 1,
+     "precision": 0.9451,
+     "recall": 0.9885,
+     "f1": 0.9663
+    },
+    "规范编号": {
+     "tp": 6,
+     "fp": 3,
+     "fn": 0,
+     "precision": 0.6667,
+     "recall": 1.0,
+     "f1": 0.8
+    }
+   }
+  },
+  "s2_crf_param_v3": {
+   "ckpt": "ner2/models/s2_crf_param_v3/model.pt",
+   "head": "crf",
+   "freeze": "none",
+   "best_val_f1": 0.8297,
+   "trainable_params": 101692876,
+   "strict": {
+    "precision": 0.905,
+    "recall": 0.9061,
+    "f1": 0.9055,
+    "f1_ci95": [
+     0.8882,
+     0.9228
+    ],
+    "precision_ci95": [
+     0.8835,
+     0.9252
+    ],
+    "recall_ci95": [
+     0.8851,
+     0.9273
+    ]
+   },
+   "lenient": {
+    "precision": 0.9228,
+    "recall": 0.9239,
+    "f1": 0.9234,
+    "f1_ci95": [
+     0.91,
+     0.9383
+    ],
+    "precision_ci95": [
+     0.9058,
+     0.9412
+    ],
+    "recall_ci95": [
+     0.9065,
+     0.9425
+    ]
+   },
+   "per_type_strict": {
+    "危大类别": {
+     "tp": 155,
+     "fp": 1,
+     "fn": 6,
+     "precision": 0.9936,
+     "recall": 0.9627,
+     "f1": 0.9779
+    },
+    "设备": {
+     "tp": 256,
+     "fp": 18,
+     "fn": 22,
+     "precision": 0.9343,
+     "recall": 0.9209,
+     "f1": 0.9275
+    },
+    "工序": {
+     "tp": 197,
+     "fp": 27,
+     "fn": 20,
+     "precision": 0.8795,
+     "recall": 0.9078,
+     "f1": 0.8934
+    },
+    "参数": {
+     "tp": 66,
+     "fp": 27,
+     "fn": 26,
+     "precision": 0.7097,
+     "recall": 0.7174,
+     "f1": 0.7135
+    },
+    "工程类型": {
+     "tp": 83,
+     "fp": 4,
+     "fn": 4,
+     "precision": 0.954,
+     "recall": 0.954,
+     "f1": 0.954
+    },
+    "规范编号": {
+     "tp": 5,
+     "fp": 3,
+     "fn": 1,
+     "precision": 0.625,
+     "recall": 0.8333,
+     "f1": 0.7143
+    }
+   },
+   "per_type_lenient": {
+    "危大类别": {
+     "tp": 155,
+     "fp": 1,
+     "fn": 6,
+     "precision": 0.9936,
+     "recall": 0.9627,
+     "f1": 0.9779
+    },
+    "设备": {
+     "tp": 258,
+     "fp": 16,
+     "fn": 20,
+     "precision": 0.9416,
+     "recall": 0.9281,
+     "f1": 0.9348
+    },
+    "工序": {
+     "tp": 203,
+     "fp": 21,
+     "fn": 14,
+     "precision": 0.9062,
+     "recall": 0.9355,
+     "f1": 0.9206
+    },
+    "参数": {
+     "tp": 71,
+     "fp": 22,
+     "fn": 21,
+     "precision": 0.7634,
+     "recall": 0.7717,
+     "f1": 0.7676
+    },
+    "工程类型": {
+     "tp": 84,
+     "fp": 3,
+     "fn": 3,
+     "precision": 0.9655,
+     "recall": 0.9655,
+     "f1": 0.9655
+    },
+    "规范编号": {
+     "tp": 6,
+     "fp": 2,
+     "fn": 0,
+     "precision": 0.75,
+     "recall": 1.0,
+     "f1": 0.8571
+    }
+   }
+  }
+ }
+}

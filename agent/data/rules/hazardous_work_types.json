@@ -1,0 +1,72 @@
+{
+  "_meta": {
+    "description": "C2 危大工程识别与超规模阈值（来自住建部令第37号附件1/附件2 + 建办质〔2018〕31号）。用于：根据方案参数判定属于哪类危大、是否需专家论证。",
+    "source": "住建部令第37号《危险性较大的分部分项工程安全管理规定》附件 + 建办质〔2018〕31号"
+  },
+  "categories": [
+    {
+      "key": "基坑工程",
+      "name": "基坑工程（开挖深度≥3m，或<3m但地质/环境复杂）",
+      "is_hazardous_threshold": "开挖深度 ≥ 3m",
+      "is_super_scale_threshold": "开挖深度 ≥ 5m",
+      "super_scale_extra": "或开挖深度虽<5m但地质条件、周围环境和地下管线复杂，或影响毗邻建筑（建质/37号附件2口径）",
+      "must_have": ["专家论证","支护设计","监测方案","应急预案","周边环境调查"]
+    },
+    {
+      "key": "模板支撑",
+      "name": "模板工程及支撑体系",
+      "is_hazardous_threshold": "搭设高度 ≥ 5m；或跨度 ≥ 10m；或施工总荷载 ≥ 10kN/m²；或集中线荷载 ≥ 15kN/m",
+      "is_super_scale_threshold": "搭设高度 ≥ 8m；或跨度 ≥ 18m；或施工总荷载 ≥ 15kN/m²；或集中线荷载 ≥ 20kN/m",
+      "must_have": ["计算书","专家论证(超规模)","混凝土浇筑顺序","监测(超规模)"]
+    },
+    {
+      "key": "起重吊装",
+      "name": "起重吊装及安装拆卸工程",
+      "is_hazardous_threshold": "非常规起重设备/方法，且单件起吊重量 ≥ 10kN",
+      "is_super_scale_threshold": "起重量 ≥ 300kN；或搭设总高度 ≥ 200m；或搭设基础标高 ≥ 200m；或单件起吊 ≥ 100kN",
+      "must_have": ["吊装工况计算","地基承载力验算","专家论证(超规模)"]
+    },
+    {
+      "key": "脚手架",
+      "name": "脚手架工程",
+      "is_hazardous_threshold": "落地式钢管脚手架搭设高度 ≥ 24m",
+      "is_super_scale_threshold": "搭设高度 ≥ 50m（落地式）；或悬挑式 ≥ 20m；或附着式升降 ≥ 150m",
+      "must_have": ["计算书","专家论证(超规模)","连墙件设计"]
+    },
+    {
+      "key": "拆除",
+      "name": "拆除工程",
+      "is_hazardous_threshold": "可能影响毗邻建筑安全（拆除/爆破）",
+      "is_super_scale_threshold": "—（拆除类无统一超规模线，按专项论证要求）",
+      "must_have": ["相邻建筑保护","粉尘/噪音控制","爆破专项(若爆破)"]
+    },
+    {
+      "key": "暗挖",
+      "name": "暗挖工程",
+      "is_hazardous_threshold": "矿山法/盾构法/顶管法等暗挖",
+      "is_super_scale_threshold": "—",
+      "must_have": ["超前地质预报","监测方案"]
+    },
+    {
+      "key": "幕墙安装",
+      "name": "建筑幕墙安装工程",
+      "is_hazardous_threshold": "建筑幕墙安装工程（建办质31号附件1七(一)，无高度门槛，本身即危大）",
+      "is_super_scale_threshold": "施工高度 ≥ 50m（附件2七(一)）",
+      "must_have": ["吊篮/蜘蛛人专项","防风措施"]
+    },
+    {
+      "key": "人工挖孔桩",
+      "name": "人工挖孔桩工程",
+      "is_hazardous_threshold": "人工挖孔",
+      "is_super_scale_threshold": "开挖深度 ≥ 16m",
+      "must_have": ["气体检测","通风","救援预案"]
+    },
+    {
+      "key": "钢结构安装",
+      "name": "钢结构安装工程",
+      "is_hazardous_threshold": "钢结构安装",
+      "is_super_scale_threshold": "跨度 ≥ 36m（或重量/高度达超规模线）",
+      "must_have": ["吊装计算","焊接工艺评定","专家论证(超规模)"]
+    }
+  ]
+}

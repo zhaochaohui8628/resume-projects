@@ -1,0 +1,16 @@
+{
+  "gold": "<REPO_ROOT>\\rag2\\data\\phase7\\gold_eval_clean.jsonl",
+  "ce": "data/models/cross_v2_ep2",
+  "n": 490,
+  "recall_topk": 20,
+  "fusion_no_rerank": {
+    "hit@5": 0.9816,
+    "mrr": 0.9209
+  },
+  "with_rerank": {
+    "hit@1": 0.9082,
+    "hit@5": 0.9857,
+    "mrr": 0.9416
+  },
+  "sec_per_query": 0.1238
+}

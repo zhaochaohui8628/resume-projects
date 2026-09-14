@@ -1,0 +1,14 @@
+{
+  "tag": "p1_base_bm25",
+  "mode": "bm25",
+  "index": "tower_base.faiss",
+  "alpha": 0.9,
+  "cand": 10,
+  "top_k": 5,
+  "n": 30,
+  "hit@k": 1.0,
+  "mrr": 0.95,
+  "ndcg@k": 0.9630929753571458,
+  "recall@k": 1.0,
+  "sec_per_query": 0.0242
+}

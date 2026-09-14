@@ -1,0 +1,34 @@
+{"text": "钢栈桥钢板材质为Q235B，单板规格6000/4500mm*1500mm，厚度为238mm，经设计确认，钢", "kind": "missed", "gold": "500mm", "gold_span": [24, 29], "pred": null, "pred_type": null}
+{"text": "钢栈桥钢板材质为Q235B，单板规格6000/4500mm*1500mm，厚度为238mm，经设计确认，钢", "kind": "missed", "gold": "500mm", "gold_span": [31, 36], "pred": null, "pred_type": null}
+{"text": "柱混凝土强度为C50，梁板混凝土强度为C35。", "kind": "missed", "gold": "C35", "gold_span": [19, 22], "pred": null, "pred_type": null}
+{"text": "检查，并使用斜楔调整固定脚支板，保证标准节上四角水平高度差不大于2mm。", "kind": "boundary", "gold": "水平高度差不大于2mm", "gold_span": [24, 35], "pred": "水平高度差不大于", "pred_span": [24, 32]}
+{"text": "严格控制模板支撑系统的施工总荷载,模板、钢筋及其它材料等施工荷载应均匀放置，不得超过", "kind": "spurious", "pred": "总荷载", "pred_span": [13, 16]}
+{"text": "格构柱外围500mm 以外区域，可开展镐头机破碎及切割作业。所有机械作业必须保持与格构", "kind": "boundary", "gold": "500mm", "gold_span": [5, 10], "pred": "500", "pred_span": [5, 8]}
+{"text": "模板支撑工程：搭设高度8m 及以上；搭设跨度18m 及以上，施工总荷载15kN/m²及以上；集", "kind": "boundary", "gold": "跨度", "gold_span": [20, 22], "pred": "搭设跨度", "pred_span": [18, 22]}
+{"text": "在铺脚手板的一层必须在外排立杆内侧，每步内设三道护栏,每道500mm,挡", "kind": "boundary", "gold": "500mm", "gold_span": [29, 34], "pred": "500", "pred_span": [29, 32]}
+{"text": "结构外墙内侧500mm。", "kind": "boundary", "gold": "500mm", "gold_span": [6, 11], "pred": "500", "pred_span": [6, 9]}
+{"text": "后回土，埋地深度应不小于70cm。", "kind": "boundary", "gold": "埋地深度应不小于70cm", "gold_span": [4, 16], "pred": "埋地深度应不小于70", "pred_span": [4, 14]}
+{"text": "离模板不应大于220mm,并不宜紧靠模板振动，且应尽避免碰撞钢筋、预埋件等。", "kind": "boundary", "gold": "220mm", "gold_span": [7, 12], "pred": "220", "pred_span": [7, 10]}
+{"text": "混凝土浇捣应防止发生分层离析，自由倾落高度不超过2m，否则必须采用串筒、溜槽。", "kind": "missed", "gold": "自由倾落高度", "gold_span": [15, 21], "pred": null, "pred_type": null}
+{"text": "救大楼-门诊楼连通道基坑开挖深度为7.4m，医技平台-病房楼连通道挖深为5.95m，东区车库-", "kind": "boundary", "gold": "开挖深度为7.4m", "gold_span": [12, 21], "pred": "开挖深度", "pred_span": [12, 16]}
+{"text": "救大楼-门诊楼连通道基坑开挖深度为7.4m，医技平台-病房楼连通道挖深为5.95m，东区车库-", "kind": "missed", "gold": "挖深为5.95m", "gold_span": [33, 41], "pred": null, "pred_type": null}
+{"text": "截面为500X500,其下设置立柱桩，桩径为900 钻孔灌注桩；栈桥下立柱采用角钢格构柱", "kind": "boundary", "gold": "桩径为900", "gold_span": [19, 25], "pred": "桩径", "pred_span": [19, 21]}
+{"text": "坑内加固：∅800@600 高压旋喷桩，标高-18.000~-27.500，水泥掺量25%。", "kind": "missed", "gold": "∅800@600", "gold_span": [5, 13], "pred": null, "pred_type": null}
+{"text": "坑内加固：∅800@600 高压旋喷桩，标高-18.000~-27.500，水泥掺量25%。", "kind": "missed", "gold": "标高-18.000~-27.500", "gold_span": [20, 37], "pred": null, "pred_type": null}
+{"text": "坑内加固：∅800@600 高压旋喷桩，标高-18.000~-27.500，水泥掺量25%。", "kind": "missed", "gold": "水泥掺量25%", "gold_span": [38, 45], "pred": null, "pred_type": null}
+{"text": "主基坑区域布置29 口疏干井，深度24.5m；", "kind": "missed", "gold": "深度24.5m", "gold_span": [15, 22], "pred": null, "pred_type": null}
+{"text": "主基坑区域共布置11 口疏干井，深度24.5m；", "kind": "missed", "gold": "深度24.5m", "gold_span": [16, 23], "pred": null, "pred_type": null}
+{"text": "待基坑开挖，沿地墙外侧至围墙区域现场均浇筑施工便道，道渣厚度200mm，钢筋混凝土厚度", "kind": "spurious", "pred": "道渣厚度", "pred_span": [26, 30]}
+{"text": "待基坑开挖，沿地墙外侧至围墙区域现场均浇筑施工便道，道渣厚度200mm，钢筋混凝土厚度", "kind": "spurious", "pred": "混凝土厚度", "pred_span": [38, 43]}
+{"text": "坑内加固：∅800@600 高压旋喷桩，标高-18.000~-27.500，水泥掺量25%。", "kind": "missed", "gold": "∅800@600", "gold_span": [5, 13], "pred": null, "pred_type": null}
+{"text": "坑内加固：∅800@600 高压旋喷桩，标高-18.000~-27.500，水泥掺量25%。", "kind": "missed", "gold": "标高-18.000~-27.500", "gold_span": [20, 37], "pred": null, "pred_type": null}
+{"text": "坑内加固：∅800@600 高压旋喷桩，标高-18.000~-27.500，水泥掺量25%。", "kind": "missed", "gold": "水泥掺量25%", "gold_span": [38, 45], "pred": null, "pred_type": null}
+{"text": "选择有资质的大型搅拌站供应商品砼，并报甲方及监理认可，砼配比按水下C35 级配（利", "kind": "missed", "gold": "C35", "gold_span": [33, 36], "pred": null, "pred_type": null}
+{"text": "选择有资质的大型搅拌站供应商品砼，并报甲方及监理认可，砼配比按水下C35 级配（利", "kind": "missed", "gold": "级配", "gold_span": [37, 39], "pred": null, "pred_type": null}
+{"text": "一次提管拆管不得超过6m，起拔导管前必须实测砼面高度，严禁将导管拔出砼面。", "kind": "missed", "gold": "砼面高度", "gold_span": [22, 26], "pred": null, "pred_type": null}
+{"text": "当地利用导管插捣桩顶，保证桩顶的密实性。浮桩长度应不小于设计桩长的3%且不小于1m，充", "kind": "boundary", "gold": "桩长", "gold_span": [21, 23], "pred": "桩长度", "pred_span": [21, 24]}
+{"text": "混凝土灌注前做砼坍落度测试，用标准的坍落度仪测定，本工程每根桩混凝土量均小于30m", "kind": "spurious", "pred": "混凝土量", "pred_span": [31, 35]}
+{"text": "主基坑区域布置29 口疏干井，深度24.5m；", "kind": "missed", "gold": "深度24.5m", "gold_span": [15, 22], "pred": null, "pred_type": null}
+{"text": "主基坑区域共布置11 口疏干井，深度24.5m；", "kind": "missed", "gold": "深度24.5m", "gold_span": [16, 23], "pred": null, "pred_type": null}
+{"text": "随基坑开挖深度的增加，按时计算围护墙体水平位移的变化速率及最大位移值，及时预警，", "kind": "type_confused", "gold": "开挖深度", "gold_span": [3, 7], "pred": "开挖", "pred_type": "工序"}
+{"text": "随基坑开挖深度的增加，按时计算围护墙体水平位移的变化速率及最大位移值，及时预警，", "kind": "missed", "gold": "水平位移", "gold_span": [19, 23], "pred": null, "pred_type": null}

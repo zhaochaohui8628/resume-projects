@@ -1,0 +1,29 @@
+{
+ "head": "softmax",
+ "ckpt": "ner2/models/s1_softmax_stage1/model.pt",
+ "pool": 6498,
+ "sp_margin": 0.25,
+ "o_margin": 0.15,
+ "crf_percentile": 60.0,
+ "excluded_hashes": 2186,
+ "total": 6498,
+ "kept_pos": 347,
+ "drop_span_margin": 1954,
+ "drop_o_margin": 5,
+ "kept_neg": 17,
+ "out": 364,
+ "out_entities": 436,
+ "by_type": {
+  "参数": 71,
+  "工程类型": 53,
+  "设备": 134,
+  "危大类别": 52,
+  "工序": 123,
+  "规范编号": 3
+ },
+ "by_len": {
+  "min": 6,
+  "max": 52,
+  "avg": 26.0
+ }
+}

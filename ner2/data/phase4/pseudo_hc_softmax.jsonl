@@ -1,0 +1,364 @@
+{"text": "附图001：桩基施工阶段临设用电平面图", "entities": [{"type": "参数", "start": 14, "end": 16}], "src": "pseudo"}
+{"text": "附图003：医技平台围护阶段临设用电平面图", "entities": [{"type": "参数", "start": 16, "end": 17}], "src": "pseudo"}
+{"text": "附图004：医技平台挖土阶段临设用电平面图", "entities": [{"type": "参数", "start": 16, "end": 17}], "src": "pseudo"}
+{"text": "连廊系统及配套设施，新建总建筑面积73500 平方米，其中地上45500 平方米，", "entities": [{"type": "工程类型", "start": 0, "end": 1}], "src": "pseudo"}
+{"text": "选择YC-70 型铜芯橡皮线，[I]=270A", "entities": [{"type": "设备", "start": 11, "end": 12}], "src": "pseudo"}
+{"text": "所有电箱均应标明其编号、名称并作分路标志。", "entities": [{"type": "设备", "start": 2, "end": 4}], "src": "pseudo"}
+{"text": "所有电箱应每日进行检查和维修一次，由专业电工按规定穿戴绝缘鞋、手套、", "entities": [{"type": "设备", "start": 2, "end": 4}], "src": "pseudo"}
+{"text": "箱内进行检查、维修时，必须将其前一级相应的电源开关分闸断电，并悬挂", "entities": [{"type": "参数", "start": 21, "end": 22}], "src": "pseudo"}
+{"text": "熔断器的熔体更换必须采用原规格的合格熔体，严禁用其它规格的合格熔体", "entities": [{"type": "设备", "start": 0, "end": 3}], "src": "pseudo"}
+{"text": "完整，严禁不用插头而用电线直接插入插座内。", "entities": [{"type": "设备", "start": 11, "end": 12}], "src": "pseudo"}
+{"text": "图三十二：降水施工平面布局图及降水井构造图；", "entities": [{"type": "设备", "start": 15, "end": 16}], "src": "pseudo"}
+{"text": "本方案为某医院某医学中心项目基坑工程施工组织设计，", "entities": [{"type": "工程类型", "start": 14, "end": 16}], "src": "pseudo"}
+{"text": "双排∅800@500，内插", "entities": [{"type": "参数", "start": 2, "end": 6}], "src": "pseudo"}
+{"text": "柱采用4L180×18 角钢，其截面为500×500，钢立柱插入作为立柱桩的钻孔灌注桩中不少于2.5m；", "entities": [{"type": "设备", "start": 34, "end": 35}, {"type": "工程类型", "start": 38, "end": 43}], "src": "pseudo"}
+{"text": "栈桥区域立柱采用4L200×18 角钢，其截面为500×500。钢立柱插入作为立柱桩的钻孔灌注桩中", "entities": [{"type": "设备", "start": 39, "end": 40}, {"type": "工程类型", "start": 43, "end": 48}], "src": "pseudo"}
+{"text": "急救综合大楼现有建筑（待拆除）", "entities": [{"type": "危大类别", "start": 12, "end": 14}], "src": "pseudo"}
+{"text": "因房屋外墙搭设脚手架，房屋倾斜测量无条件", "entities": [{"type": "危大类别", "start": 7, "end": 10}], "src": "pseudo"}
+{"text": "房地下室:基础梁+筏板;其余:", "entities": [{"type": "工程类型", "start": 5, "end": 6}], "src": "pseudo"}
+{"text": "监测最新数据，并根据监测数据对施工参数进行及时调整以保证管线变形在规范设计要求范围内。", "entities": [{"type": "参数", "start": 10, "end": 11}], "src": "pseudo"}
+{"text": "根据施工进程分阶段考虑场地交通组织和布置。", "entities": [{"type": "工序", "start": 18, "end": 20}], "src": "pseudo"}
+{"text": "边场地布置。", "entities": [{"type": "工序", "start": 3, "end": 5}], "src": "pseudo"}
+{"text": "施工临设布置：施工用房(标养室、木工房、电工间、机修间、氧气乙炔间、仓库等）在现", "entities": [{"type": "工序", "start": 4, "end": 6}], "src": "pseudo"}
+{"text": "一道支撑中心标高处，开槽施工第一道围檩及水平支撑；", "entities": [{"type": "工序", "start": 10, "end": 12}], "src": "pseudo"}
+{"text": "急救大楼止水帷幕及槽壁加固：", "entities": [{"type": "工程类型", "start": 4, "end": 5}], "src": "pseudo"}
+{"text": "垂直度、轴线测", "entities": [{"type": "参数", "start": 0, "end": 3}], "src": "pseudo"}
+{"text": "本工程劳动力由公司劳务中心统一组织调配。", "entities": [{"type": "工序", "start": 17, "end": 18}], "src": "pseudo"}
+{"text": "安排2 台桩机进行施工，施工前进行试成桩试验，确定成桩施工参数，施工流程总体从西北角开", "entities": [{"type": "工序", "start": 18, "end": 20}, {"type": "工序", "start": 25, "end": 27}], "src": "pseudo"}
+{"text": "一般情况下坑内搭接250mm 采用该种方式进行施工（见下图）", "entities": [{"type": "参数", "start": 7, "end": 8}], "src": "pseudo"}
+{"text": "本工程三轴搅拌桩坑内加固采用单侧挤压方式，施工顺序如下：", "entities": [{"type": "工程类型", "start": 3, "end": 8}], "src": "pseudo"}
+{"text": "位置严格钻机桩架的移动就位，就位误差不大于3cm。开钻前应用水平尺将平台调平，并调直机", "entities": [{"type": "工序", "start": 25, "end": 27}], "src": "pseudo"}
+{"text": "施工的关键在于如何保证桩身的强度和均匀性。在施工中应加强对水泥用量和水灰比的控制，", "entities": [{"type": "参数", "start": 34, "end": 37}], "src": "pseudo"}
+{"text": "在施工现场搭建拌浆施工平台，平台附近搭建100m2 水泥库，在开机前应进行浆液的搅", "entities": [{"type": "工序", "start": 7, "end": 9}], "src": "pseudo"}
+{"text": "搅拌30 秒再倒入存浆桶。", "entities": [{"type": "设备", "start": 9, "end": 10}], "src": "pseudo"}
+{"text": "达到一定强度后进行补桩，以防偏钻，保证补桩效果。因处理冷缝而增加的工程量以实际施工量", "entities": [{"type": "工序", "start": 9, "end": 11}], "src": "pseudo"}
+{"text": "抗压强度试验。", "entities": [{"type": "参数", "start": 0, "end": 1}], "src": "pseudo"}
+{"text": "径，数量不少于桩总数的10%；", "entities": [{"type": "参数", "start": 7, "end": 8}], "src": "pseudo"}
+{"text": "护筒埋设由现场监理审核签证通过后，铺设枕木或道轨，最后钻机就位准备开孔。开孔前，", "entities": [{"type": "工序", "start": 33, "end": 35}, {"type": "工序", "start": 36, "end": 38}], "src": "pseudo"}
+{"text": "机台在接到项目部下达的开孔通知单后方能正式开钻。开孔通知单中明确注明道轨或地面标", "entities": [{"type": "工序", "start": 11, "end": 13}, {"type": "工序", "start": 21, "end": 23}, {"type": "工序", "start": 24, "end": 26}], "src": "pseudo"}
+{"text": "坍落度测试和试块制作由专人负责，并有原始记录。", "entities": [{"type": "参数", "start": 0, "end": 3}], "src": "pseudo"}
+{"text": "内侧面倾斜度（垂直度）", "entities": [{"type": "参数", "start": 7, "end": 10}], "src": "pseudo"}
+{"text": "尺寸在导墙上标出锁口管位置。", "entities": [{"type": "设备", "start": 8, "end": 9}], "src": "pseudo"}
+{"text": "的垂直度和水平位置精度。", "entities": [{"type": "参数", "start": 1, "end": 4}, {"type": "参数", "start": 5, "end": 6}], "src": "pseudo"}
+{"text": "本工程地下墙墙体之间的接头采用柔性接头，为提高接头处的抗渗及抗剪性能，增加地下围", "entities": [{"type": "工程类型", "start": 3, "end": 6}], "src": "pseudo"}
+{"text": "为∅900 钻孔灌注桩；栈桥下立柱采用角钢格构柱4L200X18 柱，截面为500X500。其下设置立", "entities": [{"type": "工程类型", "start": 6, "end": 11}], "src": "pseudo"}
+{"text": "为∅650 钻孔灌注桩；栈桥下立柱采用角钢格构柱4L160X16 柱，截面为500X500。其下设置立", "entities": [{"type": "工程类型", "start": 6, "end": 11}], "src": "pseudo"}
+{"text": "免因浇灌速度快而产生格构柱底部中心偏移。", "entities": [{"type": "工序", "start": 2, "end": 3}], "src": "pseudo"}
+{"text": "局部允许变形", "entities": [{"type": "工序", "start": 4, "end": 5}], "src": "pseudo"}
+{"text": "开钻前事先在钻机下面地坪进行硬化找平，为以后格构柱校正架的定位提供稳固的操作平台。", "entities": [{"type": "工序", "start": 0, "end": 2}], "src": "pseudo"}
+{"text": "在同一截面上的搭接不少于50%，错位为70cm 。", "entities": [{"type": "参数", "start": 7, "end": 8}], "src": "pseudo"}
+{"text": "至200t，达到保压值。前一级加载稳定后，待各方确认后再加载下一级。", "entities": [{"type": "参数", "start": 8, "end": 9}], "src": "pseudo"}
+{"text": "形（支撑与立柱交点）不应超过20mm,如达到上述数值则千斤顶应及时卸压。", "entities": [{"type": "设备", "start": 27, "end": 30}], "src": "pseudo"}
+{"text": "的影响时，现场可作适当调整。", "entities": [{"type": "工序", "start": 11, "end": 13}], "src": "pseudo"}
+{"text": "支撑侧模采用木模，横竖围檩用φ48X3.2 钢管@800 设置，采用Φ14 对拉螺栓，支撑梁、围", "entities": [{"type": "参数", "start": 14, "end": 19}], "src": "pseudo"}
+{"text": "基准点垂直方向的变化则采用精密自动安平水准仪，按照国家二等水准测量的技术要求定期", "entities": [{"type": "参数", "start": 3, "end": 5}, {"type": "设备", "start": 19, "end": 22}], "src": "pseudo"}
+{"text": "累计值D(mm)", "entities": [{"type": "参数", "start": 0, "end": 1}], "src": "pseudo"}
+{"text": "垂直位移报警值", "entities": [{"type": "参数", "start": 0, "end": 2}, {"type": "参数", "start": 4, "end": 7}], "src": "pseudo"}
+{"text": "累计值S(mm)", "entities": [{"type": "参数", "start": 0, "end": 1}], "src": "pseudo"}
+{"text": "柱的隆沉变化。以期为支护体系的安全性分析提供适量可供参考的有益信息。测点宜选择支撑交", "entities": [{"type": "工序", "start": 34, "end": 35}], "src": "pseudo"}
+{"text": "监测设备仪器的安装随基坑工程的施工步序开展，基本按如下顺序进行：", "entities": [{"type": "工程类型", "start": 10, "end": 12}], "src": "pseudo"}
+{"text": "本基坑监测的测量仪器及设备经校准有效方可使用，不合格的仪器、设备不得投入使用，优", "entities": [{"type": "工程类型", "start": 1, "end": 3}], "src": "pseudo"}
+{"text": "轴力累计值达到9000kN", "entities": [{"type": "参数", "start": 2, "end": 3}], "src": "pseudo"}
+{"text": "强现场及周边环境的巡视工作。由业主单位应召集各参建单位开会，分析原因，各单位应做好启", "entities": [{"type": "参数", "start": 23, "end": 24}], "src": "pseudo"}
+{"text": "动应急预案。如需启动，各参建单位主要负责人应在现场值守，指挥应急抢险工作。抢险工作结", "entities": [{"type": "参数", "start": 12, "end": 13}], "src": "pseudo"}
+{"text": "接到进场指令后项目经理组织监测人员进场，然后和参建各方讨论施工节点和顺序。", "entities": [{"type": "参数", "start": 23, "end": 24}], "src": "pseudo"}
+{"text": "的成型钢筋必须根据清单进行整理、分类，按照施工顺序分类堆放整齐。", "entities": [{"type": "工序", "start": 1, "end": 2}], "src": "pseudo"}
+{"text": "求施工。避雷钢筋焊接均为三面围焊，焊缝长度6d 加端头焊，避雷钢筋一律用黄油漆作好标记，", "entities": [{"type": "设备", "start": 4, "end": 5}], "src": "pseudo"}
+{"text": "型泵送剂和S95 矿粉。具体配合比报告待正式施工阶段，由拌站实验室出具实验报告，设计确", "entities": [{"type": "设备", "start": 1, "end": 3}, {"type": "参数", "start": 14, "end": 15}], "src": "pseudo"}
+{"text": "上，水平温度钢筋垂直于膨胀加强带长度方向进行分布，两端各伸出膨胀加强带2.0m，并固定", "entities": [{"type": "参数", "start": 2, "end": 3}], "src": "pseudo"}
+{"text": "可开始进行布点施工。按方案中确定的布点平面位置进行布点，用一根刚度满足要求的钢筋，其", "entities": [{"type": "工序", "start": 5, "end": 6}, {"type": "工序", "start": 17, "end": 18}, {"type": "工序", "start": 25, "end": 26}], "src": "pseudo"}
+{"text": "工班组进行交底注意浇捣过程中对测温装置的保护。", "entities": [{"type": "工序", "start": 9, "end": 11}], "src": "pseudo"}
+{"text": "时按规定的顺序吊插。", "entities": [{"type": "工序", "start": 7, "end": 9}], "src": "pseudo"}
+{"text": "檩与围护桩之间缝隙须采用C30 细石混凝土填实。", "entities": [{"type": "参数", "start": 12, "end": 15}], "src": "pseudo"}
+{"text": "设备机械供应、成品半成品供应、劳动力", "entities": [{"type": "工序", "start": 7, "end": 8}], "src": "pseudo"}
+{"text": "力更大的深井泵。", "entities": [{"type": "设备", "start": 4, "end": 7}], "src": "pseudo"}
+{"text": "水）。采用移动式注水设备对沉降严重区域定向加压注水。", "entities": [{"type": "工序", "start": 8, "end": 9}, {"type": "工序", "start": 23, "end": 24}], "src": "pseudo"}
+{"text": "快、实际开挖面积过大等情况，加强监测，根据监测结果加快支撑施工或采取必要的补撑措施。", "entities": [{"type": "工序", "start": 4, "end": 6}], "src": "pseudo"}
+{"text": "对受损区域进行注浆加固或增设临时支撑。", "entities": [{"type": "工序", "start": 7, "end": 9}], "src": "pseudo"}
+{"text": "须搅拌30 秒再倒入存浆桶。", "entities": [{"type": "设备", "start": 10, "end": 11}], "src": "pseudo"}
+{"text": "块必须按设计和规范的要求设置，严格检查防止缺漏，保证成墙后不露筋。同时对商品砼原材料", "entities": [{"type": "工序", "start": 26, "end": 28}], "src": "pseudo"}
+{"text": "严格执行浇捣令制度。", "entities": [{"type": "工序", "start": 4, "end": 6}], "src": "pseudo"}
+{"text": "电焊工、吊车工、汽吊指挥等特殊岗位人员必须经安全主管部门考核合格后持证上岗，并熟", "entities": [{"type": "设备", "start": 0, "end": 1}, {"type": "设备", "start": 8, "end": 10}], "src": "pseudo"}
+{"text": "加强班组建设，有“三上岗一讲评”的安全记录，有良好的班容班貌。", "entities": [{"type": "参数", "start": 8, "end": 9}], "src": "pseudo"}
+{"text": "大气污染：①施工垃圾搭设封闭式临时专用垃圾道或采用容器吊运，严禁随意临空撒散，垃", "entities": [{"type": "工序", "start": 36, "end": 37}], "src": "pseudo"}
+{"text": "噪音污染：①整个基地围墙封闭，处于封闭状态施工。②制定合理的施工计划，确保附近", "entities": [{"type": "工程类型", "start": 8, "end": 9}], "src": "pseudo"}
+{"text": "定期及时清运，若暂时无法定期清运，则定期喷洒药消毒。", "entities": [{"type": "工序", "start": 4, "end": 5}, {"type": "工序", "start": 14, "end": 15}], "src": "pseudo"}
+{"text": "已具备作业能力后，利用250 吨履带吊对300T 履带吊进行拼拆。", "entities": [{"type": "设备", "start": 16, "end": 19}, {"type": "设备", "start": 25, "end": 28}, {"type": "工序", "start": 30, "end": 31}], "src": "pseudo"}
+{"text": "设水管穿过。", "entities": [{"type": "设备", "start": 1, "end": 3}], "src": "pseudo"}
+{"text": "卷扬机构—→操作与控制系统—→安全保护系统顺序依次进行履带吊的安拆组装施工；按履带", "entities": [{"type": "设备", "start": 27, "end": 30}, {"type": "工序", "start": 31, "end": 32}, {"type": "设备", "start": 39, "end": 41}], "src": "pseudo"}
+{"text": "使用，在设备使用完毕之后8 月30 日至9 月1 日进行拆卸并退场。", "entities": [{"type": "危大类别", "start": 28, "end": 29}], "src": "pseudo"}
+{"text": "将主臂中间臂用汽车吊采用双点起吊，平稳与下节臂对接，采用人工进行微调，将两节主臂的", "entities": [{"type": "设备", "start": 7, "end": 10}], "src": "pseudo"}
+{"text": "机，指挥起杆，起杆时必须抬升到30°仰角后方可带吊钩滑轮组和吊杆一起上升。", "entities": [{"type": "设备", "start": 26, "end": 29}], "src": "pseudo"}
+{"text": "吊钩磨损、U 型吊环磨损的检查。", "entities": [{"type": "工序", "start": 8, "end": 9}], "src": "pseudo"}
+{"text": "注：本工程履带吊进出路线通畅无障碍。", "entities": [{"type": "设备", "start": 5, "end": 8}], "src": "pseudo"}
+{"text": "履带吊进场、卸车", "entities": [{"type": "设备", "start": 0, "end": 3}], "src": "pseudo"}
+{"text": "汽车吊配合安装", "entities": [{"type": "设备", "start": 0, "end": 3}], "src": "pseudo"}
+{"text": "联轴器零件无缺损，连接无松动，运转时无撞击声。", "entities": [{"type": "设备", "start": 0, "end": 3}], "src": "pseudo"}
+{"text": "齿轮箱地脚螺栓、壳体连接螺栓无松动、缺损。", "entities": [{"type": "设备", "start": 0, "end": 3}], "src": "pseudo"}
+{"text": "各液压阀无内外泄露，工作可靠有效。", "entities": [{"type": "设备", "start": 1, "end": 4}], "src": "pseudo"}
+{"text": "方向机横竖拉杆无松动", "entities": [{"type": "设备", "start": 0, "end": 3}], "src": "pseudo"}
+{"text": "液压油位正常", "entities": [{"type": "设备", "start": 0, "end": 2}], "src": "pseudo"}
+{"text": "变幅油压缸无下滑现象", "entities": [{"type": "设备", "start": 0, "end": 1}], "src": "pseudo"}
+{"text": "液压油温正常", "entities": [{"type": "设备", "start": 0, "end": 2}], "src": "pseudo"}
+{"text": "水平仪的指示正常", "entities": [{"type": "设备", "start": 0, "end": 1}], "src": "pseudo"}
+{"text": "磨损：检查销轴孔、销轴螺纹、销轴颈部的磨损程度。过度磨损（孔径增大、螺纹损伤）", "entities": [{"type": "设备", "start": 5, "end": 6}, {"type": "设备", "start": 9, "end": 10}, {"type": "设备", "start": 14, "end": 15}], "src": "pseudo"}
+{"text": "移动机具及照明的使用应实行二级漏电保护。经常进行检查、维修和保养；施工现场大型用电", "entities": [{"type": "设备", "start": 0, "end": 1}], "src": "pseudo"}
+{"text": "向作业区。在驾驶室安装回转角度限位报警装置。", "entities": [{"type": "工序", "start": 9, "end": 11}], "src": "pseudo"}
+{"text": "盖板（租赁公司定型产品）。派专人负责清理排水沟内的淤泥与杂物，确保排水畅通。", "entities": [{"type": "设备", "start": 7, "end": 8}, {"type": "工序", "start": 18, "end": 19}], "src": "pseudo"}
+{"text": "期间，派专人在门口疏导交通并起到警示作用。在基地临时便道的交叉口设置交通指（禁）令", "entities": [{"type": "工程类型", "start": 22, "end": 23}], "src": "pseudo"}
+{"text": "够的应急设备、物资。项目部根据重大危险源管理办法，每月进行不少于2 次的专项检查，并", "entities": [{"type": "危大类别", "start": 17, "end": 19}], "src": "pseudo"}
+{"text": "险储备物资及运输车辆均要明确专人负责，定点储存，严禁随意动用，随时听从市、区防汛指", "entities": [{"type": "设备", "start": 0, "end": 1}], "src": "pseudo"}
+{"text": "便携式工作灯", "entities": [{"type": "设备", "start": 0, "end": 1}], "src": "pseudo"}
+{"text": "深井降水备用真空泵", "entities": [{"type": "设备", "start": 6, "end": 9}], "src": "pseudo"}
+{"text": "等待对事故原因及负责人的调查。同时应立即采取善后工作，及时清理，将火灾造成的垃圾分", "entities": [{"type": "工序", "start": 29, "end": 30}], "src": "pseudo"}
+{"text": "附件一：STT603-26T 塔吊基础计算书", "entities": [{"type": "设备", "start": 15, "end": 17}], "src": "pseudo"}
+{"text": "塔吊基础参数表", "entities": [{"type": "设备", "start": 0, "end": 2}], "src": "pseudo"}
+{"text": "基坑施工阶段型号", "entities": [{"type": "工程类型", "start": 0, "end": 2}], "src": "pseudo"}
+{"text": "电源：急救大楼区域现场业主提供800KVA 箱变，位于场地北侧。医技平台区域临时用电从", "entities": [{"type": "设备", "start": 22, "end": 24}], "src": "pseudo"}
+{"text": "本工程两部塔吊共用同一承台基础，基础受力验算采用最大型号计算，本方案采用", "entities": [{"type": "设备", "start": 5, "end": 7}], "src": "pseudo"}
+{"text": "本工程塔吊安装高度未超过最大独立高度，无需设置附墙装置。", "entities": [{"type": "设备", "start": 3, "end": 5}], "src": "pseudo"}
+{"text": "钢筋及塔吊固定脚", "entities": [{"type": "设备", "start": 3, "end": 5}], "src": "pseudo"}
+{"text": "基础平面位置详见附图。", "entities": [{"type": "工程类型", "start": 0, "end": 1}], "src": "pseudo"}
+{"text": "本工程塔吊安装在A7 轴～A9 轴，AL 轴～AM 轴，塔吊基础中心距离A7 轴9300mm，距离A9", "entities": [{"type": "设备", "start": 3, "end": 5}, {"type": "设备", "start": 28, "end": 30}], "src": "pseudo"}
+{"text": "本工程基础承台外边线距地下连续墙外边线3m。", "entities": [{"type": "工程类型", "start": 3, "end": 4}, {"type": "工程类型", "start": 11, "end": 16}], "src": "pseudo"}
+{"text": "图4.1 钻孔桩施工工艺流程图", "entities": [{"type": "工程类型", "start": 5, "end": 8}], "src": "pseudo"}
+{"text": "重应小于1.3，手触泥浆无颗粒感觉，一次清孔即可结束。", "entities": [{"type": "工序", "start": 20, "end": 22}], "src": "pseudo"}
+{"text": "清孔后，将钻具提出孔外，测量其孔深、孔径及孔斜，并做好记录，吊放钢筋笼时，可利用", "entities": [{"type": "工序", "start": 0, "end": 2}, {"type": "工序", "start": 30, "end": 31}], "src": "pseudo"}
+{"text": "如不符合要求应进行重新清孔。", "entities": [{"type": "工序", "start": 11, "end": 13}], "src": "pseudo"}
+{"text": "号，按标准养护28 天，然后测定其抗压强度。", "entities": [{"type": "参数", "start": 17, "end": 18}], "src": "pseudo"}
+{"text": "为避免塔吊预埋件与主体钢筋的冲突，施工时遵循以下原则：当钢筋与埋件位置干涉时，应", "entities": [{"type": "设备", "start": 3, "end": 5}], "src": "pseudo"}
+{"text": "为了正确的固定固定脚，需要以下材料：", "entities": [{"type": "设备", "start": 7, "end": 9}], "src": "pseudo"}
+{"text": "正，以保证塔机安全。", "entities": [{"type": "设备", "start": 5, "end": 7}], "src": "pseudo"}
+{"text": "沉降（竖向位移）监测：监测基础各角点的沉降差，计算整体倾斜率。", "entities": [{"type": "工程类型", "start": 13, "end": 14}, {"type": "参数", "start": 19, "end": 22}], "src": "pseudo"}
+{"text": "具体塔吊布置参见各阶段平面布置图。", "entities": [{"type": "设备", "start": 2, "end": 4}, {"type": "工序", "start": 4, "end": 5}, {"type": "工序", "start": 13, "end": 14}], "src": "pseudo"}
+{"text": "使用。在无载荷情况下，塔身与地面的垂直度偏差不得超过4/1000。", "entities": [{"type": "参数", "start": 17, "end": 20}], "src": "pseudo"}
+{"text": "司机必须得到指挥信号后，方得进行操作。信号工违章指挥，司机有权停止操作。", "entities": [{"type": "设备", "start": 19, "end": 20}], "src": "pseudo"}
+{"text": "电箱、开关箱都编号，箱内电气完好匹配。", "entities": [{"type": "设备", "start": 0, "end": 2}, {"type": "设备", "start": 3, "end": 6}], "src": "pseudo"}
+{"text": "专业吊装单位取得联系及对紧急情况的处理做出安排；在紧急状态结束后，组织人员参加事故的", "entities": [{"type": "工序", "start": 2, "end": 4}], "src": "pseudo"}
+{"text": "塔吊构件、其它构件是否有继续倒塌的危险、人员伤亡情况等，商定抢救方案后，项目经理", "entities": [{"type": "设备", "start": 0, "end": 2}], "src": "pseudo"}
+{"text": "加强监测频率；分析裂缝原因；可考虑对裂缝进行压力灌浆封闭", "entities": [{"type": "工序", "start": 9, "end": 10}, {"type": "工序", "start": 18, "end": 19}, {"type": "工序", "start": 24, "end": 26}], "src": "pseudo"}
+{"text": "塔吊停止作业；会同设计和勘察单位分析原因；塔吊卸载及降节。", "entities": [{"type": "设备", "start": 0, "end": 2}, {"type": "设备", "start": 21, "end": 23}], "src": "pseudo"}
+{"text": "水平荷载设计值Fv(kN)", "entities": [{"type": "参数", "start": 4, "end": 7}], "src": "pseudo"}
+{"text": "水平荷载设计值Fv'(kN)", "entities": [{"type": "参数", "start": 4, "end": 7}], "src": "pseudo"}
+{"text": "桩直径d(mm)", "entities": [{"type": "参数", "start": 0, "end": 3}], "src": "pseudo"}
+{"text": "桩身周长：u=πd=3.14×0.9=2.827m", "entities": [{"type": "参数", "start": 0, "end": 1}], "src": "pseudo"}
+{"text": "塔吊对承台底的冲切范围：B+2h0=2.05+2×2.536=7.122m", "entities": [{"type": "设备", "start": 0, "end": 2}], "src": "pseudo"}
+{"text": "附件02：梁侧模板计算书2（800×1800）", "entities": [{"type": "设备", "start": 7, "end": 9}], "src": "pseudo"}
+{"text": "急救综合大楼基坑Ⅱ区底板混凝土浇筑", "entities": [{"type": "工程类型", "start": 6, "end": 8}], "src": "pseudo"}
+{"text": "急救综合大楼基坑Ⅲ区底板混凝土浇筑", "entities": [{"type": "工程类型", "start": 6, "end": 8}], "src": "pseudo"}
+{"text": "一、参建单位", "entities": [{"type": "参数", "start": 2, "end": 3}], "src": "pseudo"}
+{"text": "二、模板排架计算参数汇总", "entities": [{"type": "设备", "start": 2, "end": 4}], "src": "pseudo"}
+{"text": "顶托（双钢管）", "entities": [{"type": "工程类型", "start": 0, "end": 1}], "src": "pseudo"}
+{"text": "分段、分立面拆除时，应确定分界处的技术处理方案，并应保证分段后架体稳定。", "entities": [{"type": "危大类别", "start": 6, "end": 8}], "src": "pseudo"}
+{"text": "报告施工负责人，停止浇筑，采取加固措施。必要时，应采取迅速撤离人员等应急措施。", "entities": [{"type": "工序", "start": 10, "end": 12}], "src": "pseudo"}
+{"text": "意拆除模板排架的基本构架杆件，整件性杆件及连接紧固件等。", "entities": [{"type": "危大类别", "start": 1, "end": 3}, {"type": "设备", "start": 3, "end": 5}], "src": "pseudo"}
+{"text": "施工及验收规范》（GB50010）的有关规定执行。冬期施工的拆模，应遵守专门规定。", "entities": [{"type": "工序", "start": 30, "end": 32}], "src": "pseudo"}
+{"text": "禁拆除下一层的模板支撑系统。", "entities": [{"type": "危大类别", "start": 1, "end": 3}, {"type": "设备", "start": 7, "end": 9}], "src": "pseudo"}
+{"text": "应和拆除立柱同时进行。", "entities": [{"type": "危大类别", "start": 2, "end": 4}], "src": "pseudo"}
+{"text": "每日收工前应清理架面，在任何情况下，严禁自架上向下抛掷材料物品和倾倒垃圾。", "entities": [{"type": "工序", "start": 6, "end": 7}], "src": "pseudo"}
+{"text": "后方可拆除承重模板。如在已拆除模板的结构上加置荷载时，应另行核算。", "entities": [{"type": "危大类别", "start": 3, "end": 5}, {"type": "设备", "start": 7, "end": 9}, {"type": "危大类别", "start": 13, "end": 15}, {"type": "设备", "start": 15, "end": 17}], "src": "pseudo"}
+{"text": "遇6 级或6 级以上大风时，应暂停室外的高处作业。雨、雪、霜后应先清扫施工现场，方可进", "entities": [{"type": "工序", "start": 33, "end": 35}], "src": "pseudo"}
+{"text": "允许偏差（mm）", "entities": [{"type": "参数", "start": 0, "end": 1}], "src": "pseudo"}
+{"text": "第六章混凝土施工", "entities": [{"type": "工序", "start": 3, "end": 7}], "src": "pseudo"}
+{"text": "混凝土输送宜采用泵送方式。", "entities": [{"type": "工序", "start": 0, "end": 3}], "src": "pseudo"}
+{"text": "四、模板工程质量标准", "entities": [{"type": "设备", "start": 2, "end": 4}], "src": "pseudo"}
+{"text": "表6.3 模板工程质量标准表", "entities": [{"type": "设备", "start": 5, "end": 7}], "src": "pseudo"}
+{"text": "一、模板安装质量要求", "entities": [{"type": "设备", "start": 2, "end": 4}], "src": "pseudo"}
+{"text": "生的荷载，以保证模板及支架有足够的承载力和刚度。", "entities": [{"type": "设备", "start": 8, "end": 10}], "src": "pseudo"}
+{"text": "四、浇捣令管理", "entities": [{"type": "工序", "start": 2, "end": 4}], "src": "pseudo"}
+{"text": "面上装、拆模板。结构复杂的模板，装、拆应严格按照施工组织设计的措施进行。", "entities": [{"type": "设备", "start": 5, "end": 7}, {"type": "设备", "start": 13, "end": 15}], "src": "pseudo"}
+{"text": "件上攀登上下，并严禁在上下同一垂直面上装、拆模板。结构复杂的模板，装、拆应严格按照施工", "entities": [{"type": "设备", "start": 22, "end": 24}, {"type": "设备", "start": 30, "end": 32}], "src": "pseudo"}
+{"text": "土养护；对固定泵管区域的排架应适当加密；同时，由于本工程裙房地下室每层混凝土竖向结构和", "entities": [{"type": "设备", "start": 7, "end": 9}], "src": "pseudo"}
+{"text": "组织扑救火灾：当基地或施工现场发生火灾时，应急准备与响应指挥小组除及时报警，并要立", "entities": [{"type": "工程类型", "start": 8, "end": 9}], "src": "pseudo"}
+{"text": "伤亡人员，隔离火灾危险源和点物资，充分利用基地或项目中的消防设施器材进行灭火。", "entities": [{"type": "工程类型", "start": 21, "end": 22}], "src": "pseudo"}
+{"text": "原因和对责任人调查。同时应立即采取善后工作，及时清理，将火灾造成的垃圾分类处理以及其它", "entities": [{"type": "工序", "start": 24, "end": 25}], "src": "pseudo"}
+{"text": "这几处重点危险区提名到案，加强在施工中的管理。", "entities": [{"type": "危大类别", "start": 5, "end": 7}], "src": "pseudo"}
+{"text": "口数量不宜少于2 个，并宜布置在不同方向。", "entities": [{"type": "工序", "start": 13, "end": 15}], "src": "pseudo"}
+{"text": "库等全年最小频率风向的上风侧。", "entities": [{"type": "参数", "start": 8, "end": 10}], "src": "pseudo"}
+{"text": "根据本工程规模、火灾危险性及施工现场布置，合理配备临时消防设施和", "entities": [{"type": "工序", "start": 18, "end": 19}], "src": "pseudo"}
+{"text": "专用金属灭火剂、干沙", "entities": [{"type": "设备", "start": 4, "end": 6}], "src": "pseudo"}
+{"text": "危险性之前，不得动火；", "entities": [{"type": "危大类别", "start": 0, "end": 1}], "src": "pseudo"}
+{"text": "急救大楼基坑共四道支撑。第二、三、四道支撑北侧及西侧采用伺服式预应力砼支撑系统。第", "entities": [{"type": "工程类型", "start": 4, "end": 6}], "src": "pseudo"}
+{"text": "待伺服系统逐级卸力完成后，视监测情况逐区拆除第三道支撑。", "entities": [{"type": "危大类别", "start": 20, "end": 22}], "src": "pseudo"}
+{"text": "目标：分级逐级卸力至0kN，全程分为5 级匀速卸力，单级卸力差值、稳压时长固定，杜绝跳", "entities": [{"type": "参数", "start": 33, "end": 34}], "src": "pseudo"}
+{"text": "第二级卸力：累计卸除初始轴力的20%，稳压30min，同步匹配二级卸力节奏；", "entities": [{"type": "参数", "start": 6, "end": 7}], "src": "pseudo"}
+{"text": "支撑拆除施工工序。", "entities": [{"type": "危大类别", "start": 2, "end": 4}], "src": "pseudo"}
+{"text": "拆除工期（d）", "entities": [{"type": "危大类别", "start": 0, "end": 2}], "src": "pseudo"}
+{"text": "切割机（台）", "entities": [{"type": "工序", "start": 0, "end": 2}], "src": "pseudo"}
+{"text": "汽车吊/叉车（台）", "entities": [{"type": "设备", "start": 0, "end": 3}], "src": "pseudo"}
+{"text": "拆除步骤、人力及机械配置，以及安全管理措施。", "entities": [{"type": "危大类别", "start": 0, "end": 2}], "src": "pseudo"}
+{"text": "主轴输出速度", "entities": [{"type": "参数", "start": 2, "end": 3}], "src": "pseudo"}
+{"text": "本工程采用80t 汽车吊吊运砼块装车；支撑砼块体装车外运采用不大于50t 平板车装载外运；", "entities": [{"type": "设备", "start": 9, "end": 12}, {"type": "设备", "start": 37, "end": 38}], "src": "pseudo"}
+{"text": "系拆除具体施工时段根据结构施工进度确定，分区域逐步拆除。", "entities": [{"type": "危大类别", "start": 1, "end": 3}, {"type": "危大类别", "start": 25, "end": 27}], "src": "pseudo"}
+{"text": "机人工凿除。", "entities": [{"type": "工序", "start": 3, "end": 5}], "src": "pseudo"}
+{"text": "厚度控制在100mm 以内，循序渐进，严禁大面积掏挖、硬撬硬砸。", "entities": [{"type": "工序", "start": 24, "end": 26}], "src": "pseudo"}
+{"text": "拆除栈桥时，在未拆除的栈桥上边退边拆。", "entities": [{"type": "危大类别", "start": 0, "end": 2}, {"type": "危大类别", "start": 8, "end": 10}], "src": "pseudo"}
+{"text": "得跨层吊挂；倒链选型与杆件重量匹配，收紧后将剪刀撑整体固定牢固，有效防止杆件倾覆、坠", "entities": [{"type": "工序", "start": 3, "end": 4}], "src": "pseudo"}
+{"text": "部剩余钢筋、撤离至安全作业区域、清理完作业面施工机具及杂物后，由现场指挥人员核查确认构", "entities": [{"type": "工序", "start": 16, "end": 17}], "src": "pseudo"}
+{"text": "吊装钢丝绳穿设固定于砼块底部就近的格构柱位置，采用水平两点吊装或十字交叉吊装方式布设吊", "entities": [{"type": "工序", "start": 0, "end": 2}, {"type": "设备", "start": 2, "end": 5}, {"type": "工序", "start": 29, "end": 31}, {"type": "工序", "start": 36, "end": 38}, {"type": "工序", "start": 40, "end": 42}], "src": "pseudo"}
+{"text": "步骤四：叉车插入梁底，向上托紧混凝土块，托紧平稳后缓慢上升高出支撑顶面，气割钢筋，", "entities": [{"type": "工序", "start": 36, "end": 38}], "src": "pseudo"}
+{"text": "砼块垂直吊装", "entities": [{"type": "工序", "start": 0, "end": 1}, {"type": "工序", "start": 4, "end": 6}], "src": "pseudo"}
+{"text": "由于现场场地狭小，切除下来的砼块要做到随装随运至建筑垃圾处置点进行破碎后用作路基或", "entities": [{"type": "工序", "start": 9, "end": 11}], "src": "pseudo"}
+{"text": "格构柱顶端砼块同格构柱割除分离，柱顶砼块在吊装过程中先将钢丝绳穿过靠近砼块底部格构", "entities": [{"type": "工序", "start": 21, "end": 23}, {"type": "设备", "start": 28, "end": 31}], "src": "pseudo"}
+{"text": "工过程中安排专人定期检查防护设施的完整性，若发现模板松动、钢管移位等情况，立即停工整改，", "entities": [{"type": "设备", "start": 24, "end": 26}], "src": "pseudo"}
+{"text": "在施工过程中，机械行驶时要加强对底板或立柱竖向钢筋的保护，立柱钢筋禁止压弯，立柱钢", "entities": [{"type": "设备", "start": 38, "end": 39}], "src": "pseudo"}
+{"text": "筋采用搭设活动式脚手架防护棚保护，剪力墙钢筋应尽量绕行，严禁将竖向受力钢筋随意弯曲。如", "entities": [{"type": "危大类别", "start": 8, "end": 11}], "src": "pseudo"}
+{"text": "禁止在已完墙体上随意钻孔、开槽或悬挂重物，如需临时固定施工设施，需采用可拆卸式夹", "entities": [{"type": "工序", "start": 10, "end": 12}, {"type": "工序", "start": 13, "end": 15}, {"type": "危大类别", "start": 36, "end": 37}], "src": "pseudo"}
+{"text": "未开展专项验收，提前进入拆除工序", "entities": [{"type": "危大类别", "start": 12, "end": 14}], "src": "pseudo"}
+{"text": "气瓶爆炸、火灾、群体性人员", "entities": [{"type": "设备", "start": 0, "end": 2}], "src": "pseudo"}
+{"text": "冲洗清扫，防止污染交通道路。", "entities": [{"type": "工序", "start": 0, "end": 1}, {"type": "工序", "start": 2, "end": 3}], "src": "pseudo"}
+{"text": "每天20:00~次日6:00 进行清渣外运施工。", "entities": [{"type": "工序", "start": 17, "end": 18}], "src": "pseudo"}
+{"text": "止因损坏导电而发生事故。", "entities": [{"type": "设备", "start": 4, "end": 5}], "src": "pseudo"}
+{"text": "通道的通畅，引导抢险救援人员及车辆的进入；抢救救援结束后，封闭事故现场直到收到明确解除", "entities": [{"type": "工程类型", "start": 0, "end": 1}], "src": "pseudo"}
+{"text": "戴和使用安全带。", "entities": [{"type": "设备", "start": 4, "end": 6}], "src": "pseudo"}
+{"text": "拆除施工，支搭脚手架的施工作业人员，必须经安全培训考核后方可上岗，不得无证上岗，上", "entities": [{"type": "危大类别", "start": 0, "end": 2}, {"type": "危大类别", "start": 7, "end": 10}], "src": "pseudo"}
+{"text": "网封闭，双排架里口与施工作业面无法防护时可铺设脚手板，架体必须用密目网沿外加内侧进行封", "entities": [{"type": "危大类别", "start": 23, "end": 25}], "src": "pseudo"}
+{"text": "起重拆除各物体时，挂钩要把物体帮牢固后方可吊起。现场使用的机械设备要严格执行操作规", "entities": [{"type": "危大类别", "start": 2, "end": 4}], "src": "pseudo"}
+{"text": "施工现场设专职用电管理安全员，加强对临时用电的安全管理。现场临时用电系统配电箱，按", "entities": [{"type": "设备", "start": 36, "end": 39}], "src": "pseudo"}
+{"text": "脚手架基础必须平整、坚实，有排水措施，满足架体支搭要求，确保不沉陷，不积水，其架体", "entities": [{"type": "危大类别", "start": 0, "end": 3}], "src": "pseudo"}
+{"text": "方可恢复分段、缓慢拆除作业。", "entities": [{"type": "危大类别", "start": 9, "end": 11}], "src": "pseudo"}
+{"text": "在基坑内侧裂缝处用快干水泥、环氧树脂等材料对裂缝进行补强和抗渗处理。", "entities": [{"type": "工程类型", "start": 1, "end": 3}], "src": "pseudo"}
+{"text": "地方，止水搅拌桩与围护结构(钻孔灌注桩)之间的间隙在堵漏前(即出水点位置左右)一定要用压密", "entities": [{"type": "工程类型", "start": 3, "end": 8}, {"type": "工程类型", "start": 14, "end": 19}], "src": "pseudo"}
+{"text": "选用2 根10m 长6×37(b)类钢芯钢丝绳", "entities": [{"type": "设备", "start": 20, "end": 23}], "src": "pseudo"}
+{"text": "因为[Fg]=173KN＞F=51KN，所以选用的钢丝绳满足要求。", "entities": [{"type": "设备", "start": 25, "end": 28}], "src": "pseudo"}
+{"text": "以8T 重支撑梁计算。", "entities": [{"type": "参数", "start": 1, "end": 3}], "src": "pseudo"}
+{"text": "支撑切割分块最大重量为8T，现复算按重量8T 进行。", "entities": [{"type": "工序", "start": 2, "end": 4}], "src": "pseudo"}
+{"text": "本项目主要配置1 台80t 汽车吊施工。", "entities": [{"type": "设备", "start": 14, "end": 17}], "src": "pseudo"}
+{"text": "楼面一般情况下均为连续板，根据《建筑结构荷载规范》(GB50009-2012)版附录C 计算等效均布活", "entities": [{"type": "规范编号", "start": 26, "end": 38}], "src": "pseudo"}
+{"text": "汽车吊主要计算参数详见下表：", "entities": [{"type": "设备", "start": 0, "end": 3}], "src": "pseudo"}
+{"text": "汽车吊自重（含配重）由4 个支腿均匀承担，单个支腿分配的自重反力标准值：", "entities": [{"type": "设备", "start": 0, "end": 3}, {"type": "参数", "start": 3, "end": 4}, {"type": "参数", "start": 28, "end": 29}], "src": "pseudo"}
+{"text": "故满足本次吊装作业需求。", "entities": [{"type": "工序", "start": 5, "end": 7}], "src": "pseudo"}
+{"text": "方案编号：SCC4-01-092-081", "entities": [{"type": "规范编号", "start": 5, "end": 10}], "src": "pseudo"}
+{"text": "具体脚手架搭设相关具体参数详见下表3.1-3：", "entities": [{"type": "危大类别", "start": 2, "end": 5}], "src": "pseudo"}
+{"text": "表3.1-3 悬挑脚手架搭设参数汇总表", "entities": [{"type": "工程类型", "start": 7, "end": 9}, {"type": "危大类别", "start": 9, "end": 12}], "src": "pseudo"}
+{"text": "系梁应在该位置断开。", "entities": [{"type": "设备", "start": 0, "end": 1}], "src": "pseudo"}
+{"text": "不得超过6kN/m2 ，集中堆载不得超过300kg；架体上的建筑垃圾及其它杂物应及时清理。", "entities": [{"type": "工序", "start": 42, "end": 44}], "src": "pseudo"}
+{"text": "拆卸人员进行安全技术书面交底，并履行签字手续。", "entities": [{"type": "危大类别", "start": 0, "end": 1}], "src": "pseudo"}
+{"text": "架上的杂物及影响拆卸作业的障碍物。", "entities": [{"type": "危大类别", "start": 8, "end": 10}], "src": "pseudo"}
+{"text": "盘扣立杆垂直度", "entities": [{"type": "参数", "start": 4, "end": 7}], "src": "pseudo"}
+{"text": "不得在脚手上集中堆放物料，严格控制施工荷载，架上堆放物料必须整齐稳固，以不影响", "entities": [{"type": "危大类别", "start": 3, "end": 5}], "src": "pseudo"}
+{"text": "挂在醒目处，灭火器必须进行有效管理，确保性能良好可有效地用于灭火。不准在操作层上吸游烟。", "entities": [{"type": "设备", "start": 6, "end": 9}], "src": "pseudo"}
+{"text": "架上作业人员应做好分工和配合，传递杆件应掌握好重心，平衡传递，不要用力过猛，以", "entities": [{"type": "设备", "start": 15, "end": 16}], "src": "pseudo"}
+{"text": "等相关人员每天进行日常巡查，必须做好凭证上岗。同时做好危险作业部位交底和安全教育工作，提", "entities": [{"type": "危大类别", "start": 27, "end": 29}], "src": "pseudo"}
+{"text": "域，采取有效措施处理好施工现场危险作业，同时组织人员按照补救措施进行抢救工作，若发生受伤", "entities": [{"type": "危大类别", "start": 15, "end": 16}], "src": "pseudo"}
+{"text": "故原因和对责任人调查。同时应立即采取善后工作，及时清理，将火灾造成的垃圾分类处理以及其它", "entities": [{"type": "工序", "start": 25, "end": 26}], "src": "pseudo"}
+{"text": "塔楼2F西侧型钢悬挑脚手架", "entities": [{"type": "危大类别", "start": 10, "end": 13}], "src": "pseudo"}
+{"text": "塔楼双排型钢悬挑脚手架（盘", "entities": [{"type": "危大类别", "start": 8, "end": 11}], "src": "pseudo"}
+{"text": "冲压钢脚手板", "entities": [{"type": "危大类别", "start": 3, "end": 5}], "src": "pseudo"}
+{"text": "冲压钢脚手板挡板", "entities": [{"type": "危大类别", "start": 3, "end": 5}], "src": "pseudo"}
+{"text": "根据横向横杆型号及依次横距计算出单根横杆自重代入计算：", "entities": [{"type": "参数", "start": 20, "end": 21}], "src": "pseudo"}
+{"text": "结构自重标准值NG1k 总计", "entities": [{"type": "参数", "start": 2, "end": 3}, {"type": "参数", "start": 12, "end": 13}], "src": "pseudo"}
+{"text": "联梁计算模型", "entities": [{"type": "设备", "start": 4, "end": 5}], "src": "pseudo"}
+{"text": "焊缝最外边缘的抵抗矩：", "entities": [{"type": "参数", "start": 7, "end": 10}], "src": "pseudo"}
+{"text": "建筑物A 向立杆排数n1", "entities": [{"type": "参数", "start": 3, "end": 4}], "src": "pseudo"}
+{"text": "建筑物B 向立杆排数n2", "entities": [{"type": "参数", "start": 3, "end": 4}], "src": "pseudo"}
+{"text": "二、联梁布置", "entities": [{"type": "工序", "start": 4, "end": 6}], "src": "pseudo"}
+{"text": "三、主梁布置及锚固参数", "entities": [{"type": "工序", "start": 4, "end": 5}, {"type": "参数", "start": 7, "end": 8}], "src": "pseudo"}
+{"text": "的垂直距离n(mm)", "entities": [{"type": "参数", "start": 1, "end": 3}], "src": "pseudo"}
+{"text": "的水平距离m(mm)", "entities": [{"type": "参数", "start": 1, "end": 3}], "src": "pseudo"}
+{"text": "下撑杆截面抵抗矩W(cm3)", "entities": [{"type": "参数", "start": 5, "end": 8}], "src": "pseudo"}
+{"text": "轴心受压稳定性计算：", "entities": [{"type": "参数", "start": 2, "end": 3}], "src": "pseudo"}
+{"text": "下撑杆件1 与建筑物连接处水平力：N1=Nxz1=5.994kN", "entities": [{"type": "参数", "start": 13, "end": 15}], "src": "pseudo"}
+{"text": "在竖向力作用下，水平角焊缝应力为：", "entities": [{"type": "参数", "start": 8, "end": 9}], "src": "pseudo"}
+{"text": "下撑杆件1 与建筑物连接处水平力：N1=Nxz1=36.847kN", "entities": [{"type": "参数", "start": 13, "end": 15}], "src": "pseudo"}
+{"text": "方案编号：SCC4-01-092-062", "entities": [{"type": "规范编号", "start": 5, "end": 10}], "src": "pseudo"}
+{"text": "附图二十二：地下连通口区域超限梁、板分布平面图", "entities": [{"type": "工程类型", "start": 6, "end": 8}, {"type": "工程类型", "start": 8, "end": 10}], "src": "pseudo"}
+{"text": "量合格证。旧扣件使用前应进行质量检查，有裂缝、变形的严禁使用，出现滑丝的螺栓必须更换。", "entities": [{"type": "设备", "start": 33, "end": 34}], "src": "pseudo"}
+{"text": "应及时调整，加固支撑。", "entities": [{"type": "工序", "start": 3, "end": 5}], "src": "pseudo"}
+{"text": "以确保混凝土不漏浆。", "entities": [{"type": "工序", "start": 3, "end": 5}], "src": "pseudo"}
+{"text": "高支模的变形监测项目：支架沉降、水平位移和变形。", "entities": [{"type": "参数", "start": 16, "end": 17}], "src": "pseudo"}
+{"text": "上，并应检查拆模场所范围内的安全措施。模板的拆除工作应设专人指挥。作业区应设围栏，", "entities": [{"type": "危大类别", "start": 6, "end": 7}, {"type": "设备", "start": 19, "end": 21}, {"type": "危大类别", "start": 22, "end": 24}], "src": "pseudo"}
+{"text": "其内不得有其他工种作业，并应设专人负责监护。拆下的模板、零配件严禁抛掷。拆模的顺序", "entities": [{"type": "危大类别", "start": 22, "end": 23}, {"type": "设备", "start": 25, "end": 27}, {"type": "工序", "start": 36, "end": 38}], "src": "pseudo"}
+{"text": "应加设临时支撑。遇6 级或6 级以上大风时，应暂停室外的高处作业。雨后应先清扫施工现场，", "entities": [{"type": "工序", "start": 37, "end": 39}], "src": "pseudo"}
+{"text": "拆除立杆同时进行。", "entities": [{"type": "危大类别", "start": 0, "end": 2}], "src": "pseudo"}
+{"text": "拆下来的材料要及时运走、分类堆放，以便于运输、维护和保管。使用后的脚手管等构配", "entities": [{"type": "危大类别", "start": 0, "end": 1}, {"type": "危大类别", "start": 33, "end": 35}], "src": "pseudo"}
+{"text": "好，涂刷隔离剂后分类立放于支架上，损坏的模板应及时修理或更换。", "entities": [{"type": "设备", "start": 4, "end": 5}, {"type": "设备", "start": 20, "end": 22}], "src": "pseudo"}
+{"text": "和冲洗干净，且不得积水；", "entities": [{"type": "工序", "start": 1, "end": 2}], "src": "pseudo"}
+{"text": "在浇筑混凝土前，先在施工缝处铺一层水泥浆或混凝土内成分相同的水泥砂浆；", "entities": [{"type": "工序", "start": 1, "end": 3}], "src": "pseudo"}
+{"text": "墙和板，应按有代表性的自然间抽查10％，且不得小于3 件)。", "entities": [{"type": "参数", "start": 11, "end": 12}], "src": "pseudo"}
+{"text": "进行成品保护。", "entities": [{"type": "工序", "start": 2, "end": 3}], "src": "pseudo"}
+{"text": "符合施工方案要求，并通过相关部门验收。混凝土浇筑方式符合施工方案要求，控制堆载，避", "entities": [{"type": "工序", "start": 19, "end": 24}], "src": "pseudo"}
+{"text": "确保混凝土不漏浆。", "entities": [{"type": "工序", "start": 2, "end": 4}], "src": "pseudo"}
+{"text": "严格执行预留洞口的定位控制，预留洞口时，木工严格按照墨线留洞。", "entities": [{"type": "工序", "start": 14, "end": 15}], "src": "pseudo"}
+{"text": "安全要求的夜间照明。基坑内施工用的照明，必须采用符合安全要求的电压。", "entities": [{"type": "工程类型", "start": 10, "end": 12}, {"type": "参数", "start": 31, "end": 33}], "src": "pseudo"}
+{"text": "应采取的控制措施：设专人负责，按规范操作经常检查电锯、电刨等的防护罩，分料器、推", "entities": [{"type": "设备", "start": 24, "end": 25}, {"type": "设备", "start": 27, "end": 28}], "src": "pseudo"}
+{"text": "派专人在门口疏导交通并起到警示作用。在基地临时便道的交叉口设置交通指（禁）令表示（牌），", "entities": [{"type": "工程类型", "start": 19, "end": 20}], "src": "pseudo"}
+{"text": "板上和抛掷。", "entities": [{"type": "工序", "start": 3, "end": 5}], "src": "pseudo"}
+{"text": "且电锯必须具备皮带防护罩、锯片防护罩、分料器和护手装置。使用木工多用机械时严禁电锯和", "entities": [{"type": "设备", "start": 1, "end": 2}], "src": "pseudo"}
+{"text": "电锯；两人操作时相互配合，不得硬拉硬拽；机械停用时断电加锁。", "entities": [{"type": "设备", "start": 0, "end": 2}], "src": "pseudo"}
+{"text": "况配备足够的应急设备、物资。项目部根据重大危险源管理办法，每月进行不少于2 次的专项检", "entities": [{"type": "危大类别", "start": 21, "end": 23}], "src": "pseudo"}
+{"text": "查，并做好相应书面记录。项目部施工、安全、技术等部门每天对深基坑施工作业进行重点监控，", "entities": [{"type": "工程类型", "start": 30, "end": 32}], "src": "pseudo"}
+{"text": "的情况下，组织抢救人员，采取有效措施进行抢救工作，首先抢救受伤人员，再抢救集体财产。", "entities": [{"type": "参数", "start": 37, "end": 38}], "src": "pseudo"}
+{"text": "方案名称：有限空间施工专项方案", "entities": [{"type": "工程类型", "start": 5, "end": 9}], "src": "pseudo"}
+{"text": "有限空间识别：", "entities": [{"type": "工程类型", "start": 0, "end": 1}], "src": "pseudo"}
+{"text": "全监护人员进行安全技术交底和培训，内容包括有限空间有毒有害因素、安全防", "entities": [{"type": "工程类型", "start": 21, "end": 23}], "src": "pseudo"}
+{"text": "剂进行清洗，优先选用无毒的物质，清洗后再用蒸汽或者热水清洗。", "entities": [{"type": "工序", "start": 3, "end": 4}, {"type": "工序", "start": 16, "end": 17}], "src": "pseudo"}
+{"text": "分钟，再次进入有限空间前，应重新通风、检测合格后方可进入。每次检测后及", "entities": [{"type": "工程类型", "start": 7, "end": 8}], "src": "pseudo"}
+{"text": "有限空间施工作业完成后，作业人员将全部设备和工具带离。监护人员清点", "entities": [{"type": "工程类型", "start": 0, "end": 3}], "src": "pseudo"}
+{"text": "说明有限空间内空气质量不佳，此时严禁现场监护人员或其他人员擅自进入有", "entities": [{"type": "工程类型", "start": 2, "end": 3}], "src": "pseudo"}
+{"text": "气设备着火时，应先断电，后灭火。如无法断电，严禁用水和泡沫灭火。", "entities": [{"type": "设备", "start": 0, "end": 1}], "src": "pseudo"}
+{"text": "本工程地下连续墙施工过程中最重钢筋笼如下表所示：", "entities": [{"type": "工程类型", "start": 3, "end": 8}], "src": "pseudo"}
+{"text": "表1.4.1 地下连续墙施工设备统计表", "entities": [{"type": "工程类型", "start": 7, "end": 12}], "src": "pseudo"}
+{"text": "带吊进行安拆", "entities": [{"type": "工序", "start": 4, "end": 6}], "src": "pseudo"}
+{"text": "台80t 汽车吊进行拼拆。", "entities": [{"type": "设备", "start": 5, "end": 8}, {"type": "工序", "start": 10, "end": 11}, {"type": "危大类别", "start": 11, "end": 12}], "src": "pseudo"}
+{"text": "距离基坑开挖边线", "entities": [{"type": "工程类型", "start": 2, "end": 4}], "src": "pseudo"}
+{"text": "直径（MM）埋深（M）", "entities": [{"type": "参数", "start": 6, "end": 7}], "src": "pseudo"}
+{"text": "根据地下连续墙施工进度要求，计量器具配置如下所示：", "entities": [{"type": "工程类型", "start": 2, "end": 7}], "src": "pseudo"}
+{"text": "表3.3 地下连续墙施工主要机具配备表", "entities": [{"type": "工程类型", "start": 5, "end": 10}], "src": "pseudo"}
+{"text": "主吊扁担下钢丝绳", "entities": [{"type": "设备", "start": 5, "end": 8}], "src": "pseudo"}
+{"text": "副吊扁担上钢丝绳", "entities": [{"type": "设备", "start": 5, "end": 8}], "src": "pseudo"}
+{"text": "地下连续墙施工前应掌握施工区域的地质资料及地下障碍物，并进行现场清障工作，在", "entities": [{"type": "工程类型", "start": 0, "end": 5}, {"type": "工序", "start": 32, "end": 33}], "src": "pseudo"}
+{"text": "施工现场布置是针对现场施工实际情况并结合现场条件进行的，其布置原则：", "entities": [{"type": "工序", "start": 4, "end": 6}, {"type": "工序", "start": 29, "end": 31}], "src": "pseudo"}
+{"text": "筋间距、预埋件及钢筋接驳器的设计位置画出控制标记，以保证钢筋笼和各种埋件的布设精", "entities": [{"type": "工序", "start": 8, "end": 10}, {"type": "工序", "start": 37, "end": 39}], "src": "pseudo"}
+{"text": "的人员都应按规定作业，现场作业流程要衔接及时。针对安全成功起吊，项目部规定安全员", "entities": [{"type": "工序", "start": 27, "end": 28}], "src": "pseudo"}
+{"text": "图5.4.3 纵向桁架布置示意图", "entities": [{"type": "工序", "start": 11, "end": 13}], "src": "pseudo"}
+{"text": "图5.4.4 横向桁架布置示意图", "entities": [{"type": "工序", "start": 11, "end": 13}], "src": "pseudo"}
+{"text": "地下连续墙钢筋笼加强筋主要为：纵、横向桁架筋和内外侧剪刀拉结筋。其中，6m 宽标", "entities": [{"type": "工程类型", "start": 0, "end": 5}], "src": "pseudo"}
+{"text": "验不合格进行整改，检验合格后方可使用。80t 汽车吊负责拼拆250t、200t 履带吊，待250t", "entities": [{"type": "设备", "start": 23, "end": 26}, {"type": "工序", "start": 28, "end": 29}, {"type": "设备", "start": 40, "end": 43}], "src": "pseudo"}
+{"text": "的平整度，并且组织人员对作业场地清扫，确保道路畅通、整洁。", "entities": [{"type": "工序", "start": 16, "end": 17}], "src": "pseudo"}
+{"text": "扣、钢丝绳的连接是否完好，钢筋笼的是否存在变形过大的问题。", "entities": [{"type": "设备", "start": 2, "end": 5}], "src": "pseudo"}
+{"text": "本工程地下连续墙钢筋笼参数见下表：", "entities": [{"type": "工程类型", "start": 3, "end": 8}], "src": "pseudo"}
+{"text": "根据履带吊生产厂家及设备公司提资，XGC300 履带吊自重约为250t,300t 履带吊车着地", "entities": [{"type": "设备", "start": 2, "end": 5}, {"type": "设备", "start": 24, "end": 27}, {"type": "参数", "start": 27, "end": 28}, {"type": "设备", "start": 41, "end": 44}], "src": "pseudo"}
+{"text": "为满足最大300t 履带吊的行走要求，对道路进行计算。", "entities": [{"type": "设备", "start": 10, "end": 13}], "src": "pseudo"}
+{"text": "设置。中间形成简支，两端形成悬挑结构形式，从而使得钢筋笼宽度方向吊装时产生弯矩最", "entities": [{"type": "工序", "start": 32, "end": 34}], "src": "pseudo"}
+{"text": "因此，横向吊点可按照0.207L+0.586L+0.207L 布置。", "entities": [{"type": "工序", "start": 31, "end": 33}], "src": "pseudo"}
+{"text": "表8.7.1 钢丝绳允许拉力", "entities": [{"type": "设备", "start": 7, "end": 10}, {"type": "参数", "start": 10, "end": 11}], "src": "pseudo"}
+{"text": "钢丝绳所受最大拉力：", "entities": [{"type": "设备", "start": 0, "end": 3}], "src": "pseudo"}
+{"text": "钢丝绳直径：28mm，[T]=5.7t；钢丝绳长度：68m*2 根（起吊绳）", "entities": [{"type": "设备", "start": 0, "end": 3}, {"type": "设备", "start": 20, "end": 23}, {"type": "设备", "start": 34, "end": 35}], "src": "pseudo"}
+{"text": "故比较以上可知，此种型号钢扁担可起吊最大重量为301.3T，取安全系数为2.5，则此", "entities": [{"type": "设备", "start": 12, "end": 15}], "src": "pseudo"}
+{"text": "扁担理论所能承受最大抗剪力为：", "entities": [{"type": "参数", "start": 10, "end": 11}], "src": "pseudo"}
+{"text": "对分包单位机具进场的管理：机具进场时，对土方挖运施工所有的机械等器材，组织线", "entities": [{"type": "工序", "start": 20, "end": 22}], "src": "pseudo"}
+{"text": "过程中，在高空拆换吊点钢丝绳时，必须佩带好安全带。安全工作做到班前交底分工明确，", "entities": [{"type": "危大类别", "start": 7, "end": 8}, {"type": "设备", "start": 11, "end": 14}], "src": "pseudo"}
+{"text": "降速度，避免产生过大的冲击荷载或导致钢筋笼倾斜。起吊、行走（如需）、回转、变幅等", "entities": [{"type": "工序", "start": 37, "end": 38}], "src": "pseudo"}
+{"text": "面钢丝直径的40%以上，或钢丝绳被腐蚀后，表面麻痕清晰可见，整根钢丝绳明显变硬；使", "entities": [{"type": "设备", "start": 13, "end": 16}, {"type": "设备", "start": 32, "end": 35}], "src": "pseudo"}
+{"text": "用新购置的吊索具前应检查其合格证，并试吊，确认安全起吊。", "entities": [{"type": "设备", "start": 5, "end": 8}, {"type": "工序", "start": 18, "end": 19}], "src": "pseudo"}
+{"text": "非常规起重设备吊装无专项施工方案", "entities": [{"type": "危大类别", "start": 3, "end": 5}, {"type": "工序", "start": 7, "end": 9}], "src": "pseudo"}
+{"text": "起重机械设备自身的安装、拆卸未编制专项施", "entities": [{"type": "危大类别", "start": 12, "end": 13}], "src": "pseudo"}
+{"text": "履带吊及地基稳定性；吊点、吊具受力情况；钢筋笼整体稳定性、有无变形；缆风绳系统张", "entities": [{"type": "设备", "start": 0, "end": 3}], "src": "pseudo"}
+{"text": "紧状态及锚固可靠性。", "entities": [{"type": "参数", "start": 4, "end": 5}], "src": "pseudo"}
+{"text": "潮、防雨、排涝器材，做好人员组织工作。坑、沟边上部不得堆积过多的材料，雨季前应清", "entities": [{"type": "工序", "start": 39, "end": 40}], "src": "pseudo"}
+{"text": "现场材料堆放合理布局，在交通便利出布置材料堆场和仓库等。对钢筋、模板、扣件等", "entities": [{"type": "工序", "start": 17, "end": 19}, {"type": "设备", "start": 32, "end": 34}], "src": "pseudo"}
+{"text": "相关方（如邻近的居民、工地等）做好紧急疏散或抢险等预防准备，同时通知相关方做好支", "entities": [{"type": "设备", "start": 34, "end": 35}], "src": "pseudo"}
+{"text": "够的应急设备、物资。项目部根据重大危险源管理办法，每月进行不少于2 次的专项检查，", "entities": [{"type": "危大类别", "start": 17, "end": 19}], "src": "pseudo"}
+{"text": "坍塌、基坑渗漏、管涌等事故后，及时向应急工作领导汇报，同时启动本预案，使基坑事故", "entities": [{"type": "工程类型", "start": 3, "end": 5}, {"type": "工程类型", "start": 36, "end": 38}], "src": "pseudo"}
+{"text": "为控制本基坑工程周边临近建筑物或重要管线的位移，除了采用加固等措施外，还在重", "entities": [{"type": "工程类型", "start": 4, "end": 6}], "src": "pseudo"}
+{"text": "钢筋笼起吊发生变形、散架事故和补救措施通常有如下情况：", "entities": [{"type": "工序", "start": 7, "end": 8}, {"type": "工序", "start": 10, "end": 11}], "src": "pseudo"}
+{"text": "桁架钢筋、主筋和分布筋全部电焊加固，桁架钢筋和分布筋相交的两个点更要全部焊接；加", "entities": [{"type": "设备", "start": 8, "end": 9}, {"type": "设备", "start": 23, "end": 24}], "src": "pseudo"}
+{"text": "等待对事故原因及负责人的调查。同时应立即采取善后工作，及时清理，将火灾造成的垃圾", "entities": [{"type": "工序", "start": 29, "end": 30}], "src": "pseudo"}
+{"text": "有产品合格证", "entities": [], "src": "pseudo"}
+{"text": "运棱角坚硬或易滑的吊物，必须加衬垫，用套索。", "entities": [], "src": "pseudo"}
+{"text": "劳务管理代办、按方案和操作规程施工", "entities": [], "src": "pseudo"}
+{"text": "厚度（mm）", "entities": [], "src": "pseudo"}
+{"text": "按照方案和埋设要求作好埋设准备，仪器安装埋设前要进行检验验和率定。仪器埋设时，核", "entities": [], "src": "pseudo"}
+{"text": "施工层外侧防护栏杆、", "entities": [], "src": "pseudo"}
+{"text": "安全保证体系：", "entities": [], "src": "pseudo"}
+{"text": "审定人：沈建华", "entities": [], "src": "pseudo"}
+{"text": "施工工具摆放杂乱、安全警示标识缺失、作业", "entities": [], "src": "pseudo"}
+{"text": "前对其重点部位（吊具、吊索等）进行检查，每周必须对起重设备进行一起全面的检查和维修，", "entities": [], "src": "pseudo"}
+{"text": "区域详见附图。", "entities": [], "src": "pseudo"}
+{"text": "设置10 个主控制点组成的控制网", "entities": [], "src": "pseudo"}
+{"text": "立控制，但未造成人员伤亡", "entities": [], "src": "pseudo"}
+{"text": "计算简图如下：", "entities": [], "src": "pseudo"}
+{"text": "编制时间：2026 年8 月3 日", "entities": [], "src": "pseudo"}
+{"text": "置垫板、扫地杆，架体整体拉结牢固、无晃动、无松动。", "entities": [], "src": "pseudo"}
+{"text": "认后方可施工。", "entities": [], "src": "pseudo"}

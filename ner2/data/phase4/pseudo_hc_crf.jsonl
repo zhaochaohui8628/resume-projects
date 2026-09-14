@@ -1,0 +1,72 @@
+{"text": "注：本工程履带吊进出路线通畅无障碍。", "entities": [{"type": "设备", "start": 5, "end": 8}], "src": "pseudo", "crf_score_per_token": -0.00062}
+{"text": "本工程地下连续墙施工过程中最重钢筋笼如下表所示：", "entities": [{"type": "工程类型", "start": 3, "end": 8}], "src": "pseudo", "crf_score_per_token": -0.001085}
+{"text": "表1.4.1 地下连续墙施工设备统计表", "entities": [{"type": "工程类型", "start": 7, "end": 12}], "src": "pseudo", "crf_score_per_token": -0.001104}
+{"text": "挂在醒目处，灭火器必须进行有效管理，确保性能良好可有效地用于灭火。不准在操作层上吸游烟。", "entities": [{"type": "设备", "start": 6, "end": 9}], "src": "pseudo", "crf_score_per_token": -0.001115}
+{"text": "因为[Fg]=173KN＞F=51KN，所以选用的钢丝绳满足要求。", "entities": [{"type": "设备", "start": 25, "end": 28}], "src": "pseudo", "crf_score_per_token": -0.001247}
+{"text": "拆除工期（d）", "entities": [{"type": "危大类别", "start": 0, "end": 2}], "src": "pseudo", "crf_score_per_token": -0.001367}
+{"text": "系拆除具体施工时段根据结构施工进度确定，分区域逐步拆除。", "entities": [{"type": "危大类别", "start": 1, "end": 3}, {"type": "危大类别", "start": 25, "end": 27}], "src": "pseudo", "crf_score_per_token": -0.001506}
+{"text": "图4.1 钻孔桩施工工艺流程图", "entities": [{"type": "工程类型", "start": 5, "end": 8}], "src": "pseudo", "crf_score_per_token": -0.001528}
+{"text": "在基坑内侧裂缝处用快干水泥、环氧树脂等材料对裂缝进行补强和抗渗处理。", "entities": [{"type": "工程类型", "start": 1, "end": 3}], "src": "pseudo", "crf_score_per_token": -0.001534}
+{"text": "符合施工方案要求，并通过相关部门验收。混凝土浇筑方式符合施工方案要求，控制堆载，避", "entities": [{"type": "工序", "start": 19, "end": 24}], "src": "pseudo", "crf_score_per_token": -0.001729}
+{"text": "作，指挥无证上岗；", "entities": [], "src": "pseudo", "crf_score_per_token": -0.001784}
+{"text": "四、模板工程质量标准", "entities": [{"type": "设备", "start": 2, "end": 4}], "src": "pseudo", "crf_score_per_token": -0.001856}
+{"text": "为满足最大300t 履带吊的行走要求，对道路进行计算。", "entities": [{"type": "设备", "start": 10, "end": 13}], "src": "pseudo", "crf_score_per_token": -0.001856}
+{"text": "塔吊停止作业；会同设计和勘察单位分析原因；塔吊卸载及降节。", "entities": [{"type": "设备", "start": 0, "end": 2}, {"type": "设备", "start": 21, "end": 23}], "src": "pseudo", "crf_score_per_token": -0.001893}
+{"text": "表3.3 地下连续墙施工主要机具配备表", "entities": [{"type": "工程类型", "start": 5, "end": 10}], "src": "pseudo", "crf_score_per_token": -0.001906}
+{"text": "拆除施工，支搭脚手架的施工作业人员，必须经安全培训考核后方可上岗，不得无证上岗，上", "entities": [{"type": "危大类别", "start": 0, "end": 2}, {"type": "危大类别", "start": 7, "end": 10}], "src": "pseudo", "crf_score_per_token": -0.001934}
+{"text": "各液压阀无内外泄露，工作可靠有效。", "entities": [{"type": "设备", "start": 1, "end": 4}], "src": "pseudo", "crf_score_per_token": -0.002014}
+{"text": "未开展专项验收，提前进入拆除工序", "entities": [{"type": "危大类别", "start": 12, "end": 14}], "src": "pseudo", "crf_score_per_token": -0.002043}
+{"text": "急救大楼基坑共四道支撑。第二、三、四道支撑北侧及西侧采用伺服式预应力砼支撑系统。第", "entities": [{"type": "工程类型", "start": 4, "end": 6}], "src": "pseudo", "crf_score_per_token": -0.002046}
+{"text": "脚手架基础必须平整、坚实，有排水措施，满足架体支搭要求，确保不沉陷，不积水，其架体", "entities": [{"type": "危大类别", "start": 0, "end": 3}], "src": "pseudo", "crf_score_per_token": -0.002107}
+{"text": "支撑拆除施工工序。", "entities": [{"type": "危大类别", "start": 2, "end": 4}], "src": "pseudo", "crf_score_per_token": -0.00216}
+{"text": "面上装、拆模板。结构复杂的模板，装、拆应严格按照施工组织设计的措施进行。", "entities": [{"type": "设备", "start": 5, "end": 7}, {"type": "设备", "start": 13, "end": 15}], "src": "pseudo", "crf_score_per_token": -0.002193}
+{"text": "本项目主要配置1 台80t 汽车吊施工。", "entities": [{"type": "设备", "start": 14, "end": 17}], "src": "pseudo", "crf_score_per_token": -0.002202}
+{"text": "报告施工负责人，停止浇筑，采取加固措施。必要时，应采取迅速撤离人员等应急措施。", "entities": [{"type": "工序", "start": 10, "end": 12}], "src": "pseudo", "crf_score_per_token": -0.002262}
+{"text": "急救综合大楼现有建筑（待拆除）", "entities": [{"type": "危大类别", "start": 12, "end": 14}], "src": "pseudo", "crf_score_per_token": -0.0023}
+{"text": "为避免塔吊预埋件与主体钢筋的冲突，施工时遵循以下原则：当钢筋与埋件位置干涉时，应", "entities": [{"type": "设备", "start": 3, "end": 5}], "src": "pseudo", "crf_score_per_token": -0.002385}
+{"text": "急救大楼：本工程地连墙由于钢筋笼重量较大、长度较长，施工采用的大型机械较多、荷", "entities": [{"type": "工程类型", "start": 8, "end": 11}], "src": "pseudo", "crf_score_per_token": -0.002441}
+{"text": "故满足本次吊装作业需求。", "entities": [{"type": "工序", "start": 5, "end": 7}], "src": "pseudo", "crf_score_per_token": -0.002447}
+{"text": "急救大楼：本工程地连墙由于钢筋笼重量较大、长度较长，施工采用的大型机械较多、", "entities": [{"type": "工程类型", "start": 8, "end": 11}], "src": "pseudo", "crf_score_per_token": -0.002507}
+{"text": "分段、分立面拆除时，应确定分界处的技术处理方案，并应保证分段后架体稳定。", "entities": [{"type": "危大类别", "start": 6, "end": 8}], "src": "pseudo", "crf_score_per_token": -0.002554}
+{"text": "生的荷载，以保证模板及支架有足够的承载力和刚度。", "entities": [{"type": "设备", "start": 8, "end": 10}], "src": "pseudo", "crf_score_per_token": -0.002594}
+{"text": "地连墙计划安排于2025 年7 月下旬开始施工，2025 年7 月20 日整机验收与报检(每台履", "entities": [{"type": "工程类型", "start": 0, "end": 3}], "src": "pseudo", "crf_score_per_token": -0.002601}
+{"text": "塔吊构件、其它构件是否有继续倒塌的危险、人员伤亡情况等，商定抢救方案后，项目经理", "entities": [{"type": "设备", "start": 0, "end": 2}], "src": "pseudo", "crf_score_per_token": -0.002649}
+{"text": "汽车吊主要计算参数详见下表：", "entities": [{"type": "设备", "start": 0, "end": 3}], "src": "pseudo", "crf_score_per_token": -0.002726}
+{"text": "方可恢复分段、缓慢拆除作业。", "entities": [{"type": "危大类别", "start": 9, "end": 11}], "src": "pseudo", "crf_score_per_token": -0.002889}
+{"text": "同时检验履带吊机身情况和钢丝绳情况，确保安全。", "entities": [{"type": "设备", "start": 4, "end": 7}, {"type": "设备", "start": 12, "end": 15}], "src": "pseudo", "crf_score_per_token": -0.002916}
+{"text": "件上攀登上下，并严禁在上下同一垂直面上装、拆模板。结构复杂的模板，装、拆应严格按照施工", "entities": [{"type": "设备", "start": 22, "end": 24}, {"type": "设备", "start": 30, "end": 32}], "src": "pseudo", "crf_score_per_token": -0.00299}
+{"text": "所有电箱应每日进行检查和维修一次，由专业电工按规定穿戴绝缘鞋、手套、", "entities": [{"type": "设备", "start": 2, "end": 4}], "src": "pseudo", "crf_score_per_token": -0.003001}
+{"text": "专业吊装单位取得联系及对紧急情况的处理做出安排；在紧急状态结束后，组织人员参加事故的", "entities": [{"type": "工序", "start": 2, "end": 4}], "src": "pseudo", "crf_score_per_token": -0.003017}
+{"text": "本基坑监测的测量仪器及设备经校准有效方可使用，不合格的仪器、设备不得投入使用，优", "entities": [{"type": "工程类型", "start": 1, "end": 3}], "src": "pseudo", "crf_score_per_token": -0.003026}
+{"text": "拆除立杆同时进行。", "entities": [{"type": "危大类别", "start": 0, "end": 2}], "src": "pseudo", "crf_score_per_token": -0.003035}
+{"text": "重应小于1.3，手触泥浆无颗粒感觉，一次清孔即可结束。", "entities": [{"type": "工序", "start": 20, "end": 22}], "src": "pseudo", "crf_score_per_token": -0.003104}
+{"text": "施，减轻噪声扰民。", "entities": [], "src": "pseudo", "crf_score_per_token": -0.003168}
+{"text": "立杆1：NG1k= NG1k1+ NG1k2+ NG1k3 =0.92+0.59+0.19=1.7kN", "entities": [], "src": "pseudo", "crf_score_per_token": -0.003249}
+{"text": "地下连续墙钢筋笼加强筋主要为：纵、横向桁架筋和内外侧剪刀拉结筋。其中，6m 宽标", "entities": [{"type": "工程类型", "start": 0, "end": 5}], "src": "pseudo", "crf_score_per_token": -0.003255}
+{"text": "二重管高压旋喷桩质量保证措施", "entities": [{"type": "工程类型", "start": 3, "end": 8}], "src": "pseudo", "crf_score_per_token": -0.003405}
+{"text": "塔吊基础参数表", "entities": [{"type": "设备", "start": 0, "end": 2}], "src": "pseudo", "crf_score_per_token": -0.00362}
+{"text": "地方，止水搅拌桩与围护结构(钻孔灌注桩)之间的间隙在堵漏前(即出水点位置左右)一定要用压密", "entities": [{"type": "工程类型", "start": 3, "end": 8}, {"type": "工程类型", "start": 14, "end": 19}], "src": "pseudo", "crf_score_per_token": -0.00384}
+{"text": "根据地下连续墙施工进度要求，计量器具配置如下所示：", "entities": [{"type": "工程类型", "start": 2, "end": 7}], "src": "pseudo", "crf_score_per_token": -0.003901}
+{"text": "安排2 台桩机进行施工，施工前进行试成桩试验，确定成桩施工参数，施工流程总体从西北角开", "entities": [{"type": "工序", "start": 18, "end": 20}, {"type": "工序", "start": 25, "end": 27}], "src": "pseudo", "crf_score_per_token": -0.003903}
+{"text": "拆除栈桥时，在未拆除的栈桥上边退边拆。", "entities": [{"type": "危大类别", "start": 0, "end": 2}, {"type": "危大类别", "start": 8, "end": 10}], "src": "pseudo", "crf_score_per_token": -0.003942}
+{"text": "三、混凝土浇筑", "entities": [{"type": "工序", "start": 2, "end": 7}], "src": "pseudo", "crf_score_per_token": -0.003952}
+{"text": "本工程地下连续墙钢筋笼参数见下表：", "entities": [{"type": "工程类型", "start": 3, "end": 8}], "src": "pseudo", "crf_score_per_token": -0.003967}
+{"text": "本方案为某医院某医学中心项目基坑工程施工组织设计，", "entities": [{"type": "工程类型", "start": 14, "end": 16}], "src": "pseudo", "crf_score_per_token": -0.003988}
+{"text": "施工现场设专职用电管理安全员，加强对临时用电的安全管理。现场临时用电系统配电箱，按", "entities": [{"type": "设备", "start": 36, "end": 39}], "src": "pseudo", "crf_score_per_token": -0.004024}
+{"text": "本工程两部塔吊共用同一承台基础，基础受力验算采用最大型号计算，本方案采用", "entities": [{"type": "设备", "start": 5, "end": 7}], "src": "pseudo", "crf_score_per_token": -0.00408}
+{"text": "严格执行浇捣令制度。", "entities": [{"type": "工序", "start": 4, "end": 6}], "src": "pseudo", "crf_score_per_token": -0.00419}
+{"text": "安全要求的夜间照明。基坑内施工用的照明，必须采用符合安全要求的电压。", "entities": [{"type": "工程类型", "start": 10, "end": 12}, {"type": "参数", "start": 31, "end": 33}], "src": "pseudo", "crf_score_per_token": -0.004196}
+{"text": "履带吊进场、卸车", "entities": [{"type": "设备", "start": 0, "end": 3}], "src": "pseudo", "crf_score_per_token": -0.004412}
+{"text": "将主臂中间臂用汽车吊采用双点起吊，平稳与下节臂对接，采用人工进行微调，将两节主臂的", "entities": [{"type": "设备", "start": 7, "end": 10}], "src": "pseudo", "crf_score_per_token": -0.004437}
+{"text": "拆除步骤、人力及机械配置，以及安全管理措施。", "entities": [{"type": "危大类别", "start": 0, "end": 2}], "src": "pseudo", "crf_score_per_token": -0.004531}
+{"text": "起重拆除各物体时，挂钩要把物体帮牢固后方可吊起。现场使用的机械设备要严格执行操作规", "entities": [{"type": "危大类别", "start": 2, "end": 4}], "src": "pseudo", "crf_score_per_token": -0.004548}
+{"text": "应和拆除立柱同时进行。", "entities": [{"type": "危大类别", "start": 2, "end": 4}], "src": "pseudo", "crf_score_per_token": -0.004651}
+{"text": "混凝土浇筑前应完成下列工作：", "entities": [{"type": "工序", "start": 0, "end": 5}], "src": "pseudo", "crf_score_per_token": -0.004714}
+{"text": "四、浇捣令管理", "entities": [{"type": "工序", "start": 2, "end": 4}], "src": "pseudo", "crf_score_per_token": -0.004952}
+{"text": "联轴器零件无缺损，连接无松动，运转时无撞击声。", "entities": [{"type": "设备", "start": 0, "end": 3}], "src": "pseudo", "crf_score_per_token": -0.005063}
+{"text": "坍塌、基坑渗漏、管涌等事故后，及时向应急工作领导汇报，同时启动本预案，使基坑事故", "entities": [{"type": "工程类型", "start": 3, "end": 5}, {"type": "工程类型", "start": 36, "end": 38}], "src": "pseudo", "crf_score_per_token": -0.005081}
+{"text": "筋采用搭设活动式脚手架防护棚保护，剪力墙钢筋应尽量绕行，严禁将竖向受力钢筋随意弯曲。如", "entities": [{"type": "危大类别", "start": 8, "end": 11}], "src": "pseudo", "crf_score_per_token": -0.005122}
+{"text": "水、淤泥控制要求：在三轴水泥搅拌桩施工时，将产生一定量的泥浆、淤泥分包必须根据总", "entities": [{"type": "工程类型", "start": 10, "end": 17}], "src": "pseudo", "crf_score_per_token": -0.00525}
+{"text": "扣、钢丝绳的连接是否完好，钢筋笼的是否存在变形过大的问题。", "entities": [{"type": "设备", "start": 2, "end": 5}], "src": "pseudo", "crf_score_per_token": -0.005549}
+{"text": "遇6 级或6 级以上大风时，应暂停室外的高处作业。雨、雪、霜后应先清扫施工现场，方可进", "entities": [{"type": "工序", "start": 33, "end": 35}], "src": "pseudo", "crf_score_per_token": -0.005578}
+{"text": "形（支撑与立柱交点）不应超过20mm,如达到上述数值则千斤顶应及时卸压。", "entities": [{"type": "设备", "start": 27, "end": 30}], "src": "pseudo", "crf_score_per_token": -0.005609}

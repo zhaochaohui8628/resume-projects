@@ -1,0 +1,24 @@
+{
+ "in": 364,
+ "out": 105,
+ "out_pos": 105,
+ "out_neg": 0,
+ "out_entities": 122,
+ "kept_ratio": 0.2885,
+ "dropped": {
+  "drop_caption": 16,
+  "drop_fragment": 154,
+  "drop_sent_empty": 243,
+  "drop_no_consensus": 81,
+  "drop_generic": 38,
+  "drop_param_no_value": 22
+ },
+ "by_type": {
+  "工程类型": 27,
+  "危大类别": 7,
+  "设备": 69,
+  "工序": 19
+ },
+ "head": "softmax",
+ "input": "ner2/data/phase4/pseudo_hc_softmax.jsonl"
+}

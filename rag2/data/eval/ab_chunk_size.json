@@ -1,0 +1,32 @@
+[
+  {
+    "size": 420,
+    "overlap": 100,
+    "units": 17094,
+    "mean_len": 171.5,
+    "over512_pct": 0.1,
+    "hit@k": 1.0,
+    "mrr": 0.836,
+    "ndcg": 0.8775
+  },
+  {
+    "size": 512,
+    "overlap": 100,
+    "units": 16095,
+    "mean_len": 176.1,
+    "over512_pct": 0.4,
+    "hit@k": 1.0,
+    "mrr": 0.8438,
+    "ndcg": 0.8836
+  },
+  {
+    "size": 700,
+    "overlap": 100,
+    "units": 15132,
+    "mean_len": 181.0,
+    "over512_pct": 11.2,
+    "hit@k": 1.0,
+    "mrr": 0.8399,
+    "ndcg": 0.8806
+  }
+]

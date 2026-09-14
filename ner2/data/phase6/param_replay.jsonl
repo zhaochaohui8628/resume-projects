@@ -1,0 +1,600 @@
+{"text": "不得少于14d，并经常检查塑料薄膜或养护剂涂层的完整情况，保持混凝土表面湿润；大体积混", "entities": [{"type": "工序", "start": 11, "end": 13}], "src": "replay"}
+{"text": "毗邻建筑沉降、开裂，项目部要加强对基坑周边监测，及时采取措施，并通知影响到的住房居", "entities": [{"type": "工程类型", "start": 17, "end": 19}], "src": "replay"}
+{"text": "浆量达到设计要求时，可终止注浆；当注浆压力≥2MPa 并稳定3min，且注浆量达到设计注浆量", "entities": [{"type": "工序", "start": 13, "end": 15}, {"type": "工序", "start": 17, "end": 19}, {"type": "工序", "start": 36, "end": 38}, {"type": "工序", "start": 43, "end": 45}], "src": "replay"}
+{"text": "能继续注浆，等10～20 秒恢复向上提升搅拌，以防断桩发生。", "entities": [{"type": "工序", "start": 3, "end": 5}], "src": "replay"}
+{"text": "模板吊钩、斜支撑及平台连接处螺栓是否松动，发现问题及时组织处理。", "entities": [{"type": "设备", "start": 0, "end": 2, "n_votes": 3, "n_experts": 3}, {"type": "设备", "start": 5, "end": 8, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "同时在基坑内侧裂缝处用快干水泥、环氧树脂等材料对裂缝进行补强和抗渗处理。", "entities": [{"type": "工程类型", "start": 3, "end": 5}], "src": "replay"}
+{"text": "匀，间隙调整适宜，制动平稳可靠。", "entities": [{"type": "工序", "start": 4, "end": 6}], "src": "replay"}
+{"text": "对后张法预应力混凝土结构构件,侧模板应在预应力张拉前拆除;底模支架应在结构构件建立预", "entities": [{"type": "设备", "start": 16, "end": 18, "n_votes": 3, "n_experts": 3}, {"type": "工序", "start": 20, "end": 25, "n_votes": 3, "n_experts": 3}, {"type": "危大类别", "start": 26, "end": 28, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "按照实际情况泵车可停靠场地外围进行浇灌。", "entities": [{"type": "设备", "start": 6, "end": 8}], "src": "replay"}
+{"text": "当有六级及六级以上大风和浓雾、雷雨等恶劣天气及夜间照明昏暗条件下，应停止脚手架", "entities": [{"type": "危大类别", "start": 36, "end": 39, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "飞跳板操作面外侧应设一道防护身栏杆和一道不低于18cm 的挡脚板，并沿脚手架外杆里侧用密目", "entities": [{"type": "危大类别", "start": 35, "end": 38, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "绳锯切割支撑梁", "entities": [{"type": "工序", "start": 2, "end": 4, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "围檩拆除工作自拆除起第4 天后开始，持续工作2 天。清理及", "entities": [{"type": "危大类别", "start": 2, "end": 4}, {"type": "危大类别", "start": 7, "end": 9}], "src": "replay"}
+{"text": "丝绳断丝数不超过规范规定；卷简上钢丝绳放出时应保留3 圈及以上；钢丝绳", "entities": [{"type": "设备", "start": 16, "end": 19, "n_votes": 3, "n_experts": 3}, {"type": "设备", "start": 32, "end": 35, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "模板的拆除工作应设专人指挥。作业区应设围栏，其内不得有其它工种作业，并应设专人负责", "entities": [{"type": "设备", "start": 0, "end": 2, "n_votes": 3, "n_experts": 3}, {"type": "危大类别", "start": 3, "end": 5, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "后应尽快浇筑垫层，使坑底土层封闭，防止坑底土上隆。", "entities": [{"type": "工序", "start": 4, "end": 6}], "src": "replay"}
+{"text": "承台配筋为双层双向C28@160。根据控制轴线弹出底板外围线，绑扎顺序自下而上分层进行，", "entities": [{"type": "工序", "start": 31, "end": 33, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "基坑土体卸荷引起坑内外侧土压力失衡，此时围护体系特别是支撑将起到抵抗外侧土压力以", "entities": [{"type": "工程类型", "start": 0, "end": 2}], "src": "replay"}
+{"text": "待250t 履带吊安装完成并检测合格后，300t 履带吊主机运送至现场，在场地内通过250t 履带", "entities": [{"type": "设备", "start": 6, "end": 9, "n_votes": 2, "n_experts": 3}, {"type": "设备", "start": 25, "end": 28, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "本工程塔吊布设于基坑东侧区域，其回转半径覆盖范围内存在两类主要障碍物，分别为一栋", "entities": [{"type": "设备", "start": 3, "end": 5, "n_votes": 2, "n_experts": 3}, {"type": "工程类型", "start": 8, "end": 10, "n_votes": 2, "n_experts": 3}], "src": "replay"}
+{"text": "级为一级，环境保护等级：南侧近浅基础居民楼为一级，其余为二级。连通道区域基坑为场地", "entities": [{"type": "工程类型", "start": 31, "end": 34, "n_votes": 3, "n_experts": 3}, {"type": "工程类型", "start": 36, "end": 38, "n_votes": 2, "n_experts": 3}], "src": "replay"}
+{"text": "后方可进行起吊。在起吊前必须仔细检查吊具、锁具、卸扣，确保完好。在起吊前应检查钢", "entities": [{"type": "设备", "start": 24, "end": 26, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "急救大楼：现场计划进场一台80t 汽车吊拼拆250t 履带吊，待250t 履带吊拼装检查完成", "entities": [{"type": "设备", "start": 17, "end": 20}, {"type": "设备", "start": 27, "end": 30}, {"type": "设备", "start": 37, "end": 40}], "src": "replay"}
+{"text": "危险性较大的分部分项工程安全管理办法建质[2009]87 号", "entities": [{"type": "危大类别", "start": 0, "end": 12, "n_votes": 2, "n_experts": 3}], "src": "replay"}
+{"text": "安排专人负责振动机的振捣。竖向结构采用插入式振动机由底部向上振捣，振捣间距不大于", "entities": [{"type": "工序", "start": 10, "end": 12}, {"type": "工序", "start": 30, "end": 32}, {"type": "工序", "start": 33, "end": 35}], "src": "replay"}
+{"text": "如遇吊绳被压，应立即停止抽绳，可采取提头试吊方法抽绳。吊运易损、易滚、易倒的吊物", "entities": [{"type": "工序", "start": 20, "end": 22, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "钢筋混凝土块体尽可能最大化，切割总量最小化，以达到最快施工速度。支撑梁切割前应正确", "entities": [{"type": "工序", "start": 14, "end": 16, "n_votes": 3, "n_experts": 3}, {"type": "工序", "start": 35, "end": 37, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "基坑临边防护：①在基坑顶设挡水坎，防止地面水流入基坑。②基坑四周设防护栏杆。③上", "entities": [{"type": "工程类型", "start": 0, "end": 2}, {"type": "工程类型", "start": 9, "end": 11}, {"type": "工程类型", "start": 24, "end": 26}, {"type": "工程类型", "start": 28, "end": 30}], "src": "replay"}
+{"text": "合规范（JGJ130-2011）规定。钢管上严禁打孔。", "entities": [{"type": "规范编号", "start": 4, "end": 15, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "脚手架施工的操作面必须铺满脚手板，离施工作业面不得大于20cm，不得有空隙和探头板，", "entities": [{"type": "危大类别", "start": 0, "end": 3, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "的安全距离；塔吊处于非工作状态时，将吊钩升到离起重臂顶端2～3m 处。", "entities": [{"type": "设备", "start": 6, "end": 8, "n_votes": 2, "n_experts": 3}], "src": "replay"}
+{"text": "基坑施工组织设计", "entities": [{"type": "工程类型", "start": 0, "end": 2}], "src": "replay"}
+{"text": "分段预制长度不宜小于支撑间距的2 倍；钢围檩下部应设置可靠钢托架。", "entities": [{"type": "参数", "start": 0, "end": 6, "n_votes": 3, "n_experts": 3}, {"type": "参数", "start": 10, "end": 14, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "临时限排措施：暂停基坑内抽水作业，启用备用电源保障回灌系统持续运行。在建筑物周边", "entities": [{"type": "工程类型", "start": 9, "end": 11}], "src": "replay"}
+{"text": "通知书后，方可拆模。模板及其支架在拆除时混凝土强度要达到如下要求：在拆除侧模时，混", "entities": [{"type": "工序", "start": 7, "end": 9, "n_votes": 3, "n_experts": 3}, {"type": "设备", "start": 10, "end": 12, "n_votes": 3, "n_experts": 3}, {"type": "危大类别", "start": 17, "end": 19, "n_votes": 3, "n_experts": 3}, {"type": "参数", "start": 20, "end": 25, "n_votes": 3, "n_experts": 3}, {"type": "危大类别", "start": 34, "end": 36, "n_votes": 2, "n_experts": 3}], "src": "replay"}
+{"text": "应预埋至混凝土梁、板底层钢筋位置，并应与混凝土梁、板底层钢筋焊接或绑扎牢固，其错固长度应", "entities": [{"type": "工序", "start": 33, "end": 35, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "现场需拼拆300t、250t、200t 及55T 履带吊。拟进场一台80T 汽车吊及一台25T 汽车吊。", "entities": [{"type": "设备", "start": 25, "end": 28}, {"type": "设备", "start": 38, "end": 41}, {"type": "设备", "start": 48, "end": 51}], "src": "replay"}
+{"text": "桩身标高-0.600~-24.800，水泥掺量20％，水灰比1.5，搅拌下沉速度控制在0.5～1m/min,提升速", "entities": [{"type": "参数", "start": 0, "end": 18}, {"type": "参数", "start": 19, "end": 26}, {"type": "参数", "start": 27, "end": 30}], "src": "replay"}
+{"text": "根据上海市工程建设规范《岩土工程勘察标准》（DG/TJ08-37-2023）第14.3.2 条公式对", "entities": [{"type": "规范编号", "start": 22, "end": 37}], "src": "replay"}
+{"text": "医技平台-病房楼连通道基坑围护平面示意图", "entities": [{"type": "工程类型", "start": 8, "end": 11}, {"type": "工程类型", "start": 11, "end": 13}], "src": "replay"}
+{"text": "表3.1-2 塔楼脚手架设置情况汇总表", "entities": [{"type": "危大类别", "start": 9, "end": 12, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "模板的拆除措施应经技术负责人批准，拆除模板的时间可按现行国家标准《混凝土结构工程施", "entities": [{"type": "设备", "start": 0, "end": 2, "n_votes": 3, "n_experts": 3}, {"type": "危大类别", "start": 3, "end": 5, "n_votes": 3, "n_experts": 3}, {"type": "危大类别", "start": 17, "end": 19, "n_votes": 2, "n_experts": 3}, {"type": "设备", "start": 19, "end": 21, "n_votes": 3, "n_experts": 3}, {"type": "工程类型", "start": 33, "end": 40, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "基坑施工组织设计", "entities": [{"type": "工程类型", "start": 0, "end": 2}], "src": "replay"}
+{"text": "固定式配电箱须垂直重复接地，金属箱体保护接零，绝缘导线接头不松动，不", "entities": [{"type": "设备", "start": 3, "end": 6, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "为防止影响外围建、构筑物出现沉降或裂缝，应立即停止土方开挖（必要时回填土方），同", "entities": [{"type": "工序", "start": 25, "end": 29}], "src": "replay"}
+{"text": "预定控制标高时，调整控制好导管在砼内的插入深度，并适当减小浇灌量，使砼面缓慢上升，避", "entities": [{"type": "工序", "start": 8, "end": 10}, {"type": "设备", "start": 13, "end": 15}], "src": "replay"}
+{"text": "基坑施工组织设计", "entities": [{"type": "工程类型", "start": 0, "end": 2}], "src": "replay"}
+{"text": "光滑，不应有裂缝、结疤、分层、错位、硬弯、毛刺、压痕和深的划道；钢管外径、壁厚、断面", "entities": [{"type": "参数", "start": 37, "end": 39, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "如在施工的地面开挖过程中，施工人员发现地下文物的，应及时向当地文物主管部门通报，", "entities": [{"type": "工序", "start": 7, "end": 9}], "src": "replay"}
+{"text": "筑基础形式均为桩-筏基础，桩基采用钻孔灌注桩。", "entities": [{"type": "工程类型", "start": 17, "end": 22}], "src": "replay"}
+{"text": "场环境温度高于35℃时，宜对金属模板进行洒水降温;洒水后不得留有积水。", "entities": [{"type": "设备", "start": 16, "end": 18, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "统→第三皮土方开挖至第三道砼支撑→垫层施工→支模、扎筋、浇混凝土→砼养护并局部安装伺", "entities": [{"type": "工序", "start": 5, "end": 9}], "src": "replay"}
+{"text": "技平台最大有限空间作业体积为35m³，位于地下二层弱电间区域。污水处理站", "entities": [{"type": "工程类型", "start": 5, "end": 11, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "做到信息化施工，确保基坑和周边环境安全。要求：监测结果每天以电子邮件或传真方式反馈给工", "entities": [{"type": "工程类型", "start": 10, "end": 12, "n_votes": 2, "n_experts": 3}], "src": "replay"}
+{"text": "本工程两部塔吊共用同一承台基础，两部塔吊固定脚埋件布置如下图所示：", "entities": [{"type": "设备", "start": 5, "end": 7, "n_votes": 2, "n_experts": 3}, {"type": "设备", "start": 18, "end": 20, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "当喷射注浆管插入设计深度后，接通泥浆泵，然后由下向上旋喷，同时将泥浆清理排出。喷", "entities": [{"type": "工序", "start": 3, "end": 5}, {"type": "参数", "start": 8, "end": 12}], "src": "replay"}
+{"text": "作业前应清除积水、积雪，并应有防滑措施。夜间施工应制订专项施工方案，提供足够的照明及采取", "entities": [{"type": "工序", "start": 4, "end": 6, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "由于两个基坑非同时开工，现将两种最不利情况考虑，即分开验算两种情况下履带吊安拆。", "entities": [{"type": "工程类型", "start": 4, "end": 6}, {"type": "设备", "start": 34, "end": 37}], "src": "replay"}
+{"text": "和方法应按模板的设计规定进行。当设计无规定时，可采取先支的后拆、后支的先拆、先拆非", "entities": [{"type": "设备", "start": 5, "end": 7, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "急救综合大楼大面积挖深17.95m、医技平台17.55m、连通道6.40m、污水处理站15.15m，", "entities": [{"type": "工程类型", "start": 29, "end": 32}], "src": "replay"}
+{"text": "一）急救大楼钢筋笼吊装高度验算：", "entities": [{"type": "工序", "start": 9, "end": 11, "n_votes": 2, "n_experts": 3}], "src": "replay"}
+{"text": "脚手架上严禁悬挂起重设备。", "entities": [{"type": "危大类别", "start": 0, "end": 3, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "主体基坑支撑下立柱采用角钢格构柱4L180X18 柱，截面为500X500,其下设置立柱桩，桩径", "entities": [{"type": "工程类型", "start": 2, "end": 4}, {"type": "参数", "start": 46, "end": 48}], "src": "replay"}
+{"text": "三、模板质量控制", "entities": [{"type": "设备", "start": 2, "end": 4, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "图3.2.6-1 人货梯处脚手架示意图", "entities": [{"type": "危大类别", "start": 13, "end": 16, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "距离为2.5m；外电线路电压为220kV 以下时，安全距离为4m；外电线路电压为330kV 以下时，安", "entities": [{"type": "参数", "start": 12, "end": 14, "n_votes": 3, "n_experts": 3}, {"type": "参数", "start": 37, "end": 39, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "急救大楼基坑地墙自北向南进行施工。", "entities": [{"type": "工程类型", "start": 4, "end": 6}], "src": "replay"}
+{"text": "强度、降水达标：混凝土支撑强度达到80%；疏干井降水深度达到开挖面以下0.5m~1m 后", "entities": [{"type": "设备", "start": 21, "end": 24}, {"type": "参数", "start": 24, "end": 28}], "src": "replay"}
+{"text": "定。拆除平台、楼板下的立杆时，作业人员应站在安全处。", "entities": [{"type": "危大类别", "start": 2, "end": 4, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "医技平台基坑（面积S≈2251m2）", "entities": [{"type": "工程类型", "start": 4, "end": 6}], "src": "replay"}
+{"text": "近作业停留，成槽前支撑不允许拆除，以免导墙变位。", "entities": [{"type": "工序", "start": 6, "end": 8}], "src": "replay"}
+{"text": "凡是进入现场的施工人员必须办妥有关证件，佩戴工地统一发的人员临时证。塔吊的指挥人", "entities": [{"type": "设备", "start": 34, "end": 36, "n_votes": 2, "n_experts": 3}], "src": "replay"}
+{"text": "测频率依据方案，并根据施工情况随时做出调整，在监测值的日变化量较大、达到报警值或遇", "entities": [{"type": "参数", "start": 36, "end": 39, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "基坑施工组织设计", "entities": [{"type": "工程类型", "start": 0, "end": 2}], "src": "replay"}
+{"text": "表高大模板排架构配件质量栓查表", "entities": [{"type": "设备", "start": 3, "end": 5, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "梢轮底磨损不超过钢丝绳直径的25%)。", "entities": [{"type": "设备", "start": 8, "end": 11, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "标养试块：每次浇筑按每100m3（/台班）留置一组标养试块，当混凝土一次连续浇筑超过", "entities": [{"type": "工序", "start": 7, "end": 9}, {"type": "工序", "start": 38, "end": 40}], "src": "replay"}
+{"text": "在底板后浇式膨胀加强带的两侧坑底（基坑底板边缘外侧）分别设置一集水坑，在后浇式膨", "entities": [{"type": "工程类型", "start": 17, "end": 19}], "src": "replay"}
+{"text": "节点、无法切割部位凿除用", "entities": [{"type": "工序", "start": 5, "end": 7, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "检确保起吊安全，且须有项目经理签发的吊装令，方可起吊。钢筋笼吊放过程中，在高空拆换", "entities": [{"type": "工序", "start": 18, "end": 20}], "src": "replay"}
+{"text": "可使用。对大型机械应单独设置随机开关箱，加强安全控制：电工晚间值班必须安排认真、责", "entities": [{"type": "设备", "start": 16, "end": 19, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "帷幕隔断+局部回灌：在止水帷幕未完全封闭承压水层的情况下，可在帷幕外侧增设回灌井，", "entities": [{"type": "工程类型", "start": 11, "end": 15, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "易松脱、破碎、洒落等附着物应清除干净或加强连接及设置保护，或者另行吊运。", "entities": [{"type": "工序", "start": 14, "end": 16}], "src": "replay"}
+{"text": "差小于20℃时，方可拆除覆盖层；大体积混凝土浇筑体的降温速率不宜大于2.0℃/d；大体积混", "entities": [{"type": "工序", "start": 19, "end": 24}], "src": "replay"}
+{"text": "为+3.500m），基坑围护施工前，应将场地标高整平至不高于绝对标高+3.700m（+3.500m），并", "entities": [{"type": "工程类型", "start": 10, "end": 12}], "src": "replay"}
+{"text": "污水处理池基坑：1）东侧开挖边线距离红线最近约17.9m。用地红线外为思南路。基坑开", "entities": [{"type": "工程类型", "start": 5, "end": 7}, {"type": "工程类型", "start": 39, "end": 41}], "src": "replay"}
+{"text": "成孔工艺及下井壁管、滤水管，围填填砾、粘性土、止水等成井工艺，成井工艺流程如下：", "entities": [{"type": "工序", "start": 0, "end": 2}], "src": "replay"}
+{"text": "埋深约45.5m（C6 孔），按最不利承压水水位3.0m 进行计算，开挖至坑底时抗承压水突涌", "entities": [{"type": "工序", "start": 34, "end": 36, "n_votes": 2, "n_experts": 3}], "src": "replay"}
+{"text": "钢板桩土孔处理对拔桩后留下的桩孔，及时采用中粗砂灌入密实。", "entities": [{"type": "工序", "start": 8, "end": 10}], "src": "replay"}
+{"text": "在接缝处钻孔注浆，以保证之水效果。", "entities": [{"type": "工序", "start": 6, "end": 8}], "src": "replay"}
+{"text": "帷幕隔断+局部回灌：在止水帷幕未完全封闭承压水层的情况下，可在帷幕外侧增设回灌井，", "entities": [{"type": "工程类型", "start": 11, "end": 15, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "汽车吊活动范围内为重载路，重载路为钢筋混凝土路面。上覆填土土质情况良好，有较好", "entities": [{"type": "设备", "start": 0, "end": 3, "n_votes": 2, "n_experts": 3}], "src": "replay"}
+{"text": "脚手架搭设排数", "entities": [{"type": "工序", "start": 0, "end": 5}], "src": "replay"}
+{"text": "基坑施工组织设计", "entities": [{"type": "工程类型", "start": 0, "end": 2}], "src": "replay"}
+{"text": "大锤砸模板。门窗洞口模板在墙体模板拆除结束后拆除，先松动四周固定用的角钢，再将各面模", "entities": [{"type": "设备", "start": 3, "end": 5, "n_votes": 3, "n_experts": 3}, {"type": "设备", "start": 10, "end": 12, "n_votes": 3, "n_experts": 3}, {"type": "工序", "start": 15, "end": 19, "n_votes": 2, "n_experts": 3}, {"type": "危大类别", "start": 22, "end": 24, "n_votes": 2, "n_experts": 3}], "src": "replay"}
+{"text": "上的角筋，在切割穿绳时，金钢绳由角筋（至少保留2 根钢筋不得切除）下方穿过，在切割时保留", "entities": [{"type": "工序", "start": 6, "end": 8, "n_votes": 3, "n_experts": 3}, {"type": "工序", "start": 39, "end": 41, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "附图6：塔吊基础施工示意图", "entities": [{"type": "设备", "start": 4, "end": 6, "n_votes": 2, "n_experts": 3}], "src": "replay"}
+{"text": "急救综合大楼基坑（面积S≈6883m2）", "entities": [{"type": "工程类型", "start": 6, "end": 8}, {"type": "参数", "start": 9, "end": 19}], "src": "replay"}
+{"text": "中浇筑砼等噪声大的施工作业尽量安排在白天进行，降低环境及噪声污染。", "entities": [{"type": "工序", "start": 1, "end": 3}], "src": "replay"}
+{"text": "水下砼浇注示意图", "entities": [{"type": "工序", "start": 2, "end": 5}], "src": "replay"}
+{"text": "二次清孔结束后，由施工员进行孔底沉渣的测试，沉渣厚度小于20cm，在满足沉渣厚度控", "entities": [{"type": "工序", "start": 2, "end": 4, "n_votes": 3, "n_experts": 3}, {"type": "参数", "start": 22, "end": 26, "n_votes": 3, "n_experts": 3}, {"type": "参数", "start": 36, "end": 40, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "塔吊基础验收必须具备以下资料：", "entities": [{"type": "设备", "start": 0, "end": 2, "n_votes": 2, "n_experts": 3}], "src": "replay"}
+{"text": "止水帷幕兼槽壁加固，三轴水泥土搅拌桩∅850@600，地墙外侧套接一孔、内侧搭接250mm，", "entities": [{"type": "工程类型", "start": 0, "end": 4}, {"type": "工程类型", "start": 5, "end": 9}, {"type": "工程类型", "start": 10, "end": 18}, {"type": "参数", "start": 18, "end": 26}, {"type": "参数", "start": 38, "end": 45}], "src": "replay"}
+{"text": "机配合主机进行钢筋笼吊装回直。", "entities": [{"type": "工序", "start": 10, "end": 12, "n_votes": 2, "n_experts": 3}], "src": "replay"}
+{"text": "急救大楼基坑栈桥采用混凝土栈桥+钢栈桥组合，混凝土栈桥板面厚250mm，混凝土标号C35。", "entities": [{"type": "工程类型", "start": 4, "end": 6}, {"type": "参数", "start": 41, "end": 44}], "src": "replay"}
+{"text": "第一道混凝土支撑拆后，钢格构柱才可以割除，钢格构柱采用氧气乙炔进行切割，先采用钢管", "entities": [{"type": "工序", "start": 33, "end": 35, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "地下室模板排架施工具体详见《模板排架专项施工方案》。", "entities": [{"type": "设备", "start": 3, "end": 5}, {"type": "设备", "start": 14, "end": 16}], "src": "replay"}
+{"text": "前，对钢筋笼制作必须实行三检制：班组自检，项目体人员复查，专职人员专检确保起吊安全，", "entities": [{"type": "工序", "start": 3, "end": 8}], "src": "replay"}
+{"text": "每道支撑最后几块区域混凝土浇筑时，根据实际情况可逐级提高混凝土强度等级。", "entities": [{"type": "工序", "start": 10, "end": 15}, {"type": "参数", "start": 28, "end": 35}], "src": "replay"}
+{"text": "产经理参加前往现场验收，对立杆间距、步距等必须实测实量，对基础及垫板、扫地杆、剪刀撑、", "entities": [{"type": "参数", "start": 18, "end": 20, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "中作业时，应先经过试吊，确认制动器灵敏可靠后方可进行作业。", "entities": [{"type": "工序", "start": 9, "end": 11, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "基坑施工组织设计", "entities": [{"type": "工程类型", "start": 0, "end": 2}], "src": "replay"}
+{"text": "图十：某医学中心基坑开挖车辆运输路线图；", "entities": [{"type": "工程类型", "start": 8, "end": 10}], "src": "replay"}
+{"text": "急救综合大楼基坑区域", "entities": [{"type": "工程类型", "start": 6, "end": 8}], "src": "replay"}
+{"text": "脚手架验收合格后，应在架体醒目处悬挂验收合格牌、限载牌及安全操作规程牌。", "entities": [{"type": "危大类别", "start": 0, "end": 3, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "本工程，钻孔灌注桩φ1100，h=30.5m 计，h2=1.3m，γw=1.15*10³kg/m³，γc=2.30 *10³kg/m", "entities": [{"type": "工程类型", "start": 4, "end": 9}, {"type": "参数", "start": 9, "end": 14}, {"type": "参数", "start": 15, "end": 22}, {"type": "参数", "start": 25, "end": 32}], "src": "replay"}
+{"text": "地下连续墙顶圈梁", "entities": [{"type": "工程类型", "start": 0, "end": 5}], "src": "replay"}
+{"text": "履带吊拼装完成具备作业能力后再用250t 履带吊拼拆300t 履带吊。（具体履带吊拼、拆装", "entities": [{"type": "设备", "start": 0, "end": 3, "n_votes": 2, "n_experts": 3}, {"type": "设备", "start": 21, "end": 24, "n_votes": 3, "n_experts": 3}, {"type": "设备", "start": 31, "end": 34, "n_votes": 3, "n_experts": 3}, {"type": "设备", "start": 38, "end": 41, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "本次吊装钢丝绳的配备以最大件单条履带23.4t 为依据，单条履带上有四个吊点，选用抗", "entities": [{"type": "工序", "start": 2, "end": 4}, {"type": "设备", "start": 4, "end": 7}], "src": "replay"}
+{"text": "急救大楼基坑副吊", "entities": [{"type": "工程类型", "start": 4, "end": 6, "n_votes": 2, "n_experts": 3}], "src": "replay"}
+{"text": "保障项目关键节点工期，支撑拆除施工做以下评审论证：", "entities": [{"type": "危大类别", "start": 13, "end": 15, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "卸料平台处脚手架构造", "entities": [{"type": "危大类别", "start": 5, "end": 8, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "期的混凝土抗拉强度是极低的，为抗压强度的十分之一，一旦拉应力大于这一极其微小的抗拉极", "entities": [{"type": "参数", "start": 5, "end": 9, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "度、起吊角度又受到最大起重量的限制，因此起吊前主吊停靠位置要考虑到吊装钢笼的方便", "entities": [{"type": "参数", "start": 11, "end": 14, "n_votes": 3, "n_experts": 3}, {"type": "工序", "start": 33, "end": 35, "n_votes": 2, "n_experts": 3}], "src": "replay"}
+{"text": "底板后浇式膨胀加强带两侧的模板采用钢板网。钢板网固定在钢筋支架上，钢筋支架与底板", "entities": [{"type": "设备", "start": 13, "end": 15}], "src": "replay"}
+{"text": "置，以便在混凝土浇捣后（主要在前期）及时了解各点的实际温度情况。在同一测区的测点，", "entities": [{"type": "工序", "start": 5, "end": 10, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "为降低金钢链切割成本，加快施工速度，用大、用足吊运机械和运输车辆能力，使混凝支撑", "entities": [{"type": "工序", "start": 6, "end": 8}], "src": "replay"}
+{"text": "专用配电箱宜设在塔吊附近，电缆卷筒必须运转灵活可靠，不得拖缆。", "entities": [{"type": "设备", "start": 2, "end": 5, "n_votes": 3, "n_experts": 3}, {"type": "设备", "start": 8, "end": 10, "n_votes": 2, "n_experts": 3}, {"type": "设备", "start": 13, "end": 15, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "模板采用吊模板施工。吊模底部中间设200×200 排气孔。深坑吊模采用优质模板，下部设置", "entities": [{"type": "设备", "start": 0, "end": 2}, {"type": "设备", "start": 5, "end": 7}, {"type": "设备", "start": 37, "end": 39}], "src": "replay"}
+{"text": "排三次”。夯实基坑（槽）、地坪，行夯路线由四边开始，夯向中间。", "entities": [{"type": "工程类型", "start": 7, "end": 9}], "src": "replay"}
+{"text": "承载力满足要求。必要时铺设钢板或浇筑混凝土垫层。清除吊装作业半径内所有障碍物，设", "entities": [{"type": "工序", "start": 16, "end": 18, "n_votes": 3, "n_experts": 3}, {"type": "工序", "start": 24, "end": 26, "n_votes": 3, "n_experts": 3}, {"type": "工序", "start": 26, "end": 28, "n_votes": 2, "n_experts": 3}], "src": "replay"}
+{"text": "沿东西方向一次开挖面不超过10 米，并立即浇筑垫层、底板；", "entities": [{"type": "工序", "start": 21, "end": 23}], "src": "replay"}
+{"text": "掺量比带外高2%。加强混凝土的振捣。振捣时从中间向两侧进行，振捣过程中严禁振动棒触及", "entities": [{"type": "工序", "start": 15, "end": 17}, {"type": "工序", "start": 18, "end": 20}, {"type": "工序", "start": 30, "end": 32}, {"type": "设备", "start": 37, "end": 40}], "src": "replay"}
+{"text": "高支模区域排架步距根据区域确定，详见附件。若后续设计图纸调整，高支模搭设以上述", "entities": [{"type": "工程类型", "start": 0, "end": 3, "n_votes": 2, "n_experts": 3}, {"type": "参数", "start": 7, "end": 9, "n_votes": 3, "n_experts": 3}, {"type": "工程类型", "start": 31, "end": 34, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "针对格构柱顶部混凝土块拆除施工，采用“先分离砼块、后拆除柱体”的专项施工工艺。首先", "entities": [{"type": "危大类别", "start": 11, "end": 13, "n_votes": 3, "n_experts": 3}, {"type": "危大类别", "start": 26, "end": 28, "n_votes": 2, "n_experts": 3}], "src": "replay"}
+{"text": "离医技平台基坑和污水处理池基坑较近。", "entities": [{"type": "工程类型", "start": 5, "end": 7}, {"type": "工程类型", "start": 13, "end": 15}], "src": "replay"}
+{"text": "配电导线截面的电压可以按照下式计算：", "entities": [{"type": "参数", "start": 7, "end": 9}], "src": "replay"}
+{"text": "扣件在格构柱四周搭设操作脚手架，脚手架上设置导链，将格构柱固定牢固防止格构柱倒下，再将", "entities": [{"type": "危大类别", "start": 12, "end": 15, "n_votes": 3, "n_experts": 3}, {"type": "危大类别", "start": 16, "end": 19, "n_votes": 2, "n_experts": 3}], "src": "replay"}
+{"text": "因工况调整，部分支撑提前拆除，故本方案拟组织专家论证。", "entities": [{"type": "危大类别", "start": 12, "end": 14, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "基坑施工组织设计", "entities": [{"type": "工程类型", "start": 0, "end": 2}], "src": "replay"}
+{"text": "切割后的砼块，采用吊机直接装上平板车将其外运。梁体起吊时，速度要均匀，构件要平稳，", "entities": [{"type": "工序", "start": 0, "end": 2, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "用∅800@600 高压旋喷桩及∅850@600 三轴水泥土搅拌桩。", "entities": [{"type": "参数", "start": 1, "end": 9}, {"type": "工程类型", "start": 10, "end": 15}, {"type": "参数", "start": 16, "end": 24}, {"type": "工程类型", "start": 25, "end": 33}], "src": "replay"}
+{"text": "桩顶平面位置的允许偏差为±50mm，桩顶标高为承台底标高+100mm；桩径允许偏差为+50mm，", "entities": [{"type": "参数", "start": 7, "end": 11}, {"type": "参数", "start": 35, "end": 37}, {"type": "参数", "start": 37, "end": 41}], "src": "replay"}
+{"text": "杜绝设备碰撞格构柱、基坑围护结构，同时落实全覆盖防护、防坠、临边防护及专人监护制度，保", "entities": [{"type": "工程类型", "start": 10, "end": 12, "n_votes": 2, "n_experts": 3}], "src": "replay"}
+{"text": "各基坑表皮土利用镐头机对施工场地混凝土表面进行破碎，随后利用挖机开挖，边挖边退；", "entities": [{"type": "工程类型", "start": 1, "end": 3}, {"type": "工序", "start": 32, "end": 34}], "src": "replay"}
+{"text": "大锤砸模板。门窗洞口模板在墙体模板拆除结束后拆除，先松动四周固定用的角钢，再将各面模", "entities": [{"type": "设备", "start": 3, "end": 5, "n_votes": 3, "n_experts": 3}, {"type": "设备", "start": 10, "end": 12, "n_votes": 3, "n_experts": 3}, {"type": "工序", "start": 15, "end": 19, "n_votes": 2, "n_experts": 3}, {"type": "危大类别", "start": 22, "end": 24, "n_votes": 2, "n_experts": 3}], "src": "replay"}
+{"text": "电瓶清洁、固定牢靠：液而高于电极板10〜15mm:免维护电瓶标志符合规定。", "entities": [{"type": "设备", "start": 0, "end": 2}, {"type": "设备", "start": 28, "end": 30}], "src": "replay"}
+{"text": "不再冒气泡时，应结束该部位振捣；", "entities": [{"type": "工序", "start": 13, "end": 15, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "安全吊装系数取值：0.9。", "entities": [{"type": "工序", "start": 2, "end": 4, "n_votes": 2, "n_experts": 3}], "src": "replay"}
+{"text": "须符合下表规定后方可拆除。拆除模板的顺序与安装模板顺序相反，先支的模板后拆，后支的先", "entities": [{"type": "危大类别", "start": 10, "end": 12, "n_votes": 3, "n_experts": 3}, {"type": "危大类别", "start": 13, "end": 15, "n_votes": 2, "n_experts": 3}, {"type": "设备", "start": 15, "end": 17, "n_votes": 3, "n_experts": 3}, {"type": "设备", "start": 23, "end": 25, "n_votes": 3, "n_experts": 3}, {"type": "设备", "start": 33, "end": 35, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "严格执行\"三定\"（定机、定人、定岗位）制度，塔吊、挖机等大型设备应实行人机固定，建", "entities": [{"type": "设备", "start": 22, "end": 24, "n_votes": 2, "n_experts": 3}], "src": "replay"}
+{"text": "加固、基坑降水、坑内支撑、土方开挖、基坑监测、基础底板浇捣等方面的施工部署、技术方案、", "entities": [{"type": "工程类型", "start": 3, "end": 7}, {"type": "工序", "start": 13, "end": 17}, {"type": "工序", "start": 18, "end": 22}], "src": "replay"}
+{"text": "距离小于3m。配电箱、开关箱应设在干燥、通风、易于修理处，箱上设固定防", "entities": [{"type": "设备", "start": 7, "end": 10, "n_votes": 3, "n_experts": 3}, {"type": "设备", "start": 11, "end": 14, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "施工专项方案）。待塔楼结构施工至十二层时，裙楼及连廊结构开始施工，此时拆除塔楼西侧7F 结", "entities": [{"type": "危大类别", "start": 35, "end": 37, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "本工程采用静力切割法拆除施工。", "entities": [{"type": "工序", "start": 7, "end": 9}, {"type": "危大类别", "start": 10, "end": 12}], "src": "replay"}
+{"text": "混凝土运输、输送、浇筑过程中严禁加水；混凝土运输、输送、浇筑过程中散落的混凝土严禁", "entities": [{"type": "工序", "start": 9, "end": 11, "n_votes": 3, "n_experts": 3}, {"type": "工序", "start": 28, "end": 30, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "有限空间作业前，项目安全、技术部门应组织所有管理人员、施工人员及安", "entities": [{"type": "工程类型", "start": 0, "end": 6, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "检验方法：对照模板设计文件和施工技术方案观察。", "entities": [{"type": "设备", "start": 7, "end": 9, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "一）急救大楼钢筋笼吊装高度验算：", "entities": [{"type": "工序", "start": 9, "end": 11, "n_votes": 2, "n_experts": 3}], "src": "replay"}
+{"text": "施工各节点焊接要求必须满足JGJ18-2012 的要求，吊点钢板和吊点钢筋都与桁架上的主", "entities": [{"type": "规范编号", "start": 13, "end": 23, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "堆场及加工场布置：基坑施工阶段利用基坑外空余场地及栈桥上方区域布置各类材料堆场及", "entities": [{"type": "工程类型", "start": 9, "end": 11}, {"type": "工程类型", "start": 17, "end": 19}], "src": "replay"}
+{"text": "导墙要对称浇筑，导墙制作一般按2～3 个诱导缝长度（50～70m 长左右）作为一个区段，", "entities": [{"type": "工序", "start": 5, "end": 7}], "src": "replay"}
+{"text": "用水准仪或拉线和尺量检查", "entities": [{"type": "设备", "start": 1, "end": 4, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "急救大楼集土坑：设置于场地东南侧，集土坑尺寸为21.25×11m，深2.5m，壁厚25cm,", "entities": [{"type": "参数", "start": 39, "end": 41, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "塔吊基础专项施工方案", "entities": [{"type": "设备", "start": 0, "end": 2}], "src": "replay"}
+{"text": "吊物下方有人；吊物上站人；埋在地下物；斜拉斜牵物；散物捆绑不牢；立式构件、大模板", "entities": [{"type": "设备", "start": 38, "end": 40, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "机配合主机进行钢筋笼吊装回直。", "entities": [{"type": "工序", "start": 10, "end": 12, "n_votes": 2, "n_experts": 3}], "src": "replay"}
+{"text": "塔吊ST6015（地下）", "entities": [{"type": "设备", "start": 0, "end": 8}], "src": "replay"}
+{"text": "高于地下水位高。", "entities": [{"type": "参数", "start": 2, "end": 6, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "附图十三：医技平台区域地下连续墙施工工况（一）", "entities": [{"type": "工程类型", "start": 11, "end": 16, "n_votes": 1, "n_experts": 3}], "src": "replay"}
+{"text": "用电设备总功率计算公式如下：", "entities": [{"type": "参数", "start": 4, "end": 7}], "src": "replay"}
+{"text": "柱混凝土强度为C50，梁板混凝土强度为C35。", "entities": [{"type": "参数", "start": 1, "end": 6, "n_votes": 3, "n_experts": 3}, {"type": "参数", "start": 13, "end": 18, "n_votes": 3, "n_experts": 3}, {"type": "参数", "start": 19, "end": 22, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "在检查过程中，若发现基坑变形过大过快、水管破裂、基坑边坡失稳、支撑失稳、基坑", "entities": [{"type": "工程类型", "start": 10, "end": 12, "n_votes": 2, "n_experts": 3}, {"type": "工程类型", "start": 24, "end": 26, "n_votes": 3, "n_experts": 3}, {"type": "工程类型", "start": 36, "end": 38, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "本工程结构类型为钢结构，脚手架沿外围一圈布设，因塔楼结构先于裙楼、连廊结构施工，故先", "entities": [{"type": "危大类别", "start": 12, "end": 15, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "结合成整体，应插入下层5～10cm，浇筑砼时应连续进行，在前层砼初凝时将次层砼浇筑完，", "entities": [{"type": "工序", "start": 18, "end": 20}, {"type": "工序", "start": 39, "end": 41}], "src": "replay"}
+{"text": "停止运转，对基坑的安全产生重大影响。", "entities": [{"type": "工程类型", "start": 6, "end": 8}], "src": "replay"}
+{"text": "距离为1.7m；外电线路电压为35kV 以下时，安全距离为2m；外电线路电压为110kV 以下时，安全", "entities": [{"type": "参数", "start": 12, "end": 14, "n_votes": 3, "n_experts": 3}, {"type": "参数", "start": 36, "end": 38, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "雨天地下水位上升时应及时加大泥浆比重和粘度，雨量较大时暂停挖槽，并封盖槽口。", "entities": [{"type": "参数", "start": 2, "end": 6, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "基坑施工组织设计", "entities": [{"type": "工程类型", "start": 0, "end": 2}], "src": "replay"}
+{"text": "易脱模和可两面使用等特点。板材厚度为14mm，并应符合现行国家标准《混凝土模板用胶合板》", "entities": [{"type": "设备", "start": 37, "end": 39, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "时根据导墙实际标高控制挖槽的深度，以保证地墙的设计深度。为保证成槽垂直度控制，本工程", "entities": [{"type": "参数", "start": 23, "end": 27}, {"type": "工序", "start": 31, "end": 33}, {"type": "参数", "start": 33, "end": 36}], "src": "replay"}
+{"text": "取全桩长范围内的桩芯，芯样立即封闭并及时进行强度试验。钻孔取芯完成后的空隙应注浆填充，", "entities": [{"type": "工序", "start": 38, "end": 40}], "src": "replay"}
+{"text": "重型道路的钢筋混凝土采用C30 标号混凝土，浇筑厚度30cm，采用φ14 钢筋单层双向布", "entities": [{"type": "工序", "start": 22, "end": 24, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "随后吊走砼块。再沿楼板面氧气乙炔齐根割除格构柱。吊装工人将吊装钢丝绳穿过格构柱中部及以", "entities": [{"type": "工序", "start": 24, "end": 26, "n_votes": 2, "n_experts": 3}, {"type": "工序", "start": 29, "end": 31, "n_votes": 3, "n_experts": 3}, {"type": "设备", "start": 31, "end": 34, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "三重管高压旋喷注浆施工工艺流程图", "entities": [{"type": "工序", "start": 7, "end": 9}], "src": "replay"}
+{"text": "侧压力对槽壁影响，成槽前，吊机应离槽壁2.0m 外的安全距离进行吊装、挖槽，要求重型设备", "entities": [{"type": "工序", "start": 9, "end": 11}, {"type": "工序", "start": 32, "end": 34}], "src": "replay"}
+{"text": "基坑施工组织设计", "entities": [{"type": "工程类型", "start": 0, "end": 2}], "src": "replay"}
+{"text": "混凝土搅拌车进场，要严格把好混凝土品质关，检查搅拌车运输时间、混凝土坍落度、可", "entities": [{"type": "设备", "start": 0, "end": 6}, {"type": "参数", "start": 34, "end": 37}], "src": "replay"}
+{"text": "医技平台地下连续墙具体型号如下：", "entities": [{"type": "工程类型", "start": 4, "end": 9}], "src": "replay"}
+{"text": "避免车辆通行时被破坏。基坑开挖前进行初始读数的测读工作，初读数取不少于两次观测值的平", "entities": [{"type": "工程类型", "start": 11, "end": 13}, {"type": "工序", "start": 13, "end": 15}], "src": "replay"}
+{"text": "检测人员根据实际情况填写《有限空间作业气体检测记录表》并签字；委托", "entities": [{"type": "工程类型", "start": 13, "end": 19, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "拔桩后的桩孔。", "entities": [{"type": "工序", "start": 0, "end": 2}], "src": "replay"}
+{"text": "基坑施工组织设计", "entities": [{"type": "工程类型", "start": 0, "end": 2}], "src": "replay"}
+{"text": "基坑周边为+3.500m），基坑围护施工前，应将场地标高整平至不高于绝对标高+3.700m（+3.500m），", "entities": [{"type": "工程类型", "start": 0, "end": 2}, {"type": "工程类型", "start": 14, "end": 16}], "src": "replay"}
+{"text": "卸扣的选择按主副吊钢丝绳最大受力选择。主吊卸扣最大受力在钢筋笼完全竖起时。", "entities": [{"type": "设备", "start": 0, "end": 2, "n_votes": 3, "n_experts": 3}, {"type": "设备", "start": 9, "end": 12, "n_votes": 3, "n_experts": 3}, {"type": "设备", "start": 21, "end": 23, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "布置3 口疏干井，深度21.5m；", "entities": [{"type": "工序", "start": 0, "end": 2}, {"type": "设备", "start": 5, "end": 8}, {"type": "参数", "start": 9, "end": 16}], "src": "replay"}
+{"text": "故本次吊装80T 汽车吊满足吊装要求。", "entities": [{"type": "工序", "start": 3, "end": 5, "n_votes": 3, "n_experts": 3}, {"type": "设备", "start": 9, "end": 12, "n_votes": 2, "n_experts": 3}, {"type": "工序", "start": 14, "end": 16, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "单台功率（KW)", "entities": [{"type": "参数", "start": 2, "end": 4}], "src": "replay"}
+{"text": "地下连续墙作为挡土结构，具有抗弯刚度大、整体性和防渗性能好、成槽施工对周围环境影", "entities": [{"type": "工程类型", "start": 0, "end": 5}, {"type": "工程类型", "start": 7, "end": 11}, {"type": "工序", "start": 30, "end": 32}], "src": "replay"}
+{"text": "现场材料堆放合理布局，在交通便利出布置材料堆场和仓库等。对钢筋、模板、扣件等材料，", "entities": [{"type": "设备", "start": 32, "end": 34, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "成槽设备：配备1 台金泰SG40 绳索式液压抓斗沉槽机。", "entities": [{"type": "工序", "start": 0, "end": 2}, {"type": "设备", "start": 20, "end": 24}], "src": "replay"}
+{"text": "卷简两侧边缘的尚度应超过最外层钢丝绳，其值不应小于钢丝绳直径的2 倍；", "entities": [{"type": "设备", "start": 15, "end": 18, "n_votes": 3, "n_experts": 3}, {"type": "设备", "start": 25, "end": 28, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "现场55T 履带吊臂长25m，作业半径9m，最大吊重为16.2t，施工现场常规控制上限80%", "entities": [{"type": "设备", "start": 6, "end": 9, "n_votes": 2, "n_experts": 3}], "src": "replay"}
+{"text": "飞跳板操作面外侧应设一道防护身栏杆和一道不低于18cm 的挡脚板，并沿脚手架外杆里侧用密目", "entities": [{"type": "危大类别", "start": 35, "end": 38, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "灰尘出现，基坑内及道路保持卫生清洁，拆除垃圾归堆管理，保持各区域道路畅通，材料堆放整齐，", "entities": [{"type": "工程类型", "start": 5, "end": 7, "n_votes": 2, "n_experts": 3}, {"type": "危大类别", "start": 18, "end": 20, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "振捣引起模板变形。", "entities": [{"type": "工序", "start": 0, "end": 2, "n_votes": 3, "n_experts": 3}, {"type": "设备", "start": 4, "end": 6, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "本工程拔桩采用振动锤拔桩：利用振动锤产生的强迫振动，扰动土质，破坏钢板桩周围土的粘聚", "entities": [{"type": "工序", "start": 3, "end": 5}, {"type": "工序", "start": 10, "end": 12}], "src": "replay"}
+{"text": "塔吊司机必须具备的条件：持有合法的上岗证件，且有较长驾龄。施工期间身体健康，符合", "entities": [{"type": "设备", "start": 0, "end": 2, "n_votes": 2, "n_experts": 3}], "src": "replay"}
+{"text": "水下砼浇注采用导管法施工，导管选用D=258 的园形螺旋快速接头型，一般每幅墙安放两", "entities": [{"type": "工序", "start": 2, "end": 5}, {"type": "设备", "start": 7, "end": 9}, {"type": "设备", "start": 13, "end": 15}], "src": "replay"}
+{"text": "到800mm，施工过程中应严格控制各项施工参数，如桩径、桩长、扩底直径等，确保施工质量", "entities": [{"type": "参数", "start": 25, "end": 27}, {"type": "参数", "start": 28, "end": 30}], "src": "replay"}
+{"text": "基坑施工组织设计", "entities": [{"type": "工程类型", "start": 0, "end": 2}], "src": "replay"}
+{"text": "履带吊对地面压强为120.89Kpa＜6404Kpa，故重载道路满足所有吊装情况吊车行走安全。", "entities": [{"type": "设备", "start": 0, "end": 3}, {"type": "工序", "start": 36, "end": 38}], "src": "replay"}
+{"text": "本公司将从全局出发，在场地布置、施工搭接等方面合理安排并接受业主", "entities": [{"type": "工序", "start": 13, "end": 15}], "src": "replay"}
+{"text": "桩机应平稳、平正，用全站仪校直桩架，然后装上吊锤控制垂直度桩身垂直度≤1/200。", "entities": [{"type": "设备", "start": 10, "end": 13}, {"type": "参数", "start": 26, "end": 29}, {"type": "参数", "start": 29, "end": 40}], "src": "replay"}
+{"text": "检查并保证千斤顶与预埋钢板密贴。", "entities": [{"type": "设备", "start": 5, "end": 8}], "src": "replay"}
+{"text": "成槽过程中利用成槽机纠偏装置控制垂直度，严格做到随挖随测随纠，达到1/500 的垂直度", "entities": [{"type": "工序", "start": 0, "end": 2}, {"type": "设备", "start": 7, "end": 10}, {"type": "参数", "start": 16, "end": 19}, {"type": "参数", "start": 40, "end": 43}], "src": "replay"}
+{"text": "高控制水位时必须停止挖土，待水位达到要求后方可开挖。", "entities": [{"type": "工序", "start": 23, "end": 25}], "src": "replay"}
+{"text": "重合，抓斗入槽、出槽应慢速、稳当，根据成槽机仪表及垂直度情况及时纠偏，确保开挖槽壁面", "entities": [{"type": "设备", "start": 19, "end": 22}, {"type": "参数", "start": 25, "end": 28}, {"type": "工序", "start": 37, "end": 39}], "src": "replay"}
+{"text": "钻孔灌注桩设计标高以上桩身分段、分层截除，土采用风镐（空压机配钻头）人工配合破除，", "entities": [{"type": "工程类型", "start": 0, "end": 5}, {"type": "设备", "start": 27, "end": 30}], "src": "replay"}
+{"text": "进行专项水文地质试验，查明其含水量大小，以及是否会对基坑突涌产生不利影响，在施工阶", "entities": [{"type": "工程类型", "start": 26, "end": 28}], "src": "replay"}
+{"text": "边至少1m，堆放高度不得超过1m。楼层边、通道口、脚手架边缘等处严禁堆放任何拆下物件。", "entities": [{"type": "危大类别", "start": 25, "end": 28, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "的地基承载力，以满足履带吊的通行要求，新建的重载道路施工时，在原处理地基上铺设150", "entities": [{"type": "设备", "start": 10, "end": 13, "n_votes": 2, "n_experts": 3}], "src": "replay"}
+{"text": "以上，或钢丝绳被腐蚀后，表面麻痕清晰可见，整根钢丝绳明显变硬；使用新购置的吊索具前", "entities": [{"type": "设备", "start": 4, "end": 7}, {"type": "设备", "start": 23, "end": 26}, {"type": "设备", "start": 37, "end": 40}], "src": "replay"}
+{"text": "间接法又分为地表模拟点和深层点。位于道路不能开挖的区域的管线，可采用地表模拟点方", "entities": [{"type": "工序", "start": 22, "end": 24}], "src": "replay"}
+{"text": "模板未固定前不得进行下一道工序。严禁在连接件和支撑件上攀登上下，严禁在上下同一垂", "entities": [{"type": "设备", "start": 0, "end": 2, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "支撑拆除步骤及方法：", "entities": [{"type": "危大类别", "start": 2, "end": 4}], "src": "replay"}
+{"text": "凝土脱离，然后一块块往下传递到地面。墙模板拆除，先拆除穿墙螺栓，再拆水平撑和斜撑，", "entities": [{"type": "工序", "start": 19, "end": 23, "n_votes": 2, "n_experts": 3}, {"type": "危大类别", "start": 25, "end": 27, "n_votes": 2, "n_experts": 3}], "src": "replay"}
+{"text": "成槽机垂直度控制：地下连续墙成槽采用长导板液压抓斗挖土，每次挖土前须拎直液压抓斗，", "entities": [{"type": "设备", "start": 0, "end": 3}, {"type": "参数", "start": 3, "end": 6}, {"type": "工程类型", "start": 9, "end": 14}, {"type": "工序", "start": 14, "end": 16}, {"type": "设备", "start": 21, "end": 25}, {"type": "设备", "start": 36, "end": 40}], "src": "replay"}
+{"text": "基坑施工组织设计", "entities": [{"type": "工程类型", "start": 0, "end": 2}], "src": "replay"}
+{"text": "凝土脱离，然后一块块往下传递到地面。墙模板拆除，先拆除穿墙螺栓，再拆水平撑和斜撑，", "entities": [{"type": "工序", "start": 19, "end": 23, "n_votes": 2, "n_experts": 3}, {"type": "危大类别", "start": 25, "end": 27, "n_votes": 2, "n_experts": 3}], "src": "replay"}
+{"text": "脚手架在投入使用之前必须进行验收，合格后方准使用。", "entities": [{"type": "危大类别", "start": 0, "end": 3, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "支撑拆除前，相应楼板下方钢管及模板不得拆除。", "entities": [{"type": "危大类别", "start": 2, "end": 4}, {"type": "设备", "start": 15, "end": 17}, {"type": "危大类别", "start": 19, "end": 21}], "src": "replay"}
+{"text": "模板吊钩、斜支撑及平台连接处螺栓是否松动，发现问题及时组织处理。", "entities": [{"type": "设备", "start": 0, "end": 2, "n_votes": 3, "n_experts": 3}, {"type": "设备", "start": 5, "end": 8, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "桩采用V 号小齿口拉森钢板桩，桩长12m，共86 根。", "entities": [{"type": "参数", "start": 15, "end": 17}], "src": "replay"}
+{"text": "塔吊基础在钢筋绑扎、模板搭设完成后，必须经过总包单位和塔吊安装单位、监理单位的共", "entities": [{"type": "设备", "start": 0, "end": 2, "n_votes": 2, "n_experts": 3}, {"type": "工序", "start": 5, "end": 9, "n_votes": 3, "n_experts": 3}, {"type": "设备", "start": 10, "end": 12, "n_votes": 3, "n_experts": 3}, {"type": "工序", "start": 27, "end": 31, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "成槽前必须对上道工序进行检查，合格后方可进行下道工序。", "entities": [{"type": "工序", "start": 0, "end": 2}], "src": "replay"}
+{"text": "塔吊基础施工", "entities": [{"type": "设备", "start": 0, "end": 2, "n_votes": 2, "n_experts": 3}], "src": "replay"}
+{"text": "吊装能力验算、地基承载力验算、重载道路承载力验算、钢丝绳强度验算、主、副吊扁担验", "entities": [{"type": "工序", "start": 0, "end": 2, "n_votes": 2, "n_experts": 3}, {"type": "设备", "start": 25, "end": 28, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "思南路地下管线信息及与基坑相对位置关系", "entities": [{"type": "工程类型", "start": 11, "end": 13}], "src": "replay"}
+{"text": "设置回灌井：在基坑外围（距离基坑边缘≥2 倍降水井深度）布置回灌井，通过向承压含水", "entities": [{"type": "工程类型", "start": 7, "end": 9}, {"type": "工程类型", "start": 14, "end": 16}, {"type": "设备", "start": 22, "end": 25}, {"type": "工序", "start": 28, "end": 30}], "src": "replay"}
+{"text": "高，随即开展承台混凝土浇筑施工；浇筑完成后的承台结构，一部分埋置于开挖后的土体内部，", "entities": [{"type": "工序", "start": 8, "end": 13, "n_votes": 3, "n_experts": 3}, {"type": "工序", "start": 16, "end": 18, "n_votes": 3, "n_experts": 3}, {"type": "工序", "start": 33, "end": 35, "n_votes": 2, "n_experts": 3}], "src": "replay"}
+{"text": "塔吊基础验收必须具备以下资料：", "entities": [{"type": "设备", "start": 0, "end": 2, "n_votes": 2, "n_experts": 3}], "src": "replay"}
+{"text": "土方开挖注意事项：", "entities": [{"type": "工序", "start": 0, "end": 4}], "src": "replay"}
+{"text": "基坑施工组织设计", "entities": [{"type": "工程类型", "start": 0, "end": 2}], "src": "replay"}
+{"text": "套导管同时浇灌，导管距槽端部不宜大于1.5m。", "entities": [{"type": "设备", "start": 1, "end": 3}, {"type": "设备", "start": 8, "end": 10}], "src": "replay"}
+{"text": "另一部分则外露于原始自然地基表面之上。承台下方施工4 根φ900 钻孔灌注桩，桩长为60m。", "entities": [{"type": "工程类型", "start": 33, "end": 38, "n_votes": 1, "n_experts": 3}, {"type": "参数", "start": 39, "end": 41, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "现场如遇吊装构件捆绑松动、物件坠落、吊物悬空摆动、卡阻撞击结构等情况。", "entities": [{"type": "工序", "start": 4, "end": 6, "n_votes": 2, "n_experts": 3}], "src": "replay"}
+{"text": "坑底反弹有两个方面原因，一部分是由于开挖后的卸载引起的回弹量，另一部分是基坑周围", "entities": [{"type": "工序", "start": 18, "end": 20}, {"type": "工程类型", "start": 36, "end": 38}], "src": "replay"}
+{"text": "施工前，清理支撑面上混凝土和建筑垃圾，并办理移交手续，以确保切割施工的顺利进行。", "entities": [{"type": "工序", "start": 30, "end": 32, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "医技平台地下连续墙具体型号如下：", "entities": [{"type": "工程类型", "start": 4, "end": 9}], "src": "replay"}
+{"text": "基坑施工组织设计", "entities": [{"type": "工程类型", "start": 0, "end": 2}], "src": "replay"}
+{"text": "基本风压ω0(kN/m2) 0.4", "entities": [{"type": "参数", "start": 2, "end": 4, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "达到设计强度后，方可拆除。", "entities": [{"type": "参数", "start": 2, "end": 6}, {"type": "危大类别", "start": 10, "end": 12}], "src": "replay"}
+{"text": "在承重焊接钢筋骨架作配筋的结构中，承受混凝土重量的模板，应在混凝土达到设计强度的25%", "entities": [{"type": "设备", "start": 25, "end": 27, "n_votes": 3, "n_experts": 3}, {"type": "参数", "start": 35, "end": 39, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "材料管理：材料质量满足方案设计和相关规程要求，搭设模板支架用的钢管、扣件，使用前", "entities": [{"type": "设备", "start": 25, "end": 27, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "附图二十六：钢筋笼制作平台布置示意图", "entities": [{"type": "工序", "start": 6, "end": 11, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "路电缆通往箱变；", "entities": [{"type": "设备", "start": 1, "end": 3, "n_votes": 3, "n_experts": 3}, {"type": "设备", "start": 5, "end": 7, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "准备备用钢支撑、千斤顶等抢险物资。", "entities": [{"type": "设备", "start": 4, "end": 7}, {"type": "设备", "start": 8, "end": 11}], "src": "replay"}
+{"text": "作业前未经试吊", "entities": [{"type": "工序", "start": 5, "end": 7, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "急救大楼基坑北侧20 米为浅基础的急诊楼，西侧某路上管线众多，且道路西侧为浅基础的", "entities": [{"type": "工程类型", "start": 4, "end": 6}], "src": "replay"}
+{"text": "端比实际槽深大0.2～0.5m，底部用胶带密封。槽段浇筑7～8 小时后用清水将管底胶带冲开，水", "entities": [{"type": "工序", "start": 26, "end": 28}], "src": "replay"}
+{"text": "医技平台基坑：", "entities": [{"type": "工程类型", "start": 4, "end": 6}], "src": "replay"}
+{"text": "抛掷物料。在拆除脚手时，应先清除钢丝网片上垃圾杂物，要集中装入容器内由货运电梯运下。", "entities": [{"type": "危大类别", "start": 6, "end": 8, "n_votes": 3, "n_experts": 3}, {"type": "工序", "start": 14, "end": 16, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "地下室底板模板：底板防水施工完成后并经验收合格后，再浇筑底板。直角不放坡区域侧模", "entities": [{"type": "设备", "start": 5, "end": 7}, {"type": "工序", "start": 26, "end": 28}], "src": "replay"}
+{"text": "脚手架在投入使用之前必须进行验收，合格后方准使用。", "entities": [{"type": "危大类别", "start": 0, "end": 3, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "防雨、排涝器材，做好人员组织工作。坑、沟边上部不得堆积过多的材料，雨季前应清除沟边", "entities": [{"type": "工序", "start": 37, "end": 39}], "src": "replay"}
+{"text": "系数下）（27+2）×1.1=31.9t（以250/200 型号履带吊需吊装最重构件+吊具进行验算），在", "entities": [{"type": "设备", "start": 32, "end": 35}, {"type": "工序", "start": 36, "end": 38}], "src": "replay"}
+{"text": "执法部门的检查工作，坚决清除不良现象，做到发现一起，严肃查处一起，确保本工地治安", "entities": [{"type": "工序", "start": 12, "end": 14, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "柱、墙模板内的混凝土浇筑不得发生离析，倾落高度应符合表5.3.1 的规定；", "entities": [{"type": "设备", "start": 3, "end": 5, "n_votes": 3, "n_experts": 3}, {"type": "工序", "start": 7, "end": 12, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "基坑施工组织设计", "entities": [{"type": "工程类型", "start": 0, "end": 2}], "src": "replay"}
+{"text": "必要时铺设钢板扩散压力。吊装场地应设置醒目的安全警戒区域，拉设警戒线或围栏，悬挂", "entities": [{"type": "工序", "start": 12, "end": 14, "n_votes": 2, "n_experts": 3}], "src": "replay"}
+{"text": "履带吊安拆部件顺序应按履带吊机说明书执行，做好上、下道相邻工序检查，确保连接可", "entities": [{"type": "设备", "start": 0, "end": 3}, {"type": "设备", "start": 11, "end": 14}], "src": "replay"}
+{"text": "与混凝土的接触面应清理干净并涂刷隔离剂；浇筑混凝土前，模板内的杂物应清理干净；", "entities": [{"type": "工序", "start": 20, "end": 22, "n_votes": 3, "n_experts": 3}, {"type": "设备", "start": 27, "end": 29, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "现场设置专用仓库储存抢险应急物资。专用仓库位于现场基坑南侧。", "entities": [{"type": "工程类型", "start": 25, "end": 27}], "src": "replay"}
+{"text": "附件05：梁侧模板计算书5（1000×2500）", "entities": [{"type": "设备", "start": 7, "end": 9, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "单履带受力面积为S=9.15*1.22=11.163 ㎡；", "entities": [{"type": "参数", "start": 3, "end": 7, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "急救大楼基坑第一皮土方开挖平面图", "entities": [{"type": "工程类型", "start": 4, "end": 6}, {"type": "工序", "start": 9, "end": 13}], "src": "replay"}
+{"text": "脚手架必须随施工进度搭设。一次搭设高度不应超过相邻连墙件以上二步。每搭完一步脚", "entities": [{"type": "危大类别", "start": 0, "end": 3, "n_votes": 3, "n_experts": 3}, {"type": "参数", "start": 15, "end": 19, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "水泵380V", "entities": [{"type": "设备", "start": 0, "end": 2, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "浇筑区域及浇筑顺序；", "entities": [{"type": "工序", "start": 0, "end": 2, "n_votes": 3, "n_experts": 3}, {"type": "工序", "start": 5, "end": 7, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "支撑切割施工方法：首先使用手持冲击钻剥开支撑上面角部的主筋，然后在此主筋下面穿个", "entities": [{"type": "工序", "start": 2, "end": 4}], "src": "replay"}
+{"text": "距离为2.5m；外电线路电压为220kV 以下时，安全距离为4m；外电线路电压为330kV 以下时，安", "entities": [{"type": "参数", "start": 12, "end": 14, "n_votes": 3, "n_experts": 3}, {"type": "参数", "start": 37, "end": 39, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "待支撑拆除施工完成后，再对该部分弯折钢筋统一进行调直复位。", "entities": [{"type": "危大类别", "start": 3, "end": 5, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "定位放切割线→摆设型钢支架→链锯切割（链锯切割斜切倒八字口）→叉车托紧支撑→气割→", "entities": [{"type": "工序", "start": 3, "end": 5, "n_votes": 3, "n_experts": 3}, {"type": "工序", "start": 16, "end": 18, "n_votes": 3, "n_experts": 3}, {"type": "工序", "start": 21, "end": 23, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "免上部荷载集中化。模板拆除方式符合施工方案要求，拆模时间符合相关检测结果和规范要求。", "entities": [{"type": "工序", "start": 9, "end": 13, "n_votes": 2, "n_experts": 3}, {"type": "工序", "start": 24, "end": 26, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "导管埋入混凝土深度，并作好记录，以便指导拆拔导管。防止因埋管过深造成提升困难和导管拔", "entities": [{"type": "设备", "start": 0, "end": 2, "n_votes": 3, "n_experts": 3}, {"type": "设备", "start": 22, "end": 24, "n_votes": 3, "n_experts": 3}, {"type": "设备", "start": 39, "end": 41, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "情况拆除第二、一道支撑。第一道支撑栈桥共分为五个区域，逐区拆除。", "entities": [{"type": "危大类别", "start": 2, "end": 4, "n_votes": 3, "n_experts": 3}, {"type": "危大类别", "start": 29, "end": 31, "n_votes": 2, "n_experts": 3}], "src": "replay"}
+{"text": "场内交通组织：本工程基坑内设置回形栈桥，基坑施工阶段利用基坑外空余场地及栈桥区域", "entities": [{"type": "工程类型", "start": 10, "end": 12}, {"type": "工程类型", "start": 20, "end": 22}, {"type": "工程类型", "start": 28, "end": 30}], "src": "replay"}
+{"text": "正式进场施工前，进行管线调查，明确管线位置，清除施工场地地面以下5 米以内的障碍物，", "entities": [{"type": "工序", "start": 22, "end": 24}], "src": "replay"}
+{"text": "外径48mm，允许偏差±0.5mm；壁厚不得＜", "entities": [{"type": "参数", "start": 7, "end": 11, "n_votes": 3, "n_experts": 3}, {"type": "参数", "start": 18, "end": 20, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "基坑施工组织设计", "entities": [{"type": "工程类型", "start": 0, "end": 2}], "src": "replay"}
+{"text": "基坑施工组织设计", "entities": [{"type": "工程类型", "start": 0, "end": 2}], "src": "replay"}
+{"text": "图1.4.1 基坑周边环境图", "entities": [{"type": "工程类型", "start": 7, "end": 9}], "src": "replay"}
+{"text": "的安全距离；塔吊处于非工作状态时，将吊钩升到离起重臂顶端2～3m 处。", "entities": [{"type": "设备", "start": 6, "end": 8, "n_votes": 2, "n_experts": 3}], "src": "replay"}
+{"text": "计方案要求，脚手架的所有扣件、螺栓都必须处于紧缩状态，可调支座加固到位，并且所用材料必", "entities": [{"type": "危大类别", "start": 6, "end": 9, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "内，以防止跨步电压触电。触电者脱离带电导线后应迅速将其带至8～10 米以外立即开始触电", "entities": [{"type": "参数", "start": 7, "end": 9, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "注：拆底模时先拆排架牵杠，再拆板底排架、模板。模板拆除时不得野蛮作业，影响重复使用。", "entities": [{"type": "设备", "start": 20, "end": 22, "n_votes": 3, "n_experts": 3}, {"type": "工序", "start": 23, "end": 27, "n_votes": 2, "n_experts": 3}], "src": "replay"}
+{"text": "的80%，待伺服系统逐级卸力完成后，视监测情况逐区拆除第二、一道支撑。", "entities": [{"type": "危大类别", "start": 25, "end": 27, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "沿不小于1m，堆放高度不得超过1m。⑤楼层边口，通道口，脚手架边缘等处，严禁堆放任何", "entities": [{"type": "危大类别", "start": 28, "end": 31}], "src": "replay"}
+{"text": "附图十二：急救大楼区域地下连续墙施工工况（四）", "entities": [{"type": "工程类型", "start": 11, "end": 16, "n_votes": 1, "n_experts": 3}], "src": "replay"}
+{"text": "即边拆除边回填方法。", "entities": [{"type": "危大类别", "start": 2, "end": 4}], "src": "replay"}
+{"text": "级配电二级保护，并实行“一机、一闸、一漏、一箱\"。", "entities": [{"type": "参数", "start": 0, "end": 2, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "定拔桩起点，必要时也可用跳拔的方法。拔桩的顺序最好与打桩时相反。", "entities": [{"type": "工序", "start": 1, "end": 3}, {"type": "工序", "start": 12, "end": 14}, {"type": "工序", "start": 18, "end": 20}, {"type": "工序", "start": 26, "end": 28}], "src": "replay"}
+{"text": "大楼地下连通道(地下1 层)。", "entities": [{"type": "工程类型", "start": 5, "end": 7, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "汇接头吊装示意图", "entities": [{"type": "工序", "start": 3, "end": 5, "n_votes": 2, "n_experts": 3}], "src": "replay"}
+{"text": "木档自由坠落，再用钩子将模板钩下。等该段的模板全部脱落后，集中运出集中堆放，木模的", "entities": [{"type": "设备", "start": 12, "end": 14, "n_votes": 3, "n_experts": 3}, {"type": "设备", "start": 21, "end": 23, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "时以上时，应将动力配电箱断电上锁。", "entities": [{"type": "设备", "start": 9, "end": 12, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "本方案适用于上部结构盘扣式悬挑脚手架施工，落地脚手架方案另行编制。", "entities": [{"type": "工程类型", "start": 13, "end": 18, "n_votes": 2, "n_experts": 3}, {"type": "危大类别", "start": 23, "end": 26, "n_votes": 2, "n_experts": 3}], "src": "replay"}
+{"text": "各布置1 口疏干井，深度12.0m；", "entities": [{"type": "工序", "start": 1, "end": 3}, {"type": "设备", "start": 6, "end": 9}, {"type": "参数", "start": 10, "end": 17}], "src": "replay"}
+{"text": "后浇式膨胀加强带混凝土封闭时间严格按照设计要求实施，封闭前对后浇带进行清理，清除", "entities": [{"type": "工序", "start": 38, "end": 40}], "src": "replay"}
+{"text": "堂钢管脚手架", "entities": [{"type": "危大类别", "start": 3, "end": 6, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "现场材料堆放合理布局，在交通便利出布置材料堆场和仓库等。对钢筋、模板、扣件等材料，", "entities": [{"type": "设备", "start": 32, "end": 34, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "塔吊作业小组和塔吊机组管理人员，应在施工期间定岗在位，各尽其责。各塔吊机组管理人", "entities": [{"type": "设备", "start": 0, "end": 2, "n_votes": 2, "n_experts": 3}, {"type": "设备", "start": 7, "end": 9, "n_votes": 3, "n_experts": 3}, {"type": "设备", "start": 33, "end": 35, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "意后，方可拆除。", "entities": [{"type": "危大类别", "start": 5, "end": 7, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "低压喷射注浆", "entities": [{"type": "工序", "start": 4, "end": 6}], "src": "replay"}
+{"text": "高压旋喷注浆二重管法就是施工时使用双通道二重注浆管，当二重注浆管钻进到土层预定深", "entities": [{"type": "工序", "start": 4, "end": 6}, {"type": "工序", "start": 22, "end": 24}, {"type": "工序", "start": 29, "end": 31}], "src": "replay"}
+{"text": "计方案要求，脚手架的所有扣件、螺栓都必须处于紧缩状态，可调支座加固到位，并且所用材料必", "entities": [{"type": "危大类别", "start": 6, "end": 9, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "用大塔吊功率", "entities": [{"type": "参数", "start": 4, "end": 6}], "src": "replay"}
+{"text": "待支撑拆除施工完成后，再对该部分弯折钢筋统一进行调直复位。", "entities": [{"type": "危大类别", "start": 3, "end": 5, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "信号导线根据现场实际情况进行保护，若信号线不能裸露，需在电缆沟槽或电缆护管内走线，终", "entities": [{"type": "设备", "start": 28, "end": 30}, {"type": "设备", "start": 33, "end": 35}], "src": "replay"}
+{"text": "丝绳断丝数不超过规范规定；卷简上钢丝绳放出时应保留3 圈及以上；钢丝绳", "entities": [{"type": "设备", "start": 16, "end": 19, "n_votes": 3, "n_experts": 3}, {"type": "设备", "start": 32, "end": 35, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "基坑施工组织设计", "entities": [{"type": "工程类型", "start": 0, "end": 2}], "src": "replay"}
+{"text": "起重钢丝绳无断丝、断股、润滑良好、直径缩径不大", "entities": [{"type": "设备", "start": 2, "end": 5, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "双液注浆按“222”的方法执行堵漏，即双管插入间距2m，插入深度比漏水点浅2m，插入位", "entities": [{"type": "工序", "start": 2, "end": 4}], "src": "replay"}
+{"text": "表高大模板排架构配件质量栓查表", "entities": [{"type": "设备", "start": 3, "end": 5, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "式中，e —— 允许导线电压降，对工地临时网络取7%；", "entities": [{"type": "参数", "start": 12, "end": 15}], "src": "replay"}
+{"text": "当立柱的水平拉杆超出2 层时，应首先拆除2 层以上的拉杆。当拆除最后一道水平拉杆时，应", "entities": [{"type": "危大类别", "start": 18, "end": 20, "n_votes": 3, "n_experts": 3}, {"type": "危大类别", "start": 30, "end": 32, "n_votes": 2, "n_experts": 3}], "src": "replay"}
+{"text": "塔楼STT153A-10T（R=55m）塔吊使用周期为：基坑开挖~结构出±0.0，按照施工进度计划，", "entities": [{"type": "设备", "start": 20, "end": 22, "n_votes": 2, "n_experts": 3}, {"type": "工程类型", "start": 28, "end": 30, "n_votes": 2, "n_experts": 3}, {"type": "工序", "start": 30, "end": 32, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "基坑工程施工质量监督、检查", "entities": [{"type": "工程类型", "start": 0, "end": 4}], "src": "replay"}
+{"text": "安全性，汽车吊统一停靠于未进行切割、未受扰动的完好栈桥板面开展作业，严禁在已切割松动、", "entities": [{"type": "设备", "start": 4, "end": 7, "n_votes": 2, "n_experts": 3}, {"type": "工序", "start": 15, "end": 17, "n_votes": 3, "n_experts": 3}, {"type": "工序", "start": 38, "end": 40, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "考虑地下墙施工时成槽机、履带吊机、车辆行走路线需要及场地条件，需计算机械对路面", "entities": [{"type": "工程类型", "start": 2, "end": 5}, {"type": "设备", "start": 8, "end": 11}, {"type": "设备", "start": 12, "end": 15}], "src": "replay"}
+{"text": "为了对基坑施工期间围护结构的止水状态进行监控，依此推断围护体有无渗漏、流砂等岩土", "entities": [{"type": "工程类型", "start": 3, "end": 5}], "src": "replay"}
+{"text": "各布置1 口疏干井，深度10.0m。", "entities": [{"type": "工序", "start": 1, "end": 3}, {"type": "设备", "start": 6, "end": 9}], "src": "replay"}
+{"text": "梯踏步角。为保证角钢牢固性，角钢上焊3 个铁角插入混凝土内，浇筑混凝土时楼梯踏步表面", "entities": [{"type": "工序", "start": 30, "end": 32, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "混凝土→拆模及设置横撑。", "entities": [{"type": "工序", "start": 4, "end": 6}, {"type": "工序", "start": 7, "end": 11}], "src": "replay"}
+{"text": "基坑抗承压水突涌稳定性验算原理示意图", "entities": [{"type": "工程类型", "start": 0, "end": 2}], "src": "replay"}
+{"text": "起重钢丝绳无断丝、断股、润滑良好、直径缩径不大", "entities": [{"type": "设备", "start": 2, "end": 5, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "同配合比的大体积混凝土时，混凝土强度试件现场取样不应小于10 组；当一次连续浇筑", "entities": [{"type": "参数", "start": 1, "end": 4}, {"type": "参数", "start": 13, "end": 18}, {"type": "工序", "start": 38, "end": 40}], "src": "replay"}
+{"text": "基坑施工组织设计", "entities": [{"type": "工程类型", "start": 0, "end": 2}], "src": "replay"}
+{"text": "合规范（JGJ130-2011）规定。钢管上严禁打孔。", "entities": [{"type": "规范编号", "start": 4, "end": 15, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "本工程新建附属急救大楼调蓄池与医技平台调蓄池，上述调蓄池基坑挖深均为5.1m。", "entities": [{"type": "工程类型", "start": 28, "end": 30}], "src": "replay"}
+{"text": "用了28C 型槽钢，布置在栈桥下共一层，位于第一~第二道支撑之间。", "entities": [{"type": "工序", "start": 10, "end": 12}], "src": "replay"}
+{"text": "塔吊基础根据QTZ450 型号计算布置。塔吊基础采用850mm 钻孔灌注桩，基础落在⑦2 层中，桩", "entities": [{"type": "设备", "start": 0, "end": 2}, {"type": "工序", "start": 17, "end": 19}, {"type": "设备", "start": 20, "end": 22}, {"type": "工程类型", "start": 32, "end": 37}], "src": "replay"}
+{"text": "位置上，传感器布置详见附图。各传感器所测得的混凝土温度通过无线传输设备上传至实验室服", "entities": [{"type": "设备", "start": 4, "end": 7}, {"type": "工序", "start": 7, "end": 9}, {"type": "设备", "start": 15, "end": 18}], "src": "replay"}
+{"text": "时为准。避免振捣时间过久，以免发生离析。", "entities": [{"type": "工序", "start": 6, "end": 8}], "src": "replay"}
+{"text": "根据250t 履带吊起重性能表(上图可见)，起重臂长为L＝46.5m，最不利起重半径为r=14m，", "entities": [{"type": "设备", "start": 7, "end": 10, "n_votes": 2, "n_experts": 3}], "src": "replay"}
+{"text": "基坑施工组织设计", "entities": [{"type": "工程类型", "start": 0, "end": 2}], "src": "replay"}
+{"text": "设备时，必须用慢速卷扬机。码放构件的场地应坚实平整。码放后应支撑牢固、稳定。吊装", "entities": [{"type": "工序", "start": 38, "end": 40, "n_votes": 2, "n_experts": 3}], "src": "replay"}
+{"text": "本工程地下墙将具有四种功能，即：挡土结构、止水帷幕、主体结构工程桩、主体结构外墙。", "entities": [{"type": "工程类型", "start": 3, "end": 6}, {"type": "工程类型", "start": 16, "end": 20}, {"type": "工程类型", "start": 21, "end": 25}, {"type": "工程类型", "start": 26, "end": 33}, {"type": "工程类型", "start": 34, "end": 40}], "src": "replay"}
+{"text": "施工准备→测量放线→钻机就位→正循环成孔→第一次清孔→制作钢筋笼并吊放→导管安", "entities": [{"type": "工序", "start": 5, "end": 9, "n_votes": 3, "n_experts": 3}, {"type": "工序", "start": 18, "end": 20, "n_votes": 3, "n_experts": 3}, {"type": "工序", "start": 24, "end": 26, "n_votes": 3, "n_experts": 3}, {"type": "设备", "start": 36, "end": 38, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "塔吊ST6015（地下）", "entities": [{"type": "设备", "start": 0, "end": 8}], "src": "replay"}
+{"text": "土达到强度要求后，进入常规施工，首先绑扎集水井、电梯井等落深处的钢筋，然后按分区域铺", "entities": [{"type": "工序", "start": 18, "end": 20}], "src": "replay"}
+{"text": "附图007：挖土支撑施工阶段现场用电系统图", "entities": [{"type": "工序", "start": 8, "end": 12}], "src": "replay"}
+{"text": "挖邻近围护结构的土方，边坡留土，保证坡顶宽度，高宽比。保证最后一层土方开挖随挖随浇捣", "entities": [{"type": "工序", "start": 33, "end": 37}], "src": "replay"}
+{"text": "地下连续墙施工过程中先进行三轴搅拌桩止水帷幕及槽壁加固施工，采用三轴水泥土搅拌桩", "entities": [{"type": "工程类型", "start": 0, "end": 5, "n_votes": 1, "n_experts": 3}, {"type": "工程类型", "start": 13, "end": 18, "n_votes": 1, "n_experts": 3}, {"type": "工程类型", "start": 18, "end": 22, "n_votes": 3, "n_experts": 3}, {"type": "工程类型", "start": 23, "end": 27, "n_votes": 3, "n_experts": 3}, {"type": "工程类型", "start": 32, "end": 40, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "急救大楼最大有限空间作业体积为865m³，位于地下三层固定电站区域。医", "entities": [{"type": "工程类型", "start": 6, "end": 12, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "二次清孔结束后，由施工员进行孔底沉渣的测试，沉渣厚度小于20cm，在满足沉渣厚度控", "entities": [{"type": "工序", "start": 2, "end": 4, "n_votes": 3, "n_experts": 3}, {"type": "参数", "start": 22, "end": 26, "n_votes": 3, "n_experts": 3}, {"type": "参数", "start": 36, "end": 40, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "挖至各基坑第一道支撑底标高后开始施工第一道支撑，支撑与挖土同步施工；", "entities": [{"type": "工程类型", "start": 3, "end": 5}], "src": "replay"}
+{"text": "稳定情况，当发现边坡出现裂缝、有走动，首先应立即暂停该区域的挖土或拆除工作，将人员撤", "entities": [{"type": "危大类别", "start": 33, "end": 35}], "src": "replay"}
+{"text": "三轴搅拌桩采用套接一孔/搭接250mm 施工，水泥采用普通硅酸盐水泥，强度等级P.O.42.5", "entities": [{"type": "工程类型", "start": 0, "end": 5}, {"type": "参数", "start": 12, "end": 19}], "src": "replay"}
+{"text": "对切割下来的支撑有一个支撑作用，为了保证支撑的稳定性，在切割的支撑梁下方，采取在支撑", "entities": [{"type": "工序", "start": 1, "end": 3}, {"type": "工序", "start": 28, "end": 30}], "src": "replay"}
+{"text": "由气割工对下方钢立柱割断，连同钢立柱一起吊运至基坑周边，进行气割分离后再装车外运。", "entities": [{"type": "工程类型", "start": 23, "end": 25, "n_votes": 2, "n_experts": 3}], "src": "replay"}
+{"text": "第三章模板排架设计", "entities": [{"type": "设备", "start": 3, "end": 5, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "基坑施工组织设计", "entities": [{"type": "工程类型", "start": 0, "end": 2}], "src": "replay"}
+{"text": "当有六级及六级以上大风和浓雾、雷雨等恶劣天气及夜间照明昏暗条件下，应停止脚手架", "entities": [{"type": "危大类别", "start": 36, "end": 39, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "基坑施工组织设计", "entities": [{"type": "工程类型", "start": 0, "end": 2}], "src": "replay"}
+{"text": "急救综合大楼基坑：", "entities": [{"type": "工程类型", "start": 6, "end": 8}], "src": "replay"}
+{"text": "混凝土计算，待混凝土强度达到设计强度C30 的80%后，进行下一层浇筑。加速器区", "entities": [{"type": "参数", "start": 7, "end": 12, "n_votes": 3, "n_experts": 3}, {"type": "参数", "start": 14, "end": 18, "n_votes": 3, "n_experts": 3}, {"type": "工序", "start": 33, "end": 35, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "生活区及餐厅用电负荷", "entities": [{"type": "参数", "start": 6, "end": 10, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "三、模板支架的验收管理", "entities": [{"type": "设备", "start": 2, "end": 4, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "某路地下管线信息及与基坑相对位置关系", "entities": [{"type": "工程类型", "start": 10, "end": 12}], "src": "replay"}
+{"text": "急救大楼：地下一～三层人防工程、电梯井、可进人管道及设备间、汽车", "entities": [{"type": "工程类型", "start": 11, "end": 15, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "缩水泥配置的微膨胀混凝土浇筑。施工后浇式膨胀加强带前将下部的泡沫条清除干净，凿除后", "entities": [{"type": "工序", "start": 9, "end": 14}, {"type": "工序", "start": 33, "end": 35}], "src": "replay"}
+{"text": "实时监控模板排架基础及架体沉降情况，及时预警沉降超标风险，避免坍塌事故，保障施工安", "entities": [{"type": "设备", "start": 4, "end": 6, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "内，以防止跨步电压触电。触电者脱离带电导线后应迅速将其带至8～10 米以外立即开始触电", "entities": [{"type": "参数", "start": 7, "end": 9, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "检查导管的密封性能，即检查导管有无漏水，导管连接密封圈的好坏情况。", "entities": [{"type": "设备", "start": 2, "end": 4, "n_votes": 3, "n_experts": 3}, {"type": "设备", "start": 13, "end": 15, "n_votes": 3, "n_experts": 3}, {"type": "设备", "start": 20, "end": 22, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "基坑施工组织设计", "entities": [{"type": "工程类型", "start": 0, "end": 2}], "src": "replay"}
+{"text": "电信和供电电缆：如果施工期间发生电信和供电电缆破坏事故，事故发生后，有关人员应立", "entities": [{"type": "设备", "start": 5, "end": 7}, {"type": "设备", "start": 21, "end": 23}], "src": "replay"}
+{"text": "拆除及回填技术要求如下：", "entities": [{"type": "危大类别", "start": 0, "end": 2}], "src": "replay"}
+{"text": "基坑施工组织设计", "entities": [{"type": "工程类型", "start": 0, "end": 2}], "src": "replay"}
+{"text": "每个浇筑点配备三台振动机进行振捣，分别对卸料处，斜坡中部和坡脚处振捣，振捣间距", "entities": [{"type": "工序", "start": 2, "end": 4}, {"type": "工序", "start": 14, "end": 16}, {"type": "工序", "start": 32, "end": 34}, {"type": "工序", "start": 35, "end": 37}], "src": "replay"}
+{"text": "钢围檩，加钢抛撑，待围护桩坝体稳定后，方可继续拆除。", "entities": [{"type": "危大类别", "start": 23, "end": 25, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "痫病、眩晕、突发性昏厥及其他影响起重吊装作业的疾病与生理缺陷。", "entities": [{"type": "危大类别", "start": 16, "end": 20, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "定。拆除平台、楼板下的立杆时，作业人员应站在安全处。", "entities": [{"type": "危大类别", "start": 2, "end": 4, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "基坑施工组织设计", "entities": [{"type": "工程类型", "start": 0, "end": 2}], "src": "replay"}
+{"text": "附图01：塔楼2F 脚手架布置图", "entities": [{"type": "危大类别", "start": 10, "end": 13, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "根据履带吊生产厂家及设备公司提资，SCC2500C 履带吊自重约为250t,拼拆过程中起吊后", "entities": [{"type": "设备", "start": 2, "end": 5, "n_votes": 2, "n_experts": 3}, {"type": "设备", "start": 26, "end": 29, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "图二：某医学中心项目基坑平面布局图；", "entities": [{"type": "工程类型", "start": 10, "end": 12}], "src": "replay"}
+{"text": "泡沫灭火器、干粉灭火", "entities": [{"type": "设备", "start": 2, "end": 5, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "汽车吊检查验收表", "entities": [{"type": "设备", "start": 0, "end": 3}], "src": "replay"}
+{"text": "方可进行工作。拆除有洞口模板时，应采取防止操作人员坠落的措施。洞口模板拆除后，应按国", "entities": [{"type": "危大类别", "start": 7, "end": 9, "n_votes": 3, "n_experts": 3}, {"type": "设备", "start": 12, "end": 14, "n_votes": 3, "n_experts": 3}, {"type": "工序", "start": 33, "end": 37, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "用吊车将导管吊入槽段规定位置，导管顶端上安放方形浇灌漏斗。在导管吊放时应避免碰撞", "entities": [{"type": "设备", "start": 4, "end": 6}, {"type": "设备", "start": 15, "end": 17}, {"type": "设备", "start": 30, "end": 32}], "src": "replay"}
+{"text": "基坑施工组织设计", "entities": [{"type": "工程类型", "start": 0, "end": 2}], "src": "replay"}
+{"text": "技平台最大有限空间作业体积为35m³，位于地下二层弱电间区域。污水处理站", "entities": [{"type": "工程类型", "start": 5, "end": 11, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "处理站最大有限空间作业体积为765m³，位于地下三层调节池区域。风管长40m,", "entities": [{"type": "工程类型", "start": 5, "end": 11, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "后回土，埋地深度应不小于70cm。", "entities": [{"type": "参数", "start": 4, "end": 16, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "相应工况下的额定起重量大于计算分配荷载（含安全系数）。检查吊机有效期内检验合格证。", "entities": [{"type": "参数", "start": 6, "end": 11, "n_votes": 2, "n_experts": 3}], "src": "replay"}
+{"text": "立杆步距h(m)", "entities": [{"type": "参数", "start": 2, "end": 4, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "第二级卸力：累计卸除总轴力的40%，卸力完成后稳压静置30min，观测基坑及支撑状态稳定", "entities": [{"type": "工程类型", "start": 35, "end": 37, "n_votes": 2, "n_experts": 3}], "src": "replay"}
+{"text": "现场如遇吊装构件捆绑松动、物件坠落、吊物悬空摆动、卡阻撞击结构等情况。", "entities": [{"type": "工序", "start": 4, "end": 6, "n_votes": 2, "n_experts": 3}], "src": "replay"}
+{"text": "基本锚固长度lab=αdfy/ft=0.16×20×270/1.57=550.318mm", "entities": [{"type": "参数", "start": 2, "end": 6, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "卸扣处时，停止下放，将两根扁担将钢筋笼担在槽孔处，确保担实不下滑后，下放钢筋笼。", "entities": [{"type": "设备", "start": 0, "end": 2, "n_votes": 3, "n_experts": 3}, {"type": "工序", "start": 34, "end": 39, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "现场预备发电机，发电机容量因至少能够保证排水措施（包括降水设备和强排水泵）和照", "entities": [{"type": "设备", "start": 4, "end": 7}, {"type": "设备", "start": 8, "end": 11}, {"type": "设备", "start": 34, "end": 36}], "src": "replay"}
+{"text": "导管底口距孔底高度一般控制在50cm 左右，且第一节导管长度应大于4m。", "entities": [{"type": "设备", "start": 0, "end": 2, "n_votes": 3, "n_experts": 3}, {"type": "设备", "start": 26, "end": 28, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "器的额定漏电动作电流和额定动作时间应作合理配合，具有分级分段保护功能。漏电保护器须按", "entities": [{"type": "设备", "start": 35, "end": 40, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "基坑施工组织设计", "entities": [{"type": "工程类型", "start": 0, "end": 2}], "src": "replay"}
+{"text": "在此主筋下面穿个孔，链条从孔内穿过；由于支撑梁断面不包括桩间凹进去部分，切割工", "entities": [{"type": "工序", "start": 36, "end": 38}], "src": "replay"}
+{"text": "利用成孔钻具直接进行，清孔时先将钻头提离孔底10～20cm，转盘回转冲孔，泥浆循环不断地", "entities": [{"type": "工序", "start": 2, "end": 4, "n_votes": 3, "n_experts": 3}, {"type": "工序", "start": 11, "end": 13, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "本工程两部塔吊共用同一承台基础，两部塔吊固定脚埋件布置如下图所示：", "entities": [{"type": "设备", "start": 5, "end": 7, "n_votes": 2, "n_experts": 3}, {"type": "设备", "start": 18, "end": 20, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "达到设计要求，提前拆除主支撑", "entities": [{"type": "危大类别", "start": 9, "end": 11, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "检测频率为每根试桩下钻到一半、下钻到底、提升到底共计三次，数据变化较大可加测。", "entities": [{"type": "工序", "start": 7, "end": 9}], "src": "replay"}
+{"text": "效控制基坑施工对周边环境的影响；", "entities": [{"type": "工程类型", "start": 3, "end": 5}], "src": "replay"}
+{"text": "当混凝土未达到规定强度或已达到设计规定强度时，如需提前拆模或承受部分超设计荷载时，", "entities": [{"type": "工序", "start": 27, "end": 29, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "墙趾注浆示意图", "entities": [{"type": "工序", "start": 2, "end": 4}], "src": "replay"}
+{"text": "故，副吊扁担下部吊点选择10t 卸扣满足要求。", "entities": [{"type": "设备", "start": 16, "end": 18, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "塔吊基础专项施工方案", "entities": [{"type": "设备", "start": 0, "end": 2}], "src": "replay"}
+{"text": "工；设置交通指挥专员，基坑内机械限速5km/h；塔吊作业半径内禁止其他人员停留严禁无关人", "entities": [{"type": "工程类型", "start": 11, "end": 13, "n_votes": 2, "n_experts": 3}, {"type": "设备", "start": 24, "end": 26, "n_votes": 2, "n_experts": 3}], "src": "replay"}
+{"text": "医技平台第三皮土方开挖平面图", "entities": [{"type": "工序", "start": 7, "end": 11}], "src": "replay"}
+{"text": "基坑施工组织设计", "entities": [{"type": "工程类型", "start": 0, "end": 2}], "src": "replay"}
+{"text": "计算竖向角焊缝总长度：", "entities": [{"type": "参数", "start": 7, "end": 10, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "置，以便在混凝土浇捣后（主要在前期）及时了解各点的实际温度情况。在同一测区的测点，", "entities": [{"type": "工序", "start": 5, "end": 10, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "度至地下0.2m 处须加防护套管；电缆沿墙布置时，须设专用支架；电缆穿越道路时采用地缆，", "entities": [{"type": "设备", "start": 17, "end": 19}, {"type": "工序", "start": 21, "end": 23}, {"type": "设备", "start": 32, "end": 34}], "src": "replay"}
+{"text": "处理站最大有限空间作业体积为765m³，位于地下三层调节池区域。风管长40m,", "entities": [{"type": "工程类型", "start": 5, "end": 11, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "后方可进行起吊。在起吊前必须仔细检查吊具、锁具、卸扣，确保完好。在起吊前应检查钢", "entities": [{"type": "设备", "start": 24, "end": 26, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "本工程属大型深基坑工程，工程实施过程中受到基坑开挖、大气降水以及施工动载等许多不", "entities": [{"type": "工程类型", "start": 7, "end": 11}, {"type": "工程类型", "start": 21, "end": 23}, {"type": "工序", "start": 23, "end": 25}], "src": "replay"}
+{"text": "期的混凝土抗拉强度是极低的，为抗压强度的十分之一，一旦拉应力大于这一极其微小的抗拉极", "entities": [{"type": "参数", "start": 5, "end": 9, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "五、拆模令管理", "entities": [{"type": "工序", "start": 2, "end": 4, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "基坑开挖完成后：可根据变形速率调整频率，但不应低于1 次/15 天。", "entities": [{"type": "工程类型", "start": 0, "end": 2, "n_votes": 2, "n_experts": 3}, {"type": "工序", "start": 2, "end": 4, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "若墙体距离拆除作业面较近（小于1.5m），需在墙体表面粘贴多层胶合板进行防护，胶合板", "entities": [{"type": "危大类别", "start": 5, "end": 7, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "上而下进行拆除。拆下的模板不得抛扔，应按指定地点堆放。", "entities": [{"type": "危大类别", "start": 5, "end": 7, "n_votes": 3, "n_experts": 3}, {"type": "设备", "start": 11, "end": 13, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "栈桥拆除分块图", "entities": [{"type": "危大类别", "start": 2, "end": 4}], "src": "replay"}
+{"text": "水准仪或拉线、钢尺检查", "entities": [{"type": "设备", "start": 0, "end": 3, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "分段预制长度不宜小于支撑间距的2 倍；钢围檩下部应设置可靠钢托架。", "entities": [{"type": "参数", "start": 0, "end": 6, "n_votes": 3, "n_experts": 3}, {"type": "参数", "start": 10, "end": 14, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "混凝土应布料均衡。应对模板及支架进行观察和维护，发生异常情况应及时进行处理。混凝土", "entities": [{"type": "设备", "start": 11, "end": 13, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "钢筋的数量、间距、锚固长度、接头设置必须符合设计要求和施工规范。", "entities": [{"type": "参数", "start": 9, "end": 13, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "度在2m 左右，周围封闭封浆；注浆采用均匀提升间隔跳孔喷浆，控制注浆量并加强监测，每", "entities": [{"type": "工序", "start": 15, "end": 17, "n_votes": 3, "n_experts": 3}, {"type": "工序", "start": 32, "end": 34, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "办公区设于已建诊疗中心大楼下沉式庭院内，为三层集装箱。基坑围护施工阶段，办公区", "entities": [{"type": "工程类型", "start": 27, "end": 29}], "src": "replay"}
+{"text": "格构柱外围500mm 以外区域，可开展镐头机破碎及切割作业。所有机械作业必须保持与格构", "entities": [{"type": "参数", "start": 5, "end": 10, "n_votes": 3, "n_experts": 3}, {"type": "工序", "start": 25, "end": 27, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "附图二：医技平台区域地下连续墙施工阶段（一）总平面布置图", "entities": [{"type": "工程类型", "start": 10, "end": 15}], "src": "replay"}
+{"text": "到结构底板浇筑", "entities": [{"type": "工序", "start": 5, "end": 7}], "src": "replay"}
+{"text": "梢轮底磨损不超过钢丝绳直径的25%)。", "entities": [{"type": "设备", "start": 8, "end": 11, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "中不发生倾斜和移动；转盘中心与桩位中心的允许偏差应小于20mm，转盘在四个方向上的水平", "entities": [{"type": "参数", "start": 20, "end": 24, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "在地下障碍物则需先清除障碍物或先引孔，后插管。桩位偏差不超过50mm。", "entities": [{"type": "工序", "start": 9, "end": 11}], "src": "replay"}
+{"text": "工，尤其是在基坑边缘外留有支模、拆模的余地。", "entities": [{"type": "工程类型", "start": 6, "end": 8}, {"type": "工序", "start": 16, "end": 18}], "src": "replay"}
+{"text": "每次浇筑高度分别为600、1100、1300，经与设计核定，排架搭设荷载按照600mm 厚", "entities": [{"type": "工序", "start": 2, "end": 4, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "经常观察导墙的间距、整体位移、沉降，并做好记录，成槽前做好复测工作。", "entities": [{"type": "工序", "start": 24, "end": 26}], "src": "replay"}
+{"text": "基坑施工组织设计", "entities": [{"type": "工程类型", "start": 0, "end": 2}], "src": "replay"}
+{"text": "点保护的建筑物、管线等基础边采取预埋设跟踪注浆孔，并根据监测单位在保护建筑物上设", "entities": [{"type": "工序", "start": 21, "end": 23, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "基坑施工组织设计", "entities": [{"type": "工程类型", "start": 0, "end": 2}], "src": "replay"}
+{"text": "一旦基坑发生坍塌事故，基坑施工管理人员迅速将施工作业人员疏散到安全区域，并及时项", "entities": [{"type": "工程类型", "start": 2, "end": 4}, {"type": "工程类型", "start": 11, "end": 13}], "src": "replay"}
+{"text": "本方案根据建设部下发建质[2018]31 号文件《危险性较大的分部分项工程安全管理办法》，搭", "entities": [{"type": "危大类别", "start": 25, "end": 37, "n_votes": 2, "n_experts": 3}], "src": "replay"}
+{"text": "件使用千斤顶同时起落；一端使用两个千斤顶调整就位时，起落速度应一致。超长型构件运输", "entities": [{"type": "设备", "start": 3, "end": 6}, {"type": "设备", "start": 17, "end": 20}, {"type": "工序", "start": 20, "end": 22}], "src": "replay"}
+{"text": "浇筑倾落高度限值", "entities": [{"type": "工序", "start": 0, "end": 2, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "必须使支撑拆除后支护结构不产生过大的应力释放，因此须遵守以下原则：", "entities": [{"type": "危大类别", "start": 5, "end": 7, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "用卡环；零碎物无容器；吊装物重量不明等。", "entities": [{"type": "工序", "start": 11, "end": 13}], "src": "replay"}
+{"text": "地下连续墙成槽顺序", "entities": [{"type": "工程类型", "start": 0, "end": 5}, {"type": "工序", "start": 5, "end": 7}], "src": "replay"}
+{"text": "节点、无法切割部位凿除用", "entities": [{"type": "工序", "start": 5, "end": 7, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "备停止运转，对基坑的安全产生重大影响。", "entities": [{"type": "工程类型", "start": 7, "end": 9, "n_votes": 2, "n_experts": 3}], "src": "replay"}
+{"text": "采取增加降水井点，加大抽水速度的方式，降低承压水压力。", "entities": [{"type": "设备", "start": 4, "end": 8, "n_votes": 2, "n_experts": 3}], "src": "replay"}
+{"text": "已拆除了模板的结构，应在混凝土强度达到设计强度值后方可承受全部设计荷载。若在未达到", "entities": [{"type": "危大类别", "start": 1, "end": 3, "n_votes": 3, "n_experts": 3}, {"type": "设备", "start": 4, "end": 6, "n_votes": 3, "n_experts": 3}, {"type": "参数", "start": 12, "end": 17, "n_votes": 3, "n_experts": 3}, {"type": "参数", "start": 19, "end": 23, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "用电设备总功率计算公式如下：", "entities": [{"type": "参数", "start": 4, "end": 7}], "src": "replay"}
+{"text": "灌注完毕后，待混凝土初凝后即可切断钢筋笼吊筋，拔出护筒，清洗导管和护筒，清除孔口", "entities": [{"type": "工序", "start": 0, "end": 2, "n_votes": 3, "n_experts": 3}, {"type": "设备", "start": 30, "end": 32, "n_votes": 3, "n_experts": 3}, {"type": "工序", "start": 36, "end": 38, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "根钢筋与底板钢筋网绑扎牢，布点结束后，检查各传感器是否完好，如有损坏，立即更换，测试", "entities": [{"type": "工序", "start": 9, "end": 11}, {"type": "工序", "start": 19, "end": 21}, {"type": "设备", "start": 22, "end": 25}], "src": "replay"}
+{"text": "所以80 吨汽车吊安装250 吨或200 吨时起重量合格。", "entities": [{"type": "设备", "start": 6, "end": 9, "n_votes": 2, "n_experts": 3}, {"type": "参数", "start": 23, "end": 26, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "正确处理好土方开挖与支撑设置间关系，遵循先撑后挖。", "entities": [{"type": "工序", "start": 5, "end": 9}], "src": "replay"}
+{"text": "灭火器配置应符合下列规定：", "entities": [{"type": "设备", "start": 0, "end": 3, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "与混凝土的接触面应清理干净并涂刷隔离剂；浇筑混凝土前，模板内的杂物应清理干净；", "entities": [{"type": "工序", "start": 20, "end": 22, "n_votes": 3, "n_experts": 3}, {"type": "设备", "start": 27, "end": 29, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "采取后退式分段拆除模式，逐跨推进拆除作业，单跨拆除严格遵循“先拆除栈桥面板、后拆除栈桥", "entities": [{"type": "危大类别", "start": 7, "end": 9, "n_votes": 3, "n_experts": 3}, {"type": "危大类别", "start": 16, "end": 18, "n_votes": 2, "n_experts": 3}, {"type": "危大类别", "start": 23, "end": 25, "n_votes": 2, "n_experts": 3}, {"type": "危大类别", "start": 31, "end": 33, "n_votes": 2, "n_experts": 3}, {"type": "危大类别", "start": 39, "end": 41, "n_votes": 2, "n_experts": 3}], "src": "replay"}
+{"text": "附图五：医技平台区域地下连续墙施工阶段（二）总平面布置图", "entities": [{"type": "工程类型", "start": 10, "end": 15, "n_votes": 1, "n_experts": 3}], "src": "replay"}
+{"text": "根据《250 履带吊说明书》可知：", "entities": [{"type": "设备", "start": 7, "end": 10}], "src": "replay"}
+{"text": "塔吊基础施工应遵循下列规定：", "entities": [{"type": "设备", "start": 0, "end": 2, "n_votes": 2, "n_experts": 3}], "src": "replay"}
+{"text": "并做好相应书面记录。项目部施工、安全、技术等部门每天对深基坑施工作业进行重点监控，", "entities": [{"type": "工程类型", "start": 28, "end": 30, "n_votes": 2, "n_experts": 3}], "src": "replay"}
+{"text": "钢丝绳夹角示意图", "entities": [{"type": "设备", "start": 0, "end": 3}], "src": "replay"}
+{"text": "立即停工，疏散基坑内及周边50 米内人员。", "entities": [{"type": "工程类型", "start": 7, "end": 9}], "src": "replay"}
+{"text": "基坑施工组织设计", "entities": [{"type": "工程类型", "start": 0, "end": 2}], "src": "replay"}
+{"text": "点及吊索具工作状况，确认无误后方可正式吊装。", "entities": [{"type": "设备", "start": 2, "end": 5}, {"type": "工序", "start": 19, "end": 21}], "src": "replay"}
+{"text": "进行布料。在振捣过程中，应加强质量监督，以免造成振捣不密实、漏振等情况。", "entities": [{"type": "工序", "start": 6, "end": 8}, {"type": "工序", "start": 24, "end": 26}], "src": "replay"}
+{"text": "固定式配电箱须垂直重复接地，金属箱体保护接零，绝缘导线接头不松动，不", "entities": [{"type": "设备", "start": 3, "end": 6, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "东区车库-转化大楼连通道基坑围护平面示意图", "entities": [{"type": "工程类型", "start": 9, "end": 12}, {"type": "工程类型", "start": 12, "end": 14}], "src": "replay"}
+{"text": "室外灯具距地面不低于3m，室内灯具不低于2.4m。固定照明全面布置，照明电压不大于36V，", "entities": [{"type": "参数", "start": 36, "end": 38, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "卷筒上的钢丝绳排列整齐。", "entities": [{"type": "设备", "start": 4, "end": 7, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "结构跨度（m）", "entities": [{"type": "参数", "start": 2, "end": 4}], "src": "replay"}
+{"text": "当拆除4~8m 跨度的梁下立杆时，应先从跨中开始，对称地分别向两端拆除。拆除时，严禁", "entities": [{"type": "危大类别", "start": 1, "end": 3, "n_votes": 3, "n_experts": 3}, {"type": "参数", "start": 8, "end": 10, "n_votes": 3, "n_experts": 3}, {"type": "危大类别", "start": 33, "end": 35, "n_votes": 2, "n_experts": 3}, {"type": "危大类别", "start": 36, "end": 38, "n_votes": 2, "n_experts": 3}], "src": "replay"}
+{"text": "混凝土浇捣前及浇捣时，应将基坑表面积水通过设置在垫层内的临时集水井、潜水泵向基", "entities": [{"type": "工序", "start": 0, "end": 5}, {"type": "工程类型", "start": 13, "end": 15}, {"type": "设备", "start": 34, "end": 37}], "src": "replay"}
+{"text": "柱桩，立柱桩为∅650 钻孔灌注桩。", "entities": [{"type": "参数", "start": 7, "end": 11}, {"type": "工程类型", "start": 12, "end": 17}], "src": "replay"}
+{"text": "严禁攀援模板支架上下。", "entities": [{"type": "设备", "start": 4, "end": 6, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "钢筋工程应符合《混凝土结构工程施工质量验收规范》（GB50204-2002）要求。", "entities": [{"type": "工程类型", "start": 0, "end": 4, "n_votes": 3, "n_experts": 3}, {"type": "工程类型", "start": 8, "end": 15, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "每根桩测定次数不少于2 次，灌注混凝土前、后阶段各一次。", "entities": [{"type": "工序", "start": 14, "end": 16}], "src": "replay"}
+{"text": "桩的混凝土灌注充盈系数不小于1.0，不大于1.2，超灌高度不小于桩长的3%；", "entities": [{"type": "工序", "start": 5, "end": 7}, {"type": "参数", "start": 7, "end": 11}, {"type": "参数", "start": 32, "end": 34}], "src": "replay"}
+{"text": "禁止随意拆除模板排架的基本构架杆件，整件性杆件及连接紧固件等。", "entities": [{"type": "危大类别", "start": 4, "end": 6, "n_votes": 3, "n_experts": 3}, {"type": "设备", "start": 6, "end": 8, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "外径48mm，允许偏差±0.5mm；壁厚不得＜", "entities": [{"type": "参数", "start": 7, "end": 11, "n_votes": 3, "n_experts": 3}, {"type": "参数", "start": 18, "end": 20, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "模板排架体系分二次验收，先竖向后横向即竖向墙、柱模板及排架搭设完成后进行一次验收，", "entities": [{"type": "设备", "start": 0, "end": 2, "n_votes": 3, "n_experts": 3}, {"type": "设备", "start": 24, "end": 26, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "具等材料的垂直运输。此阶段塔吊最大起重量约为7T，工作半径为51m（小于此处塔吊起重性能", "entities": [{"type": "设备", "start": 13, "end": 15, "n_votes": 2, "n_experts": 3}, {"type": "参数", "start": 17, "end": 20, "n_votes": 3, "n_experts": 3}, {"type": "设备", "start": 38, "end": 40, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "救大楼基坑面积约为6883m2，医技平台基坑面积约为2251m2，污水处理站基坑面积约为683m2。", "entities": [{"type": "工程类型", "start": 3, "end": 5}, {"type": "工程类型", "start": 20, "end": 22}, {"type": "工程类型", "start": 38, "end": 40}], "src": "replay"}
+{"text": "个沉降和位移监测基准点，并做好保护。（与基坑变形监测基准点共用）", "entities": [{"type": "工程类型", "start": 20, "end": 22, "n_votes": 2, "n_experts": 3}], "src": "replay"}
+{"text": "基坑开挖及塔吊使用过程中应实时监测，如监测结果异常，应立即上报并启动本应急预案。", "entities": [{"type": "工程类型", "start": 0, "end": 2, "n_votes": 2, "n_experts": 3}, {"type": "工序", "start": 2, "end": 4, "n_votes": 3, "n_experts": 3}, {"type": "设备", "start": 5, "end": 7, "n_votes": 2, "n_experts": 3}], "src": "replay"}
+{"text": "某医学中心基坑概况表", "entities": [{"type": "工程类型", "start": 5, "end": 7}], "src": "replay"}
+{"text": "灌注完毕后，待混凝土初凝后即可切断钢筋笼吊筋，拔出护筒，清洗导管和护筒，清除孔口", "entities": [{"type": "工序", "start": 0, "end": 2, "n_votes": 3, "n_experts": 3}, {"type": "设备", "start": 30, "end": 32, "n_votes": 3, "n_experts": 3}, {"type": "工序", "start": 36, "end": 38, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "吊装能力验算、地基承载力验算、重载道路承载力验算、钢丝绳强度验算、主、副吊扁担验", "entities": [{"type": "工序", "start": 0, "end": 2, "n_votes": 2, "n_experts": 3}, {"type": "设备", "start": 25, "end": 28, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "先对承台对应区域进行土方开挖作业，开挖尺寸为长5700mm×宽5700mm×深2150mm，基坑采用", "entities": [{"type": "工序", "start": 10, "end": 14, "n_votes": 3, "n_experts": 3}, {"type": "工序", "start": 17, "end": 19, "n_votes": 3, "n_experts": 3}, {"type": "工程类型", "start": 46, "end": 48, "n_votes": 2, "n_experts": 3}], "src": "replay"}
+{"text": "模板排架通过设置竖向剪刀撑、水平剪刀撑、减小立杆间距和步距来增加排架的整体刚度。排", "entities": [{"type": "设备", "start": 0, "end": 2, "n_votes": 3, "n_experts": 3}, {"type": "参数", "start": 27, "end": 29, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "本工程共有三个独立深基坑，桩基围护和地下结构施工工作量较大，同时施工区域内外场地", "entities": [{"type": "工程类型", "start": 10, "end": 12}], "src": "replay"}
+{"text": "医技平台地下连通道：高压旋喷桩双排∅800@500，桩身标高-2.200~-16.400，水泥掺量25％；", "entities": [{"type": "工程类型", "start": 4, "end": 9}, {"type": "工程类型", "start": 10, "end": 15}, {"type": "参数", "start": 17, "end": 25}, {"type": "参数", "start": 45, "end": 52}], "src": "replay"}
+{"text": "依据施工工况，监测频率原则上按下述执行：", "entities": [{"type": "参数", "start": 7, "end": 11, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "坡度、薄层浇筑、循序推进、一次到顶”的方法。每台泵车浇捣速度平均每小时不少于30m3，", "entities": [{"type": "工序", "start": 5, "end": 7}, {"type": "设备", "start": 24, "end": 26}], "src": "replay"}
+{"text": "场地范围内不得存在有管线、暗沟、空洞等。场地必须开阔，上空不得有架空电缆，如有则必", "entities": [{"type": "设备", "start": 34, "end": 36}], "src": "replay"}
+{"text": "应经常检查各种传动、升降，电压、机械系统，以及吊臂、吊绳、吊钩等关键部位的安全性、牢", "entities": [{"type": "参数", "start": 13, "end": 15}], "src": "replay"}
+{"text": "本工程塔吊接地采用L70×70 长1.5m 的角钢，接地体引出铜导线截面积应≥25mm²，若土壤", "entities": [{"type": "设备", "start": 3, "end": 5, "n_votes": 2, "n_experts": 3}], "src": "replay"}
+{"text": "贯彻“安全第一，预防为主”的方针，保证在深基坑施工过程中发生异常情况后，有效防止事", "entities": [{"type": "工程类型", "start": 21, "end": 23}], "src": "replay"}
+{"text": "承台配筋为双层双向C28@160。根据控制轴线弹出底板外围线，绑扎顺序自下而上分层进行，", "entities": [{"type": "工序", "start": 31, "end": 33, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "度，将坑内地下水位降至坑底下1m。", "entities": [{"type": "参数", "start": 5, "end": 9, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "塔吊STT603（地上）", "entities": [{"type": "设备", "start": 0, "end": 2, "n_votes": 2, "n_experts": 3}], "src": "replay"}
+{"text": "空间所有施工作业全部完成后，对登高架予以拆除，随后按规范对该结构洞口进", "entities": [{"type": "危大类别", "start": 20, "end": 22, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "温度与环境最大温差小于20℃时，方可拆除覆盖层；大体积混凝土浇筑体的降温速率不宜大于", "entities": [{"type": "工序", "start": 27, "end": 32}], "src": "replay"}
+{"text": "环成孔工艺，孔内水位一般不得低于地面30cm，保证孔内水位高度，确保孔壁稳定。", "entities": [{"type": "工序", "start": 1, "end": 3}], "src": "replay"}
+{"text": "钢板桩在顺基坑周边方向及其垂直方向的倾斜度均不大于5‰。", "entities": [{"type": "工程类型", "start": 5, "end": 7}], "src": "replay"}
+{"text": "本工程基坑开挖不会突涌。第⑨层埋深更深，可不考虑第⑨层及以下承压含水层的突涌问题。", "entities": [{"type": "工程类型", "start": 3, "end": 5}, {"type": "工序", "start": 5, "end": 7}], "src": "replay"}
+{"text": "值，数据无超标、无突变异动方可分区拆除，指标超限立即停工处置。", "entities": [{"type": "危大类别", "start": 17, "end": 19, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "相应工况下的额定起重量大于计算分配荷载（含安全系数）。检查吊机有效期内检验合格证。", "entities": [{"type": "参数", "start": 6, "end": 11, "n_votes": 2, "n_experts": 3}], "src": "replay"}
+{"text": "塔吊基础在钢筋绑扎、模板搭设完成后，必须经过总包单位和塔吊安装单位、监理单位的共", "entities": [{"type": "设备", "start": 0, "end": 2, "n_votes": 2, "n_experts": 3}, {"type": "工序", "start": 5, "end": 9, "n_votes": 3, "n_experts": 3}, {"type": "设备", "start": 10, "end": 12, "n_votes": 3, "n_experts": 3}, {"type": "工序", "start": 27, "end": 31, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "线安全，根据地下管线的分布情况及规范要求，拟布设电力管线、煤气管线、雨污水管线及信息", "entities": [{"type": "工序", "start": 22, "end": 24}], "src": "replay"}
+{"text": "模板拆除根据现场同条件的试块指导强度，符合设计要求的百分率后，由技术人员发放拆模", "entities": [{"type": "工序", "start": 0, "end": 4, "n_votes": 2, "n_experts": 3}, {"type": "工序", "start": 38, "end": 40, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "配电导线截面的电压可以按照下式计算：", "entities": [{"type": "参数", "start": 7, "end": 9}], "src": "replay"}
+{"text": "基坑施工组织设计", "entities": [{"type": "工程类型", "start": 0, "end": 2}], "src": "replay"}
+{"text": "时根据槽段宽度确定挖槽的幅数和次序，对三序成槽的槽段，应先两边后中间，对于转角的槽段，", "entities": [{"type": "工序", "start": 21, "end": 23}], "src": "replay"}
+{"text": "图三十四：基坑监测点位布设示意图；", "entities": [{"type": "工序", "start": 5, "end": 9}], "src": "replay"}
+{"text": "埋好钢板后专业分包单位吊装伺服系统就位，就位后伺服头子接油管及位移线与泵站连接。最", "entities": [{"type": "工序", "start": 11, "end": 13}], "src": "replay"}
+{"text": "域。医技平台最大有限空间作业体积为35m³，位于地下二层弱电间区域。污水", "entities": [{"type": "工程类型", "start": 8, "end": 14, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "基坑施工组织设计", "entities": [{"type": "工程类型", "start": 0, "end": 2}], "src": "replay"}
+{"text": "基坑施工组织设计", "entities": [{"type": "工程类型", "start": 0, "end": 2}], "src": "replay"}
+{"text": "用电设备总功率计算公式如下：", "entities": [{"type": "参数", "start": 4, "end": 7}], "src": "replay"}
+{"text": "效降低开挖土体中的含水量，确保基坑开挖施工的顺利进行。", "entities": [{"type": "工序", "start": 3, "end": 5}, {"type": "工程类型", "start": 15, "end": 17}, {"type": "工序", "start": 17, "end": 19}], "src": "replay"}
+{"text": "基坑施工组织设计", "entities": [{"type": "工程类型", "start": 0, "end": 2}], "src": "replay"}
+{"text": "模板上口必须同混凝土构件保持同一高度。", "entities": [{"type": "设备", "start": 0, "end": 2}], "src": "replay"}
+{"text": "本方案根据建设部下发建质[2018]31 号文件《危险性较大的分部分项工程安全管理办法》，搭", "entities": [{"type": "危大类别", "start": 25, "end": 37, "n_votes": 2, "n_experts": 3}], "src": "replay"}
+{"text": "污水处理站基坑（面积S≈668m2）", "entities": [{"type": "工程类型", "start": 5, "end": 7}], "src": "replay"}
+{"text": "基采用钻孔灌注桩。紧急医学中心为钢框架-混凝土核心筒结构，医技平台为钢", "entities": [{"type": "工程类型", "start": 3, "end": 8, "n_votes": 1, "n_experts": 3}], "src": "replay"}
+{"text": "程相关单位，并送达基坑围护设计院。", "entities": [{"type": "工程类型", "start": 9, "end": 11, "n_votes": 2, "n_experts": 3}], "src": "replay"}
+{"text": "图二十二：某医学中心基坑立柱桩详图；", "entities": [{"type": "工程类型", "start": 10, "end": 12}], "src": "replay"}
+{"text": "要求不出现夹心层及冷施工缝，并应特别重视每个浇筑带坡顶和坡脚两道振动器振动，确保上、", "entities": [{"type": "工序", "start": 22, "end": 24}], "src": "replay"}
+{"text": "汽车吊选用：三一STC800C5-8，主要性能见表：", "entities": [{"type": "设备", "start": 0, "end": 3, "n_votes": 2, "n_experts": 3}], "src": "replay"}
+{"text": "故下卧层地基承载力能满足吊装要求。", "entities": [{"type": "工序", "start": 12, "end": 14}], "src": "replay"}
+{"text": "配合钢丝绳捆绑吊装的卸扣单个承载力应不小于15t，型号选择弓形。", "entities": [{"type": "设备", "start": 2, "end": 5, "n_votes": 3, "n_experts": 3}, {"type": "工序", "start": 7, "end": 9, "n_votes": 2, "n_experts": 3}, {"type": "设备", "start": 10, "end": 12, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "必须经过计算和技术主管确认其强度能足够承受此荷载后，方可拆除。", "entities": [{"type": "危大类别", "start": 28, "end": 30, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "应采取的控制措施：脚手架作业面应采取铺板或平挂安全网等防护措施，且工人应规范操作，", "entities": [{"type": "危大类别", "start": 9, "end": 12, "n_votes": 3, "n_experts": 3}, {"type": "设备", "start": 23, "end": 26, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "多排脚手架荷载计算", "entities": [{"type": "危大类别", "start": 2, "end": 5, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "在基坑施工过程中，应加强对围护结构的巡视工作，若发现肉眼可见裂缝时，应及时布设监", "entities": [{"type": "工程类型", "start": 1, "end": 3}, {"type": "工序", "start": 37, "end": 39}], "src": "replay"}
+{"text": "布置3 口疏干井，深度21.5m；", "entities": [{"type": "工序", "start": 0, "end": 2}, {"type": "设备", "start": 5, "end": 8}, {"type": "参数", "start": 9, "end": 16}], "src": "replay"}
+{"text": "具体脚手架设置相关情况详见下表3.1-2：", "entities": [{"type": "危大类别", "start": 2, "end": 5, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "检查、调整，要求标准节或固定框的对角线长度及平面高度差不大于2mm，合格后使用。", "entities": [{"type": "设备", "start": 8, "end": 11, "n_votes": 3, "n_experts": 3}, {"type": "设备", "start": 12, "end": 15, "n_votes": 3, "n_experts": 3}, {"type": "参数", "start": 16, "end": 21, "n_votes": 3, "n_experts": 3}, {"type": "参数", "start": 22, "end": 27, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "优秀历史建筑，为更好的基坑微变形控制，在急救大楼基坑北侧及西侧设置了混凝土伺服控制系", "entities": [{"type": "工程类型", "start": 11, "end": 13}, {"type": "工程类型", "start": 24, "end": 26}], "src": "replay"}
+{"text": "的监测点的数值，采用信息化施工来决定是否注浆及控制注浆量及配比，以确保建筑物安全。", "entities": [{"type": "工序", "start": 20, "end": 22, "n_votes": 3, "n_experts": 3}, {"type": "工序", "start": 25, "end": 27, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "钢筋切割作业期间严格执行人机配合安全管控要求，作业人员割除栈桥板短边钢筋的全过程中，", "entities": [{"type": "工序", "start": 2, "end": 4, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "设安全防护围挡，悬挂标准红白警示旗，明确划定吊装危险作业区域，起到隔离警示、规避无关人", "entities": [{"type": "工序", "start": 22, "end": 24, "n_votes": 2, "n_experts": 3}], "src": "replay"}
+{"text": "应检查其合格证，并试吊，确认安全起吊。", "entities": [{"type": "工序", "start": 9, "end": 11}], "src": "replay"}
+{"text": "从基坑开始开挖", "entities": [{"type": "工程类型", "start": 1, "end": 3}, {"type": "工序", "start": 5, "end": 7}], "src": "replay"}
+{"text": "加设基坑外降水井，孔深低于坑底标高，降低坑外地下水位和改变地下水渗流方向。", "entities": [{"type": "工程类型", "start": 2, "end": 4}, {"type": "设备", "start": 5, "end": 8}, {"type": "参数", "start": 13, "end": 17}, {"type": "参数", "start": 22, "end": 26}], "src": "replay"}
+{"text": "后浇带位置在浇筑之前，必须清理里面垃圾，冲水将泥浆、建筑垃圾清理干净，无法冲洗干", "entities": [{"type": "工序", "start": 6, "end": 8}], "src": "replay"}
+{"text": "底板的模板拆除工作必须待混凝土浇筑完毕后隔天进行，翻口处模板三天后方可拆除；", "entities": [{"type": "工序", "start": 3, "end": 7}, {"type": "工序", "start": 12, "end": 17}, {"type": "设备", "start": 28, "end": 30}], "src": "replay"}
+{"text": "电缆直径满足要求。", "entities": [{"type": "设备", "start": 0, "end": 2}], "src": "replay"}
+{"text": "模板排架通过设置竖向剪刀撑、水平剪刀撑、减小立杆间距和步距来增加排架的整体刚度。排", "entities": [{"type": "设备", "start": 0, "end": 2, "n_votes": 3, "n_experts": 3}, {"type": "参数", "start": 27, "end": 29, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "因此250t 履带吊吊装按最重25.4T(起吊配备铁扁担及料索具、吊钩总重约2t。履带重量", "entities": [{"type": "设备", "start": 7, "end": 10}, {"type": "工序", "start": 10, "end": 12}], "src": "replay"}
+{"text": "脚手架上严禁悬挂起重设备。", "entities": [{"type": "危大类别", "start": 0, "end": 3, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "此时因外部因素导致停工，将对基坑造成极大的风险。现场将视情况采取临时增加钢支撑或进行", "entities": [{"type": "工程类型", "start": 14, "end": 16}, {"type": "设备", "start": 36, "end": 39}], "src": "replay"}
+{"text": "附图四：250T 履带吊安拆场地布置图", "entities": [{"type": "设备", "start": 9, "end": 12}], "src": "replay"}
+{"text": "保障项目关键节点工期，支撑拆除施工做以下评审论证：", "entities": [{"type": "危大类别", "start": 13, "end": 15, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "支撑拆除到拆除完成后3d按照每2天监测一次的频率监测直到基坑工程施工完成。如遇到特", "entities": [{"type": "危大类别", "start": 2, "end": 4}, {"type": "危大类别", "start": 5, "end": 7}, {"type": "工程类型", "start": 28, "end": 32}], "src": "replay"}
+{"text": "支架拆除时，严禁超过两人在同一垂直平面上操作。严禁将拆卸的杆件、零配件向地面抛掷。", "entities": [{"type": "危大类别", "start": 2, "end": 4, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "应采取的控制措施：脚手架作业面应采取铺板或平挂安全网等防护措施，且工人应规范操作，", "entities": [{"type": "危大类别", "start": 9, "end": 12, "n_votes": 3, "n_experts": 3}, {"type": "设备", "start": 23, "end": 26, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "电源：急救大楼区域现场业主提供1200KVA 箱变，位于场地北侧。医技平台区域临时用", "entities": [{"type": "设备", "start": 23, "end": 25, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "拆除产生的混凝土块吊运时，避免钢丝绳或吊具刮擦基础底板边缘，必要时在底板边缘设置", "entities": [{"type": "危大类别", "start": 0, "end": 2, "n_votes": 3, "n_experts": 3}, {"type": "设备", "start": 15, "end": 18, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "医技平台底板Ⅱ区混凝土浇筑施工示意", "entities": [{"type": "工序", "start": 8, "end": 13}], "src": "replay"}
+{"text": "施工操作人员应及时做好脚手架清理工作，每日收工前清理脚手架上建筑垃圾及杂物，并", "entities": [{"type": "危大类别", "start": 11, "end": 14, "n_votes": 3, "n_experts": 3}, {"type": "危大类别", "start": 26, "end": 29, "n_votes": 2, "n_experts": 3}], "src": "replay"}
+{"text": "该经常检查，防止产生疲劳破坏。凡有下列情况之一的钢丝绳不得继续使用：在一个节距", "entities": [{"type": "设备", "start": 24, "end": 27, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "医技平台基坑第一皮土方开挖平面图", "entities": [{"type": "工程类型", "start": 4, "end": 6}, {"type": "工序", "start": 9, "end": 13}], "src": "replay"}
+{"text": "认真检查进场模板质量。各种模板要求坚实、平整、完好。钢模板每次使用前须进行清理，", "entities": [{"type": "设备", "start": 6, "end": 8}, {"type": "设备", "start": 13, "end": 15}, {"type": "设备", "start": 27, "end": 29}], "src": "replay"}
+{"text": "回转机构各部间隙调整适当，冋转时无明显晃动或抖动，丼具有滑转性能，行", "entities": [{"type": "工序", "start": 8, "end": 10}], "src": "replay"}
+{"text": "急救大楼及以及平台基坑：", "entities": [{"type": "工程类型", "start": 9, "end": 11}], "src": "replay"}
+{"text": "凝土达到设计强度后，模板支撑体系经项目技术负责人检查验证确认不再需要，并监理单位审批同", "entities": [{"type": "参数", "start": 4, "end": 8, "n_votes": 3, "n_experts": 3}, {"type": "危大类别", "start": 10, "end": 14, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "急救大楼：地下一～三层人防工程、电梯井、可进人管道及设备间、汽车", "entities": [{"type": "工程类型", "start": 11, "end": 15, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "污水处理站基坑（面积S≈668m2）", "entities": [{"type": "工程类型", "start": 5, "end": 7}], "src": "replay"}
+{"text": "所有柱子模板拼缝、梁与柱、柱与梁等节点处均用海绵胶带贴缝，楼板缝用胶带纸贴缝，以", "entities": [{"type": "设备", "start": 4, "end": 6, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "压水在局部分布区域对基坑开挖有不利影响。但考虑到⑤3t 层为透镜体，仅在场地内局部", "entities": [{"type": "工程类型", "start": 10, "end": 12, "n_votes": 2, "n_experts": 3}, {"type": "工序", "start": 12, "end": 14, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "施工操作人员在脚手架上施工作业时，应注意自我保护和保护他人安全意识。上下脚手架", "entities": [{"type": "危大类别", "start": 7, "end": 10, "n_votes": 3, "n_experts": 3}, {"type": "危大类别", "start": 36, "end": 39, "n_votes": 2, "n_experts": 3}], "src": "replay"}
+{"text": "作业前应清除积水、积雪，并应有防滑措施。夜间施工应制订专项施工方案，提供足够的照明及采取", "entities": [{"type": "工序", "start": 4, "end": 6, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "吊物下方有人；吊物上站人；埋在地下物；斜拉斜牵物；散物捆绑不牢；立式构件、大模板", "entities": [{"type": "设备", "start": 38, "end": 40, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "基坑施工组织设计", "entities": [{"type": "工程类型", "start": 0, "end": 2}], "src": "replay"}
+{"text": "压水在局部分布区域对基坑开挖有不利影响。但考虑到⑤3t 层为透镜体，仅在场地内局部", "entities": [{"type": "工程类型", "start": 10, "end": 12, "n_votes": 2, "n_experts": 3}, {"type": "工序", "start": 12, "end": 14, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "该线路主要用于现场施工机械用电，在挖土支撑供降水施工机械用电负荷，", "entities": [{"type": "参数", "start": 28, "end": 32, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "单台功率（KW)", "entities": [{"type": "参数", "start": 2, "end": 4}], "src": "replay"}
+{"text": "附图五：医技平台区域地下连续墙施工阶段（二）总平面布置图", "entities": [{"type": "工程类型", "start": 10, "end": 15, "n_votes": 1, "n_experts": 3}], "src": "replay"}
+{"text": "现场违规吸烟、宿舍使用大功率电器、", "entities": [{"type": "参数", "start": 12, "end": 14, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "所以80 吨汽车吊安装250 吨或200 吨时起重量合格。", "entities": [{"type": "设备", "start": 6, "end": 9, "n_votes": 2, "n_experts": 3}, {"type": "参数", "start": 23, "end": 26, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "本次吊装钢丝绳的配备以最大件单条履带27t 为依据，单条履带上有四个吊点，选用抗拉", "entities": [{"type": "工序", "start": 2, "end": 4}, {"type": "设备", "start": 4, "end": 7}], "src": "replay"}
+{"text": "急救大楼基坑交通组织：现场施工机械均从场地南侧施工大门进入，从场地西侧施工大门驶", "entities": [{"type": "工程类型", "start": 4, "end": 6}], "src": "replay"}
+{"text": "钢模板，用8#槽钢固定模板，强度达到70％后方可拆模。模板拆除后统一设置10cm 直径上、", "entities": [{"type": "设备", "start": 1, "end": 3}, {"type": "设备", "start": 11, "end": 13}, {"type": "工序", "start": 24, "end": 26}, {"type": "工序", "start": 27, "end": 31}], "src": "replay"}
+{"text": "根据250t 履带吊起重性能表(上图可见)，起重臂长为L＝46.5m，最不利起重半径为r=14m，", "entities": [{"type": "设备", "start": 7, "end": 10, "n_votes": 2, "n_experts": 3}], "src": "replay"}
+{"text": "幅槽壁垂直度检测2～3 个断面。", "entities": [{"type": "参数", "start": 3, "end": 6, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "拉强度为177kg/mm2,D=47.5 的6×37 钢丝绳，长度10m。", "entities": [{"type": "设备", "start": 27, "end": 30, "n_votes": 3, "n_experts": 3}], "src": "replay"}
+{"text": "通道挖深为5.95m、东区车库-转化大楼连通道基坑挖深为6.4m。", "entities": [{"type": "工程类型", "start": 0, "end": 2}, {"type": "参数", "start": 2, "end": 10}, {"type": "工程类型", "start": 20, "end": 25}, {"type": "参数", "start": 25, "end": 32}], "src": "replay"}

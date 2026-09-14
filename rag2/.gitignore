@@ -1,0 +1,22 @@
+# rag2 —— 版本控制忽略规则
+#
+# 迁移推荐用 git（代码与小数据走仓库，大文件走外部拷贝）。
+# 这里刻意**不忽略** data/authoring 与 data/phase1：那是人工撰写的问句与训练集，
+# 体量小（<2MB）且不可复现，必须入库。
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+
+# 可重建的大产物（用脚本重建，不入库）
+data/index/
+data/models/
+
+# 注：data/corpus/clauses.jsonl（12720 条款）自本仓库版起纳入版本控制，
+#     因为重建它需要先获得 82 本规范 PDF，而 PDF 因体积与版权不入库。
+
+# 评估中间产物
+data/eval/*.jsonl

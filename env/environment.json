@@ -1,0 +1,104 @@
+{
+  "schema": 1,
+  "captured_on": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "machine": "DESKTOP-1BSE39V",
+    "python": "3.12.13 | packaged by Anaconda, Inc. | (main, Mar 19 2026, 20:16:45) [MSC v.1942 64 bit (AMD64)]"
+  },
+  "project_root_relative_contract": "rag2/ 与 data/ 必须是同级兄弟目录",
+  "python": {
+    "executable": "C:\\Users\\<用户名>\\anaconda3\\envs\\torch_gpu\\python.exe",
+    "version": "3.12.13",
+    "implementation": "CPython"
+  },
+  "packages": {
+    "numpy": "2.5.3",
+    "torch": "2.7.1+cu118",
+    "transformers": "5.17.0",
+    "sentence_transformers": "6.0.1",
+    "faiss": "1.15.0",
+    "fitz": "1.28.2"
+  },
+  "gpu": {
+    "cuda_available": true,
+    "threads": 10,
+    "torch": "2.7.1+cu118",
+    "cuda_build": "11.8",
+    "device_name": "NVIDIA GeForce RTX 4060 Ti"
+  },
+  "models": {
+    "base_tower(bge-small-zh-v1.5)": {
+      "path": "data/models/bge-small-zh-v1.5",
+      "exists": true,
+      "n_files": 10,
+      "has_weights": true
+    },
+    "dual_mix/doc_encoder": {
+      "path": "rag2/data/models/dual_mix/doc_encoder",
+      "exists": true,
+      "n_files": 9,
+      "has_weights": true
+    },
+    "dual_mix/query_encoder": {
+      "path": "rag2/data/models/dual_mix/query_encoder",
+      "exists": true,
+      "n_files": 9,
+      "has_weights": true
+    },
+    "dual_gold/doc_encoder": {
+      "path": "rag2/data/models/dual_gold/doc_encoder",
+      "exists": true,
+      "n_files": 9,
+      "has_weights": true
+    },
+    "cross_v2_ep4(CrossEncoder)": {
+      "path": "rag2/data/models/cross_v2_ep4",
+      "exists": true,
+      "n_files": 5,
+      "has_weights": true
+    }
+  },
+  "corpus_stats": {
+    "clauses": 13661,
+    "units": 14916,
+    "sources": 81
+  },
+  "artifact_sha256": {
+    "rag2/data/corpus/clauses.jsonl": {
+      "bytes": 10544996,
+      "sha256": "95612da756a7ba6a69b29562722c787f1f9de9510682d9121cfee8f12ba4dcc4"
+    },
+    "rag2/data/phase1/train.jsonl": {
+      "bytes": 1121913,
+      "sha256": "1259e801d67105eaeddc0fef4b9745630b4adbefd3d18bb241d3d184f81cdda1"
+    },
+    "rag2/data/phase1/val.jsonl": {
+      "bytes": 7997,
+      "sha256": "d4fe50a878efe0d19abfe62c12af424cb37de5ff652092d8c05403a863d9de62"
+    },
+    "rag2/data/index/bm25_calib.json": {
+      "bytes": 294,
+      "sha256": "c2c70db69e5b734e0b826d0eb003cdf9b93ace50c049ad80545dc3b0939a82aa"
+    },
+    "rag2/data/corpus/corpus_stats.json": {
+      "bytes": 24405,
+      "sha256": "ab0aa3f3a40640ab8f08a464bc297b2dfc1c4ca793f2ccd6f6585d41ad67290b"
+    }
+  },
+  "artifact_bytes": {
+    "rag2/data/index/bm25.json": 27566495,
+    "rag2/data/index/units.jsonl": 11491656,
+    "rag2/data/index/tower_base.faiss": 30548013,
+    "rag2/data/index/dual_mix.faiss": 30548013,
+    "rag2/data/index/dual_gold.faiss": 30548013,
+    "rag2/data/models/dual_mix/doc_encoder/model.safetensors": 95823472,
+    "rag2/data/models/dual_mix/query_encoder/model.safetensors": 95823472,
+    "rag2/data/models/cross_v2_ep4/model.safetensors": 1112201932,
+    "data/models/bge-small-zh-v1.5/model.safetensors": 95827648,
+    "data/models/qwen-grpo/r2_final/config.json": 1620
+  },
+  "env_files": {
+    "requirements": "rag2/requirements.txt",
+    "frozen": "env/requirements-frozen.txt"
+  }
+}

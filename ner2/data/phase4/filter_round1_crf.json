@@ -1,0 +1,22 @@
+{
+ "head": "crf",
+ "ckpt": "ner2/models/s2_crf_stage1/model.pt",
+ "data": "<REPO_ROOT>\\ner2\\data\\phase2\\silver_train.jsonl",
+ "sp_margin": 0.0,
+ "o_margin": 0.0,
+ "n_in": 1577,
+ "out": 504,
+ "out_entities": 648,
+ "by_type": {
+  "参数": 43,
+  "工程类型": 259,
+  "设备": 130,
+  "工序": 152,
+  "危大类别": 60,
+  "规范编号": 4
+ },
+ "total": 1577,
+ "drop_inconsistent": 1017,
+ "drop_disagree": 56,
+ "kept": 504
+}

@@ -1,0 +1,8 @@
+{
+ "consensus_uniq": 1043,
+ "train_portion": 500,
+ "gold_test": 543,
+ "appended_to_silver_train": 500,
+ "silver_train_total": 1577,
+ "test_zero_overlap": true
+}

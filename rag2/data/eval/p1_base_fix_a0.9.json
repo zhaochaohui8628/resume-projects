@@ -1,0 +1,14 @@
+{
+  "tag": "p1_base_fix_a0.9",
+  "mode": "convex",
+  "index": "tower_base.faiss",
+  "alpha": 0.9,
+  "cand": 10,
+  "top_k": 5,
+  "n": 43,
+  "hit@k": 0.9534883720930233,
+  "mrr": 0.8463455149501662,
+  "ndcg@k": 0.8710324551711448,
+  "recall@k": 0.9534883720930233,
+  "sec_per_query": 0.0425
+}

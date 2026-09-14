@@ -1,0 +1,27 @@
+{
+  "n_total": 1500,
+  "n_train": 1000,
+  "n_eval": 500,
+  "scenario": {
+    "长尾": 600,
+    "模糊": 450,
+    "对抗": 450
+  },
+  "split_by_scenario": {
+    "长尾": {
+      "eval": 200,
+      "train": 400
+    },
+    "模糊": {
+      "eval": 150,
+      "train": 300
+    },
+    "对抗": {
+      "eval": 150,
+      "train": 300
+    }
+  },
+  "sources_covered": 81,
+  "appendix_covered": 240,
+  "seed": 20260911
+}

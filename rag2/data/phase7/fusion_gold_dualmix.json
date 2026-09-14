@@ -1,0 +1,239 @@
+{
+  "gold_set": "<REPO_ROOT>\\rag2\\data\\phase7\\gold_eval.jsonl",
+  "n": 500,
+  "cand": 20,
+  "index": "dual_mix.faiss",
+  "all_results": [
+    {
+      "label": "BM25-only (α=1.0)",
+      "mode": "convex",
+      "alpha": 1.0,
+      "rrf_k": 60,
+      "hit@5": 0.934,
+      "mrr": 0.8538,
+      "ndcg@5": 0.8718
+    },
+    {
+      "label": "纯向量 (α=0.0)",
+      "mode": "convex",
+      "alpha": 0.0,
+      "rrf_k": 60,
+      "hit@5": 0.94,
+      "mrr": 0.8698,
+      "ndcg@5": 0.8862
+    },
+    {
+      "label": "RRF k=10",
+      "mode": "rrf",
+      "alpha": 0.0,
+      "rrf_k": 10,
+      "hit@5": 0.962,
+      "mrr": 0.9025,
+      "ndcg@5": 0.9163
+    },
+    {
+      "label": "RRF k=20",
+      "mode": "rrf",
+      "alpha": 0.0,
+      "rrf_k": 20,
+      "hit@5": 0.962,
+      "mrr": 0.9022,
+      "ndcg@5": 0.916
+    },
+    {
+      "label": "RRF k=60",
+      "mode": "rrf",
+      "alpha": 0.0,
+      "rrf_k": 60,
+      "hit@5": 0.962,
+      "mrr": 0.9014,
+      "ndcg@5": 0.9154
+    },
+    {
+      "label": "RRF k=100",
+      "mode": "rrf",
+      "alpha": 0.0,
+      "rrf_k": 100,
+      "hit@5": 0.962,
+      "mrr": 0.9014,
+      "ndcg@5": 0.9154
+    },
+    {
+      "label": "凸组合 α=0.0",
+      "mode": "convex",
+      "alpha": 0.0,
+      "rrf_k": 60,
+      "hit@5": 0.94,
+      "mrr": 0.8698,
+      "ndcg@5": 0.8862
+    },
+    {
+      "label": "凸组合 α=0.1",
+      "mode": "convex",
+      "alpha": 0.1,
+      "rrf_k": 60,
+      "hit@5": 0.95,
+      "mrr": 0.893,
+      "ndcg@5": 0.9065
+    },
+    {
+      "label": "凸组合 α=0.2",
+      "mode": "convex",
+      "alpha": 0.2,
+      "rrf_k": 60,
+      "hit@5": 0.952,
+      "mrr": 0.9055,
+      "ndcg@5": 0.9165
+    },
+    {
+      "label": "凸组合 α=0.3",
+      "mode": "convex",
+      "alpha": 0.3,
+      "rrf_k": 60,
+      "hit@5": 0.954,
+      "mrr": 0.9142,
+      "ndcg@5": 0.9235
+    },
+    {
+      "label": "凸组合 α=0.4",
+      "mode": "convex",
+      "alpha": 0.4,
+      "rrf_k": 60,
+      "hit@5": 0.956,
+      "mrr": 0.9132,
+      "ndcg@5": 0.9236
+    },
+    {
+      "label": "凸组合 α=0.5",
+      "mode": "convex",
+      "alpha": 0.5,
+      "rrf_k": 60,
+      "hit@5": 0.958,
+      "mrr": 0.9043,
+      "ndcg@5": 0.9173
+    },
+    {
+      "label": "凸组合 α=0.6",
+      "mode": "convex",
+      "alpha": 0.6,
+      "rrf_k": 60,
+      "hit@5": 0.96,
+      "mrr": 0.8974,
+      "ndcg@5": 0.9125
+    },
+    {
+      "label": "凸组合 α=0.7",
+      "mode": "convex",
+      "alpha": 0.7,
+      "rrf_k": 60,
+      "hit@5": 0.964,
+      "mrr": 0.8934,
+      "ndcg@5": 0.9102
+    },
+    {
+      "label": "凸组合 α=0.8",
+      "mode": "convex",
+      "alpha": 0.8,
+      "rrf_k": 60,
+      "hit@5": 0.962,
+      "mrr": 0.8912,
+      "ndcg@5": 0.9075
+    },
+    {
+      "label": "凸组合 α=0.9",
+      "mode": "convex",
+      "alpha": 0.9,
+      "rrf_k": 60,
+      "hit@5": 0.956,
+      "mrr": 0.8891,
+      "ndcg@5": 0.904
+    },
+    {
+      "label": "凸组合 α=1.0",
+      "mode": "convex",
+      "alpha": 1.0,
+      "rrf_k": 60,
+      "hit@5": 0.934,
+      "mrr": 0.8538,
+      "ndcg@5": 0.8718
+    }
+  ],
+  "best_rrf": {
+    "label": "RRF k=10",
+    "mode": "rrf",
+    "alpha": 0.0,
+    "rrf_k": 10,
+    "hit@5": 0.962,
+    "mrr": 0.9025,
+    "ndcg@5": 0.9163
+  },
+  "best_convex": {
+    "label": "凸组合 α=0.3",
+    "mode": "convex",
+    "alpha": 0.3,
+    "rrf_k": 60,
+    "hit@5": 0.954,
+    "mrr": 0.9142,
+    "ndcg@5": 0.9235
+  },
+  "delta_mrr": 0.0117,
+  "delta_pct_vs_rrf": 1.3,
+  "breakdown": {
+    "RRF": {
+      "config": {
+        "label": "RRF k=10",
+        "mode": "rrf",
+        "alpha": 0.0,
+        "rrf_k": 10,
+        "hit@5": 0.962,
+        "mrr": 0.9025,
+        "ndcg@5": 0.9163
+      },
+      "per_scenario": {
+        "长尾": {
+          "hit@5": 0.935,
+          "mrr": 0.8777,
+          "ndcg@5": 0.8916
+        },
+        "模糊": {
+          "hit@5": 0.98,
+          "mrr": 0.9098,
+          "ndcg@5": 0.9262
+        },
+        "对抗": {
+          "hit@5": 0.98,
+          "mrr": 0.9284,
+          "ndcg@5": 0.9394
+        }
+      }
+    },
+    "凸组合": {
+      "config": {
+        "label": "凸组合 α=0.3",
+        "mode": "convex",
+        "alpha": 0.3,
+        "rrf_k": 60,
+        "hit@5": 0.954,
+        "mrr": 0.9142,
+        "ndcg@5": 0.9235
+      },
+      "per_scenario": {
+        "长尾": {
+          "hit@5": 0.925,
+          "mrr": 0.8818,
+          "ndcg@5": 0.8912
+        },
+        "模糊": {
+          "hit@5": 0.98,
+          "mrr": 0.9266,
+          "ndcg@5": 0.9399
+        },
+        "对抗": {
+          "hit@5": 0.9667,
+          "mrr": 0.9451,
+          "ndcg@5": 0.9502
+        }
+      }
+    }
+  }
+}

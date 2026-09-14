@@ -1,0 +1,640 @@
+{"text": "编制时间：2025 年3 月23 日", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "附图001：桩基施工阶段临设用电平面图", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "附图003：医技平台围护阶段临设用电平面图", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "附图004：医技平台挖土阶段临设用电平面图", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "附图006：桩基阶段施工现场用电系统图", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "连廊系统及配套设施，新建总建筑面积73500 平方米，其中地上45500 平方米，", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "层，地下室埋深均约为19 米，基础形式为桩-筏基础。桩基采用钻孔灌注桩。", "entities": [{"type": "工程类型", "start": 30, "end": 35}], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "水处理工艺需要采用框架剪力墙结构。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "集团标准及现场标准化管理细则", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "图3.2 配电系统分布图", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "室外施工照明类负荷", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "图3.3 配电系统分布图", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "型高功率机械同时施工，是本工程耗电极高的阶段之一，根据现场施工工期及工", "entities": [{"type": "参数", "start": 2, "end": 4}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["功率"]}
+{"text": "图3.4 配电系统分布图", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "插入式振动棒（φ50、", "entities": [{"type": "设备", "start": 3, "end": 6}, {"type": "参数", "start": 7, "end": 10}], "src": "param_specialist_full", "forms": ["SPEC:径规格"], "nouns": ["<spec>"]}
+{"text": "图3.5 配电系统分布图", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "图3.6 配电系统分布图", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "装饰装修施工机械负荷", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "本例采用需要系数法进行负荷计算，公式为：", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "式中：P0 —— 供电设备总需要容量（KVA）；", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "由于在不同的施工阶段中，每条线路所负荷的用电量不同，故每条线路按照", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "当前线路在不同施工阶段中的最大负荷进行计算，确保线路在整个施工过程中的", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "图6-1 TN-S 保护接零系统", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "人工接地体的形式：垂直接地体使用Φ25 钢管，长度2~3m，接地体间距一", "entities": [{"type": "参数", "start": 16, "end": 19}], "src": "param_specialist_full", "forms": ["SPEC:径规格"], "nouns": ["<spec>"]}
+{"text": "接地体与接地体的连接方式，采用螺栓焊接，螺栓直径不得小于8mm。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "脚手架接地：垂直接地体使用Ф50 钢管，长度2~3m，接地体间距一般不小", "entities": [{"type": "危大类别", "start": 0, "end": 3}], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "埋设深度不宜小于0.8m;水平接地极的间距不宜小于5m,垂直接地极的间距不宜", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "小于其长度的2 倍。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "得有外露部分。动力、照明分路，配电三级配电，二级漏电保护。", "entities": [{"type": "参数", "start": 18, "end": 20}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["级配"]}
+{"text": "为确保我项目部触电事故发生以后，能迅速有效地开展抢救工作，最大限度", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "环境造成的污染降低到最低限度。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "编制时间：2025 年03 月01 日", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "图四：围护施工平面布置图；", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "图五：围护地墙阶段施工布局图；", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "图六：某医学中心临时用水布置图；", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "图七：医技平台临时用水布置图；", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "图八：污水处理站临时用水布置图；", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "图九：某医学中心项目车辆流线图；", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "图十六：某医学中心项目调蓄池支撑平面图；", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "图十七：某医学中心围护桩基施工阶段工况图一；", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "图十八：某医学中心围护桩基施工阶段工况图二；", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "图十九：某医学中心围护桩基施工阶段工况图三；", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "图二十：某医学中心围护桩基施工阶段工况图四；", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "图二十一：某医学中心围护桩基施工阶段工况图五；", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "图二十三：医技平台围护桩基施工阶段工况图一；", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "图二十四：医技平台围护桩基施工阶段工况图二；", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "图二十六：医技平台围护桩基施工阶段工况图四；", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "图二十七：医技平台围护桩基施工阶段工况图五；", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "图二十八：污水处理站围护桩基施工阶段工况图一；", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "图二十九：污水处理站围护桩基施工阶段工况图二；", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "图三十：某医学中心地墙分幅图；", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "图三十三：某医学中心周边环境监测图；", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "图三十五：某医学中心土方分区及开挖流线图；", "entities": [{"type": "工序", "start": 15, "end": 17}], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "图三十七：医技平台土方分区及开挖流线图；", "entities": [{"type": "工序", "start": 14, "end": 16}], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "图四十二：某医学中心工况图二；", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "图四十三：某医学中心工况图三~五；", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "图四十四：某医学中心工况图六~九；", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "图四十五：某医学中心工况图十~十三；", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "图四十六：医技平台工况图一~二；", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "图四十七：医技平台工况图三~五；", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "图四十九：医技平台工况图十~十三；", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "图五十：污水处理站工况图一~二；", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "图五十一：污水处理站工况图三~五；", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "图五十二：污水处理站工况图六~九；", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "图五十三：污水处理站工况图十~十二；", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "图五十四：某医学中心换撑平面布局图；", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "图五十七：某医学中心基础底板测温点布设图；", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "图六十：某医学中心项目管线总平图。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "进度计划、质量和安全文明保证措施以及应急预案等。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "急救大楼地上13 层，局部3 层，地下3 层，医技平台地上4 层，地下3 层，地下室埋深均", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "约为19 米。污水处理站为地下3 层建筑，根据污水处理工艺需要采用框架剪力墙结构。上述建", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "建筑高度（m）", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "级一级，结构重要性系数为1.1；", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "级二级，结构重要性系数为1.0。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "急救综合大楼大面积基础底板厚度为800mm（局部区域2200mm、2400mm、2600mm），", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "医技平台大面积基础底板厚度为800mm，底板顶标高为-16.65m（局部区域-5.35m），基础", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "污水处理站大面积基础底板厚度为800mm，底板顶标高为-9.75m，基础底板砼强度等级为", "entities": [{"type": "参数", "start": 38, "end": 43}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["砼强度等级"]}
+{"text": "地墙：墙厚800mm、墙长37m～", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "围护钻孔灌注桩：∅1100@1300，", "entities": [{"type": "工程类型", "start": 2, "end": 7}, {"type": "参数", "start": 8, "end": 18}], "src": "param_specialist_full", "forms": ["SPEC:径规格"], "nouns": ["<spec>"]}
+{"text": "双排∅800@500，内插", "entities": [{"type": "参数", "start": 2, "end": 10}], "src": "param_specialist_full", "forms": ["SPEC:径规格"], "nouns": ["<spec>"]}
+{"text": "支撑顶面相对标高（m）", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "不少于3.0m。桩身混凝土设计强度等级C30（水下）。型钢格构立柱在穿越底板的范围内设置", "entities": [{"type": "参数", "start": 13, "end": 17}, {"type": "参数", "start": 19, "end": 22}], "src": "param_specialist_full", "forms": ["A", "SPEC:强度等级值"], "nouns": ["设计强度", "<spec>"]}
+{"text": "向补给，其排泄方式以蒸发消耗为主。浅部土层中的潜水位埋深，一般离地表面0.3～", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "系十分密切，故水位呈季节性波动。拟建场地浅部地下水属潜水类型。设计时地下水", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "工程经验，其承压水头埋深一般在3m~12m 之间，呈周期性变化。据勘察报告，第⑦", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "承压水突涌稳定系数计算结果如下：", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "式对承压水水头的稳定性安全系数进行了初步估算，考虑施工中地下水的波动，故按", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "最不利的承压水水头埋深估算。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "均匀沉降测量结果与倾斜测量结果基本一致。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "东西向倾斜无规律，倾斜率在0.1~0.5‰之间。不均匀沉降测量", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "之间。不均匀沉降测量结果与倾斜测量结果基本一致", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "东西向倾斜无规律，倾斜率在1.7~5.1‰之间。不均匀沉降测量", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "之间。不均匀沉降测量结果与倾斜测量结果基本一致。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "东西向倾斜无规律，倾斜率在0.2-3.1‰之间。不均匀沉降测量", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "直径（mm）", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "原有老门诊存在一层地下室，建筑面积2073m2，挖深4.6m，地下室底板厚600mm，根据已", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "不少于三遍。分段分层填土，交接处应填成阶梯形，每层互相搭接，其搭接长度应不少于每层填", "entities": [{"type": "参数", "start": 31, "end": 35}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["搭接长度"]}
+{"text": "土厚度的两倍，上下层错缝距离不少于1m。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "为30～40kg；每层厚度为200mm，夯重应为60～70kg.打夯要领为“夯高过膝，一夯压半夯，夯", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "因坍孔而引起孔外土体沉降进而影响周边建筑物。围护体及加固采用“跳仓法”或“梅花形”施工方", "entities": [{"type": "工序", "start": 1, "end": 3}], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "况，并请市政、管线权属单位对管线具体数量、埋深详细交底，制定周密的保护措施。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "强对上述部位的监测布点及加密重要时期（如挖土、拆撑）的监测频率；", "entities": [{"type": "参数", "start": 27, "end": 31}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["监测频率"]}
+{"text": "环境的变形和受力情况，“信息化”指导施工。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "防止由于围护结构变形过大而发生渗漏现象。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "复核挖土范围和标高，保证施工速度和质量。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "项目部严格按照建设部、上海市有关建筑工程施工现场标准化管理规定组织施工。以安全、", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "桩架垂直度偏差不大于1/250，成桩垂直度偏差不大于1/200。", "entities": [{"type": "参数", "start": 2, "end": 5}, {"type": "工序", "start": 16, "end": 18}, {"type": "参数", "start": 18, "end": 21}], "src": "param_specialist_full", "forms": ["A", "A"], "nouns": ["垂直度", "垂直度"]}
+{"text": "水泥掺量20%。", "entities": [{"type": "参数", "start": 0, "end": 4}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["水泥掺量"]}
+{"text": "桩身标高-0.600~-24.800，水泥掺量20％。", "entities": [{"type": "参数", "start": 19, "end": 23}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["水泥掺量"]}
+{"text": "槽段宽度允许偏差为0~+50mm，墙面平整度应小于100mm，钢筋笼安装深度允许偏差不大于", "entities": [{"type": "参数", "start": 4, "end": 8}, {"type": "参数", "start": 19, "end": 22}, {"type": "参数", "start": 38, "end": 42}], "src": "param_specialist_full", "forms": ["A", "A", "A"], "nouns": ["允许偏差", "平整度", "允许偏差"]}
+{"text": "水泥掺量25％。槽段接缝止水∅1000@800 高压旋喷桩，与地墙搭接200mm，-0.650~-25.050，", "entities": [{"type": "参数", "start": 0, "end": 4}, {"type": "参数", "start": 14, "end": 23}], "src": "param_specialist_full", "forms": ["A", "SPEC:径规格"], "nouns": ["水泥掺量", "<spec>"]}
+{"text": "水泥掺量25％。", "entities": [{"type": "参数", "start": 0, "end": 4}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["水泥掺量"]}
+{"text": "施工过程中对围护结构测斜、周围结构顶部隆沉与位移、坑外地表沉降、坑外土体测斜、立", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "柱隆沉、坑外潜水水位、支撑轴力、周边管线进行监测。并在各项内容前，应测得出示读数。由", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "围墙：急救大楼除某路侧围墙均采用底部砌筑+上部75mm 厚夹芯岩棉板的形式，高度", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "造柱，方钢立柱插入构造柱底部，构造柱尺寸为：0.2m*0.2m，内置4φ12 钢筋，箍筋采用φ8@200，", "entities": [{"type": "参数", "start": 35, "end": 38}], "src": "param_specialist_full", "forms": ["SPEC:径规格"], "nouns": ["<spec>"]}
+{"text": "混凝土为C25，构造柱高度900 或者1150；急救大楼西侧靠近某路一侧围墙底部设置防撞墩，", "entities": [{"type": "参数", "start": 4, "end": 7}], "src": "param_specialist_full", "forms": ["SPEC:强度等级值"], "nouns": ["<spec>"]}
+{"text": "基础采用预制基础+上部75mm 厚夹芯岩棉板的形式，围墙高度3000mm；医技平台北侧靠近干保", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "区与施工区域采用钢制围挡进行临时性封闭，围挡立柱采用80*80*5 镀锌方钢，间距4250mm，", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "高压、三轴施工用电负荷", "entities": [{"type": "参数", "start": 7, "end": 11}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["用电负荷"]}
+{"text": "挖土支撑施工机械用电负荷", "entities": [{"type": "参数", "start": 8, "end": 12}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["用电负荷"]}
+{"text": "插入式振动棒（φ50、φ35）", "entities": [{"type": "设备", "start": 3, "end": 6}, {"type": "参数", "start": 7, "end": 10}, {"type": "参数", "start": 11, "end": 14}], "src": "param_specialist_full", "forms": ["SPEC:径规格", "SPEC:径规格"], "nouns": ["<spec>", "<spec>"]}
+{"text": "其中: d ──配水管直径(m)；", "entities": [{"type": "设备", "start": 8, "end": 11}], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "详见附件《某医院某医学中心项目施工总进度计划》", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "垂直度、轴线测", "entities": [{"type": "参数", "start": 0, "end": 3}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["垂直度"]}
+{"text": "标高控制、检测", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "层高、距离检测", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "混凝土强度检", "entities": [{"type": "参数", "start": 0, "end": 5}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["混凝土强度"]}
+{"text": "坍落度筒及捣棒", "entities": [{"type": "参数", "start": 0, "end": 3}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["坍落度"]}
+{"text": "坍落度、扩展度", "entities": [{"type": "参数", "start": 0, "end": 3}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["坍落度"]}
+{"text": "角度距离测量放线", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "标高测量控制", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "标高水平线测设", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "可根据业主提供的基准点和测量的坐标，根据施工现场平面图和上海市一级控制点的标高和", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "不大于20mm，标高误差不大于50mm，桩架垂直度偏差不大于1/250，成桩垂直度偏差不大于", "entities": [{"type": "参数", "start": 22, "end": 25}, {"type": "工序", "start": 36, "end": 38}, {"type": "参数", "start": 38, "end": 41}], "src": "param_specialist_full", "forms": ["A", "A"], "nouns": ["垂直度", "垂直度"]}
+{"text": "桩身标高-0.650~-25.050，水泥掺量20％，水灰比1.5，搅拌下沉速度控制在0.5～1m/min,提升速", "entities": [{"type": "参数", "start": 19, "end": 23}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["水泥掺量"]}
+{"text": "水泥掺量20%，水灰比1.5，搅拌下沉速度控制在0.5～1m/min,提升速度控制在1～2m/min，并", "entities": [{"type": "参数", "start": 0, "end": 4}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["水泥掺量"]}
+{"text": "比1.5，搅拌下沉速度控制在0.5～1m/min,提升速度控制在1～2m/min，并保持匀速下沉与匀速", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "备的垂直度补正是依靠重复套打来保证，以达到止水作用。", "entities": [{"type": "参数", "start": 2, "end": 5}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["垂直度"]}
+{"text": "级。水灰比1.5，28 天无侧限抗压强度不小于0.8MPa，三轴搅拌桩水泥掺量20%。三轴搅拌机", "entities": [{"type": "参数", "start": 16, "end": 20}, {"type": "参数", "start": 35, "end": 39}], "src": "param_specialist_full", "forms": ["A", "A"], "nouns": ["抗压强度", "水泥掺量"]}
+{"text": "搅拌下沉速度宜控制在0.5～1m/min,提升速度宜控制在1～2m/min，并保持匀速下沉与匀速提升，", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "搅拌提升时不应使孔内产生负压造成周边地基沉降。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "各排桩跳排施工，每排桩施工按跳槽式连接顺序及单排咬合式连接方式进行施工。分段长度以两", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "计长度，成桩试验应在原位区域确定组数进行成桩试验，施工前通过成桩试验确定搅拌下沉和提", "entities": [{"type": "工序", "start": 4, "end": 6}, {"type": "工序", "start": 20, "end": 22}, {"type": "工序", "start": 30, "end": 32}], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "升速度、水泥浆液水灰比等工艺参数及成桩工艺；测定水泥浆从输送管达到搅拌机喷浆口的时间，", "entities": [{"type": "工序", "start": 17, "end": 19}], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "沉速度、提升速度、水泥掺量、水泥总量、施工时间、水泥浆量、注浆流量等。", "entities": [{"type": "参数", "start": 9, "end": 13}, {"type": "工序", "start": 29, "end": 31}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["水泥掺量"]}
+{"text": "根据放样出的围护中心线，用挖掘机沿围护中心线平行方向开掘工作沟槽，沟槽宽度根据围", "entities": [{"type": "工序", "start": 26, "end": 28}], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "先予以处理后在进行搅拌桩施工，同时可适当提高搅拌桩水泥掺量。如遇地下障碍物时，利用镐", "entities": [{"type": "参数", "start": 25, "end": 29}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["水泥掺量"]}
+{"text": "架，确保机架垂直度＜1/200。", "entities": [{"type": "参数", "start": 6, "end": 9}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["垂直度"]}
+{"text": "施工的关键在于如何保证桩身的强度和均匀性。在施工中应加强对水泥用量和水灰比的控制，", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "确保泵送压力。浆液水灰比用比重计抽查，每台班不少于3 次。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "根据钻头下沉和提升二种不同的速度，注入搅拌均匀的水泥浆液，确保水泥土搅拌桩在初凝", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "在施工中根据地层条件，严格控制搅拌钻机下沉速度和提升速度，确保搅拌时间，根据设计", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "下沉及提升均为喷浆搅拌，下沉速度一般为0.5~1.0m/min，提升速度1.0~2.0m/min；压浆速", "entities": [{"type": "工序", "start": 49, "end": 51}], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "度应和提升(或下沉)速度相配合，确保额定浆量在桩身长度范围内均匀分布；提升时不应在", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "制，开钻前对拌浆工作人员做好交底工作。采用42.5 级普通硅酸盐水泥，浆液水灰比1.5。", "entities": [{"type": "工序", "start": 2, "end": 4}, {"type": "工序", "start": 6, "end": 8}], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "于1/200（槽壁加固区域不大于1/400）。SMW 工法桩垂直度偏差不大于1/250，H 型钢穿过压", "entities": [{"type": "参数", "start": 30, "end": 33}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["垂直度"]}
+{"text": "顶梁，定位误差应不大于30mm，垂直度偏差不宜大于1/200。施工前严格按照设计提供的施工", "entities": [{"type": "参数", "start": 16, "end": 19}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["垂直度"]}
+{"text": "提升及下沉速度，并保持匀速下沉和提升。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "量采取总量控制，并用比重仪随时检查水泥浆的比重。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "速度；若无法搭接或搭接不良，应作为冷缝记录在案，并经围护设计单位认可后，在搭接处采取", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "达到一定强度后进行补桩，以防偏钻，保证补桩效果。因处理冷缝而增加的工程量以实际施工量", "entities": [{"type": "工序", "start": 9, "end": 11}, {"type": "工序", "start": 19, "end": 21}], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "少于3 件试块，芯样应在全桩长范围内连续钻取的桩芯上选取，取样点应沿桩长不同深度和不同", "entities": [{"type": "参数", "start": 13, "end": 15}, {"type": "参数", "start": 34, "end": 36}], "src": "param_specialist_full", "forms": ["A", "A"], "nouns": ["桩长", "桩长"]}
+{"text": "浆液试块强度试验应采取刚搅拌完而尚未凝固的水泥土搅拌桩浆液制作试块，每台班应抽检", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "抗压强度试验。", "entities": [{"type": "参数", "start": 0, "end": 4}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["抗压强度"]}
+{"text": "槽段接缝止水∅1000@800 高压旋喷桩，与地墙搭接200mm，-0.650~-25.050，水", "entities": [{"type": "参数", "start": 6, "end": 15}, {"type": "工程类型", "start": 16, "end": 21}], "src": "param_specialist_full", "forms": ["SPEC:径规格"], "nouns": ["<spec>"]}
+{"text": "泥掺量25％。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "止孔间串浆，施工时必须采用跳跃法，相邻两根桩施工间隔时间不小于48h，间距不小于4~6m。", "entities": [{"type": "参数", "start": 24, "end": 28}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["间隔时间"]}
+{"text": "喷嘴边喷浆边旋转边提升，该固结体的直径显著增加。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "等参数符合要求，并随时做好记录，直到设计桩顶标高。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "插管时，开启高低压泵（压力可控制在1Mpa 左右）防止砂土堵塞喷嘴。", "entities": [{"type": "设备", "start": 7, "end": 10}], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "为了防止孔间串浆，施工时必须采用跳跃法，间距不小于4~6m，相邻两根桩施工间隔时间", "entities": [{"type": "参数", "start": 37, "end": 41}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["间隔时间"]}
+{"text": "锤调平），孔位误差小于2cm，钻至设计深度。", "entities": [{"type": "参数", "start": 17, "end": 21}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["设计深度"]}
+{"text": "具可合并进行），用旋喷专用机下放钻具至设计深度。", "entities": [{"type": "参数", "start": 19, "end": 23}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["设计深度"]}
+{"text": "值开始旋转，在各泵压达到设计值并在孔口返出水泥浆后，开始按设计值提升钻具，提升到设计", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "桩顶标高以上0.5m，完成旋喷，提出钻具移动到下一孔位。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "围护高压旋喷桩完成后，进行围护型钢的施工，旋喷桩桩位偏差不超过50mm,桩身垂直度误", "entities": [{"type": "参数", "start": 24, "end": 28}, {"type": "参数", "start": 36, "end": 41}], "src": "param_specialist_full", "forms": ["A", "A"], "nouns": ["桩位偏差", "桩身垂直度"]}
+{"text": "桩施工间隔时间不小于48h，间距不小于4~6m。", "entities": [{"type": "参数", "start": 3, "end": 7}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["间隔时间"]}
+{"text": "采用P.042.5 普通硅酸盐水泥，水泥掺入量25%，水灰比1.0，按规定委托有资质机构进行", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "水泥浆液采用两级搅拌。一级搅拌，按照浆液要求配比定量加水加灰（1:1 水灰比加水700L,", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "高压泵的距离不宜过远，钻机孔位允许偏差不应大于50mm。桩位偏差不超过50mm,桩身垂直度", "entities": [{"type": "参数", "start": 15, "end": 19}, {"type": "参数", "start": 28, "end": 32}, {"type": "参数", "start": 40, "end": 45}], "src": "param_specialist_full", "forms": ["A", "A", "A"], "nouns": ["允许偏差", "桩位偏差", "桩身垂直度"]}
+{"text": "中要详细记录好钻杆节数，保证钻孔深度的准确。", "entities": [{"type": "参数", "start": 14, "end": 18}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["钻孔深度"]}
+{"text": "得超过1Mpa，以免压力过高，将孔壁射穿，高压水喷嘴要用塑料布包裹，以防泥土进入管内。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "射时，先应达到预定的喷射压力、喷浆后再逐渐提升旋喷管，以防扭断旋喷管。为保证桩底端的", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "质量，喷嘴下沉到设计深度时，在原位置旋转10 秒钟左右，待孔口冒浆正常后再旋喷提升。钻", "entities": [{"type": "参数", "start": 8, "end": 12}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["设计深度"]}
+{"text": "旋喷提升到设计桩顶标高时停止旋喷，提升钻头出孔口，清洗注浆泵及输送管道，然后将钻", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "凿除泛浆后必须保证暴露的桩顶混凝土强度达到设计等级，在工程桩中必须均匀随机抽查孔", "entities": [{"type": "参数", "start": 14, "end": 19}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["混凝土强度"]}
+{"text": "桩垂直度控制在1/200 内；", "entities": [{"type": "参数", "start": 1, "end": 4}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["垂直度"]}
+{"text": "桩基施工前对整个场地硬化，道渣厚度200mm，钢筋混凝土厚度150mm，内置配筋：HRB400 12@200", "entities": [{"type": "参数", "start": 13, "end": 17}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["道渣厚度"]}
+{"text": "埋设深度应超过杂填土埋深，护筒底口埋入粘性土原土深度不小于0.2m；由于施工时采取正循", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "深误差将严格控制在0mm～+300 ㎜范围。终孔后，由现场施工技术人员及监理，对孔深、剩余尺", "entities": [{"type": "工序", "start": 22, "end": 24}], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "开机钻进时先轻压、低转速、慢钻进，进入正常状态后，逐渐加大转速和钻进速度。全程控", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "形成锯齿形孔壁，增加桩体摩擦阻力，以保证桩体的承载力。", "entities": [{"type": "参数", "start": 23, "end": 26}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["承载力"]}
+{"text": "按照设计要求确保钻头直径，并定期检查复核钻头直径，以保证孔径达到要求。", "entities": [{"type": "参数", "start": 28, "end": 30}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["孔径"]}
+{"text": "钢筋笼制作严格按设计图纸进行。钢筋笼制作时采用单面焊接，主筋和加强箍筋焊缝长度为", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "单面焊10d、双面焊5d（d 为所用钢筋的直径，下同），焊缝宽度不小于0.8d，焊缝厚度不小于", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "的50％，相邻接头应上下错开，错开距离不应小于35 倍主筋直径。制作时采用模具架，保证主", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "钢筋笼长度±100mm。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "筋笼在井口对接时，每节钢筋笼加焊二组直径为100mm 的砼保护块（如下图），每组保护块不少", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "厚度达70mm。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "钢筋笼全部安装入孔后，根据地面标高、笼顶标高选择合适长度、合适强度的钢筋做吊筋，", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "盈系数控制在1.0～1.2 之间。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "本工程，钻孔灌注桩φ1000，h=25m 计，h2=1.3m，γw=1.15*10³kg/m³，γc=2.30 *10³kg/m³，", "entities": [{"type": "工程类型", "start": 4, "end": 9}, {"type": "参数", "start": 9, "end": 14}], "src": "param_specialist_full", "forms": ["SPEC:径规格"], "nouns": ["<spec>"]}
+{"text": "坍落度测试和试块制作由专人负责，并有原始记录。", "entities": [{"type": "参数", "start": 0, "end": 3}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["坍落度"]}
+{"text": "钢筋进场时，应按国家现行相关标准的规定抽取试件作屈服极限、极限强度、伸长率、冷弯", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "钻孔灌注桩排桩低应变动测检测桩完整性的比例不少于20%，且不少于10 根。", "entities": [{"type": "工程类型", "start": 0, "end": 5}], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "辅助吊机：根据本工程地墙钢筋笼起重量（最大幅重48.4t）以及流水作业计划安排，共采", "entities": [{"type": "参数", "start": 15, "end": 18}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["起重量"]}
+{"text": "质量检测设备：为确保泥浆质量，配备一套泥浆检测设备，主要有泥浆比重计、粘度测试漏", "entities": [{"type": "参数", "start": 29, "end": 33}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["泥浆比重"]}
+{"text": "斗等；同时配置一套DM-684 型超声波侧壁测定仪，以测定地墙沉槽垂直度。", "entities": [{"type": "设备", "start": 22, "end": 25}, {"type": "参数", "start": 33, "end": 36}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["垂直度"]}
+{"text": "导墙设计采用“”型整体式钢筋砼结构，导墙间距1040/840mm，导墙顶口一般比地面高出", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "不实造成导墙整体沉降。导墙肋厚200mm，配Φ14@200 双向钢筋网片，顶宽1m 左右，导墙筋", "entities": [{"type": "参数", "start": 22, "end": 29}], "src": "param_specialist_full", "forms": ["SPEC:径规格"], "nouns": ["<spec>"]}
+{"text": "内墙面要垂直，墙面与纵横轴线间距的允许偏差±10mm，内外导墙间距允许偏差±5mm，导墙面", "entities": [{"type": "参数", "start": 17, "end": 21}, {"type": "参数", "start": 33, "end": 37}], "src": "param_specialist_full", "forms": ["A", "A"], "nouns": ["允许偏差", "允许偏差"]}
+{"text": "应保持水平，墙面不平整度小于3mm。", "entities": [{"type": "参数", "start": 9, "end": 12}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["平整度"]}
+{"text": "内墙面平整度（倾斜度）", "entities": [{"type": "参数", "start": 3, "end": 6}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["平整度"]}
+{"text": "内外导墙间距（W+40 mm）", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "导墙顶面标高", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "导墙顶面平整度", "entities": [{"type": "参数", "start": 4, "end": 7}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["平整度"]}
+{"text": "物理、化学分析和矿物鉴定，其粘粒含量应大于50%，塑性塑性指数应大于20，含砂量应小于", "entities": [{"type": "参数", "start": 37, "end": 40}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["含砂量"]}
+{"text": "定，遇有粉砂、细砂地层时提高泥浆粘度，但不大于45S；当地下水位较高时，可提高泥浆比重，", "entities": [{"type": "参数", "start": 39, "end": 43}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["泥浆比重"]}
+{"text": "泥浆搅拌严格按照操作规程和配合比要求进行，泥浆拌制后应静置24 小时后方可使用；", "entities": [{"type": "工序", "start": 0, "end": 4}, {"type": "参数", "start": 13, "end": 16}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["配合比"]}
+{"text": "对严重水泥污染及超比重的泥浆（泥浆比重大于1.3，pH 值大于14 时）作废浆处理，废弃", "entities": [{"type": "参数", "start": 15, "end": 19}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["泥浆比重"]}
+{"text": "的每一幅地墙的分幅宽度标志，用红漆直接显著标在导墙顶面上，以便进行挖槽控制。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "的垂直度，并及时纠偏推板，做到勤纠、小纠。", "entities": [{"type": "参数", "start": 1, "end": 4}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["垂直度"]}
+{"text": "槽深、垂直度测量及控制：槽深以标定好的测绳测量为主，每幅根据其宽度测2～3 点，同", "entities": [{"type": "参数", "start": 3, "end": 6}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["垂直度"]}
+{"text": "一道。纵向桁架采用Ⅲφ25 钢筋，纵向桁架吊点处桁架筋设为“X”型、非吊点处设为“W”型，每", "entities": [{"type": "参数", "start": 10, "end": 13}], "src": "param_specialist_full", "forms": ["SPEC:径规格"], "nouns": ["<spec>"]}
+{"text": "榀纵向桁架需使用2 根φ32 钢筋筋制作成“U”型进行上下封口，电焊连接横向桁架吊点及非吊点", "entities": [{"type": "参数", "start": 11, "end": 14}], "src": "param_specialist_full", "forms": ["SPEC:径规格"], "nouns": ["<spec>"]}
+{"text": "桁架筋均设为“X”型，钢筋笼横向桁架水平钢筋及纵向桁架竖向主筋均改为Ⅲφ28 钢筋，以使钢", "entities": [{"type": "参数", "start": 35, "end": 38}], "src": "param_specialist_full", "forms": ["SPEC:径规格"], "nouns": ["<spec>"]}
+{"text": "接焊，焊缝长度满足设计要求，搭接错位应满足钢筋混凝土规范要求。为保证保护层的厚度，在", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "钢筋笼宽度水平方向设两列3mm 厚的钢板制成的定位垫块，其间距为横向2.5m、纵向3.0m。钢", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "钢筋制作允许偏差、检验数量和方法：", "entities": [{"type": "参数", "start": 4, "end": 8}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["允许偏差"]}
+{"text": "钢筋主筋间距", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "钢筋水平筋间距", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "角度逐渐使之垂直，吊车将钢筋笼移到槽段边缘，对准槽段按设计要求位置缓缓入槽并控制其标", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "高。钢筋笼放置到设计标高后，利用槽钢制作的扁担搁置在导墙上。根据设计要求，地下墙墙顶", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "标高误差为+3mm～-3mm，在钢筋笼吊放前要再次复核导墙上4 个支点的标高，精确计算吊筋长", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "顶砼强度满足设计要求。", "entities": [{"type": "参数", "start": 1, "end": 4}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["砼强度"]}
+{"text": "下砼凝固速度的规律及施工实践，砼浇注开始后一般3～5 小时左右开始拔动。其幅度不宜大于", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "有一些沉渣产生，将影响以后地下墙的承载力并增大沉降量，所以对基底沉渣进行处理就显得十", "entities": [{"type": "参数", "start": 17, "end": 20}, {"type": "参数", "start": 23, "end": 26}], "src": "param_specialist_full", "forms": ["A", "A"], "nouns": ["承载力", "沉降量"]}
+{"text": "钢筋笼上的固定问题。本工程采用短钢筋焊接成网架，根据接驳器标高划线位置，将它与钢筋笼", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "钢筋笼的标高垂直度控制：接驳器在钢筋笼上固定正确以后即可进行钢筋笼的沉笼工作，钢", "entities": [{"type": "参数", "start": 6, "end": 9}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["垂直度"]}
+{"text": "筋笼沉笼标高的控制是非常关键的工序。因此必须在钢筋笼上设置明显的标志，同时起吊机械必", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "角度进行调整来解决，但必须符合规范1/6 要求并事先经设计同意；预埋件（筋）位置偏差较大", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "允许偏差或允", "entities": [{"type": "参数", "start": 0, "end": 4}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["允许偏差"]}
+{"text": "厚度（mm）", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "长度（mm）", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "宽度（mm）", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "混凝土抗渗等级", "entities": [{"type": "参数", "start": 3, "end": 7}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["抗渗等级"]}
+{"text": "为∅900 钻孔灌注桩；栈桥下立柱采用角钢格构柱4L200X18 柱，截面为500X500。其下设置立", "entities": [{"type": "参数", "start": 1, "end": 5}, {"type": "工程类型", "start": 6, "end": 11}], "src": "param_specialist_full", "forms": ["SPEC:径规格"], "nouns": ["<spec>"]}
+{"text": "中不发生倾斜和移动；转盘中心与桩位中心的允许偏差应不大于20mm，转盘在四个方向上的水", "entities": [{"type": "参数", "start": 20, "end": 24}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["允许偏差"]}
+{"text": "全能保证格构柱居中垂直。确保一柱一桩钢立柱垂直度控制在1/250，中心偏差±20mm。", "entities": [{"type": "参数", "start": 21, "end": 24}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["垂直度"]}
+{"text": "在钢立柱上用红油漆标出，钢立柱标高控制为0～+10mm。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "偏差为±5 毫米，局部变形允许偏差为±2 毫米。", "entities": [{"type": "参数", "start": 13, "end": 17}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["允许偏差"]}
+{"text": "缀板拼接严格按每道梁中心线为基准安排缀板位置。为保证钢柱垂直度，在专用靠模中拼接。", "entities": [{"type": "参数", "start": 28, "end": 31}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["垂直度"]}
+{"text": "缀板与角钢的焊缝等级为三级，焊缝厚度为10mm。角铁拼接的焊缝等级为二级。焊条使用", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "柱身弯曲允许偏差h/250，不大于5 毫米。格构柱堆放必须整齐，且不能超过两层，所垫导", "entities": [{"type": "参数", "start": 4, "end": 8}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["允许偏差"]}
+{"text": "木须在同一直线上。格构柱在距底板底及底板定250mm 位置设置两道止水钢板，宽度100mm，", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "局部允许变形", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "格构柱加工成品必须向监理工程师报检，严格按照“三检制度”验收，合格后方可进入现场投", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "厚度≥0.3d。钢筋笼下放到与护筒齐平位置，暂时固定。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "钻孔桩设计顶标高以下3.0m 位置，格构柱每侧面与两根主筋焊接牢固，焊接采用双面焊，焊缝", "entities": [{"type": "工程类型", "start": 0, "end": 3}], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "长度≥5d，并用定位钢筋将格构柱固定在桩孔中心处。为保证下放过程中钢筋笼不变形，在笼顶", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "第一道加强筋位置采用两根加强箍筋对笼顶易变形位置进行加强，然后将格构柱与钢筋笼用吊车", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "格构柱顶标高控制及固定：格构柱标高控制，预先用水准仪测定桩孔处校正架顶标高，然后", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "根据插入孔内深度，在钢立柱上用红油漆标出柱顶标高位置，当钢立柱下放到位时，在格构柱两", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "侧用L160×16 角钢焊接固定在校正架上，格构柱标高控制为±20mm。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "的两边根据钻孔机的宽度用轨道铺设，铺设时确保围护桩的中心线与轨道及钻机中心一致，钻机", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "孔，以防孔与孔相串，影响施工质量及进度。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "层（粉质粘土）钻机使用Ⅱ档（70 转/分），适当减少钻压，加快钻进速度，泥浆密度控制在1.25", "entities": [{"type": "参数", "start": 36, "end": 40}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["泥浆密度"]}
+{"text": "钻机使用Ⅰ档（40 转/分），适当增加钻压，减慢钻进速度，泥浆密度控制在1.3 左右，粘度控制", "entities": [{"type": "参数", "start": 29, "end": 33}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["泥浆密度"]}
+{"text": "孔径规则,并能保证大颗粒的泥屑能够返携出孔。", "entities": [{"type": "参数", "start": 0, "end": 2}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["孔径"]}
+{"text": "支撑及围檩强度达到C25 后，第三级加载至150t；支撑及围檩强度达到C30 后，第四级加载", "entities": [{"type": "参数", "start": 9, "end": 12}, {"type": "参数", "start": 35, "end": 38}], "src": "param_specialist_full", "forms": ["SPEC:强度等级值", "SPEC:强度等级值"], "nouns": ["<spec>", "<spec>"]}
+{"text": "至200t；支撑及围檩强度达到C35 后，第五级加载至250t，达到保压值。前一级加载稳定后，", "entities": [{"type": "参数", "start": 15, "end": 18}], "src": "param_specialist_full", "forms": ["SPEC:强度等级值"], "nouns": ["<spec>"]}
+{"text": "上千斤顶必须同步均匀加载。千斤顶最大顶力不得超过该支撑设计值，否则应主动卸压。", "entities": [{"type": "设备", "start": 1, "end": 4}, {"type": "设备", "start": 13, "end": 16}], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "加力值根据变形数据以20t 一档逐级增加；", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "上道混凝土支撑受拉、混凝土支撑出现裂缝、钢格构柱位移过大超过2cm 等现象，应适当降低", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "轴力控制值，以25t 为一档递减，减力后应继续监测和观察；", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "本工程⑤3t 层层面埋深最浅为34.2m，观测水位为2.54m~3.05m 之间（标高0.60m～1.27m），", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "故按最不利水位埋深2m 估算，估算Pcz/Pwy=0.97＜1.05；因此，⑤3t 层微承压水在局部分布区", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "深到坑底落深区4.25m 时，⑦2 层承压水突涌按最不利3m 计算，低于1.05 安全系数要求，经复", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "过滤器（滤水管）：滤水管的直径与井壁管直径应相同；降压井兼观测兼备用井滤水管采用", "entities": [{"type": "设备", "start": 25, "end": 28}], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "沉淀管：滤水管底部设置长度为1.00m 的沉淀管，防止井内沉砂堵塞而影响进水；沉淀管底", "entities": [{"type": "设备", "start": 0, "end": 3}], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "出水含砂量：抽水稳定后，出水含砂量不得超过2 万分之一(体积比)。", "entities": [{"type": "参数", "start": 2, "end": 5}, {"type": "参数", "start": 14, "end": 17}], "src": "param_specialist_full", "forms": ["A", "A"], "nouns": ["含砂量", "含砂量"]}
+{"text": "井内水位：抽水稳定后，井内的水位应处于安全水位以下。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "注意管井施工时，井点深度全部以井底标高来控制，若场地标高有起伏应在管井的最上部一", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "隙内返浆，使孔内的泥浆密度逐步调到1.05,然后开小泵量按前述井的构造设计要求填入滤料，", "entities": [{"type": "参数", "start": 9, "end": 13}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["泥浆密度"]}
+{"text": "并随填随测填滤料的高度。直至滤料下入预定位置为止。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "填前需将块状的粘性土碾碎（粒径小于3cm 为宜）后填入，下入速度不宜太快，沿着井管周围", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "口井降水对周边降水井的水位影响范围。抽水前记录井内水位高度，每次待水位稳定后进行再进", "entities": [{"type": "设备", "start": 7, "end": 10}], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "注：表中为相对标高。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "要求，经复核，在坑底落深区4.25m 处观察承压水位，高于3.8m 时，开启降压井，进行按需降", "entities": [{"type": "设备", "start": 38, "end": 41}], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "础及上部结构的抗浮力，在确保承压水水头压力不大于抗浮力的情况下，逐步减少减压井的开启", "entities": [{"type": "设备", "start": 36, "end": 39}], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "满足抗浮要求，且大底板完全达到设计强度后方可实施封井。", "entities": [{"type": "参数", "start": 15, "end": 19}, {"type": "工序", "start": 24, "end": 26}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["设计强度"]}
+{"text": "抽吸深度：9.6m", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "额定电压：380V", "entities": [{"type": "参数", "start": 2, "end": 4}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["电压"]}
+{"text": "提升高度：8m", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "分块垫层面积控制应控制在150 ㎡以内。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "围檩靠道路侧挖土宽度为围檩外边线以外1 米；", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "其中混凝土内支撑标高及截面如下表：", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "支撑标高及截面信息表", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "支撑中心标高（m）", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "根据分段尺寸，施工缝处预留钢筋长度分别为100 与1100mm 两种，接头50％错开，钢筋", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "个接头试件作抗拉强度试验。", "entities": [{"type": "参数", "start": 6, "end": 10}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["抗拉强度"]}
+{"text": "施工缝的留设：施工缝要求留设在跨中的L/3 内，同一连接区域内的搭接钢筋接头面积不应", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "急救综合大楼地下二层、地下一层楼板标高处与消化楼连通区域（非两墙合一处）局部设置", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "砼换撑板带。换撑板带厚度及配筋见详图，换撑面标高应与相应部位地下室楼板板面标高一致。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "楼板缺失部位换撑为型钢或钢管，中心标高同相接梁中心标高（不与梁相接时同楼板中心标高）。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "换撑面标高应与相应部位地下室楼板板面标高一致。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "楼板缺失部位换撑为型钢或钢管，中心标高同相接梁中心标高（不与梁相接时同楼板中心标", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "位的围护体应力释放和变形能相对对称、均匀、缓慢。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "起吊能力精心计算每块混凝土的重量。", "entities": [{"type": "参数", "start": 0, "end": 4}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["起吊能力"]}
+{"text": "机械行驶时要加强对底板或中板竖向钢筋的保护，柱子钢筋禁止压弯，剪力墙钢筋应尽量绕", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "和变形偏大的安全隐患。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "法及精度、监测报警值、工作计划、监测周期及频率、资料整理与提交、监测信息管理与预警系", "entities": [{"type": "参数", "start": 7, "end": 10}, {"type": "参数", "start": 16, "end": 20}], "src": "param_specialist_full", "forms": ["A", "A"], "nouns": ["报警值", "监测周期"]}
+{"text": "点的稳定性可以从两个指标衡量，那就是垂直方向的变化和水平方向的变化。对基准点水平方向", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "联测，以检核其稳定性。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "变化速率VD(mm/d)", "entities": [{"type": "参数", "start": 0, "end": 4}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["变化速率"]}
+{"text": "垂直位移报警值", "entities": [{"type": "参数", "start": 4, "end": 7}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["报警值"]}
+{"text": "变化速率VS(mm/d)", "entities": [{"type": "参数", "start": 0, "end": 4}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["变化速率"]}
+{"text": "求，及时调整工艺及参数，确保顺利实现下一施工进度控制，从而切实实现信息化施工；", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "制性的提供有关变形范围、最大值及发展或收敛方向，尽早发现异常情况并及时处理；", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "准备工作，防止施工中发生大面积涌砂现象；", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "周边建筑物竖向、水平位移监测", "entities": [{"type": "参数", "start": 8, "end": 12}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["水平位移"]}
+{"text": "测量频率相对应，进行巡视检查，并形成书面巡视检测记录。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "入管线上部的土体内，嵌入深度依管线的埋设深度确定，但为确保布点时不伤及管线，测量标杆", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "底端与管线顶部至少保留30cm的间距。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "置图位置插入准备好的沉降标，沉降标顶部高于混凝土顶部2mm左右。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "墙顶位移监测点", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "测点按均匀、对称、突出重点、预测位移大等原则设置。测斜管的埋设随围护桩施工同步进", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "行，测斜管长度与地墙笼长度相当。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "设计的经验性，设计支撑所起的作用即支撑轴力在时空分布上可能会与原定意想不一致，或在某", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "监测内容包括围护墙体的测斜，围檩水平位移、支撑轴力，最近一排格构立柱垂直位移及水平位", "entities": [{"type": "参数", "start": 16, "end": 20}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["水平位移"]}
+{"text": "埋设方法：轴力监测断面应选在受力大但受力形式简单的支撑杆件两支点间的1/3处，为获", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "得较真实的支撑轴力数据，对钢筋混凝土支撑在每个安装断面选择顶底面或腰筋的主筋上进行钢", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "筋应力计的安装，每断面4个，取其测量平均值作为支撑轴力监测值，以减少支撑的“梁件”作用", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "筋计的拉杆长度应适当加长。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "支撑轴力监测断面钢筋应力计安装位置图", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "荷作用，以及结构或施工荷载的影响，作用于立柱上的竖向力会有不同程度的变化，从而引起立", "entities": [{"type": "参数", "start": 9, "end": 13}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["施工荷载"]}
+{"text": "柱的隆沉变化。以期为支护体系的安全性分析提供适量可供参考的有益信息。测点宜选择支撑交", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "坑内水位监测", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "垂直和水平位移监测点的埋设，混凝土达到设计强度后进行初始值的测取。", "entities": [{"type": "参数", "start": 3, "end": 7}, {"type": "参数", "start": 19, "end": 23}], "src": "param_specialist_full", "forms": ["A", "A"], "nouns": ["水平位移", "设计强度"]}
+{"text": "装埋设监测设施设立保护装置进行保护。对于测量点、观测孔（测斜孔、水位孔及分层沉降孔）", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "性，观测数据不受长距离测量和环境温度变化的影响，如果有影响所产生的测值误差应易于消除。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "累计变化量（mm)", "entities": [{"type": "参数", "start": 2, "end": 5}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["变化量"]}
+{"text": "累计变化报警值", "entities": [{"type": "参数", "start": 4, "end": 7}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["报警值"]}
+{"text": "围护结构侧向最大位移", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "伺服式预应力钢筋砼支撑及内圈梁轴力", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "轴力累计值达到9000kN", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "圈梁位移差达到30mm", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "到报警值或遇到不良天气等时，加密观测，作好监测和相关特征状态记录，并会同有关人员分析", "entities": [{"type": "参数", "start": 1, "end": 4}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["报警值"]}
+{"text": "由于本工程为超深基坑工程，监测周期较长，在监测过程中应设置预警值，其为报警值的80%，", "entities": [{"type": "工程类型", "start": 8, "end": 10}, {"type": "参数", "start": 13, "end": 17}, {"type": "参数", "start": 29, "end": 32}, {"type": "参数", "start": 35, "end": 38}], "src": "param_specialist_full", "forms": ["A", "A", "A"], "nouns": ["监测周期", "预警值", "报警值"]}
+{"text": "当监测数据达到预警值时在监测报表中加注提示标示，并口头通知各方，以引起重视。", "entities": [{"type": "参数", "start": 7, "end": 10}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["预警值"]}
+{"text": "变形速率连续2天报警，且变形趋势持续增大，有其他危险征兆出现。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "三级：监测单位及时提交监测报表，并在报表中相应位置加盖红色报警章。监测项目变形速", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "率单次报警时，适当提高报警测点的监测频率。当累计变形值达到报警值时，业主单位应召集各", "entities": [{"type": "参数", "start": 16, "end": 20}, {"type": "参数", "start": 29, "end": 32}], "src": "param_specialist_full", "forms": ["A", "A"], "nouns": ["监测频率", "报警值"]}
+{"text": "施，有效控制变形量的增大。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "表，并在报表中相应位置加盖红色报警章。根据测点变化数值的大小，确定合适的监测频率，加", "entities": [{"type": "参数", "start": 36, "end": 40}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["监测频率"]}
+{"text": "体测斜管的埋设。检测频率为至少2d/次", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "殊情况可适当增加监测频率或增加监测点位。", "entities": [{"type": "参数", "start": 8, "end": 12}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["监测频率"]}
+{"text": "出20 厘米左右长度的螺杆及球形固定器。并在井架顶端下2 米处固定，待起扳后至85°~88°才可", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "本工程急救大楼基础底板厚度主要为800、850、2000、2200mm；医技平台基础底板厚度", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "主要为800、1200mm；污水处理站基础底板厚度主要为800mm。基础底板混凝土强度等级均", "entities": [{"type": "参数", "start": 38, "end": 45}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["混凝土强度等级"]}
+{"text": "求施工。避雷钢筋焊接均为三面围焊，焊缝长度6d 加端头焊，避雷钢筋一律用黄油漆作好标记，", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "为了确保底板上部钢筋能承受钢筋施工和作业荷载。在上层钢筋底部制作钢结构支架，以保", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "严格控制支架面标高，保证大底板板面钢筋平整、顺直、保护层厚度满足设计要求。钢筋支", "entities": [{"type": "参数", "start": 25, "end": 30}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["保护层厚度"]}
+{"text": "筋立柱两侧焊接，焊缝高度不小于6mm，严禁点焊；严格控制立柱间距。钢筋支架横梁设置方", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "架上，以保证上层钢筋位置的正确性和施工作业的安全性。局部面筋加密区域的支架横梁同普遍", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "纵向受力钢筋的混凝土保护层(钢筋外边缘至混凝土表面的距离)不应小于钢筋的公称直径，", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "防地下室构件钢筋锚固长度不小于1.05La。", "entities": [{"type": "参数", "start": 8, "end": 12}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["锚固长度"]}
+{"text": "受拉钢筋的抗震锚固长度表", "entities": [{"type": "参数", "start": 7, "end": 11}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["锚固长度"]}
+{"text": "胎膜采用强度等级为MU15（240mm*115mm*53mm）的混凝土实心砖，砌筑砂浆采用DP15 的", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "整体分层连续浇注或推移式连续浇注应缩短间歇时间，混凝土供应速度应大于混凝土初凝", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "场混凝土实际坍落度、可泵性、和易性等质量信息，以有利于控制搅拌站出料质量。", "entities": [{"type": "参数", "start": 6, "end": 9}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["坍落度"]}
+{"text": "要求混凝土拌站在现场准备一定量的泵送剂，以防因混凝土坍落度小而泵送困难时添加使", "entities": [{"type": "设备", "start": 16, "end": 19}, {"type": "参数", "start": 26, "end": 29}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["坍落度"]}
+{"text": "混凝土表面处理做到“二压二平”。首先按面标高用煤撬拍板压实，长刮尺刮平；终凝前，", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "在砼布料时，应预先做好样棒，以控制每皮砼的布料厚度，且应严格按施工方案所示方向", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "楚标识，局部区域加设短钢筋电焊在底板表面钢筋上，标高控制点的间距为3000mm 左右，重", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "要部位用麻线定标高。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "砼初凝时间为8~10 小时内属正常，如超过12 小时应立即与拌站联系，核对配合比。先浇", "entities": [{"type": "参数", "start": 37, "end": 40}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["配合比"]}
+{"text": "人、定时、定点。浇水次数每天不得少于2 次，以保持混凝土有足够的湿度为准。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "混凝土硬化后宜采用蓄水养护或用湿麻袋覆盖，保持混凝土表面潮湿。大体积混凝土保湿养护", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "差(不含混凝土收缩的当量温度)不宜大于25℃，养护时间不应少于14 天，并宜待混凝土表面", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "上，水平温度钢筋垂直于膨胀加强带长度方向进行分布，两端各伸出膨胀加强带2.0m，并固定", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "筑，带内镁质高性能混凝土抗裂剂的掺量比带外高2%，从而提高易开裂部位的混凝土的膨胀率，", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "同位置避开止水钢板上下两根；另后浇式膨胀加强带型钢换撑起始位置为型钢换撑中心位置距离", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "大体积混凝土基础底板，由于混凝土在浇捣后的硬化过程中，水泥与水进行着剧烈的水化", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "反应并释放出大量的热量，然而由于体积大，热传导性差，几乎是绝热的，在升温阶段，水化", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "阻的存在而无法畅通地传导出来，使区域的温度急剧上升并高居不下。而混凝土表面热量因良", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "好的散热条件而迅速散去，导致表面温度的急剧下降。“热胀冷缩” 使混凝土处于受拉状态。早", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "为了避免综上所述的危害，就需要在大体积混凝土浇捣之前，在各预定位置预埋热传感装", "entities": [{"type": "工序", "start": 19, "end": 24}], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "当其内表温差达到报警临界温度（25℃）时，应及时采取适当而必要的措施，使内表温差在达", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "到极限临界温度（30℃）前所采取的降温措施产生效果。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "务器，客户可通过电脑、手机或IPAD 等网络终端实时查看，可及时了解混凝土内部温度的最新", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "如测温过程中混凝土结构表面以内40mm~80mm 位置的温度与环境温度的差值已经小于20℃时", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "后，应立即护盖相当的保温材料，以防止表面产生过大的拉应力。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "养护要求：对于大体积混凝土和大面积板面混凝土，表面抹压后用塑料薄膜覆盖，混凝土硬", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "化后宜采用蓄水养护或用湿麻袋覆盖，保持混凝土表面潮湿。大体积混凝土保湿养护的持续时间", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "缩的当量温度)不宜大于25℃，养护时间不应少于14 天，并宜待混凝土表面温度与环境最大温", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "件的拉伸、弯曲试验，锁口强度试验和延伸率试验等项内容。每一种规格的钢板桩至少进行一个", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "虑到以后的施工方便；②钢板桩要按型号、规格、长度分别堆放，并在堆放处设置标牌说明；③", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "导向木，顺导向木下插，使第一组钢板桩桩身垂直，由于钢板桩桩组上下宽度不完全一致，锁口", "entities": [{"type": "设备", "start": 5, "end": 8}], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "为增加栈桥立柱稳定性，在急救大楼和医技平台栈桥下设置了钢剪刀撑进行加固。剪刀撑采", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "剪刀撑在第二道支撑形成后，进行焊接、拼装，槽钢与格构柱连接部位满焊，焊缝厚度不低", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "工程计划和进度管理", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "按总进度计划安排，对现场的物资供应、", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "批。按总进度计划的安排，编制工程年度、", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "按总进度计划的安排，制定各分包施工的", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "明（标准化）施工的管理。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "写、收集、流转的制度或方式。对所有参", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "进行工程的测量定位、轴线、标高的复测和验收，并按要求及时通知监理", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "试验强度报告。工程全部完工后，经认真自检，再行向监理工程师提交验", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "员维持交通秩序和维修居民水管，最大限度的减少居民的损失。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "根据渗漏严重程度，分别采用坑内堵漏、坑外堵漏或两者相结合的方式。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "水位丰沛的地方，止水搅拌桩与围护结构（钻孔灌注桩）之间的间隙在堵漏前（即出水点位置左", "entities": [{"type": "工程类型", "start": 19, "end": 24}], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "璃250 ㎏，水560 ㎏。（施工中应根据地质条件调整浆液配比）", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "当发现支撑有裂缝时，测得裂缝宽度以及当时支撑轴力，反馈给围护设计单位，根据围护设", "entities": [{"type": "参数", "start": 12, "end": 16}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["裂缝宽度"]}
+{"text": "测量井底沉淀物的深度，如沉淀物过厚，应重新洗井，排除沉渣。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "制水位并减小沉降影响。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "注水加压法：通过向承压水层高压注水（注水压力≤地层抗渗强度），暂时提高水头压力，", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "间歇性降水：根据施工阶段动态调整降水速率，配合回灌实现水位波动≤0.5m/天。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "监测系统升级：加密承压水水位监测点（间距≤20m），同步监测建筑物沉降、倾斜及裂缝", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "数据联动控制：将水位-沉降数据接入自动化系统，当沉降速率>3mm/天或水位下降>1m 时，", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "水）。采用移动式注水设备对沉降严重区域定向加压注水。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "一旦发现某部位坑底位移达到警戒值，立即在此处回填土，直至坑底不再产生位移，然后利", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "用旋喷机和配备的水泥对土体进行加固，加固深度至-40cm，选喷浆液水泥比为25%，然后再对", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "鼻污物，保持呼吸通畅，进行心肺复苏等。并尽快就近送医院。对塌方后出现的土体应力松弛过", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "快、实际开挖面积过大等情况，加强监测，根据监测结果加快支撑施工或采取必要的补撑措施。", "entities": [{"type": "参数", "start": 4, "end": 8}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["开挖面积"]}
+{"text": "施工前先在安全距离范围内探明地质情况，如离房屋较近可以采取静压松木桩作永久支护，", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "避免在民房附近边过往施工机械挠动民房基础导致外围建、构筑物出现沉降或裂缝。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "挖土，召集业主、监理、设计等召开专题会议，制定对策，如减小挖土分块面积，加快结构施工", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "速度等措施，具体措施根据现场实际情况而定。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "周围建筑物、道路、地表不均匀沉降及塌陷，出现险情时对策措施：按监测数据反映的信息", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "时间进行地基或支撑加固，回填可采用混凝土及砂土。管线不均匀沉降时对策措施：按不同的情", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "周边建构筑物沉降和位移状况应急响应流程：", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "当不均匀沉降数据报警时，通知应急小组各方。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "步变形，确保周边建筑物的稳定。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "伺服系统实时监控预应力、位移、倾斜数据，每2 小时人工复核一次。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "调整伺服系统参数，局部补加预应力。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "评估支撑系统安全性，制定修复或更换方案。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "进提升及下沉速度，并保持匀速下沉和提升。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "水量采取总量控制，并用比重仪随时检查水泥浆的比重。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "称、高度一致。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "施工中防止泥浆漏失并及时补浆，始终维持稳定槽段所必须的液位高度，保证泥浆液面始终", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "程带来很大的影响，故必须严格控制其安设标高和位置。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "由此计算吊筋长度，以确保钢筋笼安放精度。同时起吊机械必须在钢筋笼就位稳定后才能松去钢", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "适当加大泥浆比重，使泥浆自重产生足够大的压力防止承压水外涌。", "entities": [{"type": "参数", "start": 4, "end": 8}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["泥浆比重"]}
+{"text": "对槽段内泥浆经常进行测量，发现异常（尤其是泥浆比重与泥皮厚度）及时换浆。", "entities": [{"type": "参数", "start": 21, "end": 25}, {"type": "工序", "start": 33, "end": 35}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["泥浆比重"]}
+{"text": "严格控制泥浆指标，确保泥皮厚度1～3mm/30min。并在施工中经常检测，一但发现异常，", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "以内，土体留坡在24 小时以上者，必须按1:2 坡度留土坡。", "entities": [{"type": "参数", "start": 24, "end": 26}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["坡度"]}
+{"text": "柱四周，避免立柱承受不均匀的侧向土压力。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "坑周围一圈明沟，经沉淀后排入市政排水系统，排水沟应紧跟挖土进度及时挖好。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "弯折，弯弧内直径不小于4d，做90弯折，弯弧内直径不小于5d；箍筋的末端应做135弯钩，", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "弯钩的弯曲直径应大于受力钢筋直径，且不小于箍筋直径的2.5 倍，弯钩平直部分的长度，等于", "entities": [{"type": "参数", "start": 12, "end": 16}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["钢筋直径"]}
+{"text": "箍筋直径10 倍。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "受力钢筋顺长度方向全长的净尺寸", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "的为50×50。按1000m 间距垫在下皮钢筋下，位置必须在钢筋的交叉处。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "面标高，防止高差。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "道工序。梁模复核时必须复核上口标高。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "按设计的砼强度标准值的百分率计（%）", "entities": [{"type": "参数", "start": 4, "end": 7}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["砼强度"]}
+{"text": "严格执行浇捣令制度。", "entities": [{"type": "工序", "start": 4, "end": 6}], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "认真做好砼的表面处理，严格控制板面标高。插铁上做好标高控制的红油标记，在红油间拉", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "起吊钢筋笼等物体时吊点必须正确，速度要均匀，被吊物体应平稳并栓挂牢靠。被吊物体上", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "集中思想、服从指挥、谨慎操作。挖机在支撑上方通行或作业时，应架空铺设走道板，架空高度", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "挖土时要注意边坡的稳定性，发现有裂缝或倾坍的可能时，人员要立即离开并及时处理。每", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "外，并且高度不得超过1.5m。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "速度，确保卸载后土体应力均衡、缓慢释放。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "严格执行机械设备保养规程、安全规程和安全操作规程，设备进场应履行好验收制度。验收", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "起吊时起重机臂应先伸至合适位置，角度、回转半径等应符合施工方案及操作规程的要求，", "entities": [{"type": "参数", "start": 19, "end": 23}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["回转半径"]}
+{"text": "严格三级动火审批制度，操作时带好两证一器，落实好监护人，严格执行“十不烧”制度。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "使用时，氧气瓶与乙炔瓶的距离不小于5m。氧气、乙炔瓶专设仓库，两瓶进库，不得散堆。", "entities": [{"type": "设备", "start": 4, "end": 7}], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "本工程实行施工现场标准化管理，为做到施工生产不影响周围环境，工地实行全封闭施工。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "明确项目经理是文明施工和标准化管理的第一责任人，组织项目管理部通过现场勘察、方案", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "规划、制度制定、设施建设和进程管理考核等过程做到文明施工和现场标准化管理。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "加强工地治安综合治理，做到目标管理、制度落实、责任到人。明确项目经理为项目部的第", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "光污染：夜间施工和特殊情况需要时，大功率的照明灯必须向场地内照明，并尽可能降低照", "entities": [{"type": "参数", "start": 18, "end": 20}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["功率"]}
+{"text": "并尽量减缓行驶速度。", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "编制时间：2025 年5 月21 日", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "上Φ52/下Φ47.5", "entities": [{"type": "参数", "start": 1, "end": 4}, {"type": "参数", "start": 6, "end": 9}], "src": "param_specialist_full", "forms": ["SPEC:径规格", "SPEC:径规格"], "nouns": ["<spec>", "<spec>"]}
+{"text": "上Φ43/下Φ28", "entities": [{"type": "参数", "start": 1, "end": 4}, {"type": "参数", "start": 6, "end": 9}], "src": "param_specialist_full", "forms": ["SPEC:径规格", "SPEC:径规格"], "nouns": ["<spec>", "<spec>"]}
+{"text": "表1.2.1 某医学中心建筑结构概况表", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "承载力后由建设单位交付我方另行施工硬化道路，保证施工安全。", "entities": [{"type": "参数", "start": 0, "end": 3}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["承载力"]}
+{"text": "思南路路中有Φ1200 雨污水管线；某路路中有Φ2700 埋深9m 的雨污水管线；", "entities": [{"type": "参数", "start": 6, "end": 11}, {"type": "参数", "start": 23, "end": 28}], "src": "param_specialist_full", "forms": ["SPEC:径规格", "SPEC:径规格"], "nouns": ["<spec>", "<spec>"]}
+{"text": "图1.4.2 周边管线分布图", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "与施工区域采用钢制围挡进行临时性封闭，围挡立柱采用80*80*5 镀锌方钢，间距4250mm，内", "entities": [], "src": "param_specialist_full", "forms": [], "nouns": []}
+{"text": "救大楼施工区域应确保清障后回填土体密实且达到原状土承载力后施工硬化道路）。", "entities": [{"type": "工序", "start": 10, "end": 12}, {"type": "参数", "start": 25, "end": 28}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["承载力"]}
+{"text": "本工程重型机械施工道路采用钢筋混凝土路面，混凝土强度C30，厚度30cm，设置单层双", "entities": [{"type": "参数", "start": 21, "end": 26}, {"type": "参数", "start": 26, "end": 29}], "src": "param_specialist_full", "forms": ["A", "SPEC:强度等级值"], "nouns": ["混凝土强度", "<spec>"]}
+{"text": "由于施工现场重载便道，经过吊车长时间行走必然会有所损坏，路面平整度也会下降。所", "entities": [{"type": "参数", "start": 30, "end": 33}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["平整度"]}
+{"text": "高，安装场地不得有不稳定土质，下层不得有淤泥夹层等，地基承载力必须达到8T/㎡。安装", "entities": [{"type": "参数", "start": 28, "end": 31}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["承载力"]}
+{"text": "行走链条无偏磨、损伤，上部履带挠度在40〜60mm 之间。", "entities": [{"type": "参数", "start": 15, "end": 17}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["挠度"]}
+{"text": "磨损：检查销轴孔、销轴螺纹、销轴颈部的磨损程度。过度磨损（孔径增大、螺纹损伤）", "entities": [{"type": "参数", "start": 29, "end": 31}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["孔径"]}
+{"text": "处理地基上铺设150 厚碎石基层。重载道路应平整，坡度不应大于8%。重载道路下方原处理地", "entities": [{"type": "工程类型", "start": 14, "end": 16}, {"type": "参数", "start": 25, "end": 27}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["坡度"]}
+{"text": "基承载力不应小于80Kpa。", "entities": [{"type": "参数", "start": 1, "end": 4}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["承载力"]}
+{"text": "定指挥。严格控制吊车回转半径，避免触及周围建筑物与高压线。严禁高空抛物，以免伤人。", "entities": [{"type": "参数", "start": 10, "end": 14}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["回转半径"]}
+{"text": "指挥下进行,做到定机、定人、定指挥。严格控制吊车回转半径，避免触及周围建筑物与高压", "entities": [{"type": "参数", "start": 24, "end": 28}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["回转半径"]}
+{"text": "筑物最小净距≥1.5m。", "entities": [{"type": "参数", "start": 4, "end": 6}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["净距"]}
+{"text": "根据本工程《岩土勘察报告》可知，下卧层地基承载力取80Kpa。", "entities": [{"type": "参数", "start": 21, "end": 24}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["承载力"]}
+{"text": "量Q＝66.4t，荷载率约为25.3/66.2=38.4%，符合单机吊荷载率不得超过额定荷载率80%的规", "entities": [{"type": "参数", "start": 9, "end": 12}, {"type": "参数", "start": 35, "end": 38}, {"type": "参数", "start": 44, "end": 47}], "src": "param_specialist_full", "forms": ["A", "A", "A"], "nouns": ["荷载率", "荷载率", "荷载率"]}
+{"text": "对比允许承载力：", "entities": [{"type": "参数", "start": 4, "end": 7}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["承载力"]}
+{"text": "回填土体密实且达到原状土承载力后施工硬化道路）。", "entities": [{"type": "参数", "start": 12, "end": 15}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["承载力"]}
+{"text": "施工机械用电负荷", "entities": [{"type": "参数", "start": 4, "end": 8}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["用电负荷"]}
+{"text": "室内照明及办公生活用电负荷", "entities": [{"type": "参数", "start": 9, "end": 13}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["用电负荷"]}
+{"text": "混凝土强度为水下C35。", "entities": [{"type": "参数", "start": 0, "end": 5}, {"type": "参数", "start": 8, "end": 11}], "src": "param_specialist_full", "forms": ["A", "SPEC:强度等级值"], "nouns": ["混凝土强度", "<spec>"]}
+{"text": "地基承载力参数示意图", "entities": [{"type": "参数", "start": 2, "end": 5}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["承载力"]}
+{"text": "动；转盘中心与桩位中心的允许偏差应小于20mm，转盘在四个方向上的水平度误差小于1/100。", "entities": [{"type": "参数", "start": 12, "end": 16}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["允许偏差"]}
+{"text": "清孔后，将钻具提出孔外，测量其孔深、孔径及孔斜，并做好记录，吊放钢筋笼时，可利用", "entities": [{"type": "工序", "start": 0, "end": 2}, {"type": "参数", "start": 18, "end": 20}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["孔径"]}
+{"text": "本工程灌注桩灌注宜采用256mm 直径导管，灌注应准确量好导管总长度。", "entities": [{"type": "工序", "start": 6, "end": 8}, {"type": "设备", "start": 19, "end": 21}, {"type": "工序", "start": 22, "end": 24}, {"type": "设备", "start": 29, "end": 31}, {"type": "参数", "start": 31, "end": 34}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["总长度"]}
+{"text": "内，含砂率小于等于8%；遇有流砂及易坍孔缩径土层，如加大泥浆比重尚不能解决的，可掺用", "entities": [{"type": "参数", "start": 28, "end": 32}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["泥浆比重"]}
+{"text": "主筋保护层符合设计图纸及规范要求，为保证保护层厚度，每节钢筋笼设置两组凸型保护层", "entities": [{"type": "参数", "start": 20, "end": 25}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["保护层厚度"]}
+{"text": "级配单应在混凝土开浇时随车附来。严格把好质量关，每批进场混凝土搅拌站必须附送级配单。", "entities": [{"type": "参数", "start": 0, "end": 2}, {"type": "参数", "start": 38, "end": 40}], "src": "param_specialist_full", "forms": ["A", "A"], "nouns": ["级配", "级配"]}
+{"text": "现场应仔细核对配合比组成情况，发现问题及时阻止更正。搅拌站后期附送混凝土质量证明单。", "entities": [{"type": "参数", "start": 7, "end": 10}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["配合比"]}
+{"text": "号，按标准养护28 天，然后测定其抗压强度。", "entities": [{"type": "参数", "start": 17, "end": 21}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["抗压强度"]}
+{"text": "在施工过程中，严格按图施工，钢筋的规格，尺寸，数量，间距，以及弯钩形式，锚固长度", "entities": [{"type": "参数", "start": 36, "end": 40}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["锚固长度"]}
+{"text": "如因天气、人为等因素，造成基础沉降，塔身垂直度超出4‰h，必须采取有效措施予以矫", "entities": [{"type": "参数", "start": 20, "end": 23}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["垂直度"]}
+{"text": "水平位移监测：动态监测塔吊基础各角点的水平位移，特别关注指向基坑方向的位移量。", "entities": [{"type": "参数", "start": 0, "end": 4}, {"type": "设备", "start": 11, "end": 13}, {"type": "参数", "start": 19, "end": 23}, {"type": "工程类型", "start": 30, "end": 32}, {"type": "参数", "start": 35, "end": 38}], "src": "param_specialist_full", "forms": ["A", "A", "A"], "nouns": ["水平位移", "水平位移", "位移量"]}
+{"text": "沉降（竖向位移）监测：监测基础各角点的沉降差，计算整体倾斜率。", "entities": [{"type": "参数", "start": 3, "end": 7}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["竖向位移"]}
+{"text": "当监测数据接近或达到预警值时：必须加密监测频率。", "entities": [{"type": "参数", "start": 10, "end": 13}, {"type": "参数", "start": 19, "end": 23}], "src": "param_specialist_full", "forms": ["A", "A"], "nouns": ["预警值", "监测频率"]}
+{"text": "根据设计要求和规范，设定三级报警值：", "entities": [{"type": "参数", "start": 14, "end": 17}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["报警值"]}
+{"text": "累计位移控制值：累计水平位移不应超过20mm，累计沉降差不应导致倾斜率超过4‰。", "entities": [{"type": "参数", "start": 10, "end": 14}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["水平位移"]}
+{"text": "建立畅通的预警信息传递通道，一旦数据达到预警值，必须立即电话通知相关责任人，", "entities": [{"type": "参数", "start": 20, "end": 23}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["预警值"]}
+{"text": "使用。在无载荷情况下，塔身与地面的垂直度偏差不得超过4/1000。", "entities": [{"type": "参数", "start": 17, "end": 20}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["垂直度"]}
+{"text": "起重机工作时必须严格按照额定起重量起吊，不得超载，也不准吊运人员、斜拉重物、拔除", "entities": [{"type": "参数", "start": 12, "end": 17}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["额定起重量"]}
+{"text": "导电不良，可在土中埋入氯化钠(食盐)然后灌水。接地电阻应≤4Ω。", "entities": [{"type": "参数", "start": 23, "end": 27}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["接地电阻"]}
+{"text": "侧压力以及施工荷载。", "entities": [{"type": "参数", "start": 5, "end": 9}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["施工荷载"]}
+{"text": "和有关规范标准进行试块制作和坍落度试验，不得向混凝土中加水。", "entities": [{"type": "参数", "start": 14, "end": 17}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["坍落度"]}
+{"text": "焊接机械应单独接地，接地电阻小于4 欧姆。", "entities": [{"type": "参数", "start": 10, "end": 14}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["接地电阻"]}
+{"text": "楼层通道和照明使用安全电压，施工用电编制施工方案，并有可靠的安全技术措施，上报审", "entities": [{"type": "参数", "start": 9, "end": 13}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["安全电压"]}
+{"text": "十分潮湿的场所使用安全电压，设置醒目的电气安装标志，不使用无效的安全技术措施的电", "entities": [{"type": "参数", "start": 9, "end": 13}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["安全电压"]}
+{"text": "保护零线每重复接地装置的接地电阻值不大于10Ω。并由电工每月检测一次，做好原始记", "entities": [{"type": "参数", "start": 0, "end": 4}, {"type": "参数", "start": 12, "end": 16}], "src": "param_specialist_full", "forms": ["A", "A"], "nouns": ["保护零线", "接地电阻"]}
+{"text": "保护零线选择不大于10mm2 的绝缘铜线，统一标志为绿/黄双色线，在任何情况下不使用绿/", "entities": [{"type": "参数", "start": 0, "end": 4}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["保护零线"]}
+{"text": "加强监测频率；分析裂缝原因；可考虑对裂缝进行压力灌浆封闭", "entities": [{"type": "参数", "start": 2, "end": 6}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["监测频率"]}
+{"text": "预警值、倾斜度", "entities": [{"type": "参数", "start": 0, "end": 3}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["预警值"]}
+{"text": "承台混凝土保护层厚度δ(mm)", "entities": [{"type": "参数", "start": 5, "end": 10}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["保护层厚度"]}
+{"text": "四、桩承载力验算", "entities": [{"type": "参数", "start": 3, "end": 6}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["承载力"]}
+{"text": "桩混凝土强度等级", "entities": [{"type": "参数", "start": 1, "end": 8}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["混凝土强度等级"]}
+{"text": "桩混凝土保护层厚度б(mm)", "entities": [{"type": "参数", "start": 4, "end": 9}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["保护层厚度"]}
+{"text": "自定义桩身承载力设计值", "entities": [{"type": "参数", "start": 5, "end": 8}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["承载力"]}
+{"text": "最大裂缝宽度ωlim(mm)", "entities": [{"type": "参数", "start": 2, "end": 6}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["裂缝宽度"]}
+{"text": "承载力特征值", "entities": [{"type": "参数", "start": 0, "end": 3}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["承载力"]}
+{"text": "修正后的地基承载力特征值fa(kPa)", "entities": [{"type": "参数", "start": 6, "end": 9}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["承载力"]}
+{"text": "地基承载力特征值fak(kPa)", "entities": [{"type": "参数", "start": 2, "end": 5}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["承载力"]}
+{"text": "下卧层顶的地基承载力修正系数ηd", "entities": [{"type": "参数", "start": 7, "end": 10}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["承载力"]}
+{"text": "下卧层顶的地基承载力修正系数ηb", "entities": [{"type": "参数", "start": 7, "end": 10}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["承载力"]}
+{"text": "受剪切承载力截面高度影响系数：βhs=(800/2000)1/4=0.795", "entities": [{"type": "参数", "start": 3, "end": 6}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["承载力"]}
+{"text": "角桩位于冲切椎体以内，可不进行角桩冲切的承载力验算！", "entities": [{"type": "参数", "start": 20, "end": 23}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["承载力"]}
+{"text": "设高度超过8m，跨度超过18m，施工总荷载大于15KN/㎡、集中线荷载大于20KN/m、高度大于支", "entities": [{"type": "参数", "start": 8, "end": 10}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["跨度"]}
+{"text": "本项目模板排架体系属于施工总荷载大于15KN/㎡、集中线荷载大于20KN/m、搭设高度超过", "entities": [{"type": "设备", "start": 3, "end": 5}, {"type": "参数", "start": 39, "end": 43}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["搭设高度"]}
+{"text": "时，型钢尺寸按承载力计算增大。", "entities": [{"type": "参数", "start": 7, "end": 10}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["承载力"]}
+{"text": "管外径允许偏差为±0.3mm，壁厚允许偏差为±0.15mm。", "entities": [{"type": "参数", "start": 3, "end": 7}, {"type": "参数", "start": 15, "end": 17}, {"type": "参数", "start": 17, "end": 21}], "src": "param_specialist_full", "forms": ["A", "A", "A"], "nouns": ["允许偏差", "壁厚", "允许偏差"]}
+{"text": "强度、抗拉强度、延伸率的要求。", "entities": [{"type": "参数", "start": 3, "end": 7}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["抗拉强度"]}
+{"text": "手柄，丝杆外径允许偏差为±0.5mm。顶托螺杆外伸长度不大于400mm。", "entities": [{"type": "参数", "start": 7, "end": 11}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["允许偏差"]}
+{"text": "架体垂直度，控制里干的垂直度不应大于H/500，且不得大于50mm；扣件螺栓是否拧紧；", "entities": [{"type": "参数", "start": 2, "end": 5}, {"type": "参数", "start": 11, "end": 14}], "src": "param_specialist_full", "forms": ["A", "A"], "nouns": ["垂直度", "垂直度"]}
+{"text": "剪刀撑的斜杆接长应采用搭接，搭接长度不应小于1m，应采用不少于2 个旋转扣件固定。", "entities": [{"type": "参数", "start": 14, "end": 18}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["搭接长度"]}
+{"text": "超过设计荷载，在施工中需安排专人监控。", "entities": [{"type": "参数", "start": 2, "end": 6}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["设计荷载"]}
+{"text": "设计荷载，在施工中需安排专人监控。", "entities": [{"type": "参数", "start": 0, "end": 4}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["设计荷载"]}
+{"text": "设计强度以前，需在结构上加置施工荷载时，应另行核算，强度不足时，应加设临时支撑。", "entities": [{"type": "参数", "start": 0, "end": 4}, {"type": "参数", "start": 14, "end": 18}], "src": "param_specialist_full", "forms": ["A", "A"], "nouns": ["设计强度", "施工荷载"]}
+{"text": "据下层楼板结构混凝土强度的实际情况，经过计算确定。", "entities": [{"type": "参数", "start": 7, "end": 12}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["混凝土强度"]}
+{"text": "预警值：单次沉降≥3mm 或累计沉降≥8mm。", "entities": [{"type": "参数", "start": 0, "end": 3}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["预警值"]}
+{"text": "达到预警值：立即停止施工，疏散作业人员，核查沉降原因。", "entities": [{"type": "参数", "start": 2, "end": 5}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["预警值"]}
+{"text": "沉降持续发展：加密监测频率至每15 分钟1 次，采取加固措施（如增设立杆、铺垫钢板）。", "entities": [{"type": "参数", "start": 9, "end": 13}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["监测频率"]}
+{"text": "表模板安装允许偏差表", "entities": [{"type": "工序", "start": 1, "end": 5}, {"type": "参数", "start": 5, "end": 9}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["允许偏差"]}
+{"text": "允许偏差（mm）", "entities": [{"type": "参数", "start": 0, "end": 4}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["允许偏差"]}
+{"text": "七、混凝土施工汽车泵地基承载力复核", "entities": [{"type": "设备", "start": 7, "end": 10}, {"type": "参数", "start": 12, "end": 15}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["承载力"]}
+{"text": "表钢管允许偏差表", "entities": [{"type": "参数", "start": 3, "end": 7}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["允许偏差"]}
+{"text": "钢管外边面锈蚀深度", "entities": [{"type": "参数", "start": 5, "end": 9}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["锈蚀深度"]}
+{"text": "严格控制排架的施工荷载。", "entities": [{"type": "参数", "start": 7, "end": 11}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["施工荷载"]}
+{"text": "急救大楼地下室结构楼板厚度为300mm，混凝土强度等级为C35。基础类型采用筏板基础，基", "entities": [{"type": "参数", "start": 20, "end": 27}, {"type": "参数", "start": 28, "end": 31}], "src": "param_specialist_full", "forms": ["A", "SPEC:强度等级值"], "nouns": ["混凝土强度等级", "<spec>"]}
+{"text": "原设计方案为：底板结构达到设计强度80%，视监测情况拆除第四道支撑。", "entities": [{"type": "参数", "start": 13, "end": 17}, {"type": "危大类别", "start": 26, "end": 28}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["设计强度"]}
+{"text": "位移；支撑轴力、伺服油压及构件裂缝挠度；坑外地表沉降、土体滑移、地面裂缝；周边建构筑物、", "entities": [{"type": "参数", "start": 17, "end": 19}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["挠度"]}
+{"text": "卸力及稳压全过程实施不间断实时动态监测，重点观测围护结构水平位移、基坑沉降、支撑实", "entities": [{"type": "参数", "start": 28, "end": 32}, {"type": "工程类型", "start": 33, "end": 35}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["水平位移"]}
+{"text": "吊装半径为10m，臂长44m，额定起重量11.4t。汽车吊钩头重量0.6t，吊具重量0.2t，吊物重量8t，", "entities": [{"type": "工序", "start": 0, "end": 2}, {"type": "参数", "start": 15, "end": 20}, {"type": "设备", "start": 26, "end": 29}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["额定起重量"]}
+{"text": "道支撑。地下二层地下室及地下一层楼板达到设计强度80%，待伺服系统逐级卸力完成后，视监测", "entities": [{"type": "参数", "start": 20, "end": 24}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["设计强度"]}
+{"text": "本工程支撑梁切割拆除施工阶段，受切割机械设备作业空间、回转半径及施工安全间距限制，", "entities": [{"type": "工序", "start": 6, "end": 8}, {"type": "危大类别", "start": 8, "end": 10}, {"type": "工序", "start": 16, "end": 18}, {"type": "参数", "start": 27, "end": 31}, {"type": "参数", "start": 34, "end": 38}], "src": "param_specialist_full", "forms": ["A", "A"], "nouns": ["回转半径", "安全间距"]}
+{"text": "架体标准：采用φ48×3mm 标准钢管脚手架，立杆纵距1.5m、横距1.2m、步距1.8m，底部设", "entities": [{"type": "参数", "start": 7, "end": 10}, {"type": "参数", "start": 39, "end": 41}], "src": "param_specialist_full", "forms": ["SPEC:径规格", "A"], "nouns": ["<spec>", "步距"]}
+{"text": "混凝土强度达到设计要求后方可投入使用，且结构板底部的排架不得拆除。", "entities": [{"type": "参数", "start": 0, "end": 5}, {"type": "危大类别", "start": 30, "end": 32}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["混凝土强度"]}
+{"text": "叉车、吊机作业时，严格控制施工荷载，禁止超载作业，且避免在楼板同一位置集中堆放混", "entities": [{"type": "参数", "start": 13, "end": 17}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["施工荷载"]}
+{"text": "换撑混凝土强度、型钢支撑安装、回填垫层未", "entities": [{"type": "参数", "start": 2, "end": 7}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["混凝土强度"]}
+{"text": "氧气瓶、乙炔瓶混放、暴晒、安全间距不足、", "entities": [{"type": "参数", "start": 13, "end": 17}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["安全间距"]}
+{"text": "不得超过该机额定起重量的80%。被吊重物必须位于起重机臂正前方，严禁斜拉，斜吊。起重机作", "entities": [{"type": "参数", "start": 6, "end": 11}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["额定起重量"]}
+{"text": "最大挠度fmax(mm) ：0.58", "entities": [{"type": "参数", "start": 2, "end": 4}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["挠度"]}
+{"text": "相对挠度V：1/2406", "entities": [{"type": "参数", "start": 2, "end": 4}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["挠度"]}
+{"text": "式中：为板的跨度；", "entities": [{"type": "参数", "start": 6, "end": 8}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["跨度"]}
+{"text": "板顶Φ16@150，板底Φ14@150", "entities": [{"type": "参数", "start": 2, "end": 9}, {"type": "参数", "start": 12, "end": 19}], "src": "param_specialist_full", "forms": ["SPEC:径规格", "SPEC:径规格"], "nouns": ["<spec>", "<spec>"]}
+{"text": "折算后混凝土抗压强度设计值：fc = 12.6N/mm2", "entities": [{"type": "参数", "start": 6, "end": 10}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["抗压强度"]}
+{"text": "钢筋抗拉强度设计值：fy = 360N/mm2", "entities": [{"type": "参数", "start": 2, "end": 6}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["抗拉强度"]}
+{"text": "为110t，静态承载力不低于50kPa，动态承载力不低于30kPa，集中荷载不低于327KN。", "entities": [{"type": "参数", "start": 8, "end": 11}, {"type": "参数", "start": 22, "end": 25}], "src": "param_specialist_full", "forms": ["A", "A"], "nouns": ["承载力", "承载力"]}
+{"text": "允许搭设高度", "entities": [{"type": "参数", "start": 2, "end": 6}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["搭设高度"]}
+{"text": "吊环预埋锚固长度应符合现行国家标准《混凝土结构设计规范)) GB 50010 中钢筋锚固的规定。", "entities": [{"type": "参数", "start": 4, "end": 8}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["锚固长度"]}
+{"text": "锚固型钢的主体结构混凝土强度等级不得低于C20 。", "entities": [{"type": "参数", "start": 9, "end": 16}, {"type": "参数", "start": 20, "end": 23}], "src": "param_specialist_full", "forms": ["A", "SPEC:强度等级值"], "nouns": ["混凝土强度等级", "<spec>"]}
+{"text": "并用旋转扣件固定在脚于架上，与地面的倾角应在45°~60°之间；连接点中心至主节点的距离不应", "entities": [{"type": "参数", "start": 18, "end": 20}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["倾角"]}
+{"text": "表3.3-2 钢管外径允许偏差（mm）", "entities": [{"type": "参数", "start": 11, "end": 15}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["允许偏差"]}
+{"text": "于2000 目/100cm2，各边缘部位的开眼环扣必须牢固可靠，环扣孔径不低于8mm。安全网上下相邻错", "entities": [{"type": "参数", "start": 34, "end": 36}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["孔径"]}
+{"text": "立杆搭设高度Hs(m)", "entities": [{"type": "参数", "start": 2, "end": 6}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["搭设高度"]}
+{"text": "风荷载标准值ωk(kN/m2)(连墙件、立杆", "entities": [{"type": "参数", "start": 0, "end": 3}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["风荷载"]}
+{"text": "风荷载高度变化系", "entities": [{"type": "参数", "start": 0, "end": 3}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["风荷载"]}
+{"text": "风荷载体型系数μs", "entities": [{"type": "参数", "start": 0, "end": 3}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["风荷载"]}
+{"text": "组合风荷载作用下单立杆轴向力：", "entities": [{"type": "参数", "start": 2, "end": 5}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["风荷载"]}
+{"text": "立杆截面回转半径i(mm)", "entities": [{"type": "参数", "start": 4, "end": 8}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["回转半径"]}
+{"text": "立杆抗压强度设计值[f](N/mm2)", "entities": [{"type": "参数", "start": 2, "end": 6}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["抗压强度"]}
+{"text": "连墙件截面回转半径i(mm)", "entities": [{"type": "参数", "start": 5, "end": 9}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["回转半径"]}
+{"text": "连墙件抗压强度设计值[f](N/mm2)", "entities": [{"type": "参数", "start": 3, "end": 7}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["抗压强度"]}
+{"text": "主梁建筑物内锚固长度Lm(mm)", "entities": [{"type": "参数", "start": 6, "end": 10}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["锚固长度"]}
+{"text": "锚固螺栓抗拉强度设计值[ft](N/mm2)", "entities": [{"type": "参数", "start": 4, "end": 8}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["抗拉强度"]}
+{"text": "主梁允许挠度[ν](mm)", "entities": [{"type": "参数", "start": 4, "end": 6}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["挠度"]}
+{"text": "混凝土的实测抗压强度fc(N/mm2)", "entities": [{"type": "参数", "start": 6, "end": 10}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["抗压强度"]}
+{"text": "主梁允许挠度[υ](mm)", "entities": [{"type": "参数", "start": 4, "end": 6}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["挠度"]}
+{"text": "下撑杆材料抗压强度设计值f(N/mm2)", "entities": [{"type": "参数", "start": 5, "end": 9}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["抗压强度"]}
+{"text": "下撑杆件截面回转半径i(cm)", "entities": [{"type": "参数", "start": 6, "end": 10}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["回转半径"]}
+{"text": "混凝土抗压强度设计值fc(N/mm2)", "entities": [{"type": "参数", "start": 3, "end": 7}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["抗压强度"]}
+{"text": "坑开挖深度范围内无任何建（构）筑物；西侧紧邻院内的绿化带，与院内门诊大楼距离为16.2m；", "entities": [{"type": "参数", "start": 1, "end": 5}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["开挖深度"]}
+{"text": "塔楼区域、加速器区域。连通道区域墙、柱、梁、板混凝土强度同主楼区域同类构件混凝土强度。", "entities": [{"type": "参数", "start": 23, "end": 28}, {"type": "参数", "start": 37, "end": 42}], "src": "param_specialist_full", "forms": ["A", "A"], "nouns": ["混凝土强度", "混凝土强度"]}
+{"text": "地下室结构材料混凝土强度等级汇总：", "entities": [{"type": "参数", "start": 7, "end": 14}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["混凝土强度等级"]}
+{"text": "立杆的顶部、底部严禁同时采用可调支座进行施工。顶托螺杆外径不小于36mm，高度不小于", "entities": [{"type": "参数", "start": 25, "end": 29}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["螺杆外径"]}
+{"text": "每根锈蚀严重的部位横向截断取样检查，当锈蚀深度超过规定值时不得使用；钢管弯曲变形应符", "entities": [{"type": "参数", "start": 19, "end": 23}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["锈蚀深度"]}
+{"text": "高度、脱模剂刷涂及预留洞口、门洞口断面尺寸等的准确性。严格控制预拼模板精度。", "entities": [{"type": "参数", "start": 17, "end": 21}, {"type": "设备", "start": 33, "end": 35}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["断面尺寸"]}
+{"text": "高支模的变形监测项目：支架沉降、水平位移和变形。", "entities": [{"type": "参数", "start": 16, "end": 20}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["水平位移"]}
+{"text": "程中，安排专人在外围进行监测。立杆变形主要监测第一步距，可在立杆上标示铅垂线，在浇", "entities": [{"type": "参数", "start": 25, "end": 27}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["步距"]}
+{"text": "遵循先支后拆，后支先拆，从上往下的原则。模板拆除前必须有混凝土强度报告，强度达到规定", "entities": [{"type": "参数", "start": 28, "end": 33}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["混凝土强度"]}
+{"text": "后方可拆除。板底模＜2 米，混凝土强度达到50%，＞2 米＜8 米混凝土强度达到75%，≥8 米，", "entities": [{"type": "危大类别", "start": 3, "end": 5}, {"type": "参数", "start": 14, "end": 19}, {"type": "参数", "start": 33, "end": 38}], "src": "param_specialist_full", "forms": ["A", "A"], "nouns": ["混凝土强度", "混凝土强度"]}
+{"text": "对活动部件必须一次拆除。已拆除了模板的结构，应在混凝土强度达到设计强度值后方可承受全", "entities": [{"type": "危大类别", "start": 9, "end": 11}, {"type": "危大类别", "start": 13, "end": 15}, {"type": "设备", "start": 16, "end": 18}, {"type": "参数", "start": 24, "end": 29}, {"type": "参数", "start": 31, "end": 35}], "src": "param_specialist_full", "forms": ["A", "A"], "nouns": ["混凝土强度", "设计强度"]}
+{"text": "部设计荷载。若在未达到设计强度以前，需在结构上加置施工荷载时，应另行核算，强度不足时，", "entities": [{"type": "参数", "start": 1, "end": 5}, {"type": "参数", "start": 11, "end": 15}, {"type": "参数", "start": 25, "end": 29}], "src": "param_specialist_full", "forms": ["A", "A", "A"], "nouns": ["设计荷载", "设计强度", "施工荷载"]}
+{"text": "施工荷载\"。", "entities": [{"type": "参数", "start": 0, "end": 4}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["施工荷载"]}
+{"text": "差：平整度应小于2mm、对角线小于2mm。", "entities": [{"type": "参数", "start": 2, "end": 5}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["平整度"]}
+{"text": "保证下铁钢筋保护层。上下铁之间用木板保证净距，上口再加木板。注意抗渗混凝土底板不允许", "entities": [{"type": "参数", "start": 20, "end": 22}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["净距"]}
+{"text": "否与方案一致；底部垫木、双向水平架、竖向立杆、剪刀撑配置情况；施工荷载状况；扣件", "entities": [{"type": "参数", "start": 31, "end": 35}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["施工荷载"]}
+{"text": "高度、脱模剂刷涂及预留洞口、门洞口断面尺寸等的准确性。严格控制预期拼模板精度。", "entities": [{"type": "参数", "start": 17, "end": 21}, {"type": "设备", "start": 34, "end": 36}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["断面尺寸"]}
+{"text": "者身下使其与地绝缘来隔断入地电流，尽快采取其它办法把电源切断。如果触电者触及断落在地", "entities": [{"type": "参数", "start": 14, "end": 16}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["电流"]}
+{"text": "在修筑施工道路时沿围墙周边设置深0.15m（最浅处）、宽0.3m 排水明沟，沟内坡度", "entities": [{"type": "工序", "start": 1, "end": 3}, {"type": "参数", "start": 40, "end": 42}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["坡度"]}
+{"text": "集土坑垫层混凝土采用250 厚C30，侧墙混凝土为C30。侧墙钢筋采用HRB400 14@200", "entities": [{"type": "参数", "start": 15, "end": 18}, {"type": "参数", "start": 25, "end": 28}], "src": "param_specialist_full", "forms": ["SPEC:强度等级值", "SPEC:强度等级值"], "nouns": ["<spec>", "<spec>"]}
+{"text": "属抗剪切强度为抗拉强度的0.6 倍，可以计算相应的焊缝抗剪切强度。具体吊点受力计算见", "entities": [{"type": "参数", "start": 7, "end": 11}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["抗拉强度"]}
+{"text": "的平整度，并且组织人员对作业场地清扫，确保道路畅通、整洁。", "entities": [{"type": "参数", "start": 1, "end": 4}, {"type": "工序", "start": 16, "end": 18}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["平整度"]}
+{"text": "本工程以最大起重不大于吊车在各种可能实际出现情况下的最弱极限起重量的0.7 倍为", "entities": [{"type": "参数", "start": 30, "end": 33}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["起重量"]}
+{"text": "医技平台基坑最不利类型为B1A 型，钢筋笼长度39.2m（含锚固长度）、宽度6m，最重", "entities": [{"type": "工程类型", "start": 4, "end": 6}, {"type": "参数", "start": 30, "end": 34}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["锚固长度"]}
+{"text": "钢扁担采用Q235 号钢板加工制作而成。60mm 厚扁担抗拉强度为190MPa，屈服强度为", "entities": [{"type": "参数", "start": 28, "end": 32}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["抗拉强度"]}
+{"text": "钢；40 吨≤钢筋笼笼重＜45 吨时主吊吊环采用Q235φ40 圆钢，副吊吊环采用Q235φ32 圆钢。", "entities": [{"type": "参数", "start": 28, "end": 31}, {"type": "参数", "start": 45, "end": 48}], "src": "param_specialist_full", "forms": ["SPEC:径规格", "SPEC:径规格"], "nouns": ["<spec>", "<spec>"]}
+{"text": "抗剪强度为抗拉强度的0.6 倍，0.6×215=129N/mm2", "entities": [{"type": "参数", "start": 5, "end": 9}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["抗拉强度"]}
+{"text": "接，单面焊接焊缝长度为10d=320mm，焊接焊条采用E4303 型（熔敷金属抗拉强度为420N/mm2）；", "entities": [{"type": "参数", "start": 39, "end": 43}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["抗拉强度"]}
+{"text": "焊缝金属抗剪强度为抗拉强度的0.6 倍，0.6×420=252N/mm2", "entities": [{"type": "参数", "start": 9, "end": 13}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["抗拉强度"]}
+{"text": "机、定人、定指挥。严格控制吊车回转半径，避免触及周围建筑物与高压线。严禁高空抛物，", "entities": [{"type": "参数", "start": 15, "end": 19}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["回转半径"]}
+{"text": "人指挥下进行,做到定机、定人、定指挥。严格控制吊车回转半径，避免触及周围建筑物与", "entities": [{"type": "参数", "start": 25, "end": 29}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["回转半径"]}
+{"text": "起重量300kN 及以上的起重设备安装工程未", "entities": [{"type": "参数", "start": 0, "end": 3}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["起重量"]}
+{"text": "建筑物最小净距≥1.5m。", "entities": [{"type": "参数", "start": 5, "end": 7}], "src": "param_specialist_full", "forms": ["A"], "nouns": ["净距"]}

@@ -1,0 +1,5 @@
+# ner2 依赖（P0~P3 纯标准库，无需安装）
+# P4+ 微调/推理另需：torch / transformers / 旧 ner/src/bert 依赖（本机 GPU 环境已具备）
+
+# 测试
+pytest>=8

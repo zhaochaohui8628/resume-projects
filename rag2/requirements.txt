@@ -1,0 +1,19 @@
+# rag2 —— 施工规范检索 重塑版（rag2）依赖
+#
+# 说明：
+#  - 语料切分 / BM25 / 指标评估 / 数据装配 均为**零第三方依赖**（纯标准库），
+#    因此 `pytest rag2/tests` 在任何 Python 3.10+ 环境都能直接跑。
+#  - 只有「解析 PDF」「向量编码」「模型训练」需要下列包。
+#  - torch 请按目标机 CUDA 版本单独安装（见 MIGRATION.md 4.2），不要用这里的默认源：
+#      pip install torch --index-url https://download.pytorch.org/whl/cu124
+
+pymupdf>=1.24            # PDF 文本层抽取（fitz）
+numpy>=1.24              # 向量与指标
+transformers>=4.40       # 双塔 / 精排的底层模型与分词器
+sentence-transformers>=3.0   # 双塔编码与导出（doc_encoder / query_encoder）
+faiss-cpu>=1.8           # 向量索引 IndexFlatIP（GPU 建库无收益，CPU 版即可）
+torch>=2.1               # 训练与编码（安装方式见上）
+
+# 可选：端到端生成质量评估（需 DEEPSEEK_API_KEY，本阶段未启用）
+# ragas>=0.1
+# datasets>=2.18
