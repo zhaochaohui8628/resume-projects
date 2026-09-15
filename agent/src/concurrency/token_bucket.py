@@ -126,6 +126,8 @@ class RateLimitedLLM:
 
         ⚠️ 此前缺失本方法 → summarize_stream 的 getattr(llm,'stream') 拿不到 →
         LLM 汇总静默退回一次性生成，UI 表现为"不是流式输出"。
+        回滚策略：一个 token 都没产出就失败 → 回滚令牌；已产出 → 不回滚
+        （用户已消费到内容，不能重复计费）。
         """
         t0 = time.perf_counter()
         ok = self.bucket.acquire_sync(1.0, timeout=self.timeout)

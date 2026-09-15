@@ -664,7 +664,9 @@ def _run_react_qa(query: str, plan: str, llm, opts: GlobalOpts, trace: list,
                   detail={"action": t.get("action", ""), "thought": t.get("thought", "")},
                   step_kind="ota")
 
-    # ReAct 自带 trace 文本（保留作 fallback）
+    # ReAct 自带 trace 文本（仅作独立字段返回，供调试/导出；**不拼进用户回复**——
+    # 2026-09-14 反馈：正文出现 <details>ReAct 思考轨迹</details> 原始标签 + tool_use
+    # 等运行细节，用户要求"回复中只放回复"。轨迹已通过 SSE step 事件进"运行过程"折叠区）
     lines = []
     for t in res.get("trace", []):
         kind = t.get("kind", "")
@@ -679,8 +681,7 @@ def _run_react_qa(query: str, plan: str, llm, opts: GlobalOpts, trace: list,
     meta = f"（工具调用 {res.get('tool_calls', 0)} 次" + \
            ("，已达上限截断）" if res.get("truncated") else "）")
     detail_md = f"{'；'.join(lines) or '（无轨迹）'}"
-    final_md = (f"{answer}\n\n---\n<details><summary>ReAct 思考轨迹 {meta}</summary>\n\n{detail_md}\n\n</details>"
-                if lines else answer)
+    final_md = answer
 
     _emit("done", "ReAct 完成", detail={"tool_calls": res.get("tool_calls", 0),
                                        "truncated": res.get("truncated", False)})

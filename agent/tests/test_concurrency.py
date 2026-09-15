@@ -75,6 +75,58 @@ def test_rate_limited_llm_release_on_error():
     print("OK test_rate_limited_llm_release_on_error")
 
 
+def test_rate_limited_llm_stream_preserved():
+    """限流包装必须保留 stream()——否则 summarize_stream 探测不到，
+    静默退回一次性 complete，UI 流式输出失效（2026-09-14 事故回归锁）。"""
+    class StreamLLM:
+        def complete(self, messages, **kwargs):
+            return "整段"
+        def stream(self, messages, **kwargs):
+            for piece in ("流", "式", "输", "出"):
+                yield piece
+
+    b = TokenBucket(rate=1000, capacity=4)
+    lim = RateLimitedLLM(StreamLLM(), bucket=b)
+    assert hasattr(lim, "stream"), "限流包装必须透出 stream()"
+    got = list(lim.stream([{"role": "user", "content": "x"}]))
+    assert got == ["流", "式", "输", "出"], got
+    assert b.available == 3, "成功调用消耗 1 个令牌"
+
+    # 流式中途异常：已产出 token → 不回滚（用户已消费内容）
+    class BoomStream:
+        def stream(self, messages, **kwargs):
+            yield "a"
+            raise RuntimeError("mid-stream down")
+    b2 = TokenBucket(rate=1000, capacity=3)
+    lim2 = RateLimitedLLM(BoomStream(), bucket=b2)
+    try:
+        list(lim2.stream([{"role": "user", "content": "x"}]))
+        assert False, "应抛出异常"
+    except RuntimeError:
+        pass
+    assert b2.available == 2, "已产出内容不应回滚令牌"
+
+    # 一个 token 都没产出就失败 → 回滚
+    class BoomImmediate:
+        def stream(self, messages, **kwargs):
+            raise RuntimeError("no token")
+    b3 = TokenBucket(rate=1000, capacity=3)
+    lim3 = RateLimitedLLM(BoomImmediate(), bucket=b3)
+    try:
+        list(lim3.stream([{"role": "user", "content": "x"}]))
+        assert False, "应抛出异常"
+    except RuntimeError:
+        pass
+    assert b3.available == 3, "零产出失败应回滚令牌"
+
+    # summarize_stream 经限流包装后仍走流式分支
+    from orchestrator.aggregator import summarize_stream
+    out = summarize_stream(lim, query="q", has_plan=False, agents=["qa"],
+                           results=[])
+    assert out == "流式输出", out
+    print("OK test_rate_limited_llm_stream_preserved")
+
+
 # ================= SharedContext =================
 def test_shared_context_publish_subscribe():
     sc = SharedContext()

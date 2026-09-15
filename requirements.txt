@@ -2,45 +2,65 @@
 #
 # 安装（PowerShell，项目根目录）：
 #   & $PY -m pip install -r requirements.txt
-# 其中 $PY 建议用带 GPU 的解释器（见 README §环境）：
+# 其中 $PY 必须用带 GPU 的解释器（见 README §环境）：
 #   C:\Users\<用户名>\anaconda3\envs\torch_gpu\python.exe
 #
 # 说明：本项目是三个子模块 + 一个训练模块，依赖按"跑得起来的最小集"分组。
 #       带 ★ 的是主链路（agent UI / CLI）必需；其余按需装。
+#
+# ⚠️ 版本策略（2026-09-14 定稿，勿随意放宽）：
+#   曾经的 >= 宽松约束导致一次 pip install 把 pandas 升到 3.0、openai 升到 3.13，
+#   连带 8 个包"半安装"（有 dist-info 无代码）。以下改为 == 精确 pin，
+#   版本 = torch_gpu 环境实测通过全量回归的版本。升级请走显式变更 + 全量回归。
 
 # ===== ★ 主链路 =====
-pyyaml>=6.0                # 运行配置 config/config.yaml
-openai>=1.0                # DeepSeek API（LLM 路由 / 汇总 / ReAct；无 Key 时走 mock）
-fastapi>=0.110             # agent UI 部署层（agent/src/fastapi_app.py）
-uvicorn>=0.27              # ASGI 服务器
-python-multipart>=0.0.9    # UI 上传方案（docx/pdf/txt）
+pyyaml==6.0.3                 # 运行配置 config/config.yaml
+openai==3.13.0                # DeepSeek API（LLM 路由 / 汇总 / ReAct；无 Key 时走 mock）
+fastapi==0.141.1              # agent UI 部署层（agent/src/fastapi_app.py）
+starlette==1.6.0              # fastapi 底层（随 fastapi pin）
+uvicorn==0.52.4               # ASGI 服务器
+click==8.5.0                  # uvicorn 依赖
+python-multipart==0.0.32      # UI 上传方案（docx/pdf/txt）
 
 # ===== ★ 检索（rag2）=====
-numpy>=1.24
-sentence-transformers>=2.7 # bge-small-zh-v1.5 / CrossEncoder
-faiss-cpu>=1.9             # 向量索引（IndexFlatIP）。
-                           # ⚠ Windows 上先 import faiss 会 DLL load failed——走 rag2/src/index/dense.py::import_faiss()
-transformers>=4.40
-torch>=2.0                 # 推理 CPU 即可；GPU 版另装（本机 torch_gpu 环境已含 cu118）
+numpy==2.5.3
+sentence-transformers==6.0.1  # bge-small-zh-v1.5 / CrossEncoder（模型以 6.0.1 存档，勿降级）
+transformers==5.17.0
+tokenizers==0.23.1
+huggingface-hub==1.31.0
+safetensors==0.8.0
+faiss-cpu==1.15.0             # 向量索引（IndexFlatIP）。
+                              # ⚠ Windows 上先 import faiss 会 DLL load failed——走 rag2/src/index/dense.py::import_faiss()
+torch==2.7.1                  # GPU 版为 2.7.1+cu118（本机 torch_gpu 已含，勿重装 CPU 版）
 
 # ===== ★ 实体抽取（ner2）=====
-pytorch-crf>=0.7.2         # 方案2 CRF 头。
-                           # ⚠ 该库 forward() 返回对数似然（gold − logZ），取负才是 loss，ner2/src/bert/crf.py 已封装
-jieba>=0.42                # 规则层中文分词/词典匹配（若未装则回退字符级匹配）
+pytorch-crf==0.7.2            # 方案2 CRF 头。
+                              # ⚠ 该库 forward() 返回对数似然（gold − logZ），取负才是 loss，ner2/src/bert/crf.py 已封装
+jieba>=0.42                   # 规则层中文分词/词典匹配（若未装则回退字符级匹配）
 
 # ===== 文档解析与报告导出 =====
-pymupdf>=1.23              # UI 上传 PDF 方案（可选：只支持 txt 时可不装）
-python-docx>=1.1           # UI 上传 docx 方案 + 简历/方案文档处理
-openpyxl>=3.1
-pandas>=2.0
+pymupdf==1.28.2               # UI 上传 PDF 方案（可选：只支持 txt 时可不装）
+python-docx==1.2.0            # UI 上传 docx 方案 + 简历/方案文档处理
+openpyxl==3.1.5
+pandas==3.0.5                 # ⚠ 3.x 起 pyarrow 为硬依赖，见下
+pyarrow==25.0.1               # pandas 3.0.5 必需（曾因缺失导致 ImportError）
+python-dateutil==2.9.0.post0  # pandas 必需（曾"半安装"导致 pandas ImportError）
+six==1.17.0
+python-dotenv==1.2.3
 
 # ===== GRPO 强化学习训练（GPU，grpo/）=====
 # 训练需 GPU；推理/自检（数据生成、判分器自检、单测）CPU 即可
-peft>=0.10                 # LoRA all-linear
-accelerate>=0.30
+peft>=0.10                    # LoRA all-linear（按需，未 pin）
+accelerate>=0.30              # 按需，未 pin
 
 # ===== 测试 =====
-pytest>=8.0
+pytest==9.1.1
+pluggy==1.6.0
+iniconfig==2.3.0
+pygments==2.21.0
 
 # ===== 可选：RAG 端到端质量评估（ragas 口径）=====
 # rag2/scripts/eval_ragas.py 需要：ragas>=0.2 / langchain-openai>=0.1 + DEEPSEEK_API_KEY
+# ⚠️ ragas 0.4.3 已装但缺 8 个依赖（langchain/datasets/appdirs/diskcache/instructor/
+#    langchain-community/langchain-core/langchain-openai/nest-asyncio）——只有 --ragas
+#    评测路径才需要；主链路不受影响。要用时再补装全家桶。

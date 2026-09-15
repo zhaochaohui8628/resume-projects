@@ -7,13 +7,13 @@
 {"qid": "w00255", "text": "箱内进行检查、维修时，必须将其前一级相应的电源开关分闸断电，并悬挂", "verdict": "empty-fix", "reason": "检查非工序", "issues": ["检查非工序"], "rule_entities": [{"type": "工序", "start": 4, "end": 6, "source": "dict", "term": "检查"}]}
 {"qid": "w00299", "text": "防水泵电源，组织抢救伤亡人员，隔离火灾危险源和重要物资，充分利用施工现", "verdict": "empty-fix", "reason": "水泵边界错误（防水泵电源）", "issues": ["水泵边界错误（防水泵电源）"], "rule_entities": [{"type": "设备", "start": 1, "end": 3, "source": "dict", "term": "水泵"}]}
 {"qid": "w00352", "text": "图四：围护施工平面布置图；", "verdict": "empty-fix", "reason": "布置非工序（图名）", "issues": ["布置非工序（图名）"], "rule_entities": [{"type": "工序", "start": 9, "end": 11, "source": "dict", "term": "布置"}]}
-{"qid": "w00354", "text": "图六：某医学中心临时用水布置图；", "verdict": "empty-fix", "reason": "布置非工序", "issues": ["布置非工序"], "rule_entities": [{"type": "工序", "start": 15, "end": 17, "source": "dict", "term": "布置"}]}
+{"qid": "w00354", "text": "图六：某医学中心临时用水布置图；", "verdict": "empty-fix", "reason": "布置非工序", "issues": ["布置非工序"], "rule_entities": [{"type": "工序", "start": 12, "end": 14, "source": "dict", "term": "布置"}]}
 {"qid": "w00355", "text": "图七：医技平台临时用水布置图；", "verdict": "empty-fix", "reason": "布置非工序", "issues": ["布置非工序"], "rule_entities": [{"type": "工序", "start": 11, "end": 13, "source": "dict", "term": "布置"}]}
 {"qid": "w00356", "text": "图八：污水处理站临时用水布置图；", "verdict": "empty-fix", "reason": "布置非工序", "issues": ["布置非工序"], "rule_entities": [{"type": "工序", "start": 12, "end": 14, "source": "dict", "term": "布置"}]}
-{"qid": "w00386", "text": "图三十五：某医学中心土方分区及开挖流线图；", "verdict": "empty-fix", "reason": "开挖非工序", "issues": ["开挖非工序"], "rule_entities": [{"type": "工序", "start": 18, "end": 20, "source": "dict", "term": "开挖"}]}
+{"qid": "w00386", "text": "图三十五：某医学中心土方分区及开挖流线图；", "verdict": "empty-fix", "reason": "开挖非工序", "issues": ["开挖非工序"], "rule_entities": [{"type": "工序", "start": 15, "end": 17, "source": "dict", "term": "开挖"}]}
 {"qid": "w00388", "text": "图三十七：医技平台土方分区及开挖流线图；", "verdict": "empty-fix", "reason": "开挖非工序", "issues": ["开挖非工序"], "rule_entities": [{"type": "工序", "start": 14, "end": 16, "source": "dict", "term": "开挖"}]}
-{"qid": "w00408", "text": "图五十七：某医学中心基础底板测温点布设图；", "verdict": "empty-fix", "reason": "布设非工序", "issues": ["布设非工序"], "rule_entities": [{"type": "工序", "start": 20, "end": 22, "source": "dict", "term": "布设"}]}
-{"qid": "w00467", "text": "某医学中心建筑总平面布置图", "verdict": "empty-fix", "reason": "布置非工序", "issues": ["布置非工序"], "rule_entities": [{"type": "工序", "start": 13, "end": 15, "source": "dict", "term": "布置"}]}
+{"qid": "w00408", "text": "图五十七：某医学中心基础底板测温点布设图；", "verdict": "empty-fix", "reason": "布设非工序", "issues": ["布设非工序"], "rule_entities": [{"type": "工序", "start": 17, "end": 19, "source": "dict", "term": "布设"}]}
+{"qid": "w00467", "text": "某医学中心建筑总平面布置图", "verdict": "empty-fix", "reason": "布置非工序", "issues": ["布置非工序"], "rule_entities": [{"type": "工序", "start": 10, "end": 12, "source": "dict", "term": "布置"}]}
 {"qid": "w00556", "text": "医技平台立柱桩布置图", "verdict": "empty-fix", "reason": "布置非工序", "issues": ["布置非工序"], "rule_entities": [{"type": "工序", "start": 7, "end": 9, "source": "dict", "term": "布置"}]}
 {"qid": "w00563", "text": "急救大楼立柱桩布置图", "verdict": "empty-fix", "reason": "布置非工序", "issues": ["布置非工序"], "rule_entities": [{"type": "工序", "start": 7, "end": 9, "source": "dict", "term": "布置"}]}
 {"qid": "w00564", "text": "污水处理站立柱桩布置图", "verdict": "empty-fix", "reason": "布置非工序", "issues": ["布置非工序"], "rule_entities": [{"type": "工序", "start": 8, "end": 10, "source": "dict", "term": "布置"}]}

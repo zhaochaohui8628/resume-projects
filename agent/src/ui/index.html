@@ -210,6 +210,10 @@ textarea.input{resize:none;min-height:64px;line-height:1.65}
 .answer-bubble p:first-child{margin-top:0}
 .answer-bubble ul,.answer-bubble ol{margin:var(--s-2) 0;padding-left:var(--s-5)}
 .answer-bubble li{margin:var(--s-1) 0}
+/* 答案排版增强（2026-09-14 反馈：要有层次、重点显示；必须留在 <style> 内） */
+.answer-bubble h3{margin:14px 0 6px;padding-left:8px;border-left:3px solid var(--c-primary);font-size:15px;line-height:1.4}
+.answer-bubble h3:first-child{margin-top:4px}
+.answer-bubble strong{color:var(--c-primary);font-weight:700}
 .answer-bubble code{font-family:var(--font-mono);font-size:.92em;background:var(--c-primary-soft);color:var(--c-primary);padding:1px 5px;border-radius:var(--r-xs)}
 .answer-bubble pre{background:#0f172a;color:#e2e8f0;padding:var(--s-3);border-radius:var(--r-sm);overflow-x:auto;margin:var(--s-3) 0}
 .answer-bubble pre code{background:none;color:inherit;padding:0}
@@ -594,6 +598,9 @@ function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,(c)=>({'&':'&amp;
 function mdToHtml(src){
   if(!src) return '';
   let s = String(src);
+  // 2026-09-14 反馈：正文不得出现运行细节——剥掉 ReAct/details 类 HTML 标签与工具标记
+  s = s.replace(/<\/?details[^>]*>/gi,'').replace(/<\/?summary[^>]*>/gi,'');
+  s = s.replace(/^[-—\s]*ReAct 思考轨迹[^\n]*$/gm,'');
   s = s.replace(/```(\w*)\n([\s\S]*?)```/g,(m,lang,code)=>`<pre><code>${esc(code.replace(/\n$/,''))}</code></pre>`);
   s = s.split(/\n{2,}/).map((block)=>{
     if(/^\s*<pre>/.test(block)) return block;
@@ -1036,8 +1043,7 @@ function startStream(item){
     renderProcInline(turn);   // 会话内实时显示 agent 运行过程
     renderTurnTrace(turn);
     if(currentTurn === turn){ renderFlow(turn.steps); renderSideSteps(turn.steps); }
-    if(turn.steps.length >= 1){ turn.traceEl.querySelector('.trace-collapsible').classList.add('open'); }
-    if(turn.sources.length >= 1){ turn.traceEl.querySelector('.rag-collapsible').classList.add('open'); }
+    // 2026-09-14 反馈：溯源默认折叠，不自动展开（用户可手动点开）
     scrollToBottom();
   });
 
@@ -1061,8 +1067,7 @@ function startStream(item){
     turn.final_md = d.final_md || '';
     if(d.trace && d.trace.length){ turn.steps = d.trace; }   // 完整 trace（含 done 步骤）
     renderTurnTrace(turn);
-    turn.traceEl.querySelector('.rag-collapsible').classList.add('open');
-    turn.traceEl.querySelector('.trace-collapsible').classList.add('open');
+    // 2026-09-14 反馈：回复完成后溯源保持折叠，不自动展开
     if(currentTurn === turn){ renderFlow(turn.steps); renderSideSteps(turn.steps); }
     foldProc(turn);                       // 汇总输出时折叠运行过程
     turn.bubbleEl.classList.remove('answer-loading','answer-streaming');
