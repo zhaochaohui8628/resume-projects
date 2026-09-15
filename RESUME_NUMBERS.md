@@ -62,8 +62,8 @@
 
 ## 3. Agent｜多 subagent 编排（✅ 工程真实）
 
-- 架构：用户输入 → **LLM 路由（orchestrator）** → compliance/hazard/qa 三 subagent（**并行执行**）→ **LLM 汇总**输出
-- 调度设计：三个 subagent 各带**完整描述**（输入/输出/适用场景/边界，`AGENT_DOC_FULL`）注册进路由 prompt，LLM 语义精确路由；**compliance 只管编制依据+缺项**（C1/C2/C4），**hazard 只管危大施工内容是否符合规范**，职责显式区分
+- 架构（**v7.2**）：用户输入 → **LLM 意图路由（orchestrator）** → **review**（**唯一审查出口**，内部三路：判档 / 技术核对 / 依据与要素）/ **qa** → **LLM 汇总**输出
+- 调度设计：subagent 各带**完整描述**（输入/输出/适用场景/边界，`AGENT_DOC_FULL`）注册进路由 prompt，LLM 语义精确路由；意图表（`orchestrator/intent.py`）把 hazard_level / technical / basis / elements 全部映射到 **review** 并指定其内部路（`ctx.checks`），不再拆成独立 subagent；执行层保留 v6 并发框架（`AsyncPipeline` 依赖 DAG + 动态裁剪 + semaphore 限流、令牌桶 LLM 限流、`SharedContext`）
 - 全局运行时开关（`GlobalOpts`）：主界面 **RAG 精排开关**（透传所有用 RAG 的 subagent）、**记忆 flush 按钮**（主动落盘 + 摘要）
 - harness：**四层记忆**（Working/Episodic/Semantic/Procedural）+ **ReAct OTA 循环**（问答主链真实执行，防御性控制流：图状态机 + 重复/相似拦截 + 降级输出）
 - 能力：C1 废止引用 / C2 危大缺项 / C4 编制要素（规则引擎全量，合成样本 12 项风险零漏报 ✅）；

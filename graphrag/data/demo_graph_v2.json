@@ -404,195 +404,6 @@
    "label": "Clause",
    "name": "GB51004-2015_建筑地基基础工程施工规范::5.3.2",
    "text": "钢筋混凝土条形基础施工应符合下列规定...混凝土宜分段分层连续浇筑，每层厚度宜为300mm~500mm。"
-  },
-  {
-   "id": "risk:起重吊装:01",
-   "label": "RiskSource",
-   "name": "地基承载力不足",
-   "category": "起重吊装",
-   "source": "地基承载力不足",
-   "hazard": "吊车支腿下陷、倾覆",
-   "control": "吊装前验算地基承载力，支腿下垫路基箱/钢板，确认地基处理合格"
-  },
-  {
-   "id": "risk:起重吊装:02",
-   "label": "RiskSource",
-   "name": "吊具/钢丝绳超载或磨损",
-   "category": "起重吊装",
-   "source": "吊具/钢丝绳超载或磨损",
-   "hazard": "吊物坠落",
-   "control": "按吊重核算钢丝绳安全系数，吊装前检查吊具、绳卡、卸扣"
-  },
-  {
-   "id": "risk:起重吊装:03",
-   "label": "RiskSource",
-   "name": "超载/超力矩作业",
-   "category": "起重吊装",
-   "source": "超载/超力矩作业",
-   "hazard": "吊车倾覆",
-   "control": "核对额定起重量曲线，严禁超载、超力矩，设力矩限制器并试吊"
-  },
-  {
-   "id": "risk:起重吊装:04",
-   "label": "RiskSource",
-   "name": "指挥信号不统一",
-   "category": "起重吊装",
-   "source": "指挥信号不统一",
-   "hazard": "误操作、碰撞",
-   "control": "专职指挥持证上岗，统一信号（旗语/对讲机），吊装区域设警戒"
-  },
-  {
-   "id": "risk:起重吊装:05",
-   "label": "RiskSource",
-   "name": "大风/恶劣天气",
-   "category": "起重吊装",
-   "source": "大风/恶劣天气",
-   "hazard": "吊物摆动失控",
-   "control": "风速超限（一般 6 级及以上）停止吊装，起重臂迎风停放"
-  },
-  {
-   "id": "risk:起重吊装:06",
-   "label": "RiskSource",
-   "name": "吊点位置不当",
-   "category": "起重吊装",
-   "source": "吊点位置不当",
-   "hazard": "构件变形、失稳",
-   "control": "按计算书确定吊点，钢栈桥设专用吊耳/吊装加固"
-  },
-  {
-   "id": "risk:起重吊装:07",
-   "label": "RiskSource",
-   "name": "作业人员无证/配合不当",
-   "category": "起重吊装",
-   "source": "作业人员无证/配合不当",
-   "hazard": "操作失误",
-   "control": "司机、司索、指挥持证上岗，作业前交底"
-  },
-  {
-   "id": "risk:起重吊装:08",
-   "label": "RiskSource",
-   "name": "临边/交叉作业",
-   "category": "起重吊装",
-   "source": "临边/交叉作业",
-   "hazard": "高处坠落、物体打击",
-   "control": "设临边防护、警戒区，吊装区下方禁止站人"
-  },
-  {
-   "id": "risk:基坑工程:01",
-   "label": "RiskSource",
-   "name": "开挖超深/超挖",
-   "category": "基坑工程",
-   "source": "开挖超深/超挖",
-   "hazard": "坍塌",
-   "control": "分层分段开挖，严禁超挖，按方案放坡或支护"
-  },
-  {
-   "id": "risk:基坑工程:02",
-   "label": "RiskSource",
-   "name": "支护结构变形超限",
-   "category": "基坑工程",
-   "source": "支护结构变形超限",
-   "hazard": "基坑失稳",
-   "control": "按方案施工支护，监测报警值设限，超限停工"
-  },
-  {
-   "id": "risk:基坑工程:03",
-   "label": "RiskSource",
-   "name": "地下水控制失效",
-   "category": "基坑工程",
-   "source": "地下水控制失效",
-   "hazard": "流砂、管涌",
-   "control": "降水井点布设与运行，坑内明排，止水帷幕完整"
-  },
-  {
-   "id": "risk:基坑工程:04",
-   "label": "RiskSource",
-   "name": "周边管线/建筑物沉降",
-   "category": "基坑工程",
-   "source": "周边管线/建筑物沉降",
-   "hazard": "管线破裂、建筑开裂",
-   "control": "周边环境调查，第三方监测，管线保护措施"
-  },
-  {
-   "id": "risk:基坑工程:05",
-   "label": "RiskSource",
-   "name": "坑边堆载超限",
-   "category": "基坑工程",
-   "source": "坑边堆载超限",
-   "hazard": "边坡失稳",
-   "control": "坑边 1m 内禁堆载，材料距坑边距离按方案"
-  },
-  {
-   "id": "risk:模板支撑:01",
-   "label": "RiskSource",
-   "name": "支撑体系失稳",
-   "category": "模板支撑",
-   "source": "支撑体系失稳",
-   "hazard": "坍塌",
-   "control": "按计算书搭设，立杆间距、步距、剪刀撑符合方案"
-  },
-  {
-   "id": "risk:模板支撑:02",
-   "label": "RiskSource",
-   "name": "混凝土浇筑不对称",
-   "category": "模板支撑",
-   "source": "混凝土浇筑不对称",
-   "hazard": "偏心荷载坍塌",
-   "control": "对称浇筑，浇筑顺序按方案，严禁集中堆载"
-  },
-  {
-   "id": "risk:模板支撑:03",
-   "label": "RiskSource",
-   "name": "拆模过早",
-   "category": "模板支撑",
-   "source": "拆模过早",
-   "hazard": "结构开裂、坍塌",
-   "control": "拆模强度达设计要求并经申请，先支后拆"
-  },
-  {
-   "id": "risk:模板支撑:04",
-   "label": "RiskSource",
-   "name": "基础不实",
-   "category": "模板支撑",
-   "source": "基础不实",
-   "hazard": "立杆下沉",
-   "control": "地基夯实并设垫板，排水畅通"
-  },
-  {
-   "id": "risk:脚手架:01",
-   "label": "RiskSource",
-   "name": "连墙件缺失",
-   "category": "脚手架",
-   "source": "连墙件缺失",
-   "hazard": "架体倾覆",
-   "control": "按方案设置连墙件，两步三跨，严禁随意拆除"
-  },
-  {
-   "id": "risk:脚手架:02",
-   "label": "RiskSource",
-   "name": "基础不实/沉降",
-   "category": "脚手架",
-   "source": "基础不实/沉降",
-   "hazard": "架体倾斜",
-   "control": "基础硬化、排水，立杆下垫板"
-  },
-  {
-   "id": "risk:脚手架:03",
-   "label": "RiskSource",
-   "name": "超载堆料",
-   "category": "脚手架",
-   "source": "超载堆料",
-   "hazard": "架体变形",
-   "control": "控制作业面荷载，严禁超载"
-  },
-  {
-   "id": "risk:脚手架:04",
-   "label": "RiskSource",
-   "name": "剪刀撑缺失",
-   "category": "脚手架",
-   "source": "剪刀撑缺失",
-   "hazard": "整体刚度不足",
-   "control": "按方案设剪刀撑，连续设置"
   }
  ],
  "edges": [
@@ -1084,122 +895,16 @@
    "from": "JGJ311-2013_建筑深基坑工程施工安全技术规范::7.1.2",
    "to": "GB51004-2015_建筑地基基础工程施工规范",
    "type": "REFERENCES"
-  },
-  {
-   "from": "起重吊装工程",
-   "to": "risk:起重吊装:01",
-   "type": "HAS_RISK"
-  },
-  {
-   "from": "起重吊装工程",
-   "to": "risk:起重吊装:02",
-   "type": "HAS_RISK"
-  },
-  {
-   "from": "起重吊装工程",
-   "to": "risk:起重吊装:03",
-   "type": "HAS_RISK"
-  },
-  {
-   "from": "起重吊装工程",
-   "to": "risk:起重吊装:04",
-   "type": "HAS_RISK"
-  },
-  {
-   "from": "起重吊装工程",
-   "to": "risk:起重吊装:05",
-   "type": "HAS_RISK"
-  },
-  {
-   "from": "起重吊装工程",
-   "to": "risk:起重吊装:06",
-   "type": "HAS_RISK"
-  },
-  {
-   "from": "起重吊装工程",
-   "to": "risk:起重吊装:07",
-   "type": "HAS_RISK"
-  },
-  {
-   "from": "起重吊装工程",
-   "to": "risk:起重吊装:08",
-   "type": "HAS_RISK"
-  },
-  {
-   "from": "深基坑工程",
-   "to": "risk:基坑工程:01",
-   "type": "HAS_RISK"
-  },
-  {
-   "from": "深基坑工程",
-   "to": "risk:基坑工程:02",
-   "type": "HAS_RISK"
-  },
-  {
-   "from": "深基坑工程",
-   "to": "risk:基坑工程:03",
-   "type": "HAS_RISK"
-  },
-  {
-   "from": "深基坑工程",
-   "to": "risk:基坑工程:04",
-   "type": "HAS_RISK"
-  },
-  {
-   "from": "深基坑工程",
-   "to": "risk:基坑工程:05",
-   "type": "HAS_RISK"
-  },
-  {
-   "from": "模板支撑工程",
-   "to": "risk:模板支撑:01",
-   "type": "HAS_RISK"
-  },
-  {
-   "from": "模板支撑工程",
-   "to": "risk:模板支撑:02",
-   "type": "HAS_RISK"
-  },
-  {
-   "from": "模板支撑工程",
-   "to": "risk:模板支撑:03",
-   "type": "HAS_RISK"
-  },
-  {
-   "from": "模板支撑工程",
-   "to": "risk:模板支撑:04",
-   "type": "HAS_RISK"
-  },
-  {
-   "from": "脚手架工程",
-   "to": "risk:脚手架:01",
-   "type": "HAS_RISK"
-  },
-  {
-   "from": "脚手架工程",
-   "to": "risk:脚手架:02",
-   "type": "HAS_RISK"
-  },
-  {
-   "from": "脚手架工程",
-   "to": "risk:脚手架:03",
-   "type": "HAS_RISK"
-  },
-  {
-   "from": "脚手架工程",
-   "to": "risk:脚手架:04",
-   "type": "HAS_RISK"
   }
  ],
  "meta": {
-  "purpose": "qa 路多跳查询图谱 demo v2（术语归一 + 阈值链 + 废止链 + 条文跳转）",
+  "purpose": "GraphRAG demo v2 图谱（术语归一 + 阈值链 + 废止链 + 条文跳转）",
   "node_labels": [
    "Clause",
    "Entity",
    "HazardCategory",
    "Metric",
    "Obligation",
-   "RiskSource",
    "Standard",
    "Term",
    "Threshold"
@@ -1210,7 +915,6 @@
    "COVERS",
    "FOR_CATEGORY",
    "HAS_METRIC",
-   "HAS_RISK",
    "HAS_THRESHOLD",
    "HIERARCHY",
    "MENTIONS",
@@ -1219,7 +923,6 @@
    "REGULATED_BY",
    "SUPERSEDES",
    "TRIGGERS"
-  ],
-  "risk_sources_added": true
+  ]
  }
 }

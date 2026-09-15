@@ -40,7 +40,6 @@ class QAAgent(SubAgent):
                 from qa.decompose import decompose
                 slot = decompose(query)
                 out = assemble(slot)
-                gts = out.get("graph_traces") or []
                 trace = [{"step": 1, "kind": "structured",
                           "route": "rule", "src": "qa/assembler.py（结构化知识库 + 规则模板）",
                           "label": f"复合结构化 QA：{slot.get('category') or '?'} / "
@@ -50,33 +49,18 @@ class QAAgent(SubAgent):
                                      "capacity": slot.get("capacity"),
                                      "is_super_scale": slot.get("is_super_scale"),
                                      "dimensions": [d["key"] for d in slot["dimensions"] if d["enabled"]]}}]
-                # ---- GraphRAG 溯源：每个用到双路召回的维度单独一步 ----
-                for gt in gts:
+                # ---- RAG 条文补充：用到 RAG 的维度单独一步（溯源） ----
+                rag_dims = [s["key"] for s in out["sections"]
+                            if "RAG" in (s.get("source") or "")]
+                if rag_dims:
                     trace.append({
-                        "step": len(trace) + 1, "kind": "graphrag",
-                        "route": "graphrag",
-                        "src": gt.get("graph_file", ""),
-                        "label": f"GraphRAG 双路召回[{gt.get('dim')}]：图谱路 "
-                                 f"{gt.get('graph_count', 0)} 本规范 → 语义路命中 "
-                                 f"{gt.get('rag_count', 0)} 条",
-                        "detail": {
-                            "tool": "图谱路 HazardCategory -REGULATED_BY-> Standard（范围限定）"
-                                    " + 语义路 RAG",
-                            "graph_file": gt.get("graph_file", ""),
-                            "graph_path": gt.get("graph_path", ""),
-                            "graph_whitelist": gt.get("graph_whitelist", []),
-                            "graph_count": gt.get("graph_count", 0),
-                            "rag_count": gt.get("rag_count", 0),
-                            "rag_sources": gt.get("rag_sources", []),
-                            "category": gt.get("category"),
-                            "use_rerank": bool(ctx.get("rag_rerank", True)),
-                            "rag_backend": getattr(ctx.get("rag"), "backend", None),
-                        }})
-                if not gts:
-                    trace.append({"step": len(trace) + 1, "kind": "graphrag_skip",
-                                  "route": "rule", "src": "",
-                                  "label": "本问未走 GraphRAG（纯规则/知识库组装）",
-                                  "detail": {"graphrag_used": False}})
+                        "step": len(trace) + 1, "kind": "rag_search",
+                        "route": "rag", "src": "qa/retrieve.py（RAG 语义条文补充）",
+                        "label": f"补充 RAG 条文：{len(rag_dims)} 维（{'/'.join(rag_dims)}）",
+                        "detail": {"tool": "RAG 检索（BM25 ∥ 双塔，受 rag_rerank 控制）",
+                                   "dims": rag_dims,
+                                   "use_rerank": bool(ctx.get("rag_rerank", True)),
+                                   "rag_backend": getattr(ctx.get("rag"), "backend", None)}})
                 return SubAgentResult(
                     name=self.name, title=out["title"],
                     summary=out["markdown"],

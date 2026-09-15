@@ -8,8 +8,10 @@
 |---|---|---|
 | `01_规范知识库清单.md` | 项目根 | v1 采购/选库清单（2026-08-31）。使命已完成——82 本 PDF 已下载并入库（81 本进语料），对账结论沉淀在 `02_规范清单_对账.md`，已无维护价值 |
 | `rag2_MIGRATION.md` | `rag2/MIGRATION.md` | rag2 换机器迁移指南。迁移已完成；文中引用的 `dual_p1` 旧塔、`data/models/dual_p1` 目录已按 2026-09-13 清理删除。迁移/自检的现行入口改为 `env/README.md` + `env/bootstrap.py` |
-| `rag2_NEO4J_GUIDE.md` | `rag2/docs/NEO4J_GUIDE.md` | GraphRAG 建图用的 Neo4j 部署说明。运行时不依赖 Neo4j 服务（agent 的 qa 路直接读离线图谱文件 `rag2/data/graphrag/demo_graph_v2.json`），仅重建图谱时才需要 |
 | `cleanup_20260913.py` | `scripts/_cleanup_20260913.py` | 2026-09-13 项目清理脚本（一次性）。保留作清理审计证据；下方记录本次实际删除内容 |
+
+> 2026-09-15：原 `rag2_NEO4J_GUIDE.md`（Neo4j 部署说明）**已随 GraphRAG 抽离**，迁至独立 demo：
+> [`../../graphrag/docs/NEO4J_GUIDE.md`](../../graphrag/docs/NEO4J_GUIDE.md)（不再属于归档，也不再属于 rag2/agent 落地链路）。
 
 ## 2026-09-13 清理记录
 

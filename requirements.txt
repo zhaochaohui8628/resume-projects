@@ -22,6 +22,10 @@ uvicorn==0.52.4               # ASGI 服务器
 click==8.5.0                  # uvicorn 依赖
 python-multipart==0.0.32      # UI 上传方案（docx/pdf/txt）
 
+# ===== GraphRAG 独立 demo（graphrag/，非落地链路；可选）=====
+neo4j==5.28.2                 # GraphRAG demo 的 Neo4j 驱动（graphrag/app.py、scripts/load_neo4j.py）
+                              #   仅演示需要；不装则 demo 显式报错（设计为不回退 JSON）
+
 # ===== ★ 检索（rag2）=====
 numpy==2.5.3
 sentence-transformers==6.0.1  # bge-small-zh-v1.5 / CrossEncoder（模型以 6.0.1 存档，勿降级）

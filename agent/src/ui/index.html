@@ -327,7 +327,6 @@ details.proc-fold .proc-body{padding:0 var(--s-3) var(--s-2);display:flex;flex-d
 .route-rule{background:#eef2ff;color:#4338ca;border-color:#c7d2fe}
 .route-ner{background:#fdf4ff;color:#a21caf;border-color:#f5d0fe}
 .route-rag{background:#ecfeff;color:#0e7490;border-color:#a5f3fc}
-.route-graphrag{background:#f0fdf4;color:#15803d;border-color:#bbf7d0}
 .route-cmp{background:#fff7ed;color:#c2410c;border-color:#fed7aa}
 .route-llm{background:#f5f3ff;color:#6d28d9;border-color:#ddd6fe}
 .route-none{background:var(--c-surface-2);color:var(--c-text-faint);border-color:var(--c-border)}
@@ -479,7 +478,7 @@ table.grid tbody tr:last-child td{border-bottom:none}
           <textarea id="query" class="input" rows="2" placeholder="输入指令，例如：
 Review：帮我全面审查方案（判档+技术核对+规则/要素）
 Review：审查方案编制依据（规则 C1） / 基坑开挖深度8m是否超规模危大（判档）
-QA：起重吊装危大工程需要哪些管控措施和验收节点？（多跳·图谱+语义双路检索）"></textarea>
+QA：起重吊装危大工程需要哪些管控措施和验收节点？（知识库+规范条文检索）"></textarea>
           <div class="input-actions">
             <span class="hint">Ctrl + Enter 发送</span>
             <button class="btn btn-primary" id="btnSend" style="height:34px;padding:0 18px">
@@ -534,7 +533,7 @@ const ICONS = {
   ota_step:'🛠', ota_init:'🚀', ota_warn:'⚠️', expand:'📖',
   ota_answer:'💬', invalid:'⚠️', aggregate:'📝', done:'✅',
   scope:'🎯', triples:'🧩', judge:'🧾', technical:'🔍', technical_case:'⚖️',
-  graphrag:'🕸', graphrag_skip:'🚫', structured:'📚', structured_error:'⚠️',
+  structured:'📚', structured_error:'⚠️',
 };
 const LABELS = {
   input:'用户输入', dispatch:'LLM 调度', execute:'并行执行',
@@ -544,7 +543,6 @@ const LABELS = {
   ota_answer:'OTA 终答', aggregate:'LLM 汇总', done:'完成',
   scope:'范围收窄', triples:'工况三元组', judge:'危大判档',
   technical:'技术核对', technical_case:'工况比对',
-  graphrag:'GraphRAG 双路召回', graphrag_skip:'未走 GraphRAG',
   structured:'结构化组装', structured_error:'结构化异常',
 };
 const FLOW_ORDER = [
@@ -557,17 +555,16 @@ const FLOW_ORDER = [
 ];
 
 /* ---------- 工具路线（细粒度溯源核心） ----------
-   route 由后端 trace 提供（rule / ner / rag / graphrag / rag+comparator / llm），
+   route 由后端 trace 提供（rule / ner / rag / rag+comparator / llm），
    前端据此渲染 subagent 内部走过的工具节点链，而不是笼统的"在哪个 agent"。*/
 const ROUTES = {
   'rule':          {icon:'🧾', label:'规则/查表', cls:'route-rule'},
   'ner':           {icon:'🧪', label:'NER 抽取', cls:'route-ner'},
   'rag':           {icon:'🔍', label:'RAG 检索', cls:'route-rag'},
-  'graphrag':      {icon:'🕸', label:'GraphRAG', cls:'route-graphrag'},
   'rag+comparator':{icon:'⚖️', label:'RAG+限值比对', cls:'route-cmp'},
   'llm':           {icon:'💬', label:'LLM', cls:'route-llm'},
 };
-const ROUTE_ORDER = ['ner','rule','rag','graphrag','rag+comparator','llm'];
+const ROUTE_ORDER = ['ner','rule','rag','rag+comparator','llm'];
 function routeMeta(r){
   return ROUTES[r] || (r ? {icon:'🔧', label:r, cls:'route-none'} : null);
 }
@@ -583,7 +580,6 @@ function routeNote(steps, r){
   if(r==='ner')     return `${d.n_entities||0} 实体 / ${d.n_sentences||0} 句`;
   if(r==='rule')    return d.n !== undefined ? `${d.n} 项` : (d.n_checked!==undefined?`查表 ${d.n_checked}`:'');
   if(r==='rag')     return `命中 ${d.hit_count!==undefined?d.hit_count:(d.n_hits||0)} 条${d.use_rerank?' · 精排开':''}`;
-  if(r==='graphrag')return `图谱 ${d.graph_count||0} 本 → 语义 ${d.rag_count||0} 条`;
   if(r==='rag+comparator'){
     const cases = steps.filter(s=>s.kind==='technical_case');
     const nbad = cases.filter(s=>(s.detail||{}).verdict==='疑似违反').length;
@@ -721,9 +717,6 @@ function stepHtml(t,i){
   if(d.tool_calls !== undefined) bits.push('工具 '+d.tool_calls+' 次');
   // 路线专属溯源 chips
   let chips = '';
-  if(d.graph_whitelist && d.graph_whitelist.length){
-    chips += `<div>${d.graph_whitelist.slice(0,8).map(x=>`<span class="chip">🕸 ${esc(x)}</span>`).join('')}</div>`;
-  }
   if(d.rag_sources && d.rag_sources.length){
     chips += `<div>${d.rag_sources.slice(0,6).map(x=>`<span class="chip">🔍 ${esc(x)}</span>`).join('')}</div>`;
   }
@@ -832,7 +825,7 @@ function appendAiMessage(turn){
 /* ---------- 会话内 agent 运行过程（实时显示 → 结束折叠） ---------- */
 const PROC_KINDS = new Set(['subagent_step','rag_search','ota_init','ota_step','ota_answer',
   'ota_warn','expand','judge','technical','technical_case','rules','ner','triples',
-  'graphrag','graphrag_skip','structured','scope','aggregate']);
+  'structured','scope','aggregate']);
 function renderProcInline(turn){
   if(!turn.procEl) return;
   const steps = (turn.steps||[]).filter(t=>PROC_KINDS.has(t.kind));

@@ -1,14 +1,14 @@
-"""目标图谱 Demo v2 构建脚本（qa 路多跳查询用）。
+"""目标图谱 Demo v2 构建脚本（GraphRAG demo 多跳演示用）。
 
 在 demo_graph.json（仅 Standard/Clause/HazardCategory/Entity）基础上，
-新增 qa 路多跳查询所需的 4 类节点 + 5 类关系，全部素材来自仓库现有文件：
+新增 demo 多跳演示所需的 4 类节点 + 5 类关系，全部素材来自仓库现有文件：
   - Metric（量名）      ← ner2/data/ner/param_lexicon.json（102 词）
   - Threshold（阈值）   ← agent/data/rules/hazardous_work_types.json + grpo 判定口径
   - Obligation（义务）  ← 37 号令/条文"应…"义务，demo 手工精编
   - Term（术语别名）    ← ner2 词典 + 规范 2.1 术语章
 
-运行：python rag2/scripts/build_demo_graph_v2.py
-输出：rag2/data/graphrag/demo_graph_v2.json
+运行：python graphrag/scripts/build_demo_graph_v2.py
+输出：graphrag/data/demo_graph_v2.json
 """
 from __future__ import annotations
 
@@ -16,8 +16,8 @@ import json
 import os
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-ROOT = os.path.dirname(HERE)
-OUT = os.path.join(ROOT, "data", "graphrag", "demo_graph_v2.json")
+ROOT = os.path.dirname(HERE)                       # .../graphrag
+OUT = os.path.join(ROOT, "data", "demo_graph_v2.json")
 
 
 def node(id_: str, label: str, **props) -> dict:
@@ -31,7 +31,7 @@ def edge(frm: str, to: str, typ: str, **props) -> dict:
 nodes: list[dict] = []
 edges: list[dict] = []
 
-# ---------------- 1) Term 术语别名（qa 路 query 改写） ----------------
+# ---------------- 1) Term 术语别名（query 口语词归一演示） ----------------
 TERMS = [
     # (术语, 指向节点, 指向类型, 规范用语说明)
     ("高支模", "模板支撑工程", "HazardCategory", "规范叫法：混凝土模板支撑工程"),
@@ -106,7 +106,7 @@ for th in THRESHOLDS:
     else:
         edges.append(edge(tid, "obligation:应组织专家论证", "TRIGGERS"))
 
-# ---------------- 5) SUPERSEDES 废止/替代链（qa 路"还能不能用"） ----------------
+# ---------------- 5) SUPERSEDES 废止/替代链（"还能不能用"演示） ----------------
 SUPERSEDES = [
     ("GB55023-2022_施工脚手架通用规范", "JGJ130-2011_建筑施工扣件式钢管脚手架安全技术规范",
      "脚手架强条以 GB55023 为准（demo 示例，全量由 abolished_clauses.json 驱动）"),
@@ -130,7 +130,7 @@ for frm, to, note in REFERENCES_CLAUSE:
     edges.append(edge(frm, to, "REFERENCES_CLAUSE", note=note))
 
 # ---------------- 7) 复用既有 demo 的骨架（做 2 跳示例的锚点） ----------------
-BASE = json.load(open(os.path.join(ROOT, "data", "graphrag", "demo_graph.json"),
+BASE = json.load(open(os.path.join(ROOT, "data", "demo_graph.json"),
                       encoding="utf-8"))
 # 只并入 Standard/HazardCategory/Entity/Clause 骨架，避免与新增节点 id 冲突
 base_ids = {n["id"] for n in nodes}
@@ -143,7 +143,7 @@ for e in BASE["edges"]:
         edges.append(e)
 
 g = {"nodes": nodes, "edges": edges, "meta": {
-    "purpose": "qa 路多跳查询图谱 demo v2（术语归一 + 阈值链 + 废止链 + 条文跳转）",
+    "purpose": "GraphRAG demo v2 图谱（术语归一 + 阈值链 + 废止链 + 条文跳转）",
     "node_labels": sorted({n["label"] for n in nodes}),
     "rel_types": sorted({e["type"] for e in edges}),
 }}

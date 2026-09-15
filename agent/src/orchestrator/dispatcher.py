@@ -564,7 +564,7 @@ _KIND_ROUTE = {
     "ner": "ner", "scope": "ner",
     "triples": "rule", "judge": "rule", "rules": "rule", "structured": "rule",
     "technical": "rag+comparator", "technical_case": "rag+comparator",
-    "rag": "rag", "rag_search": "rag", "graphrag": "graphrag",
+    "rag": "rag", "rag_search": "rag",
     "llm": "llm", "aggregate": "llm", "dispatch": "llm",
 }
 
@@ -578,7 +578,7 @@ def _emit_subagent(trace: list, result, emit) -> None:
     if not getattr(result, "trace", None):
         return
     for t in result.trace:
-        # route/src = 工具路线与产物溯源（规则 / NER / RAG / GraphRAG / 比对 / LLM），
+        # route/src = 工具路线与产物溯源（规则 / NER / RAG / 比对 / LLM），
         # 前端据此渲染细粒度图状态机（不再只显示"在哪个 agent"）。
         emit("subagent_step", f"[{result.name}] {t.get('label', '')}",
              detail=t.get("detail", {}),
@@ -612,7 +612,7 @@ def _run_react_qa(query: str, plan: str, llm, opts: GlobalOpts, trace: list,
     rag = None
     try:
         from subagents._shared import get_rag                            # noqa: E402
-        rag = get_rag()                    # 进程级单例：review/qa/GraphRAG 共用一份模型实例
+        rag = get_rag()                    # 进程级单例：review/qa 共用一份模型实例
     except Exception as e:
         _emit("ota_warn", "RagClient 初始化失败", detail={"err": str(e)})
     rag_hit_sink: list = []          # rag skill 的结构化命中（UI 溯源用，以前是空的）

@@ -45,7 +45,6 @@ rag2/
 │   ├── retrieval/     hybrid（Corpus/EncoderPair/HybridRetriever/load_retriever）· rerank · llm_summarize
 │   ├── eval/          metrics（hit@k / recall@k / MRR，零依赖）
 │   ├── train/         dual_tower（InfoNCE）· cross_encoder（BCE）· distill（软 margin 蒸馏，备选）
-│   ├── graphrag/      schema · neo4j_store · hybrid_search（图谱 + 语义双路召回）
 │   └── serve/         llm_client
 ├── scripts/           见下表
 ├── data/
@@ -71,7 +70,6 @@ rag2/
 | P4 蒸馏（备选） | `gen_distill_data.py` → `src/train/distill/train.py` → `eval_teacher_ab.py` |
 | P6 融合 | `eval_fusion_gold.py`（RRF vs 凸组合 + α 网格）、`eval_pipeline_rerank.py`（端到端召回+精排） |
 | P7 黄金集 | `sample_gold_sources.py` → 人工撰写 → `build_gold_train_data.py`、`gold_fp_screen.py` |
-| 图谱 | `build_demo_graph.py` / `build_demo_graph_v2.py` / `build_full_graph.py`（全量需 Neo4j 服务） |
 | 评估 | `eval_retrieval.py`（多路对照）、`eval_ragas.py`（需 Key）、`ab_chunk_size.py` / `ab_pooling.py`（消融） |
 
 ## 运行（Windows PowerShell，项目根目录）
@@ -100,8 +98,7 @@ $PY = "C:\Users\<用户名>\anaconda3\envs\torch_gpu\python.exe"
 & $PY rag2/scripts/build_gold_train_data.py --index dual_mix.faiss    # 挖 hard negatives
 & $PY rag2/scripts/train_cross_encoder.py --out data/models/cross_v2_ep4
 
-# —— 图谱 / 测试 ——
-& $PY rag2/scripts/build_demo_graph_v2.py         # qa 路多跳查询用的 demo 图谱
+# —— 测试 ——
 & $PY -m pytest rag2/tests
 ```
 

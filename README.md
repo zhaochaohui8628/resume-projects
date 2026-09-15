@@ -19,6 +19,12 @@ cd <REPO_ROOT>
 
 就这一条。脚本会自动挑 Python 解释器、检查索引与模型是否在位，然后起服务（`http://127.0.0.1:7860/`）。
 
+另有一个**独立 demo**（不属于主链路）：GraphRAG 规范知识图谱，一键启动：
+
+```powershell
+.\graphrag\start_demo.ps1        # 自动起 Neo4j + 建图 + 前端（http://127.0.0.1:7870/）
+```
+
 如果 PowerShell 提示"无法加载文件…因为在此系统上禁止运行脚本"，先放行一次：
 
 ```powershell
@@ -63,6 +69,8 @@ $PY = "C:\Users\<用户名>\anaconda3\envs\torch_gpu\python.exe"
 
 - `start.ps1` 会按 `torch_gpu → 托管 venv → PATH 上的 python` 顺序自动探测，一般不用手填。
 - ⚠️ **别用** `C:\Users\<用户名>\anaconda3\python.exe`（base）——那是 CPU 版 torch，检索/精排/NER 会慢很多且可能加载失败。
+  若某台机器上**没有** `envs\torch_gpu`，脚本会一路退到 PATH 上的 `python`（常是 base），此时自检会提示「建议改用 torch_gpu 环境」——
+  用 `-Py` 显式指定那台机器的正确解释器即可，脚本不会替你改环境。
 - 依赖清单见 [`requirements.txt`](requirements.txt)；装依赖：
 
 ```powershell
@@ -134,12 +142,15 @@ foreach ($t in 'agent/tests','rag2/tests','ner2/tests','grpo/tests') { & $PY -m 
 | `config/config.yaml` | 检索/精排运行配置 |
 | `env/` | 环境快照与自举（`bootstrap.py`） |
 | `docs/` | 文档索引；`docs/archive/` 为已归档历史文档 |
-| `neo4j-community-4.4.8/` | 仅重建 GraphRAG 图谱时使用（运行时不需要） |
+| `graphrag/` | **独立 demo（非落地链路）**：GraphRAG 规范知识图谱 —— Neo4j 后端 + 单路/双路前端 + 一键启动 `start_demo.ps1` |
+| `neo4j-community-4.4.8/` | 仅 GraphRAG demo 使用（需 JDK 11）；主链路运行时不依赖 |
 
 ## 七、常见问题
 
 | 现象 | 处理 |
 |---|---|
+| 自检报「缺依赖 sentence_transformers」或「不可用（1 个致命问题）」 | 该机器上没有 `envs\torch_gpu`，脚本退到了 PATH 上的 python（多为 base，CPU 版 torch 且缺 sentence-transformers）。用 `-Py` 显式指定：<br>`.\start.ps1 check -Py "<该机器 torch_gpu 的 python.exe>"` |
+| 脚本输出中文变成「鐩綍濂戠害」这类乱码 | Python 侧写 UTF-8、PowerShell 5.1 按系统代码页(GBK)解码不一致所致。脚本已统一设 `PYTHONIOENCODING=utf-8` + `[Console]::OutputEncoding=UTF8`；手动跑 python 时先 `$env:PYTHONIOENCODING = "utf-8"` |
 | UI/trace 里显示 `CE精排=关`，但开关是打开的 | **精排被降级**了（CrossEncoder 加载失败会静默降级，只记 `rag_client.errors["rerank"]`）。常见原因是本机**提交内存不足**：`OSError: 页面文件太小，无法完成操作。(os error 1455)`。处理：调大 Windows 虚拟内存（页面文件 16–32 GB）或关掉占内存程序；`OPENBLAS_NUM_THREADS=1` 已由脚本设好 |
 | `OpenBLAS error: Memory allocation still failed after 10 retries` 或 faiss `MemoryError: std::bad_alloc` | BLAS 按 16 核分配缓冲、内存不够。设 `$env:OPENBLAS_NUM_THREADS="1"`（`start.ps1` 已自动设）。**索引文件本身没问题**——已用文件头校验：`IxFI` + d=512 + ntotal=14916，长度精确等于 45+14916×512×4 |
 | `faiss` 报 `DLL load failed` | 已知问题：faiss 依赖 `libiomp5md.dll`（在 torch/lib）。**不要裸 `import faiss`**，统一走 `rag2/src/index/dense.py::import_faiss()` |
@@ -162,5 +173,11 @@ foreach ($t in 'agent/tests','rag2/tests','ner2/tests','grpo/tests') { & $PY -m 
 | [`ner2/README.md`](ner2/README.md) | 级联抽取架构、7 阶段路线、训练与评估 |
 | [`grpo/README.md`](grpo/README.md) | 强化学习训练链、8G 显存工程、评测矩阵 |
 | [`env/README.md`](env/README.md) | 换机器 / 环境快照 / 自检原理 |
+| [`graphrag/README.md`](graphrag/README.md) | **独立 demo**：GraphRAG 规范知识图谱（Neo4j 后端 · 单路/双路开关 · 一键启动 · 面试演示脚本） |
+| [`graphrag/docs/NEO4J_GUIDE.md`](graphrag/docs/NEO4J_GUIDE.md) | Neo4j 部署、Cypher 查询与排障手册（demo 专用） |
 | [`02_规范清单_对账.md`](02_规范清单_对账.md) | 规范库对账（82 本 → 81 本入库） |
 | [`docs/archive/`](docs/archive/README.md) | 已归档历史文档 + 2026-09-13 清理记录 |
+
+> **GraphRAG 的位置**：它是**独立演示模块**，不属于 rag2 / agent 的落地链路——
+> rag2（检索）与 agent（编排）中不含任何图谱/Neo4j 代码或依赖，agent 的结构化 QA 走纯 RAG。
+> 演示链路强制走 Neo4j（不回退 JSON），一键启动：`.\graphrag\start_demo.ps1`（前端 7870 / Neo4j Browser 7474）。

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GraphRAG 规范知识图谱 Demo</title>
+<style>
+:root{
+  --bg:#0f172a; --panel:#111827; --panel2:#0b1220; --line:#1e293b; --line2:#334155;
+  --txt:#e2e8f0; --mut:#94a3b8; --acc:#38bdf8; --ok:#22c55e; --bad:#ef4444; --warn:#f59e0b;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,'Microsoft YaHei',sans-serif;background:var(--bg);color:var(--txt);height:100vh;display:flex;flex-direction:column}
+header{padding:10px 16px;background:var(--panel2);border-bottom:1px solid var(--line);display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+header b{color:var(--acc)}
+.badge{font-size:12px;padding:3px 9px;border-radius:999px;border:1px solid var(--line2);color:var(--mut)}
+.badge.ok{border-color:#14532d;background:#052e16;color:#86efac}
+.badge.bad{border-color:#7f1d1d;background:#2a0a0a;color:#fca5a5}
+.badge.warn{border-color:#78350f;background:#2a1a05;color:#fcd34d}
+a{color:var(--acc)}
+main{flex:1;display:flex;min-height:0}
+#left{width:460px;min-width:360px;display:flex;flex-direction:column;border-right:1px solid var(--line);min-height:0}
+#right{flex:1;position:relative;min-width:0}
+.pad{padding:12px 14px}
+.row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+textarea{width:100%;height:76px;background:var(--panel);border:1px solid var(--line2);border-radius:8px;color:var(--txt);padding:9px;font-size:13px;resize:vertical}
+button{background:var(--acc);color:#04212f;border:0;border-radius:8px;padding:8px 16px;font-weight:700;cursor:pointer;font-size:13px}
+button.ghost{background:transparent;border:1px solid var(--line2);color:var(--txt);font-weight:500}
+button:disabled{opacity:.5;cursor:not-allowed}
+.seg{display:inline-flex;border:1px solid var(--line2);border-radius:8px;overflow:hidden}
+.seg label{padding:6px 14px;font-size:13px;cursor:pointer;color:var(--mut)}
+.seg input{display:none}
+.seg input:checked + span{background:var(--acc);color:#04212f;font-weight:700}
+.seg span{display:block;padding:6px 14px}
+.sw{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--mut)}
+#results{flex:1;overflow:auto;padding:0 14px 20px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:10px 12px;margin-bottom:10px}
+.card h4{margin:0 0 6px;font-size:13px;color:var(--acc)}
+.tag{font-size:11px;padding:1px 7px;border-radius:6px;border:1px solid;margin-right:6px}
+.t-graph{color:#86efac;border-color:#14532d;background:#052e16}
+.t-vector{color:#93c5fd;border-color:#1e3a8a;background:#0a1229}
+.t-both{color:#fcd34d;border-color:#78350f;background:#2a1a05}
+.hit{padding:8px 0;border-bottom:1px dashed var(--line)}
+.hit:last-child{border-bottom:0}
+.hit .cid{font-size:12px;color:var(--mut)}
+.hit .txt{font-size:13px;margin-top:3px;line-height:1.5}
+.chip{display:inline-block;font-size:11px;color:var(--mut);border:1px solid var(--line);border-radius:6px;padding:2px 7px;margin:3px 5px 0 0}
+.empty{color:var(--mut);font-size:13px;padding:26px 6px;text-align:center}
+#legend{position:absolute;top:10px;right:10px;background:rgba(17,24,39,.92);border:1px solid var(--line);border-radius:8px;padding:8px 10px;font-size:11px;line-height:1.7}
+#legend .dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:5px;vertical-align:middle}
+#gtip{position:fixed;pointer-events:none;background:#1e293b;border:1px solid var(--line2);border-radius:6px;padding:6px 8px;font-size:12px;max-width:300px;display:none;z-index:50}
+#toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:#1e293b;border:1px solid var(--line2);padding:9px 16px;border-radius:8px;font-size:13px;display:none;z-index:60}
+.hint{font-size:12px;color:var(--mut);margin-top:6px;line-height:1.5}
+</style>
+</head>
+<body>
+<header>
+  <b>GraphRAG 规范知识图谱 Demo</b>
+  <span class="badge" id="neo4jBadge">Neo4j：检测中…</span>
+  <a href="http://localhost:7474" target="_blank">打开 Neo4j Browser ↗</a>
+  <button class="ghost" id="btnLoad">写入 demo 图谱到 Neo4j</button>
+  <button class="ghost" id="btnReload">刷新图谱视图</button>
+</header>
+
+<main>
+  <div id="left">
+    <div class="pad">
+      <div class="row" style="margin-bottom:8px">
+        <div class="seg" id="modeSeg">
+          <label><input type="radio" name="mode" value="graph" checked><span>单路 · 图谱</span></label>
+          <label><input type="radio" name="mode" value="dual"><span>双路 · 向量+图谱</span></label>
+        </div>
+        <label class="sw"><input type="checkbox" id="vecOn" checked>启用向量端</label>
+      </div>
+      <textarea id="q" placeholder="例：深基坑开挖前要做哪些安全准备？&#10;例：模板支撑搭设高度 9m、施工总荷载 18kN/m² 属于什么风险？">深基坑开挖前要做哪些安全准备？</textarea>
+      <div class="row" style="margin-top:8px">
+        <button id="btnSearch">检索</button>
+        <span class="sw">跳数 <input type="number" id="hops" value="2" min="1" max="4" style="width:48px;background:var(--panel);border:1px solid var(--line2);color:var(--txt);border-radius:6px;padding:3px 6px"></span>
+        <span class="sw">top-k <input type="number" id="topk" value="5" min="1" max="20" style="width:52px;background:var(--panel);border:1px solid var(--line2);color:var(--txt);border-radius:6px;padding:3px 6px"></span>
+      </div>
+      <div class="hint" id="modeHint">单路：仅图谱子图扩展（Neo4j 多跳）。双路：叠加向量召回；取消勾选「启用向量端」即等价单路。</div>
+    </div>
+    <div id="results"><div class="empty">输入问句后点「检索」。<br>结果来自 Neo4j 图谱子图扩展（+ 可选向量召回）。</div></div>
+  </div>
+  <div id="right">
+    <canvas id="cv"></canvas>
+    <div id="legend"></div>
+  </div>
+</main>
+<div id="gtip"></div>
+<div id="toast"></div>
+
+<script>
+const COLORS={Standard:'#3b82f6',Clause:'#22c55e',HazardCategory:'#ef4444',Entity:'#f59e0b',
+  Metric:'#a855f7',Threshold:'#06b6d4',Obligation:'#ec4899',Term:'#84cc16',RiskSource:'#14b8a6'};
+const $=s=>document.querySelector(s);
+const esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function toast(m){const t=$('#toast');t.textContent=m;t.style.display='block';clearTimeout(t._t);t._t=setTimeout(()=>t.style.display='none',3200);}
+
+/* ---------------- 图谱渲染 ---------------- */
+const cv=$('#cv'),ctx=cv.getContext('2d');
+let G={nodes:[],edges:[]},idx={},E=[],W=0,H=0,scl=1,ox=0,oy=0,drag=-1;
+let hl=new Set();              // 高亮节点 id
+function resize(){const r=cv.parentElement.getBoundingClientRect();W=cv.width=r.width;H=cv.height=r.height;
+  scl=Math.min(W/1200,H/820)*1.0;ox=W/2;oy=H/2;}
+addEventListener('resize',resize);
+function setGraph(g){
+  G=g||{nodes:[],edges:[]};
+  idx={};G.nodes.forEach((n,i)=>{idx[n.id]=i;n.x=(Math.random()-.5)*640;n.y=(Math.random()-.5)*440;n.vx=0;n.vy=0;});
+  E=G.edges.map(e=>({a:idx[e.from],b:idx[e.to],t:e.type})).filter(e=>e.a!=null&&e.b!=null);
+  const cnt={};G.nodes.forEach(n=>cnt[n.label]=(cnt[n.label]||0)+1);
+  $('#legend').innerHTML=Object.keys(cnt).sort().map(l=>
+    `<div><span class="dot" style="background:${COLORS[l]||'#64748b'}"></span>${esc(l)} (${cnt[l]})</div>`).join('');
+}
+function tick(){for(const e of E){const a=G.nodes[e.a],b=G.nodes[e.b];let dx=b.x-a.x,dy=b.y-a.y,d=Math.hypot(dx,dy)||1;
+    const f=(d-140)/d*0.02;a.vx+=dx*f;a.vy+=dy*f;b.vx-=dx*f;b.vy-=dy*f;}
+  for(let i=0;i<G.nodes.length;i++){const n=G.nodes[i];if(i===drag)continue;n.vx*=0.9;n.vy*=0.9;n.x+=n.vx;n.y+=n.vy;}}
+function draw(){ctx.clearRect(0,0,W,H);ctx.save();ctx.translate(ox,oy);ctx.scale(scl,scl);
+  for(const e of E){const a=G.nodes[e.a],b=G.nodes[e.b];
+    const on=hl.has(a.id)&&hl.has(b.id);
+    ctx.lineWidth=on?1.8:0.7;ctx.strokeStyle=on?'#38bdf8':'#475569';
+    ctx.beginPath();ctx.moveTo(a.x,a.y);ctx.lineTo(b.x,b.y);ctx.stroke();
+    if(on){ctx.fillStyle='#93c5fd';ctx.font='7px sans-serif';ctx.fillText(e.t,(a.x+b.x)/2,(a.y+b.y)/2);}}
+  for(const n of G.nodes){const on=hl.has(n.id);
+    ctx.beginPath();ctx.arc(n.x,n.y,on?11:8,0,7);ctx.fillStyle=COLORS[n.label]||'#64748b';ctx.fill();
+    if(on){ctx.lineWidth=2;ctx.strokeStyle='#f8fafc';ctx.stroke();}
+    ctx.fillStyle='#0f172a';ctx.font='bold 8px sans-serif';ctx.textAlign='center';
+    ctx.fillText((n.name||n.id).slice(0,4),n.x,n.y+3);}
+  ctx.restore();}
+(function loop(){tick();draw();requestAnimationFrame(loop);})();
+function toM(e){const r=cv.getBoundingClientRect();return{x:(e.clientX-r.left-ox)/scl,y:(e.clientY-r.top-oy)/scl};}
+cv.onmousedown=e=>{const m=toM(e);for(let i=0;i<G.nodes.length;i++){if(Math.hypot(G.nodes[i].x-m.x,G.nodes[i].y-m.y)<14){drag=i;break;}}};
+cv.onmouseup=()=>drag=-1;cv.onmouseleave=()=>{drag=-1;$('#gtip').style.display='none';};
+cv.onmousemove=e=>{const m=toM(e);
+  if(drag>=0){G.nodes[drag].x=m.x;G.nodes[drag].y=m.y;G.nodes[drag].vx=G.nodes[drag].vy=0;}
+  const tip=$('#gtip');let h=null;
+  for(const n of G.nodes){if(Math.hypot(n.x-m.x,n.y-m.y)<14){h=n;break;}}
+  if(h){tip.style.display='block';tip.style.left=(e.clientX+12)+'px';tip.style.top=(e.clientY+12)+'px';
+    let s=`<b>${esc(h.name||h.id)}</b><br>${esc(h.label)}`;
+    const p=h.props||{};const ks=Object.keys(p).slice(0,5);
+    if(ks.length)s+='<br>'+ks.map(k=>`${esc(k)}: ${esc(String(p[k]).slice(0,60))}`).join('<br>');
+    tip.innerHTML=s;}
+  else tip.style.display='none';};
+cv.onwheel=e=>{e.preventDefault();const m=toM(e);const k=e.deltaY<0?1.1:.9;scl*=k;ox=m.x-(m.x-ox)*k;oy=m.y-(m.y-oy)*k;};
+
+/* ---------------- 接口 ---------------- */
+async function loadHealth(){const b=$('#neo4jBadge');
+  try{const r=await fetch('/api/health');const j=await r.json();
+    if(j.ok){const s=j.stats;b.className='badge ok';b.textContent=`Neo4j 已连接 · ${s.nodes} 节点 / ${s.edges} 关系`;}
+    else{b.className='badge bad';b.textContent='Neo4j 不可用（点标题栏按钮或先启动服务）';}
+  }catch(e){b.className='badge bad';b.textContent='无法访问后端服务';}}
+async function loadGraph(){try{const r=await fetch('/api/graph');if(!r.ok)return;setGraph(await r.json());}catch(e){}}
+async function doSearch(){
+  const q=$('#q').value.trim();if(!q)return;
+  const mode=$('input[name=mode]:checked').value;
+  const vec=$('#vecOn').checked;
+  const eff=(mode==='dual'&&vec)?'dual':'graph';
+  $('#btnSearch').disabled=true;$('#results').innerHTML='<div class="empty">检索中…（首次双路会加载向量模型，稍候）</div>';
+  try{
+    const r=await fetch('/api/search',{method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({query:q,mode:eff,hops:parseInt($('#hops').value||'2'),top_k:parseInt($('#topk').value||'5')})});
+    const j=await r.json();
+    if(!r.ok){$('#results').innerHTML=`<div class="empty">检索失败：${esc(j.detail||r.statusText)}</div>`;return;}
+    renderResult(j,eff);
+  }catch(e){$('#results').innerHTML=`<div class="empty">请求异常：${esc(e.message)}</div>`;}
+  finally{$('#btnSearch').disabled=false;}
+}
+function renderResult(j,eff){
+  hl=new Set();
+  (j.graph_subgraph?.nodes||[]).forEach(n=>hl.add(n.id));
+  const modeTag=eff==='dual'
+    ? (j.vector_error?`<span class="badge warn">向量端异常，已退化图谱路</span>`:`<span class="badge ok">双路</span>`)
+    : `<span class="badge">单路（图谱）</span>`;
+  const hz=(j.hazards||[]).map(h=>`<span class="chip">${esc(h)}</span>`).join('')||'<span class="chip">未识别（按关键词扩展）</span>';
+  const wl=(j.graph_whitelist||[]).map(w=>`<span class="chip">${esc(w)}</span>`).join('')||'<span class="chip">无</span>';
+  const th=(j.graph_thresholds||[]).map(t=>`<span class="chip">${esc(t.metric)} ${esc(t.level)} ${esc(t.value)}${esc(t.unit)}</span>`).join('')||'<span class="chip">无</span>';
+  const hits=(j.hits||[]).map(h=>{
+    const cls=h.source==='both'?'t-both':(h.source==='graph'?'t-graph':'t-vector');
+    const lab={graph:'图谱',vector:'向量',both:'双源'}[h.source]||h.source;
+    return `<div class="hit"><span class="tag ${cls}">${lab}</span><span class="cid">${esc(h.clause_id)}</span>
+      <div class="txt">${esc((h.text||'').slice(0,180))}</div></div>`;}).join('')||'<div class="empty" style="padding:14px">无命中条款</div>';
+  $('#results').innerHTML=`
+    <div class="card"><h4>检索模式</h4>${modeTag}
+      <span class="chip">图谱条款 ${j.graph_clauses||0}</span><span class="chip">向量条款 ${j.vector_clauses||0}</span>
+      <span class="chip">合并 ${j.merged||0}</span></div>
+    <div class="card"><h4>识别危大类别（图谱入口）</h4>${hz}</div>
+    <div class="card"><h4>图谱范围白名单（HazardCategory -REGULATED_BY-> Standard）</h4>${wl}</div>
+    <div class="card"><h4>阈值链（类别 → 量名 → 阈值）</h4>${th}</div>
+    <div class="card"><h4>命中条款（融合去重）</h4>${hits}</div>`;
+  $('#results').scrollTop=0;
+}
+$('#btnSearch').onclick=doSearch;
+$('#btnReload').onclick=()=>{loadGraph();loadHealth();};
+$('#btnLoad').onclick=async()=>{
+  $('#btnLoad').disabled=true;toast('写入中…');
+  try{const r=await fetch('/api/load',{method:'POST'});const j=await r.json();
+    if(r.ok){toast(`写入完成：${j.nodes} 节点 / ${j.edges} 关系`);await loadHealth();await loadGraph();}
+    else toast('写入失败：'+(j.detail||r.statusText));
+  }catch(e){toast('写入异常：'+e.message);}finally{$('#btnLoad').disabled=false;}};
+$('#vecOn').onchange=()=>{const m=$('input[name=mode]:checked').value;
+  $('#modeHint').textContent = (m==='dual'&&$('#vecOn').checked)
+    ? '双路：图谱子图扩展 + 向量召回，合并去重。'
+    : '单路：仅图谱子图扩展（向量端已关闭）。';};
+document.querySelectorAll('input[name=mode]').forEach(r=>r.onchange=$('#vecOn').onchange);
+
+/* ---------------- 启动 ---------------- */
+resize();loadHealth();loadGraph();
+</script>
+</body>
+</html>

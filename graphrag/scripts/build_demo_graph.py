@@ -19,10 +19,12 @@ import re
 import sys
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+GRAPH_ROOT = Path(__file__).resolve().parents[1]          # .../graphrag
+sys.path.insert(0, str(GRAPH_ROOT))
 
-from src.common.paths import data_dir  # noqa: E402
-from src.graphrag.schema import *  # noqa: E402,F403
+from src.schema import *  # noqa: E402,F403
+
+DATA_DIR = GRAPH_ROOT / "data"
 
 
 # ---- 1. 规范节点（真实存在的 81 部规范中选取）----
@@ -171,7 +173,7 @@ def build_demo_graph() -> dict:
 
 def main() -> None:
     graph = build_demo_graph()
-    out = data_dir("graphrag") / "demo_graph.json"
+    out = DATA_DIR / "demo_graph.json"
     out.parent.mkdir(parents=True, exist_ok=True)
     with open(out, "w", encoding="utf-8") as f:
         json.dump(graph, f, ensure_ascii=False, indent=2)

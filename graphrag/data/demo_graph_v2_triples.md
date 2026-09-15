@@ -1,13 +1,13 @@
 # 图谱 demo v2 — 实体三元组清单（实体 -关系-> 实体）
 
-来源：`rag2/data/graphrag/demo_graph_v2.json`
+来源：`graphrag/data/demo_graph_v2.json`（生成脚本 `graphrag/scripts/build_demo_graph_v2.py`）
 共 **96 条三元组 / 13 类关系**。
-新增部分（qa 路多跳所需）= ALIAS_OF/HAS_METRIC/HAS_THRESHOLD/FOR_CATEGORY/TRIGGERS/SUPERSEDES/REFERENCES_CLAUSE = **42 条**；
+新增部分（demo 多跳演示所需）= ALIAS_OF/HAS_METRIC/HAS_THRESHOLD/FOR_CATEGORY/TRIGGERS/SUPERSEDES/REFERENCES_CLAUSE = **42 条**；
 既有骨架 = BELONGS_TO/REGULATED_BY/COVERS/MENTIONS/HIERARCHY/REFERENCES = 54 条。
 
 ---
 
-## 新增 · 供 qa 路多跳查询
+## 新增 · 供 demo 多跳查询
 
 ### ALIAS_OF · 术语归一（用户口语词 → 规范词）· 6 条
 ```

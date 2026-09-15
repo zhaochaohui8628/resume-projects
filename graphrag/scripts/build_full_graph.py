@@ -28,11 +28,16 @@ import sys
 from collections import Counter, defaultdict
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+GRAPH_ROOT = Path(__file__).resolve().parents[1]        # .../graphrag
+WORKSPACE = GRAPH_ROOT.parent                            # 项目根
+sys.path.insert(0, str(GRAPH_ROOT))
 
-from src.common.paths import data_dir  # noqa: E402
-from src.graphrag.schema import (BELONGS_TO, CLS, COVERS, ENT, HAZ, HIERARCHY,  # noqa: E402
-                                 MENTIONS, REFERENCES, REGULATED_BY, STD)
+from src.schema import (BELONGS_TO, CLS, COVERS, ENT, HAZ, HIERARCHY,  # noqa: E402
+                        MENTIONS, REFERENCES, REGULATED_BY, STD)
+
+DATA_DIR = GRAPH_ROOT / "data"                           # 图谱产物输出目录
+# 全量建图的语料来自 rag2（只读引用，不修改 rag2）
+CORPUS_CLAUSES = WORKSPACE / "rag2" / "data" / "corpus" / "clauses.jsonl"
 
 # ---------- 规范层级 ----------
 def std_level(sid: str) -> str:
@@ -166,7 +171,7 @@ HIERARCHY_MAP = {
 
 
 def build() -> dict:
-    clauses = [json.loads(l) for l in open(data_dir("corpus", "clauses.jsonl"), encoding="utf-8") if l.strip()]
+    clauses = [json.loads(l) for l in open(CORPUS_CLAUSES, encoding="utf-8") if l.strip()]
     std_ids = sorted({c["metadata"]["source"] for c in clauses})
     std_set = set(std_ids)
 
@@ -293,7 +298,7 @@ def main() -> None:
     ap.add_argument("--load", action="store_true")
     a = ap.parse_args()
 
-    out = data_dir("graphrag") / "full_graph.json"
+    out = DATA_DIR / "full_graph.json"
     if a.build or not a.load:
         g = build()
         out.parent.mkdir(parents=True, exist_ok=True)

@@ -3,12 +3,13 @@
 数据源 = agent/src/qa/risk_sources.py 的 RISK_SOURCES（**同源**，图谱与规则兜底
 永不打架；后续 Neo4j 全量图谱也由本脚本生成）。
 
-产出：合并进 rag2/data/graphrag/demo_graph_v2.json
+产出：合并进 graphrag/data/demo_graph_v2.json
   - RiskSource 节点：{id: "risk:{类别}:{序号}", label: "RiskSource",
                        category, source(风险源), hazard(后果), control(管控)}
   - HazardCategory -HAS_RISK-> RiskSource（类别名映射见 _CAT_MAP）
 
-运行：python rag2/scripts/add_risk_sources.py
+运行：python graphrag/scripts/add_risk_sources.py
+（数据源 agent/src/qa/risk_sources.py 为可选：找不到则跳过，不影响图谱 demo。）
 """
 from __future__ import annotations
 
@@ -17,15 +18,19 @@ import os
 import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-ROOT = os.path.dirname(HERE)                                   # rag2
+ROOT = os.path.dirname(HERE)                                   # .../graphrag
 WS = os.path.dirname(ROOT)                                     # 工作区根
 AGENT_SRC = os.path.join(WS, "agent", "src")
 if AGENT_SRC not in sys.path:
     sys.path.insert(0, AGENT_SRC)
 
-from qa.risk_sources import RISK_SOURCES  # noqa: E402
+try:
+    from qa.risk_sources import RISK_SOURCES  # noqa: E402
+except Exception as _e:  # noqa: BLE001
+    RISK_SOURCES = {}
+    print(f"[warn] 风险源知识库不可用（{_e}），本脚本跳过（不影响图谱 demo）")
 
-GRAPH = os.path.join(ROOT, "data", "graphrag", "demo_graph_v2.json")
+GRAPH = os.path.join(ROOT, "data", "demo_graph_v2.json")
 
 # risk_sources.py 的类别 key → 图谱 HazardCategory 节点 id（含 id 片段即可匹配）
 _CAT_MAP = {

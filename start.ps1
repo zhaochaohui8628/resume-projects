@@ -53,6 +53,11 @@ $env:OPENBLAS_NUM_THREADS = '1'
 $env:OMP_NUM_THREADS = '1'
 $env:MKL_NUM_THREADS = '1'
 
+# 中文输出统一 UTF-8：Python 侧写 UTF-8，而 PowerShell 5.1 默认按系统代码页(GBK)解码 native
+# stdout → 实测出现「鐩綍濂戠害」这类乱码。两边都钉成 UTF-8 后一致。
+$env:PYTHONIOENCODING = 'utf-8'
+try { [Console]::OutputEncoding = [System.Text.Encoding]::UTF8 } catch { }
+
 $Root = Split-Path -Parent $MyInvocation.MyCommand.Path
 Set-Location $Root
 
@@ -85,6 +90,18 @@ function Show-Help {
 }
 
 # ------------------------------------------------------------------ 解释器探测
+function Invoke-PyQuiet([string]$exe, [string]$code) {
+    # 探测型 python 调用：native 命令往 stderr 写内容时，PS 5.1 会包成 NativeCommandError，
+    # 在 $ErrorActionPreference='Stop' 下被升级为终止性错误（`2>$null` 拦不住）→
+    # 缺依赖时脚本会"莫名中断"而不是返回 false。这里临时放宽 EAP 再丢弃 stderr。
+    $prev = $ErrorActionPreference
+    $ErrorActionPreference = 'SilentlyContinue'
+    try {
+        $null = & $exe -c $code 2>$null
+        return ($LASTEXITCODE -eq 0)
+    } finally { $ErrorActionPreference = $prev }
+}
+
 function Resolve-Python {
     $cands = @()
     if ($Py) { $cands += $Py }
@@ -121,8 +138,7 @@ elseif ($Python -like '*anaconda3\python.exe') { Write-Warn2 'base 环境是 CPU
 
 # ------------------------------------------------------------------ 依赖检查
 function Test-Module($name) {
-    & $Python -c "import $name" 2>$null
-    return ($LASTEXITCODE -eq 0)
+    return (Invoke-PyQuiet $Python "import $name")
 }
 
 function Install-Deps {

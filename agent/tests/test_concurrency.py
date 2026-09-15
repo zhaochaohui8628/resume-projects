@@ -29,6 +29,27 @@ from concurrency import (TokenBucket, SharedContext, AsyncPipeline,  # noqa: E40
 
 
 # ================= 令牌桶 =================
+class _FrozenClock:
+    """把 token_bucket 依赖的 time.monotonic 冻结。
+
+    为什么需要：`TokenBucket.available` 每次都会按 rate 连续补充令牌，
+    rate=1000 时 26µs 就补 0.026 个 → 对 `available == 3` 这类精确相等断言
+    会偶发失败（2026-09-15 全量回归实际观测到 3.0256）。
+    冻结时钟后"成功调用消耗 1 个 / 失败回滚"的语义不变，且不受机器快慢影响。
+    """
+
+    def __init__(self, t: float = 1000000.0):
+        self.t = t
+
+    def __call__(self) -> float:
+        return self.t
+
+
+def _freeze_bucket_clock(monkeypatch):
+    import concurrency.token_bucket as tb_mod
+    monkeypatch.setattr(tb_mod.time, "monotonic", _FrozenClock())
+
+
 def test_token_bucket_basic():
     b = TokenBucket(rate=1000, capacity=4)
     assert b.try_acquire(2)          # 突发可用
@@ -59,7 +80,9 @@ def test_token_bucket_async_acquire():
     print("OK test_token_bucket_async_acquire")
 
 
-def test_rate_limited_llm_release_on_error():
+def test_rate_limited_llm_release_on_error(monkeypatch):
+    _freeze_bucket_clock(monkeypatch)      # 冻结补充，避免浮点抖动
+
     class BoomLLM:
         def complete(self, messages, **kwargs):
             raise RuntimeError("api down")
@@ -75,9 +98,11 @@ def test_rate_limited_llm_release_on_error():
     print("OK test_rate_limited_llm_release_on_error")
 
 
-def test_rate_limited_llm_stream_preserved():
+def test_rate_limited_llm_stream_preserved(monkeypatch):
     """限流包装必须保留 stream()——否则 summarize_stream 探测不到，
     静默退回一次性 complete，UI 流式输出失效（2026-09-14 事故回归锁）。"""
+    _freeze_bucket_clock(monkeypatch)      # 冻结补充，避免浮点抖动
+
     class StreamLLM:
         def complete(self, messages, **kwargs):
             return "整段"

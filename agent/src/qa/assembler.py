@@ -6,12 +6,12 @@
 四维取数：
   risks      风险点          ← risk_sources 知识库（工程管理知识）
   plan       方案编制内容     ← 编制要素表（建办质〔2018〕31号 九章 + 48号 细化要素）
-  controls   风险管控清单     ← 风险点→管控要点（知识库）+ RAG 条文（可选，后续接双路）
-  acceptance 验收节点        ← 规则模板（分阶段验收框架）
+  controls   风险管控清单     ← 风险点→管控要点（知识库）+ RAG 条文
+  acceptance 验收节点        ← 规则模板（分阶段验收框架）+ RAG 条文
 
 设计原则：
-- 不依赖 RAG/Neo4j 也能出第一版（规则 + 知识库）。
-- 每段标注来源（知识库 / 规范依据），为后续接双路召回留接口。
+- 不依赖 RAG 也能出第一版（规则 + 知识库）。
+- 每段标注来源（知识库 / 规范依据）。
 - 输出为 markdown，可直接喂给 LLM 汇总或直接展示。
 """
 from __future__ import annotations
@@ -59,46 +59,27 @@ def _plan_content(slot: dict) -> list[str]:
     return ch + extra
 
 
-def _controls(slot: dict, ctx: dict | None = None) -> tuple[list[str], str, dict]:
-    """风险管控清单：知识库管控要点 + 双路召回条文（RAG 可用时）。
-
-    返回 (items, source, graph_trace)；graph_trace 供前端溯源图谱路/语义路：
-    {graph_file, graph_whitelist, rag_count, rag_sources}
-    """
+def _controls(slot: dict, ctx: dict | None = None) -> tuple[list[str], str]:
+    """风险管控清单：知识库管控要点 + RAG 条文（RAG 可用时）。"""
     rows = risk_table(slot.get("category"))
     items = [f"{r['source']} → {r['control']}" for r in rows]
     source = "风险源知识库（管控要点）"
-    gtrace = {}
     if not slot.get("no_retrieve"):
         try:
-            from .retrieve import dual_retrieve
-            dr = dual_retrieve(slot.get("category"), f"{slot.get('category') or ''} 吊装安全技术措施 钢丝绳 指挥 大风", top_k=3)
-            gtrace = _gtrace(dr, slot.get("category"))
+            from .retrieve import retrieve_clauses
+            dr = retrieve_clauses(slot.get("category"),
+                                  f"{slot.get('category') or ''} 吊装安全技术措施 钢丝绳 指挥 大风",
+                                  top_k=3)
             if dr["items"]:
                 items = items + dr["items"]
-                source += " + 双路召回条文"
+                source += " + RAG 条文"
         except Exception:
             pass
-    return items, source, gtrace
+    return items, source
 
 
-def _gtrace(dr: dict, category: str | None) -> dict:
-    """把双路召回结果整理成可溯源字典（图谱文件路径 + 白名单 + 语义路命中）。"""
-    from .retrieve import GRAPH
-    return {
-        "dim": "",
-        "category": category,
-        "graph_file": GRAPH,                                   # demo_graph_v2.json 绝对路径
-        "graph_path": "HazardCategory -REGULATED_BY-> Standard",
-        "graph_whitelist": dr.get("graph_whitelist", []) or [],  # 图谱限定出的规范名
-        "graph_count": len(dr.get("graph_whitelist") or []),
-        "rag_count": dr.get("rag_count", 0),                   # 语义路命中间数
-        "rag_sources": dr.get("sources", []) or [],
-    }
-
-
-def _acceptance(slot: dict, ctx: dict | None = None) -> tuple[list[str], str, dict]:
-    """验收节点：规则模板 + 双路召回条文（RAG 可用时）。同样返回 graph_trace。"""
+def _acceptance(slot: dict, ctx: dict | None = None) -> tuple[list[str], str]:
+    """验收节点：规则模板 + RAG 条文（RAG 可用时）。"""
     cat = slot.get("category")
     base = [
         "施工准备阶段验收：方案交底、人员持证、设备/吊具检查",
@@ -117,33 +98,29 @@ def _acceptance(slot: dict, ctx: dict | None = None) -> tuple[list[str], str, di
     else:
         items = list(base)
     source = "分阶段验收规则模板"
-    gtrace = {}
     if not slot.get("no_retrieve"):
         try:
-            from .retrieve import dual_retrieve
-            dr = dual_retrieve(cat, f"{cat or ''} 验收 检查 检验批 记录", top_k=3)
-            gtrace = _gtrace(dr, cat)
+            from .retrieve import retrieve_clauses
+            dr = retrieve_clauses(cat, f"{cat or ''} 验收 检查 检验批 记录", top_k=3)
             if dr["items"]:
                 items = items + dr["items"]
-                source += " + 双路召回条文"
+                source += " + RAG 条文"
         except Exception:
             pass
-    return items, source, gtrace
+    return items, source
 
 
 def assemble(slot: dict, ctx: dict | None = None) -> dict:
     """四维组装 → {title, sections: [{key,label,items,source}], markdown}。
 
-    ctx: 可选 {rag: RagClient | None}，控制 controls/acceptance 是否接双路召回。
-         slot['no_retrieve'] = True 时跳过双路召回（纯规则，测试/离线用）。
+    ctx: 可选 {rag: RagClient | None}，控制 controls/acceptance 是否接 RAG。
+         slot['no_retrieve'] = True 时跳过 RAG（纯规则，测试/离线用）。
     """
     sections = []
-    graph_traces: list[dict] = []
     for d in slot["dimensions"]:
         if not d["enabled"]:
             continue
         key = d["key"]
-        gtrace = {}
         if key == "risks":
             items = [f"{r['source']}：{r['hazard']}（管控：{r['control']}）"
                      for r in risk_table(slot.get("category"))]
@@ -152,14 +129,11 @@ def assemble(slot: dict, ctx: dict | None = None) -> dict:
             items = _plan_content(slot)
             source = "建办质〔2018〕31号 九章 + 建办质〔2021〕48号 细化要素"
         elif key == "controls":
-            items, source, gtrace = _controls(slot, ctx)
+            items, source = _controls(slot, ctx)
         elif key == "acceptance":
-            items, source, gtrace = _acceptance(slot, ctx)
+            items, source = _acceptance(slot, ctx)
         else:
             items, source = [], ""
-        if gtrace:
-            gtrace["dim"] = key
-            graph_traces.append(gtrace)
         sections.append({"key": key, "label": d["label"], "items": items, "source": source})
 
     # 标题
@@ -180,8 +154,7 @@ def assemble(slot: dict, ctx: dict | None = None) -> dict:
         for it in s["items"]:
             md.append(f"- {it}")
         md.append("")
-    return {"title": title, "sections": sections, "markdown": "\n".join(md),
-            "graph_traces": graph_traces}
+    return {"title": title, "sections": sections, "markdown": "\n".join(md)}
 
 
 def run(query: str, ctx: dict | None = None) -> dict:

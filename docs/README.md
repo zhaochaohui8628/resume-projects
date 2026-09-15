@@ -12,6 +12,7 @@
 | 实体抽取（ner2） | [`../ner2/README.md`](../ner2/README.md) |
 | 编排 + UI + 报告（agent） | [`../agent/README.md`](../agent/README.md) |
 | GRPO 强化学习训练 | [`../grpo/README.md`](../grpo/README.md) |
+| GraphRAG 知识图谱演示（**独立 demo，非落地链路**） | [`../graphrag/README.md`](../graphrag/README.md) · Neo4j 手册 [`../graphrag/docs/NEO4J_GUIDE.md`](../graphrag/docs/NEO4J_GUIDE.md) |
 | 换机器 / 环境自检 | [`../env/README.md`](../env/README.md) |
 | 规范库对账（82 本 → 81 本入库） | [`../02_规范清单_对账.md`](../02_规范清单_对账.md) |
 | rag2 开发进度与交接 | [`../rag2/docs/PROGRESS.md`](../rag2/docs/PROGRESS.md) |
@@ -22,3 +23,7 @@
 已失效但仍留作证据的历史文档在 [`archive/`](archive/README.md)。归档文档**不再维护**，
 其中的文件路径、目录名、命令可能指向已删除的旧模块（如旧检索索引 `data/vector_db/`、旧迁移指南），
 读的时候以当前代码为准（现行模块 = `rag2` / `ner2` / `agent` / `grpo`）。
+
+> 2026-09-15：原归档文档 `rag2_NEO4J_GUIDE.md` 随 GraphRAG 抽离，已迁至独立 demo
+> [`../graphrag/docs/NEO4J_GUIDE.md`](../graphrag/docs/NEO4J_GUIDE.md)。GraphRAG **不属于落地链路**，
+> 相关演示步骤、单路/双路说明、Neo4j 排障都在 `graphrag/` 内。

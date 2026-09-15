@@ -605,40 +605,28 @@ P4 蒸馏线关闭**（如未来要再试：需更大蒸馏数据/从基座重�
 - 单条耗时 ~0.07s（batch16）。结果：`data/eval/pipeline_rerank_gold.json`。
 
 
-### GraphRAG 双引擎（2026-09-12 启动，demo 已打通）
+### GraphRAG 双引擎（2026-09-12 启动 → 2026-09-15 抽离为独立 demo）
 
 **背景**：单路 RAG 面对危大工程多标准交叉判定无法综合多部规范（盲人摸象）。
-**方案**：规范知识图谱（引用/包含/冲突/上位法）+ 向量双引擎联动。
-**用户决策**：直接上 Neo4j；先出简单 demo 打通全链路（图谱仅简单示例）。
+**方案**：规范知识图谱（引用/包含/冲突/上位法）+ 向量双引擎联动（Neo4j 存储）。
 
-**已交付（src/graphrag/ + scripts/build_demo_graph.py）**：
-- schema.py：Standard/Clause/HazardCategory/Entity 4 类节点 + 9 类关系
-  （BELONGS_TO/REFERENCES/REFERENCES_CLAUSE/SUPERSEDES/CONFLICTS_WITH/HIERARCHY/
-  COVERS/MENTIONS/REGULATED_BY）
-- neo4j_store.py：Cypher 写入 + 子图扩展（BFS）；Neo4j 不可用时自动降级 memory 后端
-- hybrid_search.py：危大识别→图谱子图扩展→向量召回→去重融合
-- demo 图谱：8 规范 + 4 危大 + 6 实体 + 8 条款 / 44 关系（data/graphrag/demo_graph.json）
+**⚠️ 2026-09-15 架构调整（用户定稿）**：GraphRAG 属**演示模块**，不再混入 rag2 落地链路。
+`src/graphrag/`、`scripts/build_*graph*.py`、`data/graphrag/` 已**整体迁出**到项目根
+**独立目录 [`../../graphrag/`](../../graphrag/README.md)**（自带 Neo4j 存储、FastAPI 服务、前端
+单路/双路开关、Neo4j Browser 演示）。rag2 与 agent **不再包含任何图谱/Neo4j 代码或依赖**；
+agent 的结构化 QA 改为纯 RAG（`qa/retrieve.py::retrieve_clauses`）。
 
-**双引擎效果**：query深基坑开挖前要做哪些安全准备→ 识别[深基坑工程] →
-图谱扩展 5 条款（跨 JGJ311/JGJ120/DG-TJ08-61/DG-TJ08-2077/GB51004）+ 向量 16 条款
-（疏干降水15d/地质/降水检验）→ 合并 21 条。跨规范多标准交叉视角已现。
+- 演示一键启动：**`.\graphrag\start_demo.ps1`**（自动起 Neo4j → 图库为空则建图 → 起前端 7870；
+  另有 `-Status` / `-Stop` / `-Reload` / `-Neo4jOnly` / `-Background` 等开关）。
+- demo 图谱规模：**56 节点 / 96 关系**（8 类节点 / 13 类关系），与 agent 旧版用的 `demo_graph_v2.json` 同源。
 
-**⚠️ 环境大修复（torch_gpu env）**：dill/faiss/accelerate/transformers/safetensors
-成片损坏（双版本 dist-info 冲突），已重装修复；transformers 4.46→5.17。
-**回归验证**：gold_eval_clean 490 hit@5 0.9816 / MRR 0.9209 与历史完全一致，链路无损。
+**迁出前已交付记录（存档）**：schema（4 类节点 + 9 类关系）· neo4j_store（Cypher 写/子图扩展）·
+hybrid_search（危大识别→子图扩展→向量融合）· Neo4j 4.4.8 部署（Bolt 7687 / HTTP 7474，
+`start_neo4j.py` 绕 PowerShell 兼容 bug 直启 java 主类）。细节与最新演示步骤见
+`graphrag/README.md` 与 `graphrag/docs/NEO4J_GUIDE.md`。
 
-**✅ Neo4j 部署完成（2026-09-12）**：
-- 用户提供 neo4j-community-4.4.8（已解压），conda 装 OpenJDK 11（env: neo4j-java11）。
-- ⚠️ PowerShell 脚本报"已添加了具有相同键的项"（PS 兼容 bug）→ **java -cp 直启主类**
-  `org.neo4j.server.CommunityEntryPoint --home-dir --config-dir`（start_neo4j.py）。
-- Bolt 7687 / HTTP 7474 就绪，密码 neo4j123456（system 库 ALTER）。
-- demo 图谱已写入：26 节点 / 44 关系；子图扩展"深基坑"→16 节点/36 关系。
-- 双引擎检索（Neo4j 后端）：图谱扩展 5 条款（跨 5 规范）+ 向量 16 条款 → 合并 21 条 ✅
-- Neo4j 启动：`python neo4j-community-4.4.8/start_neo4j.py --background`
-  （run_in_background 内直接跑 java 命令最稳）。
-
-**待办**：①图谱扩到全 81 规范（引用抽取需清洗 OCR 噪声）；②双引擎黄金集定量评测；
-③危大类别/实体识别增强（当前关键词匹配，可上 NER）。
+**待办（迁至 graphrag demo）**：①图谱扩到全 81 规范（引用抽取需清洗 OCR 噪声）；
+②双引擎黄金集定量评测；③危大类别/实体识别增强（当前关键词匹配，可上 NER）。
 
 ### P4 泛化验证（holdout20 全新测试集，2026-09-12）
 

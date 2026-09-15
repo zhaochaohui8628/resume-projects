@@ -91,26 +91,24 @@ def test_run_end_to_end():
     print("OK test_run_end_to_end")
 
 
-def test_dual_retrieve_graph_whitelist():
-    """图谱路：起重吊装 → REGULATED_BY 白名单（DG-TJ08-2077 危大工程安全管理标准）。"""
-    from qa.retrieve import graph_standard_whitelist, dual_retrieve
-    wl = graph_standard_whitelist("起重吊装")
-    assert any("2077" in w or "危大" in w for w in wl), wl
-    # RAG 不可用（当前无检索后端）→ items 为空但不抛异常，白名单仍在
-    dr = dual_retrieve("起重吊装", "吊装 安全技术措施")
-    assert dr["graph_whitelist"] == wl
+def test_retrieve_clauses_no_backend():
+    """RAG 后端不可用（当前无检索后端）→ items 为空但不抛异常。"""
+    from qa.retrieve import retrieve_clauses
+    dr = retrieve_clauses("起重吊装", "吊装 安全技术措施")
     assert isinstance(dr["items"], list)
-    print(f"OK test_dual_retrieve_graph_whitelist: whitelist={wl}")
+    assert isinstance(dr["sources"], list)
+    assert dr["rag_count"] == len(dr["items"]) or dr["rag_count"] >= 0
+    print(f"OK test_retrieve_clauses_no_backend: rag_count={dr['rag_count']}")
 
 
 def test_assemble_no_retrieve_pure_rules():
-    """slot['no_retrieve']=True → 不接双路召回，纯规则（离线可测）。"""
+    """slot['no_retrieve']=True → 不接 RAG，纯规则（离线可测）。"""
     from qa.decompose import decompose
     slot = decompose("130t 汽车吊钢栈桥吊装危大工程，有哪些风险点？对应的方案编制内容、风险管控清单、验收节点分别是什么？")
     slot["no_retrieve"] = True
     out = assemble(slot)
     for s in out["sections"]:
-        assert "双路召回" not in s["source"]
+        assert "RAG" not in s["source"]
     print("OK test_assemble_no_retrieve_pure_rules")
 
 
