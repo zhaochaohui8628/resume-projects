@@ -5,11 +5,15 @@
 
 用法：
   # 写入 demo 图谱（需 Neo4j 在跑）
-  python -m src.neo4j_store --load
+  python graphrag/src/neo4j_store.py --load
   # 子图扩展（Cypher 多跳）
-  python -m src.neo4j_store --query "深基坑工程" --hops 2
+  python graphrag/src/neo4j_store.py --query "深基坑工程" --hops 2
   # 打印图库统计
-  python -m src.neo4j_store --stats
+  python graphrag/src/neo4j_store.py --stats
+
+⚠️ 导入约定：本 demo 内部一律用「裸模块名」（`from schema import ...` / `from neo4j_store import ...`），
+不要写成 `from src.xxx` —— 因为 rag2 也有一个 `src` 包，两套同名包会互相抢占，
+双路模式会报 `No module named 'src.common'`。`src` 这个名字留给 rag2。
 """
 from __future__ import annotations
 
@@ -22,10 +26,11 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve()
 GRAPH_ROOT = HERE.parents[1]                       # .../graphrag
-if str(GRAPH_ROOT) not in sys.path:
-    sys.path.insert(0, str(GRAPH_ROOT))
+SRC_DIR = HERE.parent                              # .../graphrag/src
+if str(SRC_DIR) not in sys.path:                   # 裸名导入的搜索根（见文件头约定）
+    sys.path.insert(0, str(SRC_DIR))
 
-from src.schema import ALL_NODE_LABELS, ALL_REL_TYPES  # noqa: E402
+from schema import ALL_NODE_LABELS, ALL_REL_TYPES  # noqa: E402
 
 DATA_DIR = GRAPH_ROOT / "data"
 
@@ -48,6 +53,7 @@ class Neo4jStore:
         self.uri, self.user, self.password = uri, user, password
         self.graph_file = DATA_DIR / graph_file
         self.driver = None
+        self._label_cache: dict | None = None      # id → 标签（惰性查询并缓存）
         self._connect()
 
     # ---------------------------------------------------------------- 连接
@@ -139,26 +145,43 @@ class Neo4jStore:
         return {"nodes": nodes, "edges": edges}
 
     # ---------------------------------------------------------------- 子图扩展
+    def _label_map(self) -> dict:
+        """id → 节点标签。neo4j 驱动返回的 path 节点**只有属性、没有 labels**，
+        必须单独查一次并缓存；否则 _node_label 会一律退化 "Entity"，
+        导致 `label == "Clause"` 判断失败、图谱路条款数恒为 0（检索返回空）。"""
+        if self._label_cache is None:
+            with self.driver.session() as s:
+                self._label_cache = {
+                    r["id"]: ((r["labels"] or ["Entity"])[0])
+                    for r in s.run("MATCH (n) RETURN n.id AS id, labels(n) AS labels").data()
+                    if r["id"]
+                }
+        return self._label_cache
+
     def expand_subgraph(self, seed: str, hops: int = 2, limit: int = 400) -> dict:
         """从 seed 节点出发做 n 跳扩展（Cypher），返回 {nodes, edges}。"""
         hops = max(1, min(int(hops), 4))
         query = (
             "MATCH (n) WHERE n.id CONTAINS $seed OR n.name CONTAINS $seed "
-            f"MATCH p=(n)-[*1..{hops}]-(m) RETURN p LIMIT {int(limit)}"
+            # ⚠️ 必须 AS path：下面按 r["path"] 取值（写成 RETURN p 会 KeyError → 检索 500）
+            f"MATCH p=(n)-[*1..{hops}]-(m) RETURN p AS path LIMIT {int(limit)}"
         )
         with self.driver.session() as s:
             recs = s.run(query, seed=seed).data()
+        label_map = self._label_map()
         nodes: dict[str, dict] = {}
         edges: dict[tuple, dict] = {}
         for r in recs:
-            path = r["path"]
+            path = r.get("path", r.get("p"))
+            if path is None:
+                continue
             for node in _path_nodes(path):
                 nid = _node_id(node)
                 if nid and nid not in nodes:
                     nodes[nid] = {
                         "id": nid,
                         "name": _node_prop(node, "name") or nid,
-                        "label": _node_label(node),
+                        "label": label_map.get(nid) or _node_label(node),
                         "props": {k: v for k, v in dict(node).items()
                                   if k not in ("id", "name")},
                     }

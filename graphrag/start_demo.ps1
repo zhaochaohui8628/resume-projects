@@ -13,19 +13,25 @@
     .\graphrag\start_demo.ps1 -Reload        强制把 demo 图谱重新写入 Neo4j
     .\graphrag\start_demo.ps1 -NoLoad        跳过“图谱是否已入库”检查
     .\graphrag\start_demo.ps1 -Open          启动后自动打开浏览器
-    .\graphrag\start_demo.ps1 -Status        查看端口/图库/进程状态
-    .\graphrag\start_demo.ps1 -Stop          停止 demo 前端 + Neo4j
+     .\graphrag\start_demo.ps1 -Status        查看端口/图库/进程状态
+     .\graphrag\start_demo.ps1 -Stop          停止 demo 前端 + Neo4j
 
   参数：
-    -Py <python.exe>   指定解释器（默认自动探测 torch_gpu / 托管 python）
+    -Py <python.exe>   指定解释器（默认 torch_gpu）
     -Port 7870         demo 前端端口
     -Timeout 150       Neo4j 就绪等待上限（秒）
-    -Install           缺依赖时自动 pip install -r requirements.txt
+    -Install           缺依赖时自动 pip install -r graphrag\requirements.txt
+
+  ★ 环境分工（两套环境，各司其职，互不新建）：
+    Python 端（demo 服务 / 建图 / 检索）→ conda env  torch_gpu
+        需要 neo4j / fastapi / uvicorn / pydantic；双路模式另需 torch / faiss /
+        transformers / sentence-transformers（torch_gpu 已备齐）。
+    Neo4j 服务本体（Java 进程）      → conda env  neo4j-java11（OpenJDK 11）
+        ⚠️ Neo4j 4.4.8 要 Java 11，不是 17+。
 
   前置：
-    ★ JDK 11（Neo4j 4.4.8 要 11，不是 17+）。缺 Java 时先设：
-        $env:NEO4J_JAVA = "C:\path\to\jdk-11\bin\java.exe"
-    ★ pip 里有 fastapi / uvicorn / neo4j（双路模式额外需要 torch + sentence-transformers）
+    ★ 缺 Java 时先设： $env:NEO4J_JAVA = "C:\path\to\jdk-11\bin\java.exe"
+    ★ torch_gpu 里有 fastapi / uvicorn / neo4j（见 graphrag\requirements.txt）
     ★ Neo4j 默认账号 neo4j / neo4j123456（可用 $env:NEO4J_PASSWORD 覆盖）
 
   首次若提示“禁止运行脚本”，执行一次：
@@ -93,20 +99,22 @@ GraphRAG demo 一键启动 —— 用法
 
 参数： -Py <python.exe>  -Port 7870  -Timeout 150  -Install
 
-前置： JDK 11（Neo4j 4.4.8 要 11，不是 17+）；pip 有 fastapi / uvicorn / neo4j
-       缺 Java 时先设： $env:NEO4J_JAVA = "C:\path\to\jdk-11\bin\java.exe"
+前置： Python 端走 conda env torch_gpu（需 fastapi / uvicorn / neo4j）
+        Neo4j 服务走 conda env neo4j-java11 的 JDK 11（4.4.8 要 11，不是 17+）
+        缺 Java 时先设： $env:NEO4J_JAVA = "C:\path\to\jdk-11\bin\java.exe"
 '@
 }
 
 # ------------------------------------------------------------------ 解释器探测
 function Resolve-Python {
+    # ★ 本 demo 的 Python 端固定走 torch_gpu（双路向量端需要 torch/faiss/transformers，
+    #   单路图谱也复用同一解释器，保持"一套环境"）。显式 -Py 优先级最高。
     $cands = @()
     if ($Py) { $cands += $Py }
     $cands += @(
         (Join-Path $env:USERPROFILE 'anaconda3\envs\torch_gpu\python.exe')
         'C:\Users\<用户名>\anaconda3\envs\torch_gpu\python.exe'
         (Join-Path $env:USERPROFILE '.workbuddy\binaries\python\envs\default\Scripts\python.exe')
-        'C:\Users\<用户名>\.workbuddy\binaries\python\versions\3.13.12\python.exe'
         'C:\Users\<用户名>\.workbuddy\binaries\python\envs\default\Scripts\python.exe'
     )
     foreach ($c in $cands) { if ($c -and (Test-Path $c)) { return $c } }
@@ -175,7 +183,7 @@ function Stop-ByPort([int]$p, [string]$name) {
 # ------------------------------------------------------------------ Neo4j
 function Test-Neo4jBolt {
     if (-not (Test-Port 7687)) { return $false }
-    return (Invoke-PyQuiet "import sys;sys.path.insert(0,'graphrag');from src.neo4j_store import Neo4jStore;s=Neo4jStore();s.close()").ok
+    return (Invoke-PyQuiet "import sys;sys.path.insert(0,'graphrag/src');from neo4j_store import Neo4jStore;s=Neo4jStore();s.close()").ok
 }
 
 function Wait-Neo4j([int]$Seconds = 150) {
@@ -191,7 +199,7 @@ function Wait-Neo4j([int]$Seconds = 150) {
 }
 
 function Get-GraphNodeCount {
-    $r = Invoke-PyQuiet "import sys;sys.path.insert(0,'graphrag');from src.neo4j_store import Neo4jStore;s=Neo4jStore();print(s.stats()['nodes']);s.close()"
+    $r = Invoke-PyQuiet "import sys;sys.path.insert(0,'graphrag/src');from neo4j_store import Neo4jStore;s=Neo4jStore();print(s.stats()['nodes']);s.close()"
     if (-not $r.ok -or -not $r.text) { return -1 }
     $last = ($r.text -split "`n")[-1].Trim()
     $n = 0
@@ -338,7 +346,9 @@ function Test-Deps {
     Write-Warn2 ("缺依赖：{0}" -f ($missing -join ', '))
     if ($Install) {
         Write-Head '安装依赖'
-        & $Python -m pip install -r (Join-Path $Root 'requirements.txt')
+        $req = Join-Path $Here 'requirements.txt'
+        if (-not (Test-Path $req)) { Write-Err2 "找不到 $req"; return $false }
+        & $Python -m pip install -i https://pypi.tuna.tsinghua.edu.cn/simple -r $req
         if ($LASTEXITCODE -ne 0) { Write-Err2 'pip install 失败，检查网络/镜像'; return $false }
         Write-Ok '依赖安装完成'
         return $true
@@ -355,7 +365,7 @@ Write-Head '环境'
 Write-Ok "解释器：$Python"
 $ver = Invoke-PyQuiet "import sys;print(sys.version.split()[0])"
 if ($ver.ok) { Write-Info "版本：$($ver.text)" }
-if ($Python -like '*torch_gpu*') { Write-Info '后端：torch_gpu（双路向量端可用）' }
+if ($Python -like '*torch_gpu*') { Write-Info '后端：torch_gpu（图谱 + 双路向量端均可用）' }
 
 if ($Status) { Show-Status; exit 0 }
 if ($Stop)   { Invoke-Stop; exit 0 }

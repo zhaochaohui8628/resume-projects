@@ -1,0 +1,16 @@
+# GraphRAG 独立 demo 依赖清单
+#
+# ★ 环境分工（不新建环境，两套现成环境各司其职）：
+#     Python 端（demo 服务 / 建图 / 检索）→ conda env "torch_gpu"
+#         & "C:\Users\<用户名>\anaconda3\envs\torch_gpu\python.exe" -m pip install -r graphrag\requirements.txt
+#     Neo4j 服务本体（Java 进程）        → conda env "neo4j-java11"（OpenJDK 11，Neo4j 4.4.8 要 11 不是 17+）
+#
+# 单路（图谱）模式：装下面的 neo4j / fastapi / uvicorn / pydantic 即可。
+# 双路（图谱 + 向量）模式：另需 torch / faiss-cpu / transformers / sentence-transformers
+#   —— torch_gpu 环境里已随 rag2 装好，无需重复安装（也不建议在此清单里锁定版本，
+#      以免与 rag2 的依赖版本冲突）。
+
+neo4j>=5.20,<7        # Neo4j Bolt 驱动（4.4 / 5.x 服务器均兼容；本 demo 用服务器 4.4.8）
+fastapi>=0.110
+uvicorn>=0.27
+pydantic>=2.5

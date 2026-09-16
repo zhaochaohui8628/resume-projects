@@ -67,7 +67,14 @@ body{
   flex:1;display:grid;grid-template-columns:260px minmax(0,1fr) 320px;gap:var(--s-5);
   padding:var(--s-5);min-height:0;
 }
-@media (max-width:1180px){.workspace{grid-template-columns:minmax(0,1fr) 280px}}
+@media (max-width:1180px){
+  .workspace{grid-template-columns:232px minmax(0,1fr) 264px;gap:var(--s-4);padding:var(--s-4)}
+  .chat-inputbar{padding:var(--s-3)}
+}
+@media (max-width:1010px){
+  .workspace{grid-template-columns:minmax(0,1fr) 264px}
+  .sidebar{display:none}
+}
 @media (max-width:900px){.workspace{grid-template-columns:1fr;gap:0;padding:0}}
 
 .panel{background:var(--c-surface);border:1px solid var(--c-border);border-radius:var(--r-lg);box-shadow:var(--sh-sm);display:flex;flex-direction:column;overflow:hidden}
@@ -84,7 +91,25 @@ body{
 
 /* ---------- Left sidebar ---------- */
 .sidebar{gap:0}
-.sidebar .panel-body{gap:var(--s-5)}
+.sidebar .panel-body{gap:0}
+
+/* ---------- Sidebar 分区（2026-09-16 反馈：记忆刷新/上传排版不美观） ---------- */
+.side-sec{display:flex;flex-direction:column;gap:var(--s-3)}
+.side-sec + .side-sec{margin-top:var(--s-5);padding-top:var(--s-4);border-top:1px solid var(--c-border)}
+.side-sec-bottom{margin-top:auto}
+.side-sec-title{
+  font-size:var(--fs-xs);font-weight:700;color:var(--c-text-faint);
+  display:flex;align-items:center;gap:6px;letter-spacing:.04em;
+}
+.btn-block{width:100%}
+.flush-state{
+  font-size:var(--fs-xs);color:var(--c-text-muted);line-height:1.55;
+  padding:7px 10px;border-radius:var(--r-sm);
+  background:var(--c-surface-2);border:1px solid var(--c-border);word-break:break-word;
+}
+.flush-state.ok{background:var(--c-success-soft);border-color:var(--c-success-2);color:#166534}
+.flush-state.err{background:var(--c-error-soft);border-color:var(--c-error-2);color:#991b1b}
+.flush-state .hint{color:inherit;opacity:.75}
 
 .field{display:flex;flex-direction:column;gap:var(--s-1)}
 .label{font-size:var(--fs-sm);font-weight:600;color:var(--c-text-2);display:flex;align-items:center;gap:var(--s-2)}
@@ -117,9 +142,18 @@ textarea.input{resize:none;min-height:64px;line-height:1.65}
 .switch input:checked + .slider{background:var(--c-primary)}
 .switch input:checked + .slider::before{transform:translateX(18px)}
 .switch input:focus-visible + .slider{box-shadow:0 0 0 3.5px var(--c-primary-ring)}
-.switch-text{min-width:0;flex:1}
-.switch-label{font-size:var(--fs-base);font-weight:650}
-.switch-hint{font-size:var(--fs-xs);color:var(--c-text-muted);margin-top:2px}
+.switch-text{min-width:0;flex:1;display:flex;flex-direction:column;gap:3px}
+.switch-label{display:flex;align-items:center;gap:7px;font-size:var(--fs-base);font-weight:650;line-height:1.35}
+.switch-label .ico{font-size:15px;line-height:1;flex:none}
+.switch-hint{font-size:var(--fs-xs);color:var(--c-text-muted);line-height:1.5}
+.switch-row.static{cursor:default}
+.switch-row.static:hover{background:transparent;border-color:transparent}
+.switch-row.static{align-items:center}
+.row-tag{
+  margin-left:auto;flex:none;font-family:var(--font-mono);font-size:10px;font-weight:600;
+  padding:2px 8px;border-radius:var(--r-full);background:var(--c-surface-2);
+  border:1px solid var(--c-border);color:var(--c-text-muted);white-space:nowrap;
+}
 
 /* Button */
 .btn{
@@ -156,7 +190,7 @@ textarea.input{resize:none;min-height:64px;line-height:1.65}
 
 /* ---------- Main Chat Panel ---------- */
 .chat-main{gap:0}
-.chat-scroll{flex:1;overflow:auto;padding:var(--s-4);display:flex;flex-direction:column;gap:var(--s-4);min-height:0}
+.chat-scroll{flex:1;overflow:auto;padding:var(--s-5);display:flex;flex-direction:column;gap:var(--s-4);min-height:0}
 
 /* current instruction banner */
 .current-query{
@@ -178,8 +212,9 @@ textarea.input{resize:none;min-height:64px;line-height:1.65}
 .msg{display:flex;gap:var(--s-3);max-width:100%;animation:msgIn var(--t-slow) ease-out}
 @keyframes msgIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
 @keyframes slideDown{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:none}}
-.msg.user{align-self:flex-end;flex-direction:row-reverse}
-.msg.ai{align-self:flex-start}
+/* 用户气泡：撑满行宽后右对齐，避免 flex-basis:0 把气泡挤窄导致短 query 折行 */
+.msg.user{align-self:stretch;flex-direction:row-reverse}
+.msg.ai{align-self:stretch}
 .msg-avatar{
   width:34px;height:34px;border-radius:50%;display:grid;place-items:center;font-size:15px;flex:none;
   border:1px solid var(--c-border);box-shadow:var(--sh-xs);margin-top:2px;
@@ -192,8 +227,13 @@ textarea.input{resize:none;min-height:64px;line-height:1.65}
   padding:var(--s-3) var(--s-4);border-radius:var(--r-lg);border:1px solid var(--c-border);
   box-shadow:var(--sh-xs);font-size:var(--fs-base);line-height:1.7;min-width:0;word-break:break-word;
 }
-.msg.user .msg-bubble{background:var(--c-primary);color:#fff;border-color:var(--c-primary);border-bottom-right-radius:var(--r-xs);max-width:80%}
-.msg.ai .msg-bubble{background:var(--c-surface);border-bottom-left-radius:var(--r-xs);max-width:100%}
+/* 用户气泡：允许更宽 + 保留手写换行；避免短 query 被过早折行 */
+.msg.user .msg-bubble{
+  background:var(--c-primary);color:#fff;border-color:var(--c-primary);
+  border-bottom-right-radius:var(--r-xs);max-width:85%;
+  word-break:normal;overflow-wrap:break-word;white-space:pre-wrap;
+}
+.msg.ai .msg-bubble{background:var(--c-surface);border-bottom-left-radius:var(--r-xs);max-width:100%;box-shadow:var(--sh-sm)}
 .msg.user .msg-bubble a{color:#fff;text-decoration:underline}
 .msg.ai .msg-bubble a{color:var(--c-primary)}
 
@@ -213,7 +253,6 @@ textarea.input{resize:none;min-height:64px;line-height:1.65}
 /* 答案排版增强（2026-09-14 反馈：要有层次、重点显示；必须留在 <style> 内） */
 .answer-bubble h3{margin:14px 0 6px;padding-left:8px;border-left:3px solid var(--c-primary);font-size:15px;line-height:1.4}
 .answer-bubble h3:first-child{margin-top:4px}
-.answer-bubble strong{color:var(--c-primary);font-weight:700}
 .answer-bubble code{font-family:var(--font-mono);font-size:.92em;background:var(--c-primary-soft);color:var(--c-primary);padding:1px 5px;border-radius:var(--r-xs)}
 .answer-bubble pre{background:#0f172a;color:#e2e8f0;padding:var(--s-3);border-radius:var(--r-sm);overflow-x:auto;margin:var(--s-3) 0}
 .answer-bubble pre code{background:none;color:inherit;padding:0}
@@ -224,15 +263,46 @@ textarea.input{resize:none;min-height:64px;line-height:1.65}
 .answer-bubble strong{font-weight:700}
 .answer-bubble a{color:var(--c-primary)}
 
+/* ---------- 序号 / 规范引用 加黑加粗（2026-09-16 反馈） ---------- */
+.answer-bubble strong{font-weight:700;color:var(--c-text)}
+.answer-bubble .num{font-weight:700;color:var(--c-text)}
+.answer-bubble .ref{
+  font-weight:700;color:#0f172a;background:#eef2f7;
+  border:1px solid #cbd5e1;border-radius:var(--r-xs);padding:0 5px;white-space:nowrap;
+}
+.answer-bubble h1 strong,.answer-bubble h2 strong,.answer-bubble h3 strong,
+.answer-bubble h1 .ref,.answer-bubble h2 .ref,.answer-bubble h3 .ref{color:inherit;background:none;border:none;padding:0}
+.answer-bubble ol>li::marker{font-weight:700;color:var(--c-text)}
+.answer-bubble ul>li::marker{color:var(--c-primary)}
+
 /* Empty / Loading inside chat */
 .empty-card{
-  flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:var(--s-4);padding:var(--s-10) var(--s-5);
-  border:2px dashed var(--c-border);border-radius:var(--r-lg);background:var(--c-surface-2);
+  flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;
+  gap:var(--s-3);padding:var(--s-8) var(--s-6);
+  border:1px solid var(--c-border);border-radius:var(--r-lg);
+  background:radial-gradient(120% 120% at 50% 0%,#ffffff 0%,var(--c-surface-2) 62%);
+  box-shadow:var(--sh-xs);
 }
-.empty-art{width:64px;height:64px;border-radius:var(--r-xl);display:grid;place-items:center;font-size:28px;background:var(--c-surface);border:1.5px dashed var(--c-border-strong)}
-.empty-title{font-size:var(--fs-md);font-weight:650;color:var(--c-text-2)}
-.empty-desc{font-size:var(--fs-sm);color:var(--c-text-muted);max-width:380px;line-height:1.8}
+.empty-art{
+  width:64px;height:64px;border-radius:var(--r-lg);display:grid;place-items:center;font-size:28px;
+  background:linear-gradient(135deg,var(--c-primary-soft),#dbeafe);
+  border:1px solid #dbeafe;box-shadow:0 6px 18px rgba(37,99,235,.12);
+}
+.empty-title{font-size:var(--fs-md);font-weight:700;color:var(--c-text-2)}
+.empty-desc{font-size:var(--fs-sm);color:var(--c-text-muted);max-width:420px;line-height:1.7}
 .empty-desc kbd{font-family:var(--font-mono);font-size:var(--fs-xs);background:var(--c-surface);padding:1px 5px;border-radius:var(--r-xs);border:1px solid var(--c-border)}
+/* 示例指令：改为逐行胶囊（原 inline kbd 会中途折行，很难看） */
+.empty-examples{display:flex;flex-direction:column;gap:6px;margin-top:var(--s-2);width:100%;max-width:440px}
+.empty-examples .ex{
+  display:flex;align-items:center;gap:9px;text-align:left;font-size:var(--fs-sm);color:var(--c-text-2);
+  background:var(--c-surface);border:1px solid var(--c-border);border-radius:var(--r-full);
+  padding:7px 15px;box-shadow:var(--sh-xs);min-width:0;
+}
+.empty-examples .ex .k{
+  font-family:var(--font-mono);font-size:10px;font-weight:700;color:var(--c-primary);
+  background:var(--c-primary-soft);border-radius:var(--r-xs);padding:1px 6px;flex:none;
+}
+.empty-examples .ex .t{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 
 .skeleton{padding:var(--s-2);display:flex;flex-direction:column;gap:var(--s-3);min-width:200px}
 .sk-line{height:12px;border-radius:var(--r-full);background:linear-gradient(90deg,#eef2f7 25%,#e2e8f0 37%,#eef2f7 63%);background-size:400% 100%;animation:shimmer 1.3s ease infinite}
@@ -264,14 +334,15 @@ textarea.input{resize:none;min-height:64px;line-height:1.65}
 .collapsible.open .collapsible-body{max-height:2000px;overflow:auto}
 .collapsible-body-inner{padding:var(--s-3)}
 
-/* Input dock */
+/* Input dock（去掉绝对定位按钮，避免与 placeholder 文字重叠） */
 .chat-inputbar{
-  flex:none;padding:var(--s-4);border-top:1px solid var(--c-border);background:var(--c-surface-2);display:flex;gap:var(--s-3);align-items:flex-end;
+  flex:none;padding:var(--s-4);border-top:1px solid var(--c-border);background:var(--c-surface-2);
+  display:flex;gap:var(--s-3);align-items:flex-end;
 }
-.chat-inputbar .input-wrap{flex:1;min-width:0;position:relative}
-#query{width:100%;min-height:48px;max-height:180px;padding-right:120px}
-.input-actions{position:absolute;right:8px;bottom:8px;display:flex;gap:var(--s-2)}
-.input-actions .hint{font-size:var(--fs-xs);color:var(--c-text-faint);padding-top:6px}
+.chat-inputbar .input-wrap{flex:1;min-width:0;display:flex;flex-direction:column;gap:4px}
+#query{width:100%;min-height:48px;max-height:180px}
+.input-foot{display:flex;justify-content:flex-end;font-size:var(--fs-xs);color:var(--c-text-faint);line-height:1.4}
+#btnSend{height:44px;padding:0 22px;flex:none}
 
 /* ---------- Right Sidebar (Flow) ---------- */
 .flow-panel .panel-body{padding:var(--s-3)}
@@ -375,9 +446,7 @@ table.grid tbody tr:last-child td{border-bottom:none}
   .chat-inputbar{flex-direction:column;align-items:stretch}
   .flow-panel{display:none}
   .msg.user .msg-bubble{max-width:100%}
-  #query{padding-right:var(--s-3)}
-  .input-actions{position:static;margin-top:var(--s-2);justify-content:flex-end}
-  .input-actions .hint{display:none}
+  #btnSend{width:100%}
 }
 .mobile-toggle{display:none;position:fixed;bottom:20px;right:20px;z-index:100;width:52px;height:52px;border-radius:50%;background:var(--c-primary);color:#fff;border:none;box-shadow:var(--sh-lg);font-size:20px;cursor:pointer;align-items:center;justify-content:center}
 @media (max-width:900px){
@@ -412,42 +481,41 @@ table.grid tbody tr:last-child td{border-bottom:none}
         <div class="panel-title"><span class="ico">🎛</span>全局开关</div>
       </div>
       <div class="panel-body tight">
-        <div class="field">
+
+        <div class="side-sec">
+          <div class="side-sec-title">⚙️ 引擎</div>
           <label class="switch-row">
             <span class="switch"><input type="checkbox" id="optRerank" checked><span class="slider"></span></span>
             <span class="switch-text">
-              <span class="switch-label">🔍 RAG 精排</span>
-              <span class="switch-hint">默认开启（精排评估显著优于纯融合），可关闭</span>
+              <span class="switch-label"><span class="ico">🔍</span>RAG 精排</span>
+              <span class="switch-hint">默认开启，精排效果更优</span>
             </span>
           </label>
-        </div>
-        <div class="field">
-          <div class="switch-row" style="cursor:default">
+          <div class="switch-row static">
             <span class="switch-text">
-              <span class="switch-label">🧪 NER 引擎</span>
-              <span class="switch-hint">固定 BERT+CRF（s2_crf_param_v3，严格 F1 0.885 &gt; softmax），无切换</span>
+              <span class="switch-label"><span class="ico">🧪</span>NER 引擎</span>
             </span>
+            <span class="row-tag">BERT+CRF</span>
           </div>
         </div>
 
-        <div class="field" style="margin-top:auto">
-          <label class="label">记忆刷新</label>
-          <div style="display:flex;align-items:center;gap:var(--s-3)">
-            <button class="btn btn-ghost btn-sm" id="btnFlush">🔄 记忆 Flush</button>
-            <span class="hint" id="flushHint">尚未刷新</span>
-          </div>
+        <div class="side-sec">
+          <div class="side-sec-title">🧠 记忆</div>
+          <button class="btn btn-ghost btn-block" id="btnFlush"><span>🔄</span> 刷新记忆</button>
+          <div class="flush-state" id="flushHint">尚未刷新</div>
         </div>
 
-        <div class="field" style="margin-top:auto">
-          <label class="label">方案上传</label>
+        <div class="side-sec side-sec-bottom">
+          <div class="side-sec-title">📄 方案</div>
           <div class="dropzone" id="dropzone" tabindex="0" role="button" aria-label="上传施工方案">
-            <div class="dz-title">📄 <span id="dzTitle">上传方案</span></div>
+            <div class="dz-title"><span class="ico">📄</span> <span id="dzTitle">上传方案</span></div>
             <div class="dz-sub" id="dzSub">.txt / .docx / .pdf</div>
           </div>
           <input type="file" id="fileInput" accept=".txt,.docx,.pdf" class="sr">
           <div id="fileChip"></div>
-          <button class="btn btn-ghost btn-sm" id="btnClearPlan" style="margin-top:var(--s-2);width:100%">🗑 清除方案</button>
+          <button class="btn btn-ghost btn-block" id="btnClearPlan">🗑 清除方案</button>
         </div>
+
       </div>
     </aside>
 
@@ -464,9 +532,11 @@ table.grid tbody tr:last-child td{border-bottom:none}
           <div class="empty-card" id="emptyCard">
             <div class="empty-art">📝</div>
             <div class="empty-title">还没有审查结果</div>
-            <div class="empty-desc">
-              上传施工方案后，在下方输入指令即可开始。<br>
-              例如：<kbd>帮我全面审查方案</kbd> <kbd>审查方案编制依据</kbd> <kbd>核查危大方案施工工艺内容</kbd>
+            <div class="empty-desc">上传施工方案后，在下方输入指令即可开始。</div>
+            <div class="empty-examples">
+              <div class="ex"><span class="k">Review</span><span class="t">帮我全面审查方案（判档 + 技术核对 + 规则/要素）</span></div>
+              <div class="ex"><span class="k">Review</span><span class="t">审查方案编制依据 / 基坑开挖深度 8m 是否超规模危大</span></div>
+              <div class="ex"><span class="k">QA</span><span class="t">起重吊装危大工程需要哪些管控措施和验收节点？</span></div>
             </div>
           </div>
         </div>
@@ -475,17 +545,10 @@ table.grid tbody tr:last-child td{border-bottom:none}
       <!-- Input dock -->
       <div class="chat-inputbar">
         <div class="input-wrap">
-          <textarea id="query" class="input" rows="2" placeholder="输入指令，例如：
-Review：帮我全面审查方案（判档+技术核对+规则/要素）
-Review：审查方案编制依据（规则 C1） / 基坑开挖深度8m是否超规模危大（判档）
-QA：起重吊装危大工程需要哪些管控措施和验收节点？（知识库+规范条文检索）"></textarea>
-          <div class="input-actions">
-            <span class="hint">Ctrl + Enter 发送</span>
-            <button class="btn btn-primary" id="btnSend" style="height:34px;padding:0 18px">
-              <span id="sendLabel">发送</span>
-            </button>
-          </div>
+          <textarea id="query" class="input" rows="2" placeholder="输入指令，例如「帮我全面审查方案」（Review: 审查 / QA: 规范问答）"></textarea>
+          <div class="input-foot"><span class="hint">Ctrl + Enter 发送</span></div>
         </div>
+        <button class="btn btn-primary" id="btnSend"><span id="sendLabel">发送</span></button>
       </div>
     </section>
 
@@ -591,6 +654,7 @@ function routeNote(steps, r){
 function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,(c)=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
 
 /* ---------- Markdown ---------- */
+const OL_ITEM = /^\s{0,3}(?:\d{1,2}(?:[、)）]|\.(?=\s|$))|[（(]\s*\d{1,2}\s*[）)]|[一二三四五六七八九十]{1,3}[、.)）])\s*/;
 function mdToHtml(src){
   if(!src) return '';
   let s = String(src);
@@ -607,8 +671,9 @@ function mdToHtml(src){
       const items = block.split('\n').filter(l=>/^\s*[-*+]\s+/.test(l)).map(l=>`<li>${inline(l.replace(/^\s*[-*+]\s+/,''))}</li>`).join('');
       return `<ul>${items}</ul>`;
     }
-    if(/^\s*\d+\.\s+/m.test(block)){
-      const items = block.split('\n').filter(l=>/^\s*\d+\.\s+/.test(l)).map(l=>`<li>${inline(l.replace(/^\s*\d+\.\s+/,''))}</li>`).join('');
+    // 有序列表：1. / 1、 / 1) / 1） / （1） / 一、（LLM 常输出「1、」而非「1.」，原先会退化成一段）
+    if(OL_ITEM.test(block)){
+      const items = block.split('\n').filter(l=>OL_ITEM.test(l)).map(l=>`<li>${inline(l.replace(OL_ITEM,''))}</li>`).join('');
       return `<ol>${items}</ol>`;
     }
     if(block.includes('|') && /^\s*\|.*\|\s*$/m.test(block)){
@@ -623,11 +688,23 @@ function mdToHtml(src){
         return `<table><tr>${head.map(c=>`<th>${inline(c)}</th>`).join('')}</tr>${body}</table>`;
       }
     }
-    return `<p>${inline(block)}</p>`;
+    return `<p>${inline(block).replace(/\n/g,'<br>')}</p>`;
   }).join('\n');
   return s;
 }
-function inline(t){let s=esc(t);s=s.replace(/`([^`]+)`/g,'<code>$1</code>');s=s.replace(/\*\*([^*]+)\*\*/g,'<strong>$1</strong>');s=s.replace(/(^|[^*])\*([^*\n]+)\*/g,'$1<em>$2</em>');s=s.replace(/\[([^\]]+)\]\(([^)]+)\)/g,'<a href="$2" target="_blank" rel="noopener">$1</a>');return s;}
+function inline(t){
+  let s=esc(t);
+  // 2026-09-16 反馈：规范编号 / 条款号 / 行首序号 → 加黑加粗
+  s=s.replace(/\b((?:GB\/T|GB|JGJ\/T|JGJ|JG|DG\/TJ|DG|DB|CJJ|CECS|SH\/T|TJ)[\s]?\d[\d.\-—\/]{2,})/g,'<span class="ref">$1</span>');
+  s=s.replace(/(第\s*[\d.]+\s*条)/g,'<span class="ref">$1</span>');
+  // 行首序号：1、/ 1）/ (1) / 一、/ 1. （后接空格或行尾，避开 16.2.1、3.5 这类数字）
+  s=s.replace(/(^|\n)(\s*)((?:\d{1,2})[、）)]|(?:\d{1,2})\.(?=\s|$)|[一二三四五六七八九十]{1,3}[、)）]|[（(]\s*\d{1,2}\s*[）)])(?=\s*\S)/g,'$1$2<span class="num">$3</span>');
+  s=s.replace(/`([^`]+)`/g,'<code>$1</code>');
+  s=s.replace(/\*\*([^*]+)\*\*/g,'<strong>$1</strong>');
+  s=s.replace(/(^|[^*])\*([^*\n]+)\*/g,'$1<em>$2</em>');
+  s=s.replace(/\[([^\]]+)\]\(([^)]+)\)/g,'<a href="$2" target="_blank" rel="noopener">$1</a>');
+  return s;
+}
 
 /* ---------- Collapsible（事件委托） ---------- */
 document.addEventListener('click',(e)=>{
@@ -1145,16 +1222,19 @@ async function upload(file){
 
 async function doFlush(){
   const btn = $('btnFlush'); btn.disabled = true; const old = btn.innerHTML;
+  const hint = $('flushHint');
+  hint.className = 'flush-state'; hint.textContent = '刷新中…';
   btn.innerHTML = '<span class="spinner spinner-dark"></span> 刷新中';
   try{
     const res = await fetch('/api/flush',{method:'POST'}); const d = await res.json();
     if(d.ok){
-      $('flushHint').innerHTML = `✅ 情景 ${d.episodic_count} · 语义 ${d.semantic_count} · 技能 ${d.procedural_skill_count} <span class="hint">（${esc(d.ts||'')}）</span>`;
+      hint.className = 'flush-state ok';
+      hint.innerHTML = `情景 ${d.episodic_count} · 语义 ${d.semantic_count} · 技能 ${d.procedural_skill_count} <span class="hint">${esc(d.ts||'')}</span>`;
     } else {
-      $('flushHint').innerHTML = `<span style="color:var(--c-error)">❌ ${esc(d.error)}</span>`;
+      hint.className = 'flush-state err'; hint.textContent = esc(d.error);
     }
   }catch(err){
-    $('flushHint').innerHTML = `<span style="color:var(--c-error)">❌ ${esc(String(err))}</span>`;
+    hint.className = 'flush-state err'; hint.textContent = String(err);
   }finally{ btn.disabled = false; btn.innerHTML = old; }
 }
 
@@ -1180,7 +1260,7 @@ fetch('/api/health').then(r=>r.json()).then(d=>{
 $('btnClearPlan').addEventListener('click', async ()=>{
   try{
     await fetch('/api/plan/clear', {method:'POST'});
-    $('dzTitle').textContent = '📄 上传方案';
+    $('dzTitle').textContent = '上传方案';
     $('dzSub').textContent = '.txt / .docx / .pdf';
   }catch(e){ /* 静默 */ }
 });

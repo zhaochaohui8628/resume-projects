@@ -20,9 +20,9 @@ import sys
 from pathlib import Path
 
 GRAPH_ROOT = Path(__file__).resolve().parents[1]          # .../graphrag
-sys.path.insert(0, str(GRAPH_ROOT))
+sys.path.insert(0, str(GRAPH_ROOT / "src"))
 
-from src.schema import *  # noqa: E402,F403
+from schema import *  # noqa: E402,F403
 
 DATA_DIR = GRAPH_ROOT / "data"
 

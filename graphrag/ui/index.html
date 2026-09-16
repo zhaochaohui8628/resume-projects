@@ -165,6 +165,18 @@ async function doSearch(){
   }catch(e){$('#results').innerHTML=`<div class="empty">请求异常：${esc(e.message)}</div>`;}
   finally{$('#btnSearch').disabled=false;}
 }
+/* 条款列表渲染：source 标签（图谱/向量/双源）+ 向量分数 */
+function hitList(list,opt){
+  opt=opt||{};
+  if(!list||!list.length)return `<div class="empty" style="padding:14px">${opt.emptyText||'无命中条款'}</div>`;
+  return list.map(h=>{
+    const cls=h.source==='both'?'t-both':(h.source==='graph'?'t-graph':'t-vector');
+    const lab={graph:'图谱',vector:'向量',both:'双源'}[h.source]||h.source;
+    const sc=(h.score!==null&&h.score!==undefined&&!isNaN(h.score))
+      ? `<span class="cid">向量分 ${Number(h.score).toFixed(3)}</span>` : '';
+    return `<div class="hit"><span class="tag ${cls}">${lab}</span><span class="cid">${esc(h.clause_id)}</span>${sc}
+      <div class="txt">${esc((h.text||'').slice(0,180))}</div></div>`;}).join('');
+}
 function renderResult(j,eff){
   hl=new Set();
   (j.graph_subgraph?.nodes||[]).forEach(n=>hl.add(n.id));
@@ -174,11 +186,12 @@ function renderResult(j,eff){
   const hz=(j.hazards||[]).map(h=>`<span class="chip">${esc(h)}</span>`).join('')||'<span class="chip">未识别（按关键词扩展）</span>';
   const wl=(j.graph_whitelist||[]).map(w=>`<span class="chip">${esc(w)}</span>`).join('')||'<span class="chip">无</span>';
   const th=(j.graph_thresholds||[]).map(t=>`<span class="chip">${esc(t.metric)} ${esc(t.level)} ${esc(t.value)}${esc(t.unit)}</span>`).join('')||'<span class="chip">无</span>';
-  const hits=(j.hits||[]).map(h=>{
-    const cls=h.source==='both'?'t-both':(h.source==='graph'?'t-graph':'t-vector');
-    const lab={graph:'图谱',vector:'向量',both:'双源'}[h.source]||h.source;
-    return `<div class="hit"><span class="tag ${cls}">${lab}</span><span class="cid">${esc(h.clause_id)}</span>
-      <div class="txt">${esc((h.text||'').slice(0,180))}</div></div>`;}).join('')||'<div class="empty" style="padding:14px">无命中条款</div>';
+  const nG=(j.graph_hits||[]).length, nV=(j.vector_hits||[]).length;
+  const sub=(t)=>`<div style="color:#8b93a7;font-size:12px;margin:2px 0 6px">${t}</div>`;
+  const mergedHits=hitList(j.hits,{emptyText:'无命中条款'});
+  const graphHits=hitList(j.graph_hits,{emptyText:'图谱路无命中条款'});
+  const vectorHits=hitList(j.vector_hits,
+    {emptyText:(eff==='dual'?'向量路无命中条款':'单路模式：向量端未启用')});
   $('#results').innerHTML=`
     <div class="card"><h4>检索模式</h4>${modeTag}
       <span class="chip">图谱条款 ${j.graph_clauses||0}</span><span class="chip">向量条款 ${j.vector_clauses||0}</span>
@@ -186,7 +199,13 @@ function renderResult(j,eff){
     <div class="card"><h4>识别危大类别（图谱入口）</h4>${hz}</div>
     <div class="card"><h4>图谱范围白名单（HazardCategory -REGULATED_BY-> Standard）</h4>${wl}</div>
     <div class="card"><h4>阈值链（类别 → 量名 → 阈值）</h4>${th}</div>
-    <div class="card"><h4>命中条款（融合去重）</h4>${hits}</div>`;
+    <div class="card"><h4>① 合并结果（图谱 + 向量，去重）</h4>
+      ${sub(`共 ${j.merged||0} 条，按「双源 → 图谱/向量交替」排序，展示前 ${(j.hits||[]).length} 条`)}
+      ${mergedHits}</div>
+    <div class="card"><h4>② 图谱路结果（子图扩展，跨规范）</h4>
+      ${sub(`${nG} 条 · 来自子图内 Clause 节点`)}${graphHits}</div>
+    <div class="card"><h4>③ 向量路结果（BM25 ∥ 双塔 + RRF）</h4>
+      ${sub(`${nV} 条${j.vector_error?` · ${esc(j.vector_error)}`:''}`)}${vectorHits}</div>`;
   $('#results').scrollTop=0;
 }
 $('#btnSearch').onclick=doSearch;

@@ -11,22 +11,27 @@
 - mode="dual" ：图谱路 + 向量路（向量端不可用时自动退化为 graph，并在结果里标注）
 
 用法：
-  python -m src.hybrid_search --query "深基坑开挖前的安全准备" --mode dual
+  python graphrag/src/hybrid_search.py --query "深基坑开挖前的安全准备" --mode dual
+
+⚠️ 导入约定：本 demo 内部用「裸模块名」（见 neo4j_store.py 文件头说明），
+`src` 这个名字留给 rag2 的 `src.common / src.index / src.retrieval`。
 """
 from __future__ import annotations
 
 import argparse
 import os
 import sys
+from itertools import zip_longest
 from pathlib import Path
 
 HERE = Path(__file__).resolve()
 GRAPH_ROOT = HERE.parents[1]                       # .../graphrag
+SRC_DIR = HERE.parent                              # .../graphrag/src
 WORKSPACE = GRAPH_ROOT.parent                      # 项目根
-if str(GRAPH_ROOT) not in sys.path:
-    sys.path.insert(0, str(GRAPH_ROOT))
+if str(SRC_DIR) not in sys.path:
+    sys.path.insert(0, str(SRC_DIR))
 
-from src.neo4j_store import Neo4jStore, Neo4jUnavailable  # noqa: E402
+from neo4j_store import Neo4jStore, Neo4jUnavailable  # noqa: E402
 
 # 危大类别关键词表（demo 级）
 HAZARD_KEYWORDS = {
@@ -105,6 +110,7 @@ class GraphRAGRetriever:
                            "source": "vector", "clause_no": v.get("clause_no", ""),
                            "score": v.get("score")}
         # 图谱路的条款节点（子图里的 Clause）
+        graph_ids: list[str] = []
         for n in g["subgraph"]["nodes"]:
             if n["label"] == "Clause":
                 cid = n["id"]
@@ -113,9 +119,27 @@ class GraphRAGRetriever:
                 else:
                     merged[cid] = {"clause_id": cid, "text": n.get("props", {}).get("text", ""),
                                    "source": "graph", "clause_no": "", "score": None}
+                graph_ids.append(cid)
 
-        order = {"both": 0, "graph": 1, "vector": 2}
-        ranked = sorted(merged.values(), key=lambda x: order[x["source"]])
+        # 两路各自的独立结果（供前端分区展示；含被两路同时命中的"双源"条款）
+        graph_hits = [merged[c] for c in graph_ids]
+        vector_hits: list[dict] = []
+        for v in vec_hits:
+            cid = v["clause_id"]
+            if cid and cid in merged:
+                vector_hits.append(merged[cid])
+            else:
+                vector_hits.append({"clause_id": cid or "", "text": v.get("text", ""),
+                                    "source": "vector", "clause_no": v.get("clause_no", ""),
+                                    "score": v.get("score")})
+
+        # 合并排序：双源最前，其后图谱 / 向量**交替**出现。
+        # （若单纯按来源优先级排，图谱条款会把 top_k 占满，向量结果永远看不见。）
+        both = [v for v in merged.values() if v["source"] == "both"]
+        g_only = [merged[c] for c in graph_ids if merged[c]["source"] == "graph"]
+        v_only = [v for v in merged.values() if v["source"] == "vector"]
+        ranked = both + [x for pair in zip_longest(g_only, v_only) for x in pair
+                         if x is not None]
         effective_mode = "dual" if (mode == "dual" and (vec_hits or not self.vector_error)) else (
             "graph" if mode == "graph" else "dual_degraded")
 
@@ -131,7 +155,9 @@ class GraphRAGRetriever:
             "vector_clauses": len(vec_hits),
             "vector_error": self.vector_error,
             "merged": len(ranked),
-            "hits": ranked[:top_k],
+            "hits": ranked[:top_k],                       # 合并结果（去重后）
+            "graph_hits": graph_hits,                     # 图谱路单独结果
+            "vector_hits": vector_hits,                   # 向量路单独结果
         }
 
 

@@ -30,9 +30,9 @@ from pathlib import Path
 
 GRAPH_ROOT = Path(__file__).resolve().parents[1]        # .../graphrag
 WORKSPACE = GRAPH_ROOT.parent                            # 项目根
-sys.path.insert(0, str(GRAPH_ROOT))
+sys.path.insert(0, str(GRAPH_ROOT / "src"))
 
-from src.schema import (BELONGS_TO, CLS, COVERS, ENT, HAZ, HIERARCHY,  # noqa: E402
+from schema import (BELONGS_TO, CLS, COVERS, ENT, HAZ, HIERARCHY,  # noqa: E402
                         MENTIONS, REFERENCES, REGULATED_BY, STD)
 
 DATA_DIR = GRAPH_ROOT / "data"                           # 图谱产物输出目录

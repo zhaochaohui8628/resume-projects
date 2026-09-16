@@ -15,9 +15,9 @@ import sys
 from pathlib import Path
 
 GRAPH_ROOT = Path(__file__).resolve().parents[1]        # .../graphrag
-sys.path.insert(0, str(GRAPH_ROOT))
+sys.path.insert(0, str(GRAPH_ROOT / "src"))
 
-from src.neo4j_store import Neo4jStore, Neo4jUnavailable  # noqa: E402
+from neo4j_store import Neo4jStore, Neo4jUnavailable  # noqa: E402
 
 
 def main() -> int:
