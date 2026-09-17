@@ -99,6 +99,34 @@ def test_run_case_empty_and_ood_survive():
     print(f"OK test_run_case_empty_and_ood_survive: empty={r1.time_m['total_ms']}ms ood={r2.time_m['total_ms']}ms")
 
 
+def test_phase_metrics():
+    """阶段拆解：从 trace.ms 聚合 路由/执行/汇总，ms=None 的批次回放步不计入。"""
+    trace = [
+        {"step": 1, "kind": "input", "label": "用户输入", "ms": 0.5},
+        {"step": 2, "kind": "dispatch", "label": "调度中心意图路由", "ms": 2.0},
+        {"step": 3, "kind": "execute", "label": "并行执行 1 个 subagent", "ms": 0.3},
+        {"step": 4, "kind": "subagent_step", "label": "[review] 完成", "ms": 800.0},
+        {"step": 5, "kind": "subagent_step", "label": "[review] 判档路", "ms": None},   # 批次回放
+        {"step": 6, "kind": "aggregate", "label": "LLM 汇总", "ms": 0.2},
+        {"step": 7, "kind": "done", "label": "完成", "ms": 120.0,
+         "detail": {"llm_ms": 118.5}},
+    ]
+    ph = M.phase_metrics(trace)
+    assert ph["route_ms"] == 2.0, ph
+    assert ph["execute_ms"] == 800.3, ph          # 执行 = execute + 完成步；None 步被跳过
+    assert ph["summary_ms"] == 118.7, ph          # aggregate 0.2 + done.detail.llm_ms 118.5
+    assert ph["other_ms"] == 0.5, ph
+    assert ph["measured_ms"] == 921.5, ph
+    # 空 / 全 None trace 不炸
+    assert M.phase_metrics([])["measured_ms"] == 0.0
+    assert M.phase_metrics([{"kind": "done", "ms": None}])["summary_ms"] == 0.0
+    # 老 trace（无 llm_ms）退回 done.ms
+    ph2 = M.phase_metrics([{"kind": "aggregate", "ms": 1.0},
+                           {"kind": "done", "ms": 200.0}])
+    assert ph2["summary_ms"] == 201.0, ph2
+    print("OK test_phase_metrics")
+
+
 def test_summarize_aggregation():
     from bench.runner import CaseResult
     results = [
@@ -129,7 +157,8 @@ def test_summarize_aggregation():
 if __name__ == "__main__":
     import traceback
     tests = [test_risk_metrics, test_risk_metrics_miss, test_ner_metrics,
-             test_rag_recall, test_time_metrics, test_run_case_empty_and_ood_survive,
+             test_rag_recall, test_time_metrics, test_phase_metrics,
+             test_run_case_empty_and_ood_survive,
              test_summarize_aggregation]
     for fn in tests:
         try:

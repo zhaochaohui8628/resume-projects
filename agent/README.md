@@ -89,10 +89,19 @@
   合计 **101 条（含合成 12 条）**。golden 经「规则引擎机械标注 ↔ 模型人工标注」交叉验证，
   `data/REVIEW_GUIDE.md` 列出规则缺陷/存疑版本/口径议题供领域专家复核；
 - `metrics.py`：全链路指标拆解——**审查漏报率 FNR / 误报率 FPR / NER 实体 F1 /
-  RAG recall@k / 各 Subagent 耗时**；
-- `runner.py` + `report.py`：端到端跑 orchestrator，产出 Markdown 报告；
+  RAG recall@k / 耗时三级拆解**：
+  ① `total_ms` 端到端；② `subagent_ms` 各 subagent **单跑基准**（非并行分段，与 total 不可相加）；
+  ③ `phase_ms` **阶段拆解**（从 orchestrator trace 的 `ms` 聚合）——`route_ms` 意图路由 /
+  `execute_ms` subagent 执行（NER 分块 + 检索精排 + 阈值与限值比对）/ `summary_ms` LLM 汇总 /
+  `other_ms` 输入准备。⚠️ **未带 `--llm` 时路由走关键词规则（≈0 ms）、汇总直接跳过（0 ms）**，
+  所以 895 ms 这类端到端数字**不含 LLM 往返**；带 `--llm deepseek` 才有真实模型耗时；
+- `runner.py` + `report.py`：端到端跑 orchestrator，产出 Markdown 报告（含阶段拆解行）；
 - CLI：`python agent/bench/run_benchmark.py --quick [--out] [--json]`（零依赖可跑），
   `--real` 追加真实施工方案用例集，`--llm deepseek` 覆盖真实路由/汇总链路。
+
+> 耗时埋点在 `orchestrator/dispatcher.py`：`emit()` 给每条 trace 步自动写 `ms`
+> （= 自上一步以来的耗时），`subagent_step` 的批次回放步标 `ms=None` 不计入。
+> 端到端耗时 = 各步 `ms` 累加，无需额外埋点即可拆解路由 / 执行 / 汇总。
 
 ## 两个 subagent（review / qa）
 
@@ -186,7 +195,7 @@ $env:DEEPSEEK_API_KEY = "sk-..."
 | `/` | GET | 前端页面 |
 | `/api/health` | GET | 健康检查（含已载入方案字数） |
 | `/api/upload` | POST | 上传方案（JSON：`{filename, b64}`） |
-| `/api/stream` | GET | SSE 流式编排（事件：`ping` / `step` / `done` / `error`） |
+| `/api/stream` | GET | SSE 流式编排（事件：`ping` / `step` / `token` / `done` / `error`；`token` = 终答逐块增量，review 与 qa 两路都有） |
 | `/api/tasks` | POST | 创建后台编排任务（返回 task_id） |
 | `/api/tasks/{id}` | GET | 任务状态与结果 |
 | `/api/tasks/{id}/cancel` | POST | 取消任务 |
@@ -206,7 +215,7 @@ $env:DEEPSEEK_API_KEY = "sk-..."
   / AsyncPipeline 硬依赖裁剪 + 软依赖共享 / dispatcher.run_async 端到端（12 项）
 - `test_harness.py` —— 渐进披露 / 防御性控制流（重复工具拦截·相似结论拦截·纠偏后收敛·降级输出，
   无硬编码工具上限）/ 四层记忆（10 项）
-- `test_bench_smoke.py` —— 评测框架：漏报/误报 / NER F1 / RAG recall@k / 耗时拆解 / 汇总（7 项）
+- `test_bench_smoke.py` —— 评测框架：漏报/误报 / NER F1 / RAG recall@k / 耗时拆解 + **阶段拆解** / 汇总（8 项）
 - `test_agent_mock`（确定性主链路 12 风险 + ReAct）、`test_rules`
 
 ```powershell

@@ -39,6 +39,96 @@ def _extract_json(text: str) -> dict | None:
         return None
 
 
+class _AnswerStreamParser:
+    """从流式 LLM 输出里**增量**抽出终答正文（`action=answer|finish` 的 `action_input`）。
+
+    为什么需要它：ReAct 每轮吐的是协议 JSON（`{"thought","action","action_input"}`），
+    只有本轮 action 判为 answer/finish 时，`action_input` 才是给用户看的正文；
+    其余轮次（thought / 工具参数）**一律不能外泄**。所以要边收边判、边判边解码。
+
+    状态机：见到 `"action":"answer|finish"` → 定位 `"action_input":"` 起点 →
+    逐字符解码（含 \\n \\t \\" \\\\ \\uXXXX，且转义序列可跨块）→ 遇未转义引号收尾。
+    """
+
+    _ACTION_RE = re.compile(r'"action"\s*:\s*"(?:answer|finish)"')
+    _VALUE_RE = re.compile(r'"action_input"\s*:\s*"')
+    _ESC = {"n": "\n", "t": "\t", "r": "\r", '"': '"', "\\": "\\", "/": "/", "b": "\b", "f": "\f"}
+
+    def __init__(self, on_token):
+        self._on_token = on_token
+        self._buf = ""           # 已收到的全部文本
+        self._cursor = 0         # buf 中已解码到的位置
+        self._pending = ""       # 跨块的未完成转义（如 '\\' 或 '\\u12'）
+        self._in_value = False
+        self.emitted = 0         # 已推送字符数（0 → 上层走一次性兜底）
+        self.is_answer = False
+        self._closed = False
+
+    def feed(self, piece: str) -> None:
+        if not piece:
+            return
+        self._buf += piece
+        if self._closed:
+            return                      # 终答已收尾：后续 JSON 尾巴（"} 等）不再外泄
+        if not self.is_answer:
+            if not self._ACTION_RE.search(self._buf):
+                return
+            self.is_answer = True
+        if not self._in_value:
+            m = self._VALUE_RE.search(self._buf)
+            if not m:
+                return                      # 键顺序颠倒等：等整轮收完由上层兜底
+            self._cursor = m.end()
+            self._in_value = True
+        self._drain()
+
+    def _drain(self) -> None:
+        if self._closed:
+            return
+        out: list[str] = []
+        buf = self._buf
+        i = self._cursor
+        while i < len(buf):
+            ch = buf[i]
+            if self._pending:
+                self._pending += ch
+                p = self._pending
+                if len(p) == 1:
+                    i += 1
+                    continue
+                if p[1] == "u":
+                    if len(p) < 6:
+                        i += 1
+                        continue
+                    try:
+                        out.append(chr(int(p[2:6], 16)))
+                    except ValueError:
+                        out.append(p)
+                else:
+                    out.append(self._ESC.get(p[1], p[1]))
+                self._pending = ""
+                i += 1
+                continue
+            if ch == "\\":
+                self._pending = "\\"
+                i += 1
+                continue
+            if ch == '"':                   # 未转义引号 → 值结束
+                self._closed = True
+                i += 1
+                break
+            out.append(ch)
+            i += 1
+        self._cursor = i
+        if out:
+            s = "".join(out)
+            self.emitted += len(s)
+            try:
+                self._on_token(s)
+            except Exception:
+                pass
+
+
 class ReActAgent:
     def __init__(self, skills: SkillRegistry, memory: MemoryManager = None,
                  llm=None, max_iterations: int = 16,
@@ -57,10 +147,31 @@ class ReActAgent:
             max_recover=max_recover)
 
     # ---------------- 对外入口 ----------------
-    def run(self, user_input: str) -> dict:
+    def run(self, user_input: str, on_token=None) -> dict:
+        """跑一轮 ReAct。
+
+        on_token(piece)：可选流式回调，**只推送终答正文**（answer/finish 的 action_input），
+        中间轮次的 thought / 工具参数一律不外泄。若 LLM 无 stream 能力、或 JSON 键顺序异常
+        导致无法边收边解，则自动降级为「终答整段一次性推送」——前端一定有内容，不会空白。
+        """
         if self.llm is None:
             return {"answer": "（未配置 LLM）", "trace": [], "tool_calls": 0, "truncated": False}
         self.memory.working_set("query", user_input)
+        pushed = {"n": 0}                    # 已推送字符数（0 → 走一次性兜底）
+
+        def _tok(piece: str) -> None:
+            if not piece:
+                return
+            pushed["n"] += len(piece)
+            try:
+                on_token(piece)
+            except Exception:
+                pass
+
+        def _push_once(text: str) -> None:
+            """兜底：本次没走成流式时，把终答整段推一次（避免"等半天突然整段冒出"落差）。"""
+            if on_token and pushed["n"] == 0 and text:
+                _tok(text)
         episodic_hits = self.memory.episodic_search(user_input, k=3)
         sys_prompt = build_system_prompt(
             skills_brief=self.skills.brief(),
@@ -77,7 +188,7 @@ class ReActAgent:
         self._sm.reset()
 
         for _ in range(self.max_iterations):
-            resp = self.llm.complete(messages)
+            resp, _parser = self._complete(messages, _tok if on_token else None)
             messages.append({"role": "assistant", "content": resp})
             act = _extract_json(resp) or {}
             thought = str(act.get("thought", ""))
@@ -90,6 +201,7 @@ class ReActAgent:
                 trace.append({"step": len(trace) + 1, "kind": "answer",
                               "thought": thought, "content": action_input})
                 self._remember(user_input, action_input, tool_calls, trace)
+                _push_once(action_input)     # 流式没覆盖到 → 整段补推
                 return {"answer": action_input, "trace": trace,
                         "tool_calls": tool_calls, "truncated": False,
                         "degraded": False, "guard_reasons": guard_reasons}
@@ -111,6 +223,7 @@ class ReActAgent:
                                   "degraded": True,
                                   "guard_reason": decision.reason})
                     self._remember(user_input, fallback, tool_calls, trace)
+                    _push_once(fallback)
                     return {"answer": fallback, "trace": trace,
                             "tool_calls": tool_calls, "truncated": True,
                             "degraded": True, "guard_reasons": guard_reasons}
@@ -148,9 +261,26 @@ class ReActAgent:
 
         # 达到 max_iterations（整体轮数上界）仍未 answer
         fallback = f"已达最大推理轮数（{self.max_iterations}），未能得到明确结论。最后思考：{thought}"
+        _push_once(fallback)
         return {"answer": fallback, "trace": trace,
                 "tool_calls": tool_calls, "truncated": True,
                 "degraded": False, "guard_reasons": guard_reasons}
+
+    # ---------------- LLM 调用（流式优先） ----------------
+    def _complete(self, messages: list[dict], on_token=None):
+        """取一轮 LLM 输出：有 stream 且需要流式 → 边收边解终答；否则退回 complete。
+
+        返回 (文本, 解析器或 None)。解析器仅供调试/统计，正常流程不依赖。
+        """
+        stream_fn = getattr(self.llm, "stream", None)
+        if on_token is None or stream_fn is None:
+            return self.llm.complete(messages), None
+        parser = _AnswerStreamParser(on_token)
+        chunks: list[str] = []
+        for piece in stream_fn(messages):
+            chunks.append(piece)
+            parser.feed(piece)
+        return "".join(chunks), parser
 
     def _degrade_answer(self, decision, thought: str, last_obs: str) -> str:
         """纠偏耗尽后的降级输出：把已收集证据交给用户，明确说明未收敛原因。"""

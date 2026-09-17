@@ -174,3 +174,42 @@ def time_metrics(total_ms: float, subagent_ms: dict[str, float]) -> dict:
     return {"total_ms": round(total_ms, 1),
             "subagent_ms": {k: round(v, 1) for k, v in subagent_ms.items()},
             "slowest": (max(subagent_ms, key=subagent_ms.get) if subagent_ms else None)}
+
+
+# ---------------- 阶段耗时拆解（从 orchestrator trace 聚合）----------------
+def phase_metrics(trace: list | None) -> dict:
+    """从 trace 的 `ms` 字段聚合三阶段耗时：路由 / 执行 / 汇总。
+
+    口径（与 dispatcher.emit 对齐）：
+      - `ms` = 自上一条 trace 步骤以来的耗时，步骤在"完成时"写入，故 ms ≈ 该步自身耗时；
+      - `ms=None` 的步骤是批次回放（subagent 内部步骤在跑完后一次性并入）→ **不计入**；
+      - 并行多 subagent 时，各"完成"步的间隔之和 ≈ 执行阶段墙钟（回调串行到达）。
+
+    返回 route_ms（意图路由）/ execute_ms（subagent 执行 + 编排）/ summary_ms（汇总阶段 =
+    aggregate 步 + done 步的 detail.llm_ms，llm=None 时≈0）/ other_ms（输入准备等零头）/
+    measured_ms（合计）。measured_ms 与 time_m.total_ms 的差值 = 未 emit 的收尾开销（记忆写入、结果拼装）。
+    """
+    route = execute = other = 0.0
+    summary = 0.0
+    for t in (trace or []):
+        ms = t.get("ms")
+        if ms is None or not isinstance(ms, (int, float)):
+            continue
+        kind = t.get("kind")
+        if kind == "dispatch":
+            route += ms
+        elif kind in ("execute", "subagent_step", "error"):
+            execute += ms
+        elif kind == "aggregate":
+            summary += ms                     # 进入汇总前的编排开销
+        elif kind == "done":
+            # done 的 ms 含"汇总 + 结果拼装"；优先用 detail.llm_ms（纯汇总耗时），避免重复计入
+            llm_ms = (t.get("detail") or {}).get("llm_ms")
+            summary += llm_ms if isinstance(llm_ms, (int, float)) else ms
+        elif kind == "input":
+            other += ms
+    return {"route_ms": round(route, 1),
+            "execute_ms": round(execute, 1),
+            "summary_ms": round(summary, 1),
+            "other_ms": round(other, 1),
+            "measured_ms": round(route + execute + summary + other, 1)}

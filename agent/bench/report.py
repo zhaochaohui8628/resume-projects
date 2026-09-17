@@ -47,7 +47,18 @@ def render_report(data: dict, bench_dir: str) -> str:
     lines.append(f"| 平均总耗时 | {s['avg_total_ms']} ms | 端到端编排 |")
     if s.get("avg_subagent_ms"):
         sub = " ｜ ".join(f"{k}: {v} ms" for k, v in s["avg_subagent_ms"].items())
-        lines.append(f"| Subagent 平均耗时 | {sub} | 各 agent 单独分解 |")
+        lines.append(f"| Subagent 平均耗时 | {sub} | 各 agent 单独分解（**单跑基准**，与总耗时不可相加） |")
+    ph = s.get("avg_phase_ms") or {}
+    if ph.get("measured_ms"):
+        _tot = ph["measured_ms"] or 1.0
+
+        def _pm(key: str) -> str:
+            v = ph.get(key, 0.0)
+            return f"{v} ms（{v / _tot * 100:.1f}%）"
+
+        lines.append(f"| 阶段拆解 · 意图路由 | {_pm('route_ms')} | 无 Key 走关键词规则；带 --llm 时为模型往返 |")
+        lines.append(f"| 阶段拆解 · 执行 | {_pm('execute_ms')} | subagent：NER 分块 + 检索精排 + 阈值/限值比对 |")
+        lines.append(f"| 阶段拆解 · LLM 汇总 | {_pm('summary_ms')} | 无 Key 时跳过该路径；带 --llm deepseek 时含模型往返 |")
     lines.append("")
 
     # —— 多维拆解章节（v2）——

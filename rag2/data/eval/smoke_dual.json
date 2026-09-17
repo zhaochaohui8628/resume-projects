@@ -1,15 +1,15 @@
 {
   "tag": "smoke_dual",
-  "mode": "convex",
-  "index": "dual_gold.faiss",
-  "alpha": 0.3,
+  "mode": "rrf",
+  "index": "dual_mix.faiss",
+  "alpha": 0.9,
   "cand": 10,
   "top_k": 5,
-  "device": "cuda:0",
+  "device": "cpu",
   "n": 43,
-  "hit@k": 0.7906976744186046,
-  "mrr": 0.7242894056847545,
-  "ndcg@k": 0.7360165654506385,
-  "recall@k": 0.7906976744186046,
-  "sec_per_query": 0.0507
+  "hit@k": 0.9302325581395349,
+  "mrr": 0.8135658914728683,
+  "ndcg@k": 0.8425139810890303,
+  "recall@k": 0.9302325581395349,
+  "sec_per_query": 0.0426
 }

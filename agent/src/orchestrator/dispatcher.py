@@ -22,6 +22,7 @@ import os
 import re
 import sys
 import threading
+import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import dataclass, field, asdict
 from typing import Any
@@ -50,12 +51,42 @@ class GlobalOpts:
                                 # 优于 softmax），该开关不再切换后端，UI 已移除该选项
     memory_dir: str | None = None  # harness 记忆落盘目录；为 None 则不写入
     verbose: bool = True        # 是否在 trace 里记录每步明细（默认开）
-    # ---- v6 并发控制 ----
-    llm_rate: float = 0.0       # LLM 令牌桶速率（tokens/sec）；0 = 不限流
-    llm_burst: int = 4          # 令牌桶容量（允许突发量）
-    max_concurrency: int = 4    # 异步流水线最大并发
-    subagent_timeout: float = 0.0  # 单 subagent 超时秒数；0 = 不限
+    # ---- v6 并发控制（默认值取自 config/config.yaml `concurrency` 段，2026-09-16 实测定档）----
+    # 实测：并发 1/2/3 峰值内存 3630/3439/3615 MB，单任务 1.33s / 0.97s（模型常驻约 3.4GB 且共享）
+    llm_rate: float = 3.0       # LLM 令牌桶速率（tokens/sec）；0 = 不限流（不推荐）
+    llm_burst: int = 6          # 令牌桶容量（允许突发量）
+    max_concurrency: int = 3    # 异步流水线最大并发（与 task_concurrency 一致便于推算）
+    subagent_timeout: float = 120.0  # 单 subagent 超时秒数；0 = 不限
     allow_degrade: bool = False    # 默认**严格**：模型/检索不可用直接报错，不静默降级出结论
+
+    # ------------------------------------------------------------------
+    @classmethod
+    def from_config(cls, **overrides) -> "GlobalOpts":
+        """按 config/config.yaml 的 `concurrency` 段构造（读不到则用上面的实测默认值）。"""
+        vals: dict = {}
+        try:
+            import yaml  # type: ignore
+            root = os.path.dirname(os.path.dirname(
+                os.path.dirname(os.path.abspath(__file__))))
+            cfg_path = os.path.join(root, "config", "config.yaml")
+            if os.path.exists(cfg_path):
+                with open(cfg_path, "r", encoding="utf-8") as f:
+                    cfg = (yaml.safe_load(f) or {})
+                c = cfg.get("concurrency") or {}
+                mapping = {
+                    "llm_rate": float, "llm_burst": int,
+                    "max_concurrency": int, "subagent_timeout": float,
+                }
+                for k, cast in mapping.items():
+                    if k in c and c[k] is not None:
+                        try:
+                            vals[k] = cast(c[k])
+                        except (TypeError, ValueError):
+                            pass
+        except Exception:
+            pass
+        vals.update({k: v for k, v in overrides.items() if v is not None})
+        return cls(**vals)
 
     def as_dict(self) -> dict:
         return asdict(self)
@@ -222,7 +253,13 @@ async def execute_async(agents: list, query: str, plan: str,
 
 # ---------------- 链路 trace 结构 ----------------
 def _trace_push(trace: list, kind: str, label: str, **kw) -> None:
-    """trace 步骤写入。统一结构供 UI 渲染。"""
+    """trace 步骤写入。统一结构供 UI 渲染。
+
+    耗时口径：`ms` = **自上一条 trace 步骤以来的耗时**（由 emit 闭包写入）。
+    trace 步骤在"该步完成时"写入，故 ms ≈ 该步自身耗时；全局累计即端到端。
+    `ms=None` 表示该步是**批次回放**（如 subagent 内部步骤在其跑完后一次性并入），
+    不参与耗时统计，避免 µs 级噪音被误读成真实耗时。
+    """
     trace.append({"step": len(trace) + 1, "kind": kind, "label": label, **kw})
 
 
@@ -262,8 +299,17 @@ def run(query: str = "", plan: str = "", llm=None,
     # v6：LLM 令牌桶限流（llm_rate>0 时路由/汇总/ReAct 全部限流）
     limited_llm, _bucket = _wrap_llm(opts, llm)
 
+    clock = [time.perf_counter()]        # 上一条 trace 步骤的时刻（耗时拆解基准）
+
     def emit(kind: str, label: str, **kw) -> None:
-        """trace 步骤写入 + 流式回调。"""
+        """trace 步骤写入 + 流式回调。
+
+        自动补 `ms` = 自上一步 trace 以来的耗时（毫秒，留 1 位小数）→ 端到端耗时拆解
+        （路由 / 执行 / 汇总）直接从 trace 聚合即可，无需额外埋点。
+        """
+        now = time.perf_counter()
+        kw.setdefault("ms", round((now - clock[0]) * 1000, 1))
+        clock[0] = now
         _trace_push(trace, kind, label, **kw)
         if on_step is not None:
             try:
@@ -294,7 +340,9 @@ def run(query: str = "", plan: str = "", llm=None,
     # 3) qa 单独走 ReAct OTA（harness）
     if limited_llm is not None and agents == ["qa"]:
         # qa 路径里 _run_react_qa 内部 trace 直接复用 emit
-        res_qa = _run_react_qa(query, plan, limited_llm, opts, trace, on_step=on_step)
+        # on_token 必须透传（否则同步入口的 qa 流式静默失效：UI 拿不到 token 事件）
+        res_qa = _run_react_qa(query, plan, limited_llm, opts, trace,
+                               on_step=on_step, on_token=on_token)
         res_qa["rules_result"] = rules_result
         res_qa["rules_injected"] = bool(rules_result)
         res_qa["routing"] = routing
@@ -337,7 +385,9 @@ def run(query: str = "", plan: str = "", llm=None,
     # 5) LLM 汇总（review 的 risks 已含依据/要素结论，无需单独拼规则结果）
     emit("aggregate", "LLM 汇总")
     final_md = None
+    summary_ms = 0.0                     # 汇总环节耗时（llm=None 时为规则拼装耗时）
     if limited_llm is not None:
+        t_sum = time.perf_counter()
         try:
             final_md = summarize_stream(limited_llm, query=query, has_plan=has_plan,
                                         agents=agents, results=results,
@@ -345,11 +395,16 @@ def run(query: str = "", plan: str = "", llm=None,
                                         on_token=on_token)
         except Exception as e:
             final_md = f"⚠️ LLM 汇总失败：{e}"
+        finally:
+            summary_ms = (time.perf_counter() - t_sum) * 1000
 
     detail_md = to_markdown(agents, results)
     summary_line = " ｜ ".join(f"{r.name}:{r.summary}" for r in results)
 
-    emit("done", "完成", detail={"summary_line": summary_line})
+    # done 步的 ms = 汇总耗时（aggregate 步写在汇总**之前**，故真实耗时落在 done 上）；
+    # detail.llm_ms 再显式给一份，供 bench 阶段拆解直接取用（llm=None 时约等于 0）。
+    emit("done", "完成",
+         detail={"summary_line": summary_line, "llm_ms": round(summary_ms, 1)})
 
     # 6) harness 记忆：Episodic 写入（v4 兼容）
     if opts.memory_dir:
@@ -437,7 +492,7 @@ async def run_async(query: str = "", plan: str = "", llm=None,
     # 3) qa 单独走 ReAct OTA（同步实现 → to_thread）
     if limited_llm is not None and agents == ["qa"]:
         res_qa = await asyncio.to_thread(
-            _run_react_qa, query, plan, limited_llm, opts, trace, on_step)
+            _run_react_qa, query, plan, limited_llm, opts, trace, on_step, on_token)
         res_qa["rules_result"] = rules_result
         res_qa["rules_injected"] = bool(rules_result)
         res_qa["routing"] = routing
@@ -473,7 +528,9 @@ async def run_async(query: str = "", plan: str = "", llm=None,
     # 5) LLM 汇总（流式：逐 token 回调 on_token，首 token 即出 → 降低 TTFT）
     emit("aggregate", "LLM 汇总")
     final_md = None
+    summary_ms = 0.0
     if limited_llm is not None:
+        t_sum = time.perf_counter()
         try:
             final_md = await asyncio.to_thread(
                 summarize_stream, limited_llm, query, has_plan, agents, results,
@@ -481,10 +538,13 @@ async def run_async(query: str = "", plan: str = "", llm=None,
                 on_token)
         except Exception as e:
             final_md = f"⚠️ LLM 汇总失败：{e}"
+        finally:
+            summary_ms = (time.perf_counter() - t_sum) * 1000
 
     detail_md = to_markdown(agents, results)
     summary_line = " ｜ ".join(f"{r.name}:{r.summary}" for r in results)
-    emit("done", "完成", detail={"summary_line": summary_line})
+    emit("done", "完成",
+         detail={"summary_line": summary_line, "llm_ms": round(summary_ms, 1)})
 
     # 6) 记忆写入
     if opts.memory_dir:
@@ -574,10 +634,20 @@ def _infer_route(kind: str) -> str:
 
 
 def _emit_subagent(trace: list, result, emit) -> None:
-    """把单个 subagent 的内部 trace 步骤作为 subagent_step 推入全局 trace 并 emit。"""
-    if not getattr(result, "trace", None):
+    """把单个 subagent 的内部 trace 步骤作为 subagent_step 推入全局 trace 并 emit。
+
+    耗时口径：先推一条「[name] 完成」步——它的 `ms` = 该 subagent 自上一个顶层 trace
+    事件到执行完毕的耗时（并行执行时即"首个完成者"的耗时，"执行"阶段的真实成本）。
+    随后的内部步骤是该 subagent **跑完后批量回放**的，统一标 `ms=None` 不参与计时
+    （否则会得到一串 µs 级假值，被误读成"每步都很快"）。
+    """
+    steps = list(getattr(result, "trace", None) or [])
+    if not steps:
         return
-    for t in result.trace:
+    emit("subagent_step", f"[{result.name}] 完成",
+         detail={"steps": len(steps), "summary": getattr(result, "summary", "")},
+         agent=result.name, route="", src="", step_kind="done")
+    for t in steps:
         # route/src = 工具路线与产物溯源（规则 / NER / RAG / 比对 / LLM），
         # 前端据此渲染细粒度图状态机（不再只显示"在哪个 agent"）。
         emit("subagent_step", f"[{result.name}] {t.get('label', '')}",
@@ -585,12 +655,18 @@ def _emit_subagent(trace: list, result, emit) -> None:
              agent=result.name,
              route=t.get("route", "") or _infer_route(t.get("kind", "")),
              src=t.get("src", ""),
-             step_kind=t.get("step_kind", ""))
+             step_kind=t.get("step_kind", ""),
+             ms=None)
 
 
 # ---------------- qa ReAct OTA ----------------
 def _run_react_qa(query: str, plan: str, llm, opts: GlobalOpts, trace: list,
-                  on_step=None):
+                  on_step=None, on_token=None):
+    """qa 路（无方案 / 一般性条文咨询）走 ReAct OTA。
+
+    on_token：终答流式回调——ReActAgent 内部只在判定为终答那一轮往外推，
+    中间轮次的 thought / 工具参数不会外泄（见 harness/react_agent.py::_AnswerStreamParser）。
+    """
     from tools.ner_client import NerClient                     # noqa: E402
     from tools.rules_checker import run_checks                # noqa: E402
     from harness.memory import MemoryManager                  # noqa: E402
@@ -622,7 +698,7 @@ def _run_react_qa(query: str, plan: str, llm, opts: GlobalOpts, trace: list,
                                      rag_sink=rag_hit_sink,
                                      rag_rerank=opts.rag_rerank)
     agent = ReActAgent(skills=skills, memory=MemoryManager(mem_dir), llm=llm)
-    res = agent.run(query)
+    res = agent.run(query, on_token=on_token)
     answer = (res.get("answer") or "").strip() or "（ReAct 未产出终答）"
 
     # OTA 步骤入 trace（含 RAG 检索明细）

@@ -473,6 +473,44 @@ def test_dispatcher_on_step_streaming_callback():
     print(f"OK test_dispatcher_on_step_streaming_callback: on_step 触发 {len(snapshots)} 次")
 
 
+def test_sync_run_passes_on_token_to_qa_path():
+    """回归：**同步** run() 的 qa 早退分支必须把 on_token 透传到 ReActAgent。
+
+    背景：异步 run_async() 一直透传，同步 run() 曾漏传 → 走同步入口时 qa 流式**静默失效**
+    （UI 只收到 done、没有 token 事件）。此处用假 ReActAgent 断言参数确实传到了最底层。
+    """
+    import harness.react_agent as RA
+    import harness.skills as HS
+    import subagents._shared as SH
+
+    seen: dict = {}
+    saved = (RA.ReActAgent, HS.build_compliance_skills, SH.get_rag)
+
+    class _FakeReAct:
+        def __init__(self, *a, **kw):
+            pass
+
+        def run(self, user_input, on_token=None):
+            seen["on_token"] = on_token
+            return {"answer": "（fake 终答）", "trace": [], "tool_calls": 0}
+
+    RA.ReActAgent = _FakeReAct
+    HS.build_compliance_skills = lambda **kw: None
+    SH.get_rag = lambda *a, **kw: None
+    cb = lambda piece: None          # 固定身份，便于 is 比较
+    try:
+        with tempfile.TemporaryDirectory() as td:
+            res = orch_run(query="塔吊安装有什么要求", plan="", llm=FakeLLM(),
+                           force_agents=["qa"], on_token=cb,
+                           global_opts=GlobalOpts(memory_dir=td, allow_degrade=True))
+    finally:
+        RA.ReActAgent, HS.build_compliance_skills, SH.get_rag = saved
+
+    assert res["agents"] == ["qa"], res.get("agents")
+    assert seen.get("on_token") is cb, "同步 run() 未把 on_token 透传给 qa 路（流式会静默失效）"
+    print("OK test_sync_run_passes_on_token_to_qa_path")
+
+
 # ====================================================================
 if __name__ == "__main__":
     import traceback
@@ -498,7 +536,8 @@ if __name__ == "__main__":
              test_rag_trace_source_path_provided_by_rag_layer,
              test_ner_client_dual_loads_both_or_fallback,
              test_ner_client_no_undefined_device_regression,
-             test_dispatcher_on_step_streaming_callback]
+             test_dispatcher_on_step_streaming_callback,
+             test_sync_run_passes_on_token_to_qa_path]
     pass_cnt = fail_cnt = 0
     for fn in tests:
         try:

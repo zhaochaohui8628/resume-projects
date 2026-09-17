@@ -73,6 +73,10 @@ def main() -> int:
     print(f"  审查 FNR={s['avg_fnr']}  FPR={s['avg_fpr']}  "
           f"NER F1={s['ner_avg_f1']}  RAG recall@k={s['rag_avg_recall_at_k']}")
     print(f"  平均总耗时 {s['avg_total_ms']} ms ｜ subagent: {s['avg_subagent_ms']}")
+    if s.get("avg_phase_ms"):
+        pm = s["avg_phase_ms"]
+        print(f"  阶段拆解：路由 {pm.get('route_ms')} ms ｜ 执行 {pm.get('execute_ms')} ms ｜ "
+              f"汇总 {pm.get('summary_ms')} ms ｜ 其他 {pm.get('other_ms')} ms")
     # 多维拆解
     if s.get("by_check"):
         print("  -- 按检查项漏报率 --")
@@ -95,7 +99,10 @@ def main() -> int:
         print(f"  -- 依据可溯源率 -- {s['traceability_rate'] * 100:.1f}%")
     for c in data["cases"]:
         flag = "❌" if c["crash"] else ("⚠️" if not c["has_output"] else "✅")
+        ph = c["time_m"].get("phase_ms") or {}
         print(f"  {flag} {c['id']:<22} {c['time_m']['total_ms']:>8.1f} ms"
+              f"  [路由 {ph.get('route_ms', '-')} / 执行 {ph.get('execute_ms', '-')} /"
+              f" 汇总 {ph.get('summary_ms', '-')}]"
               f"  risks={len(c['risks'])}  ents={len(c['entities'])}")
     print("=" * 60)
 

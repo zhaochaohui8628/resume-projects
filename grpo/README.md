@@ -83,7 +83,8 @@ $PY = "C:\Users\<用户名>\anaconda3\envs\torch_gpu\python.exe"
 ## 关键超参（`config.py`）
 
 GRPO：G=8 · T=1.0 · clip ε=0.2 · KL β=0.04（阶段二 0.06~0.1）· lr 7e-6 · inner 3 ·
-LoRA r32/α64/all-linear · SFT lr 1.5e-5 epochs 5 ·
+LoRA r16/α32/all-linear（alpha/r=2；8G 显存实测 r32 固定开销 6.71G 只剩 1.2G 活动空间，减半后峰值 7.24G 稳定）·
+SFT lr 1.5e-5 epochs 5 ·
 奖励权重 `REWARD_WEIGHTS`（format .15 / cot .20 / basis .25 / answer .40）·
 SFT 轨迹回收 `SFT_KEEP_MIN=0.95 / SFT_REBUILD_MIN=0.5`（**每组 top-k=2 高分**，`--top-k`）·
 SFT 混入预训练 `--pretrain-ratio 0.1`（条款续写，减少对齐税）·

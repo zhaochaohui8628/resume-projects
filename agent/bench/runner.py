@@ -117,6 +117,8 @@ def run_case(case: BenchCase, llm=None, opts=None,
             cr.error = (cr.error + f" | {name} 单跑异常:{type(e).__name__}" if cr.error
                         else f"{name} 单跑异常:{type(e).__name__}")
     cr.time_m = M.time_metrics(total_ms, sub_ms)
+    # 阶段拆解（路由 / 执行 / 汇总）：直接从 orchestrator trace 的 ms 字段聚合
+    cr.time_m["phase_ms"] = M.phase_metrics(res.get("trace"))
 
     # ---- 指标 ----
     cr.risk_m = M.risk_metrics(case.golden_risks, cr.risks)
@@ -190,6 +192,16 @@ def summarize(results: list[CaseResult]) -> dict:
                 sub_agg.setdefault(k, []).append(v)
     avg_sub = {k: round(sum(v) / len(v), 1) for k, v in sub_agg.items()}
 
+    # 阶段耗时（路由 / 执行 / 汇总）—— 逐用例取自 trace.ms，只统计有 phase_ms 的用例
+    ph_agg: dict[str, list[float]] = {}
+    for r in results:
+        ph = r.time_m.get("phase_ms") or {}
+        for k in ("route_ms", "execute_ms", "summary_ms", "other_ms", "measured_ms"):
+            v = ph.get(k)
+            if isinstance(v, (int, float)):
+                ph_agg.setdefault(k, []).append(v)
+    avg_phase = {k: round(sum(v) / len(v), 1) for k, v in ph_agg.items()}
+
     # ---- 多维汇总 ----
     check_agg: dict[str, dict] = {}
     for c in M.CHECKS:
@@ -226,6 +238,7 @@ def summarize(results: list[CaseResult]) -> dict:
         "rag_avg_recall_at_k": round(avg_rk, 4) if avg_rk is not None else None,
         "avg_total_ms": round(avg_total, 1),
         "avg_subagent_ms": avg_sub,
+        "avg_phase_ms": avg_phase,
         # —— 多维拆解（v2）——
         "by_check": check_agg,
         "by_severity": sev_agg,

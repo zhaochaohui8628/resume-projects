@@ -38,6 +38,22 @@ class FakeLLM:
         return r
 
 
+class StreamFakeLLM(FakeLLM):
+    """带 stream 的假 LLM：把整段 JSON 按 chunk 长度切开逐块吐（模拟真实流式分块）。
+
+    逐块切分正好用来验证跨块转义（`\\n` 被切在 `\\` 与 `n` 之间）这类边界。
+    """
+
+    def __init__(self, script=None, chunk=7):
+        super().__init__(script)
+        self.chunk = chunk
+
+    def stream(self, messages, **kwargs):
+        text = self.complete(messages)          # 复用同一游标：每轮只会走 stream 或 complete
+        for i in range(0, len(text), self.chunk):
+            yield text[i:i + self.chunk]
+
+
 def _demo_skills(log=None) -> SkillRegistry:
     reg = SkillRegistry()
     reg.register(Skill("check_rule", "规则检查（demo）",
@@ -234,6 +250,40 @@ def test_skills_invoke_rules_stub():
     assert "[HIGH]" in out
 
 
+def test_react_answer_streaming_only_final():
+    """qa 路流式（2026-09-17）：只推终答正文，中间轮次的协议 JSON 一律不外泄。"""
+    with tempfile.TemporaryDirectory() as td:
+        answer = "结论：基坑 5m 需专家论证。\n依据：DG/TJ08-61 第 16.2.1 条。"
+        llm = StreamFakeLLM([
+            json.dumps({"thought": "先查规范", "action": "lookup_std", "action_input": "基坑"}),
+            json.dumps({"thought": "执行检索", "action": "lookup_std", "action_input": "基坑 5m"}),
+            json.dumps({"thought": "够了", "action": "answer", "action_input": answer}),
+        ])
+        agent = ReActAgent(skills=_demo_skills(), memory=_mem(td), llm=llm)
+        got: list[str] = []
+        res = agent.run("基坑 5m 深合规吗？", on_token=got.append)
+        joined = "".join(got)
+        assert res["answer"] == answer
+        assert joined == answer          # 分块内容拼接 == 终答全文（含 \n 转义已还原）
+        assert len(got) > 1              # 确实分块推送，不是一次性
+        for bad in ('"thought"', '"action"', "lookup_std", "执行检索"):
+            assert bad not in joined     # 中间轮次内容没外泄
+
+
+def test_react_stream_fallback_reversed_key_order():
+    """键顺序颠倒（action_input 在 action 之前）→ 无法边收边解 → 整段兜底推送，不丢内容。"""
+    with tempfile.TemporaryDirectory() as td:
+        answer = "结论：不满足要求。"
+        payload = '{"thought": "t", "action_input": "%s", "action": "answer"}' % answer
+        llm = StreamFakeLLM([payload], chunk=5)
+        agent = ReActAgent(skills=_demo_skills(), memory=_mem(td), llm=llm)
+        got: list[str] = []
+        res = agent.run("q", on_token=got.append)
+        assert res["answer"] == answer
+        assert "".join(got) == answer
+        assert len(got) == 1             # 一次性兜底
+
+
 if __name__ == "__main__":
     import traceback
 
@@ -244,7 +294,9 @@ if __name__ == "__main__":
              test_state_vector_cosine_deterministic,
              test_progressive_expand_once,
              test_unknown_action_and_invalid_json, test_memory_layers,
-             test_skills_invoke_rules_stub]
+             test_skills_invoke_rules_stub,
+             test_react_answer_streaming_only_final,
+             test_react_stream_fallback_reversed_key_order]
     for fn in tests:
         try:
             fn()

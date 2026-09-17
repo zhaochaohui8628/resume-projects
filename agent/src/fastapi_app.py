@@ -25,6 +25,7 @@ import base64
 import json
 import os
 import sys
+import threading
 import time
 import uuid
 from typing import Any, AsyncGenerator
@@ -129,7 +130,8 @@ async def _run_task(task: Task, query: str, api_key: str,
             pass
 
     llm = _build_llm(api_key)
-    opts = GlobalOpts(rag_rerank=rag_rerank, ner_crf=ner_crf, memory_dir=MEMORY_DIR)
+    opts = GlobalOpts.from_config(rag_rerank=rag_rerank, ner_crf=ner_crf,
+                                  memory_dir=MEMORY_DIR)
 
     async def worker():
         try:
@@ -229,14 +231,71 @@ async def plan_clear():
     return {"ok": True, "plan_chars": 0}
 
 
+# ============================================================================
+# 任务队列准入控制（2026-09-16 依据实测定档，读 config/config.yaml `concurrency`）
+# 实测：并发 1/2/3 峰值内存 3630/3439/3615 MB，单任务 1.33s / 0.97s。
+# 目的：防止无限并发提交拖垮内存（历史上出现 WinError 1455 页面文件不足）。
+# ============================================================================
+def _load_concurrency_cfg() -> tuple[int, int]:
+    """返回 (task_concurrency, queue_max)；读不到配置时用实测保守值 (3, 8)。"""
+    try:
+        import yaml  # type: ignore
+        # 用模块级 ROOT（项目根）。原先自己 dirname 两次，只到 agent/ 少一层，
+        # 导致 agent/config/config.yaml 不存在 → 配置静默失效、永远回落到默认值。
+        cfg_path = os.path.join(ROOT, "config", "config.yaml")
+        if os.path.exists(cfg_path):
+            with open(cfg_path, "r", encoding="utf-8") as f:
+                c = ((yaml.safe_load(f) or {}).get("concurrency") or {})
+            return (int(c.get("task_concurrency", 3)), int(c.get("queue_max", 8)))
+    except Exception:
+        pass
+    return (3, 8)
+
+
+TASK_CONCURRENCY, QUEUE_MAX = _load_concurrency_cfg()
+# 信号量：同时执行的编排任务数（模型槽位闸门另行兜底重型模型并发）
+_TASK_SLOT = threading.BoundedSemaphore(TASK_CONCURRENCY)
+# 队列计数：正在执行 + 等待信号量的任务总数
+_QUEUE_N = 0
+_QUEUE_LOCK = threading.Lock()
+
+
 @app.post("/api/tasks", response_model=dict)
 async def create_task(body: TaskQuery) -> dict:
-    """创建编排后台任务，返回 task_id。"""
+    """创建编排后台任务，返回 task_id。
+
+    准入控制：队列满（queue_max）直接 429；否则入队，由信号量限制同时执行数
+    （task_concurrency）。任务结束/取消时释放信号量与队列计数。
+    """
+    global _QUEUE_N
+    with _QUEUE_LOCK:
+        if _QUEUE_N >= QUEUE_MAX:
+            raise HTTPException(
+                status_code=429,
+                detail=(f"系统繁忙：任务队列已满（{_QUEUE_N}/{QUEUE_MAX}），"
+                        f"当前并发上限 {TASK_CONCURRENCY}。请稍后重试或先取消旧任务。"))
+        _QUEUE_N += 1
     task = Task()
     _TASKS[task.id] = task
-    asyncio.ensure_future(_run_task(task, body.query, body.api_key,
-                                    body.rag_rerank, body.ner_crf))
-    return {"ok": True, "task_id": task.id, "status": task.status}
+
+    async def _guarded():
+        global _QUEUE_N
+        try:
+            # 信号量在工作线程获取（避免阻塞事件循环）
+            await asyncio.to_thread(_TASK_SLOT.acquire)
+            try:
+                await _run_task(task, body.query, body.api_key,
+                                body.rag_rerank, body.ner_crf)
+            finally:
+                _TASK_SLOT.release()
+        finally:
+            with _QUEUE_LOCK:
+                _QUEUE_N -= 1
+
+    asyncio.ensure_future(_guarded())
+    return {"ok": True, "task_id": task.id, "status": task.status,
+            "queue": {"waiting": _QUEUE_N, "queue_max": QUEUE_MAX,
+                      "concurrency": TASK_CONCURRENCY}}
 
 
 @app.get("/api/tasks/{task_id}")
@@ -267,7 +326,8 @@ async def stream(query: str = "", api_key: str = "", rag_rerank: bool = True,
         if llm is None:
             yield _sse("error", {"message": "未配置 DeepSeek API Key（请在前端填写，或服务端设置环境变量 DEEPSEEK_API_KEY 后重启）。"})
             return
-        opts = GlobalOpts(rag_rerank=rag_rerank, ner_crf=ner_crf, memory_dir=MEMORY_DIR)
+        opts = GlobalOpts.from_config(rag_rerank=rag_rerank, ner_crf=ner_crf,
+                                  memory_dir=MEMORY_DIR)
         snap_q: "asyncio.Queue" = asyncio.Queue()
         loop = asyncio.get_running_loop()
 
